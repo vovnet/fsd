@@ -1,0 +1,7 @@
+mixin like(likes, liked=false)
+    if liked
+        .like.like--liked= likes
+            i.like__icon.like__icon--liked favorite
+    else
+        .like= likes
+            i.like__icon favorite_border

@@ -7,6 +7,7 @@ html
     include blocks/radio/radio.pug
     include blocks/toggle/toggle.pug
     include blocks/long-button/long-button.pug
+    include blocks/like/like.pug
 
     h1
       | This one is the sub-section or widget title
@@ -40,3 +41,11 @@ html
     .simple-button.simple-button--disabled Click me
 
     +long-button('Перейти к оплате')
+
+    br 
+    br
+    
+
+    +like(1000)
+    +like(33, true)
+    +like(222)
