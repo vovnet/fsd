@@ -3,6 +3,10 @@
 @import '../blocks/checkbox/checkbox.scss';
 @import '../blocks/radio/radio.scss';
 @import '../blocks/toggle/toggle.scss';
+@import '../blocks/button/button.scss';
+@import '../blocks/rounded-button/rounded-button.scss';
+@import '../blocks/simple-button/simple-button.scss';
+@import '../blocks/long-button/long-button.scss';
 
 
 body {
@@ -30,3 +34,16 @@ h2 {
     color: #1F2041;
 }
 
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px; 
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+}

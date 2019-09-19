@@ -1,0 +1,14 @@
+.simple-button {
+    display: inline-block;
+    padding: 1em;
+    font-size: .75rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $purple;
+    cursor: pointer;
+
+    &--disabled {
+        cursor: default;
+        color: $dark-shade-50;
+    }
+}
