@@ -1,44 +1,46 @@
-.radio {
-    display: inline-block;
+.toggle {
+    padding-left: 3.6em;
     position: relative;
-    padding-left: 2.3em;
-    padding-right: 1em;
-    user-select: none;
     cursor: pointer;
+    user-select: none;
 
     &__input {
-        opacity: 0;
         width: 0;
         height: 0;
+        opacity: 0;
     }
 
     &__mark {
         position: absolute;
-        top: -1px;
+        top: -2px;
         left: 0;
-        width: 20px;
+        width: 40px;
         height: 20px;
-        border-radius: 50%;
         border: 1px solid $dark-shade-25;
+        border-radius: 10px;
+        transition: .3s;
     }
 
-    &__mark::after {
-        content: '';
-        display: none;
+    &__mark:after {
+        display: block;
         position: absolute;
-        top: 4px;
-        left: 4px;
+        content: '';
         width: 12px;
         height: 12px;
-        background-image: linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
+        top: 4px;
+        left: 4px;
         border-radius: 50%;
+        background-color: $dark-shade-25;
+        transition: .3s;
     }
 
     &__input:checked ~ &__mark::after {
-        display: block;
+        transform: translateX(20px);
+        background-image: $gradient;
     }
 
     &__input:checked ~ &__mark {
         border-color: $purple;
     }
+
 }

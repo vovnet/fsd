@@ -5,6 +5,7 @@ html
   body
     include blocks/checkbox/checkbox.pug
     include blocks/radio/radio.pug
+    include blocks/toggle/toggle.pug
 
     h1
       | This one is the sub-section or widget title
@@ -22,3 +23,8 @@ html
     +radio('Мужчина', 'n')
     +radio('Женщина', 'n')
     +radio('Ныпаймикто', 'n')
+
+    br
+    br
+    +toggle('Предлагать новости', true)
+    +toggle('Не нужны новости')
