@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Mont';
+    src: url("../fonts/Montserrat-Regular.ttf") format('opentype');
+}
+
+@font-face {
+    font-family: "Quicksand";
+    src: url("../fonts/quicksand/Quicksand-Bold.svg") format("svg"),
+      url("../fonts/quicksand/Quicksand-Bold.ttf") format("truetype"),
+      url("../fonts/quicksand/Quicksand-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+}

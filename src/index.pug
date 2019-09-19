@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    title Index
+  body
+    include blocks/checkbox/checkbox.pug
+    include blocks/radio/radio.pug
+
+    h1
+      | This one is the sub-section or widget title
+    h2
+      | Next one is the item title inside widgets
+
+    p
+      | Просто какой-то обычный текст на странице. Который можно читать и все...
+    
+    .content
+      +checkbox("Можно курить")
+      +checkbox("Можно с питомцами", true)
+      +checkbox('Можно пригласить гостей (до 10 человек)', false)
+
+    +radio('Мужчина', 'n')
+    +radio('Женщина', 'n')
+    +radio('Ныпаймикто', 'n')

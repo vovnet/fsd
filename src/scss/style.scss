@@ -1,0 +1,31 @@
+@import 'colors.scss';
+@import 'fonts.scss';
+@import '../blocks/checkbox/checkbox.scss';
+@import '../blocks/radio/radio.scss';
+
+
+body {
+    color: rgba(31, 32, 65, 0.75);
+    font-family: 'Mont', Arial;
+    margin-top: 3em;
+    font-size: .875rem;
+    line-height: 20px;
+}
+
+.content {
+    width: 230px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
+    color: #1F2041;
+}
+
+h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 19px;
+    color: #1F2041;
+}
+
