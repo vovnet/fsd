@@ -1,0 +1,12 @@
+.card-canvas {
+    position: relative;
+    top: -200px;
+    left: 170px;
+    display: block;
+    padding: 40px 30px 32px 30px;
+    width: 380px;
+    background-color: $white;
+    border-radius: 4px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}

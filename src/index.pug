@@ -8,6 +8,9 @@ html
     include blocks/toggle/toggle.pug
     include blocks/long-button/long-button.pug
     include blocks/like/like.pug
+    include blocks/enter-card/enter-card.pug
+    include blocks/rating/rating.pug
+
 
     h1
       | This one is the sub-section or widget title
@@ -30,9 +33,9 @@ html
     br
     +toggle('Предлагать новости', true)
     +toggle('Не нужны новости')
-
-    .button Click me
-    .button.button--disabled Click me
+    .content
+      .button Click me
+      .button.button--disabled Click me
 
     .rounded-button Click me
     .rounded-button.rounded-button--disabled Click me
@@ -40,16 +43,18 @@ html
     .simple-button Click me
     .simple-button.simple-button--disabled Click me
 
-    +long-button('Перейти к оплате')
 
-    br 
-    br
-    
 
     +like(1000)
     +like(33, true)
     +like(222)
 
-    .content
-      input.text-field#field(type="text" value="Email")
-      input.text-field(type="password" value="Password")
+    
+    +rating(3)
+    +rating(2)
+    +rating(5)
+    +rating(0)
+
+
+    
+    //+enter-card

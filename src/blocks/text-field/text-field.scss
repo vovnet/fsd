@@ -9,8 +9,16 @@
     padding-bottom: 13px;
     width: 100%;
 
+    &::placeholder {
+        color: $dark-shade-25;
+    }
+
     &:hover, &:focus {
         border-color: $dark-shade-50;
         color: $dark-shade-75;
+
+        &::placeholder {
+            color: $dark-shade-75;
+        }
     }
 }

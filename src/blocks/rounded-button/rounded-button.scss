@@ -3,9 +3,10 @@
     position: relative;
     color: $purple;
     border-radius: 22px;
-    padding: 11px 18px;
+    padding: 8px 18px;
     text-transform: uppercase;
     font-size: .75rem;
+    line-height: 24px;
     font-weight: bold;
     cursor: pointer;
     user-select: none;
@@ -32,4 +33,5 @@
     &--disabled {
         cursor: auto;
     }
+
 }

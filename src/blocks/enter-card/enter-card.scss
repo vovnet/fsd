@@ -1,0 +1,24 @@
+.enter-card {
+    padding-top: 10px;
+
+    &__title {
+        margin-top: 36px;
+        margin-bottom: 24px;
+    }
+
+    &__field {
+        margin-bottom: 8px;
+    }
+
+    &__enter-button {
+        margin-top: 18px;
+    }
+
+    &__account {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding-top: 30px;
+    }
+
+}
