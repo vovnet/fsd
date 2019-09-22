@@ -19,7 +19,7 @@ html
 
     p
       | Просто какой-то обычный текст на странице. Который можно читать и все...
-    
+   
     .content
       +checkbox("Можно курить")
       +checkbox("Можно с питомцами", true)
@@ -43,6 +43,11 @@ html
       .simple-button Click me
       .simple-button.simple-button--disabled Click me
 
+      label.checkbox.checkbox--bold Широкий коридор
+        input.checkbox__input(type="checkbox" checked=checked)
+        .checkbox__mark
+        .checkbox__description
+          | Ширина коридоров в номере не менее 91 см.
 
 
       +like(1000)
@@ -67,6 +72,12 @@ html
           +checkbox('Телевизор')
           +checkbox('Шампунь')
       
+      ul.bullet
+        li Нельзя с питомцами
+        li Без вечеринок и мероприятий
+        li Время прибытия &#8212; после 13:00, а выезд до 12:00
       //+enter-card
     script
       include blocks/expander/expander.js
+
+  

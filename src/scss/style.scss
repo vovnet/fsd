@@ -13,6 +13,7 @@
 @import '../blocks/enter-card/enter-card.scss';
 @import '../blocks/rating/rating.scss';
 @import '../blocks/expander/expander.scss';
+@import '../blocks/bullet/bullet.scss';
 
 :root {
     box-sizing: border-box;
@@ -64,3 +65,4 @@ h2 {
     white-space: nowrap;
     direction: ltr;
 }
+

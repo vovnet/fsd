@@ -1,0 +1,25 @@
+.bullet {
+    list-style: none;
+    line-height: 1.5em;
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-end: 0;
+    list-style-position: inside;
+
+    & li {
+        text-indent: -1em;
+        padding-bottom: 1.02em;
+    }
+
+    & li::before {
+        content: '';
+        position: relative;
+        display: inline-block;
+        left: -.8em;
+        width: .72em;
+        height: .72em;
+        background-color: $dark-shade-25;
+        border-radius: 50%;
+    }
+}
