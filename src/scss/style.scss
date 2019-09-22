@@ -12,6 +12,7 @@
 @import '../blocks/card-canvas/card-canvas.scss';
 @import '../blocks/enter-card/enter-card.scss';
 @import '../blocks/rating/rating.scss';
+@import '../blocks/expander/expander.scss';
 
 :root {
     box-sizing: border-box;
@@ -25,7 +26,7 @@
 
 body {
     color: rgba(31, 32, 65, 0.75);
-    font-family: 'Mont', Arial;
+    font-family: 'Montserrat', Arial;
     margin-top: 3em;
     font-size: .875rem;
     line-height: 20px;
@@ -34,7 +35,7 @@ body {
 }
 
 .content {
-    width: 230px;
+    width: 330px;
     margin: 0 auto;
 }
 

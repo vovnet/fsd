@@ -25,36 +25,48 @@ html
       +checkbox("Можно с питомцами", true)
       +checkbox('Можно пригласить гостей (до 10 человек)', false)
 
-    +radio('Мужчина', 'n')
-    +radio('Женщина', 'n')
-    +radio('Ныпаймикто', 'n')
+      +radio('Мужчина', 'n')
+      +radio('Женщина', 'n')
+      +radio('Ныпаймикто', 'n')
 
-    br
-    br
-    +toggle('Предлагать новости', true)
-    +toggle('Не нужны новости')
-    .content
-      .button Click me
-      .button.button--disabled Click me
+      br
+      br
+      +toggle('Предлагать новости', true)
+      +toggle('Не нужны новости')
+      .content
+        .button Click me
+        .button.button--disabled Click me
 
-    .rounded-button Click me
-    .rounded-button.rounded-button--disabled Click me
+      .rounded-button Click me
+      .rounded-button.rounded-button--disabled Click me
 
-    .simple-button Click me
-    .simple-button.simple-button--disabled Click me
-
-
-
-    +like(1000)
-    +like(33, true)
-    +like(222)
-
-    
-    +rating(3)
-    +rating(2)
-    +rating(5)
-    +rating(0)
+      .simple-button Click me
+      .simple-button.simple-button--disabled Click me
 
 
-    
-    //+enter-card
+
+      +like(1000)
+      +like(33, true)
+      +like(222)
+
+      
+      +rating(3)
+      +rating(2)
+      +rating(5)
+      +rating(0)
+
+      .expander
+        .expander__header#expander-header Expandable checkbox list
+        #expander-list.expander__list.expander__list--hide
+          +checkbox('Завтрак')
+          +checkbox('Письменный стол', true)
+          +checkbox('Стул для кормления', true)
+          +checkbox('Кроватка', true)
+          +checkbox('Телевизор')
+          +checkbox('Шампунь')
+          +checkbox('Телевизор')
+          +checkbox('Шампунь')
+      
+      //+enter-card
+    script
+      include blocks/expander/expander.js
