@@ -16,6 +16,8 @@
 @import '../blocks/bullet/bullet.scss';
 @import '../blocks/configuration-dropdown/configuration-dropdown.scss';
 @import '../blocks/additions/additions.scss';
+@import '../blocks/avatar/avatar.scss';
+@import '../blocks/comment/comment.scss';
 
 :root {
     box-sizing: border-box;
@@ -38,7 +40,7 @@ body {
 }
 
 .content {
-    width: 320px;
+    width: 710px;
     margin: 0 auto;
 }
 
