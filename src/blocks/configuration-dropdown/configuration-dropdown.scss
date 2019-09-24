@@ -1,0 +1,80 @@
+.configuration-dropdown {
+
+    &__header {
+        position: relative;
+        color: $dark-shade-75;
+        line-height: 1.715em;
+        padding: .57em 0 .715em 1em;
+        width: 19em;
+        border: 1px solid $dark-shade-25;
+        border-radius: .14em .14em 0 0;
+        user-select: none;
+        cursor: pointer;
+
+        &::after {
+            content: '\e313';
+            font-family: 'Material Icons';
+            font-size: 24px;
+            position: absolute;
+            right: 9px;
+            top: 10px;
+            color: $dark-shade-75;
+        }
+
+    }
+
+    &__content {
+        display: block;
+        border: 1px solid $dark-shade-25;
+        border-radius: 0 0 .14em .14em;
+        border-top: none;
+        width: 19em;
+        padding-bottom: 6px;
+
+        &--hide {
+            display: none;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        font-family: 'Montserrat Bold';
+        text-transform: uppercase;
+        font-size: .75rem;
+        color: $dark-shade-100;
+        vertical-align: middle;
+        padding: 0 0 0 14px;
+    }
+
+    &__controlls {
+        display: flex;
+        align-items: baseline;
+        width: 100px;
+        justify-content: space-between;
+        line-height: 0;
+        padding-top: 6px;
+        padding-right: 6px;
+    }
+
+    &__button {
+        width: 1.5em;
+        height: 1.5em;
+        border: 1px solid $dark-shade-50;
+        font-family: 'Montserrat';
+        color: $dark-shade-50;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 1.285rem;
+        line-height: 30px;
+        user-select: none;
+        cursor: pointer;
+
+        &--disabled {
+            cursor: default;
+            border-color: $dark-shade-25;
+            color: $dark-shade-25;
+        }
+    }
+}
