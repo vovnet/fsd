@@ -5,7 +5,6 @@
         color: $dark-shade-75;
         line-height: 1.715em;
         padding: .57em 0 .715em 1em;
-        width: 19em;
         border: 1px solid $dark-shade-25;
         border-radius: .14em .14em 0 0;
         user-select: none;
@@ -28,7 +27,6 @@
         border: 1px solid $dark-shade-25;
         border-radius: 0 0 .14em .14em;
         border-top: none;
-        width: 19em;
         padding-bottom: 6px;
 
         &--hide {
@@ -38,24 +36,30 @@
 
     &__item {
         display: flex;
-        align-items: baseline;
         justify-content: space-between;
         font-family: 'Montserrat Bold';
         text-transform: uppercase;
         font-size: .75rem;
         color: $dark-shade-100;
         vertical-align: middle;
-        padding: 0 0 0 14px;
+        padding: 0 0 0 1.2em;
+    }
+
+    &__option {
+        padding-top: 10px;
     }
 
     &__controlls {
         display: flex;
-        align-items: baseline;
         width: 100px;
         justify-content: space-between;
         line-height: 0;
         padding-top: 6px;
         padding-right: 6px;
+    }
+
+    &__counter {
+        padding-top: 1.2em;
     }
 
     &__button {
@@ -76,5 +80,12 @@
             border-color: $dark-shade-25;
             color: $dark-shade-25;
         }
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        height: 40px;
+        padding-top: 4px;
     }
 }

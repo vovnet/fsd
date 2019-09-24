@@ -15,6 +15,7 @@
 @import '../blocks/expander/expander.scss';
 @import '../blocks/bullet/bullet.scss';
 @import '../blocks/configuration-dropdown/configuration-dropdown.scss';
+@import '../blocks/additions/additions.scss';
 
 :root {
     box-sizing: border-box;
@@ -37,7 +38,7 @@ body {
 }
 
 .content {
-    width: 330px;
+    width: 320px;
     margin: 0 auto;
 }
 

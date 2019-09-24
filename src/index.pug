@@ -77,7 +77,8 @@ html
         li Без вечеринок и мероприятий
         li Время прибытия &#8212; после 13:00, а выезд до 12:00
       //+enter-card
-   
+  
+
       .configuration-dropdown
         .configuration-dropdown__header#dropdown_header 2 спальни, 2 кровати...
         .configuration-dropdown__content.configuration-dropdown__content--hide#dropdown_content
@@ -85,17 +86,44 @@ html
             .configuration-dropdown__option Спальни
             .configuration-dropdown__controlls
               .configuration-dropdown__button#room(data-id='room' data-type='dec') -
-              p#room_field 0
+              .configuration-dropdown__counter#room_field 0
               .configuration-dropdown__button(data-id='room' data-type='inc') +
-          .configuration-dropdown__item#config_bad Кровати
+          .configuration-dropdown__item#config_bad 
+            .configuration-dropdown__option Кровати
             .configuration-dropdown__controlls
               .configuration-dropdown__button#bad(data-id='bad' data-type='dec') -
-              p#bad_field 3
+              .configuration-dropdown__counter#bad_field 3
               .configuration-dropdown__button(data-id='bad' data-type='inc') +
-          .configuration-dropdown__item#config_badroom Ванные комнаты
+          .configuration-dropdown__item#config_badroom 
+            .configuration-dropdown__option Ванные комнаты
             .configuration-dropdown__controlls
               .configuration-dropdown__button#badroom(data-id='badroom' data-type='dec') -
-              p#badroom_field 3
+              .configuration-dropdown__counter#badroom_field 3
               .configuration-dropdown__button(data-id='badroom' data-type='inc') +
+          .configuration-dropdown__footer
+            .simple-button.simple-button--disabled Очистить
+            .simple-button Применить
+
+
+      .additions
+        .additions__title Комфорт
+        div Шумопоглощающие стены
+
+      .additions.additions--home
+        .additions__title Удобство
+        div Окно в каждой из спален
+
+      br
+      br
+      br
+      br
+      br
+      br
+      br
+      br
+      br
+      br
+      br
+      br
 
   

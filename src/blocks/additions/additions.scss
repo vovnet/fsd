@@ -1,0 +1,30 @@
+.additions {
+    position: relative;
+    line-height: 24px;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: $dark-shade-10;
+    padding: 20px 0 20px 58px;
+
+
+    &__title {
+        font-family: 'Montserrat Bold';
+    }
+
+    &::after {
+        content: '\e420';
+        position: absolute;
+        top: 24px;
+        left: 0;
+        font-family: 'Material Icons';
+        font-size: 48px;
+        line-height: 40px;
+        background: $gradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &--home::after {
+        content: '\e7f1';
+    }
+}
