@@ -1,0 +1,45 @@
+.pagination {
+    font-size: .75rem;
+
+    &__item {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        vertical-align: bottom;
+        text-decoration: none;
+        color: $dark-shade-50;
+
+        &--active {
+            border-radius: 50%;
+            background-image: $gradient;
+            color: $white;
+            
+        }
+    }
+
+    &__info {
+        font-size: .875rem;
+        padding: 10px 0 0 6px;
+    }
+
+    &__next {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        vertical-align: bottom;
+        border-radius: 50%;
+        background-image: $light-gradient;
+        border: none;
+        cursor: pointer;
+
+        &::after {
+            content: '\e5c8';
+            font-family: 'Material Icons';
+            color: $white;
+            font-size: 24px;
+        }
+    }
+}
