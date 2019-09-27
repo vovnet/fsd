@@ -20,6 +20,11 @@
 @import '../blocks/comment/comment.scss';
 @import '../blocks/pagination/pagination.scss';
 @import '../blocks/subscription/subscription.scss';
+@import '../blocks/color/color.scss';
+@import '../blocks/palette/palette.scss';
+@import '../blocks/type/type.scss';
+@import '../blocks/color-types/color-types.scss';
+@import '../blocks/logo/logo.scss';
 
 :root {
     box-sizing: border-box;
@@ -47,15 +52,25 @@ body {
 }
 
 h1 {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 24px;
+    font-family: 'Quicksand Bold', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.25em;
     color: #1F2041;
 }
 
 h2 {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 19px;
+    font-family: 'Quicksand Bold', sans-serif;
+    font-size: 1.1875rem;
+    line-height: 1.22em;
     color: #1F2041;
+}
+
+h3 {
+    font-family: 'Montserrat Bold';
+    font-size: .75rem;
+    line-height: .8em;
+    color: $dark-shade-100;
+    text-transform: uppercase;
 }
 
 .material-icons {

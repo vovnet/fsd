@@ -42,6 +42,11 @@ module.exports = {
 			filename: 'index.html',
 			template: './src/index.pug',
 		}),
+
+		new HtmlWebpackPlugin({
+			filename: 'pages/colors-and-fonts.html',
+			template: './src/pages/colors-and-fonts.pug'
+		}),
 		
 		new MiniCssExtractPlugin({
 			filename: 'css/[name].css',

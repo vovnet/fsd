@@ -1,0 +1,55 @@
+.color {
+    display: flex;
+    padding-bottom: 20px;
+    font-size: 19px;
+    line-height: 29px;
+
+    &__box {
+        width: 70px;
+        height: 70px;
+        border-radius: 6px;
+
+        &--dark-shade {
+
+            &-100 {
+                background-color: $dark-shade-100;
+            }
+
+            &-75 {
+                background-color: $dark-shade-75;
+            }
+
+            &-50 {
+                background-color: $dark-shade-50;
+            }
+
+            &-25 {
+                background-color: $dark-shade-25;
+            }
+
+            &-5 {
+                background-color: $dark-shade-5;
+            }
+        }
+
+        &--purple {
+            background-color: $purple;
+        }
+
+        &--green {
+            background-color: $green;
+        }
+    }
+
+    &__description {
+        padding: 8px 0 0 40px;
+    }
+
+    &__title {
+        font-family: 'Quicksand Bold';
+    }
+
+    &__body {
+        font-family: 'Quicksand Regular';
+    }
+}
