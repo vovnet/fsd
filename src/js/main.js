@@ -1,6 +1,7 @@
 import expander from '../blocks/expander/expander';
 import conf from '../blocks/configuration-dropdown/configuration-dropdown';
 import 'jquery-ui/ui/widgets/datepicker';
+import 'jquery.maskedinput/src/jquery.maskedinput';
 
 $.datepicker.regional['ru'] = {
     closeText: 'Закрыть',
@@ -31,3 +32,5 @@ let options = {
 
 $('#first_date').datepicker(options);
 $('#second_date').datepicker(options);
+
+$('#birthday').mask('99.99.9999');

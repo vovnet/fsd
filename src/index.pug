@@ -122,27 +122,8 @@ html
       include blocks/find-apartments-card/find-apartments-card.pug 
       +apartments()
 
-      .register-card
-        .card-canvas
-          h1 Регистрация аккаунта
-          .register-card__block
-            input.text-field(placeholder="Имя").register-card__item
-            input.text-field(placeholder="Фамилия").register-card__item
-            +radio('Мужчина', 'gender', true)
-            +radio('Женщина', 'gender')
-          .register-card__block
-            h3 Дата рождения
-            input.text-field(placeholder="ДД.ММ.ГГГГ")#birthday
-          .register-card__block
-            h3 Данные для входа в сервис
-            input.text-field(placeholder="Email").register-card__item
-            input.text-field(placeholder="Пароль").register-card__item
-            +toggle('Получать спецпредложения')
-          .register-card__block
-            +long-button('Перейти к оплате')
-          .register-card__block.register-card__block--last
-            include blocks/card-footer/card-footer.pug 
-            +card-footer('Уже есть аккаунт на Toxin', 'Войти')
+      include blocks/register-card/register-card.pug 
+      +register-card()
             
       br
       br
