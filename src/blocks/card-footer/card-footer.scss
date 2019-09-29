@@ -1,0 +1,10 @@
+.card-footer {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: baseline;
+    line-height: 18px;
+    color: $black;
+}
