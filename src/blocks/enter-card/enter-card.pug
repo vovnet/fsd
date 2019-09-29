@@ -5,6 +5,7 @@ mixin enter-card()
       input.text-field(type="password" placeholder="Пароль")
       .long-button.enter-card__enter-button Войти
         i.long-button__icon arrow_forward
-      .enter-card__account
-        p Нет аккаунта на Toxin?
-        .rounded-button Создать
+      
+      .enter-card__footer
+        include ../card-footer/card-footer.pug 
+        +card-footer('Нет аккаунта на Toxin?', 'Создать')

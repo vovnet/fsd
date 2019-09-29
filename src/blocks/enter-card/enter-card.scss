@@ -1,4 +1,5 @@
 .enter-card {
+    width: 380px;
     padding-top: 10px;
 
     &__title {
@@ -19,6 +20,10 @@
         justify-content: space-between;
         align-items: baseline;
         padding-top: 30px;
+    }
+
+    &__footer {
+        margin-top: 30px;
     }
 
 }
