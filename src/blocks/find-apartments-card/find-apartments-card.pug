@@ -1,0 +1,9 @@
+mixin apartments()
+    .find-apartments-card
+        .card-canvas
+          .find-apartments-card__content
+            h1 Найдем номера под ваши пожелания
+            +range-dates()
+            .find-apartments-card__dropdown
+              +dropdown({label: 'Гости', isFooter: true})
+            +long-button('Подобрать номер')

@@ -1,4 +1,11 @@
 .configuration-dropdown {
+    position: relative;
+
+    &__label {
+        text-transform: uppercase;
+        font-family: 'Montserrat Bold';
+        font-size: .75rem;
+    }
 
     &__header {
         position: relative;
@@ -24,6 +31,10 @@
 
     &__content {
         display: block;
+        position: absolute;
+        background-color: $white;
+        left: 0;
+        right: 0;
         border: 1px solid $dark-shade-25;
         border-radius: 0 0 .14em .14em;
         border-top: none;

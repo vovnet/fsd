@@ -27,6 +27,7 @@
 @import '../blocks/logo/logo.scss';
 @import 'datepicker/datepicker.scss';
 @import '../blocks/range-dates/range-dates.scss';
+@import '../blocks/find-apartments-card/find-apartments-card.scss';
 
 :root {
     box-sizing: border-box;
@@ -58,6 +59,7 @@ h1 {
     font-size: 1.5rem;
     line-height: 1.25em;
     color: #1F2041;
+    margin: 0;
 }
 
 h2 {
