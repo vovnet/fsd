@@ -1,6 +1,6 @@
 .bullet {
     list-style: none;
-    line-height: 1.5em;
+    line-height: 1.54em;
     padding-inline-start: 0;
     margin-block-start: 0;
     margin-block-end: 0;
@@ -8,18 +8,19 @@
     list-style-position: inside;
 
     & li {
-        text-indent: -1em;
-        padding-bottom: 1.02em;
-    }
-
-    & li::before {
-        content: '';
         position: relative;
-        display: inline-block;
-        left: -.8em;
-        width: .72em;
-        height: .72em;
-        background-color: $dark-shade-25;
-        border-radius: 50%;
+        padding-left: 19px;
+        margin-bottom: 14px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: -1px;
+            width: 10px;
+            height: 10px;
+            background-color: $dark-shade-25;
+            border-radius: 50%;
+        }
     }
 }
