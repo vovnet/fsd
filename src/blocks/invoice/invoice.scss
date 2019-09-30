@@ -1,0 +1,36 @@
+.invoice {
+    line-height: 18px;
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 16px;
+
+        &--total {
+            font-family: 'Quicksand Bold';
+            margin-top: 16px;
+            margin-bottom: 0;
+            
+        }
+
+        
+        
+    }
+
+    &__line {
+        width: 100%;
+        border-bottom: 1px dashed $dark-shade-25;
+    }
+
+    &__service {
+        position: relative;
+        width: 70%;
+    }
+
+    &__info {
+        position: absolute;
+        top: 0;
+        right: -14px;
+    }
+
+}

@@ -1,0 +1,14 @@
+mixin gallery(image, arrows = true)
+    .gallery
+        .gallery__image
+            img(src=image)
+            if (arrows)
+                .gallery__left-arrow.gallery__arrow
+                    i.material-icons keyboard_arrow_left
+                .gallery__right-arrow.gallery__arrow
+                    i.material-icons keyboard_arrow_left
+            .gallery__point-container
+                .gallery__point.gallery__point--fill
+                .gallery__point
+                .gallery__point
+                .gallery__point

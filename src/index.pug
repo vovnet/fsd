@@ -129,6 +129,13 @@ html
       include blocks/register-card/register-card.pug 
       +register-card()
             
+      .inv_cont
+        include blocks/invoice/invoice.pug 
+        +invoice()
+
+      .gal_cont
+        include blocks/gallery/gallery.pug
+        +gallery("/img/apartments_2.png", true)
       br
       br
       br

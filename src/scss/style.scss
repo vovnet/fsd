@@ -30,6 +30,9 @@
 @import '../blocks/find-apartments-card/find-apartments-card.scss';
 @import '../blocks/register-card/register-card.scss';
 @import '../blocks/card-footer/card-footer.scss';
+@import '../blocks/invoice/invoice.scss';
+@import '../blocks/info/info.scss';
+@import '../blocks/gallery/gallery.scss';
 
 :root {
     box-sizing: border-box;
@@ -93,3 +96,16 @@ h3 {
     direction: ltr;
 }
 
+.inv_cont {
+    width: 380px;
+    padding: 0 30px;
+}
+
+.gal_cont {
+    width: 271px;
+}
+
+img {
+    margin: 0;
+    padding: 0;
+}
