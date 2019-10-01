@@ -1,24 +1,34 @@
 .menu {
-    display: flex;
-    justify-content: space-between;
+    display: none;
+    flex-direction: column;
     color: $dark-shade-50;
-    height: 100%;
+    position: relative;
+    border: 1px solid $dark-shade-50;
 
     &__item {
-        cursor: pointer;
+        text-align: center;
+        line-height: 40px;
 
         &--current {
             font-family: 'Montserrat Bold';
             cursor: default;
         }
+
+        &:hover {
+            background-color: $dark-shade-5;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: $dark-shade-50;
+        display: block;
+        height: 100%;
+        
     }
 
     &__submenu {
         position: relative;
-
-        &:hover .submenu {
-            display: block;
-        }
 
         &::after {
             position: absolute;
@@ -27,35 +37,112 @@
             font-size: 24px;
             width: 24px;
             height: 21px;
-            line-height: 22px;
+            line-height: 40px;
+            top: 0;
+            right: 10px;
+        }
+    }
+    
+
+    &__menu-toggle {
+        position: absolute;
+        top: 10px;
+        right: 40px;
+        border: none;
+        background-color: transparent;
+    
+        &:after {
+            position: absolute;
+            content: '\2261';
+            color: $dark-shade-50;
+            display: block;
+            font-size: 40px;
+            width: 40px;
+            height: 40px;
         }
     }
 
-    a {
-        text-decoration: none;
-        color: $dark-shade-50;
+    &--open {
+        display: flex;
     }
 }
 
 .submenu {
-    position: absolute;
     display: none;
-    top: 30px;
-    left: -20px;
-    border: 1px solid rgba(0, 0, 0, 0.12);
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
+    flex-direction: column;
+    padding: 10px;
+    background-color: $dark-shade-10;
 
-    &:hover {
-        display: block;
+    &--open {
+        display: flex;
+    }
+}
+
+
+@media screen and (min-width: $small-size) {
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 100%;
+        border: none;
+
+        &__item {
+            cursor: pointer;
+            padding: 10px 15px;
+            border: none;
+            line-height: 20px;
+        }
+
+        &__submenu {
+            position: relative;
+            padding-right: 25px;
+
+            &:hover .submenu {
+                display: block;
+            }
+
+            &::after {
+                position: absolute;
+                content: '\e313';
+                font-family: 'Material Icons';
+                font-size: 24px;
+                width: 24px;
+                height: 21px;
+                line-height: 22px;
+                top: 10px;
+                right: 0;
+            }
+        }
+
+        &__menu-toggle {
+            display: none;
+        }
+        
     }
 
-    &__item {
-        padding: 10px 40px;
-        text-align: center;
+    
+
+    .submenu {
+        position: absolute;
+        display: none;
+        top: 40px;
+        left: -20px;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+        background-color: $white;
 
         &:hover {
-            background-color: $dark-shade-5;
+            display: block;
+        }
+
+        &__item {
+            padding: 10px 40px;
+            text-align: center;
+
+            &:hover {
+                background-color: $dark-shade-5;
+            }
         }
     }
 }

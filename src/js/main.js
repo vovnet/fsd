@@ -2,6 +2,7 @@ import expander from '../blocks/expander/expander';
 import conf from '../blocks/configuration-dropdown/configuration-dropdown';
 import 'jquery-ui/ui/widgets/datepicker';
 import 'jquery.maskedinput/src/jquery.maskedinput';
+import '../blocks/menu/menu';
 
 $.datepicker.regional['ru'] = {
     closeText: 'Закрыть',

@@ -1,5 +1,6 @@
 @import 'colors.scss';
 @import 'fonts.scss';
+@import 'sizes.scss';
 @import '../blocks/checkbox/checkbox.scss';
 @import '../blocks/radio/radio.scss';
 @import '../blocks/toggle/toggle.scss';
@@ -116,5 +117,5 @@ img {
 }
 
 .menu_cont {
-    height: 30px;
+    width: 400px;
 }
