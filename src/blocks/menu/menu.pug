@@ -1,0 +1,20 @@
+mixin menu()
+    button.menu__menu-toggle
+    .menu_cont
+      .menu.menu--open
+        .menu__item.menu__item--current 
+          a(href="#") Home
+        .menu__item 
+          a(href="#") About Us
+        .menu__item.menu__submenu#services_menu Services
+          .submenu#services_submenu
+            .submenu__item 
+              a(href="#first") First
+            .submenu__item 
+              a(href="#second") Second
+        .menu__item 
+          a(href="#") Careers
+        .menu__item
+          a(href="#") News
+        .menu__item 
+          a(href="#") Documentation
