@@ -137,8 +137,27 @@ html
         +gallery("/img/apartments_2.png", true)
 
       include blocks/image-card/image-card.pug 
-      +image-card("/img/apartments_2.png", true, 888, '9 990', 5, 999)
+      +image-card("/img/apartments_2.png", true, 888, true, '9 990', 5, 999)
       br
+
+      .menu_cont
+        .menu
+          .menu__item.menu__item--current 
+            a(href="#") Home
+          .menu__item 
+            a(href="#") About Us
+          .menu__item.menu__submenu Services
+            .submenu
+              .submenu__item 
+                a(href="#") First
+              .submenu__item 
+                a(href="#") Second
+          .menu__item 
+            a(href="#") Careers
+          .menu__item
+            a(href="#") News
+          .menu__item 
+            a(href="#") Documentation
       br
       br
       br

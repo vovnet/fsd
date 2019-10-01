@@ -34,6 +34,7 @@
 @import '../blocks/info/info.scss';
 @import '../blocks/gallery/gallery.scss';
 @import '../blocks/image-card/image-card.scss';
+@import '../blocks/menu/menu.scss';
 
 :root {
     box-sizing: border-box;
@@ -112,4 +113,8 @@ h3 {
 img {
     margin: 0;
     padding: 0;
+}
+
+.menu_cont {
+    height: 30px;
 }
