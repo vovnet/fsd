@@ -132,10 +132,12 @@ html
       .inv_cont
         include blocks/invoice/invoice.pug 
         +invoice()
-
+      include blocks/gallery/gallery.pug
       .gal_cont
-        include blocks/gallery/gallery.pug
         +gallery("/img/apartments_2.png", true)
+
+      include blocks/image-card/image-card.pug 
+      +image-card("/img/apartments_2.png", true, 888, '9 990', 5, 999)
       br
       br
       br

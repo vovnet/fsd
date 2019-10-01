@@ -1,0 +1,17 @@
+mixin image-card(image, arrows = true, apartment, price, rating, comments)
+    .image-card
+        +gallery(image, arrows)
+        .image-card__body
+          .image-card__item.image-card__item--border
+            span.image-card--bold № 
+            h2= apartment 
+            span.image-card--lux  Люкс
+          .image-card__item.image-card__item--right.image-card__item--border
+            b #{price}&#8381; 
+            span.image-card__s в сутки
+          .image-card__item.image-card__item--rating
+            +rating(rating)
+          .image-card__item.image-card__item--right
+            b 
+              | #{comments} 
+            | Отзывов
