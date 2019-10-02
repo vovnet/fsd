@@ -1,4 +1,5 @@
 # FSD Template
 ## Pages
-[Test](http://fsd.vovnet.github.io)
-[Fonts & Type](http://fsd.vovnet.github.io/pages/colors-and-fonts.html)
+[Test](http://vovnet.github.io/fsd)
+
+[Fonts & Type](http://vovnet.github.io/fsd/pages/colors-and-fonts.html)
