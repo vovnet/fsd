@@ -10,6 +10,10 @@ module.exports = {
 		main: './src/js/main.js'
 	},
 
+	output: {
+		path: path.resolve(__dirname, 'docks')
+	},
+
 	module: {
 		rules: [
 			{
