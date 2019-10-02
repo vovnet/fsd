@@ -95,7 +95,7 @@ html
         div Окно в каждой из спален
 
       .comment
-        img.avatar(src="../img/ava.jpg")
+        img.avatar(src="img/ava.jpg")
         div
           .comment__author Мурад Сарафанов
           .comment__date 5 дней назад
@@ -136,10 +136,10 @@ html
         +invoice()
       include blocks/gallery/gallery.pug
       .gal_cont
-        +gallery("/img/apartments_2.png", true)
+        +gallery("img/apartments_2.png", true)
 
       include blocks/image-card/image-card.pug 
-      +image-card("/img/apartments_2.png", true, 888, true, '9 990', 5, 999)
+      +image-card("img/apartments_2.png", true, 888, true, '9 990', 5, 999)
       br
 
       
