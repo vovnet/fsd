@@ -1,0 +1,28 @@
+.socials {
+    display: flex;
+
+    &__button {
+        border: none;
+        font-family: 'Font Awesome';
+        width: 28px;
+        height: 24px;
+        font-size: 24px;
+        cursor: pointer;
+        margin: 0 8px;
+        background: $gradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        &--twitter::before {
+            content: '\f099';
+        }
+
+        &--fb::before {
+            content: '\f082';
+        }
+
+        &--instagram::before {
+            content: '\f16d';
+        }
+    }
+}
