@@ -39,6 +39,7 @@
 @import '../blocks/light-footer/light-footer.scss';
 @import '../blocks/site-logo/site-logo.scss';
 @import '../blocks/socials/socials.scss';
+@import '../blocks/footer/footer.scss';
 
 :root {
     box-sizing: border-box;
@@ -121,4 +122,9 @@ img {
 
 .menu_cont {
     width: 80%;
+}
+
+a {
+    text-decoration: none;
+    color: $dark-shade-50;
 }

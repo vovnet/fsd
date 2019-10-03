@@ -1,0 +1,33 @@
+.footer {
+    width: 100%;
+    background-color: $white;
+    line-height: 24px;
+    padding: 100px 0;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1160px;
+        margin: 0 auto;
+    }
+
+    &__block {
+        width: 260px;
+
+        &__header {
+            margin-bottom: 26px;
+        }
+    }
+
+    &__nav {
+        width: 160px;
+    }
+
+    &__link {
+        display: block;
+        margin: 20px 0;
+        line-height: 17px;
+    }
+
+    
+}
