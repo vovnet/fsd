@@ -2,10 +2,11 @@ doctype html
 html
     head
         title Colors & Type
+        meta(name="viewport" content="width=device-width, initial-scale=1")
     body
         img.logo(src="../img/logo.svg")
         .color-types
-            .palette
+            .palette.color-types__pallete
                 .color
                     .color__box.color__box--dark-shade-100
                     .color__description
@@ -42,7 +43,7 @@ html
                         .color__title Green
                         .color__body #6FCF97
 
-            .type-container
+            .color-types__types
                 .type
                     .type__head.type__head--big H1
                     .type__body
