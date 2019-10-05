@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import './menu.scss';
 
 $('.menu__menu-toggle').click( e => {
     $('.menu').toggleClass('menu--open');

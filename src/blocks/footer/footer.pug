@@ -1,0 +1,43 @@
+mixin footer()
+    footer.footer
+      .footer__container
+        .footer__block
+          .site-logo
+          p
+          | Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam 
+          | eget nullam pellentesque aliquam curabitur cociis.
+        .footer__nav
+          .footer__block__header
+            h3 Navigation
+          p
+            a.footer__link(href="#") About Us
+            a.footer__link(href="#") News
+            a.footer__link(href="#") Support
+            a.footer__link(href="#") Products
+        .footer__nav
+          .footer__block__header
+            h3 About Us
+          p
+            a.footer__link(href="#") Who we are
+            a.footer__link(href="#") Our team
+            a.footer__link(href="#") Careers
+            a.footer__link(href="#") Investors
+        .footer__nav
+          .footer__block__header
+            h3 Support
+          p
+            a.footer__link(href="#") Documentation
+            a.footer__link(href="#") Community
+            a.footer__link(href="#") Get in Touch
+        .footer__block
+          .footer__block__header
+            h3 Subscribe to out newsletter
+          p Receive our latest news and promotions in your inbox!
+          .subscription
+            .subscription__item
+            input.text-field(placeholder="Your email address")
+      .footer__bottom
+        .footer__copy
+            p Copyright © 2018 Toxin UI Kit. All rights reserved.
+            include ../socials/socials.pug 
+            +socials()

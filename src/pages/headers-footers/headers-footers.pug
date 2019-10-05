@@ -1,0 +1,18 @@
+doctype html
+html
+    head
+        title Headers and Footer
+    body
+        include ../../blocks/header/header.pug
+        img.logo(src="../img/logo.svg")
+        .headers-footers
+            .headers-footers__item.headers-footers__item--up
+                +header()
+            .headers-footers__item
+                +header(true)
+            .headers-footers__item.headers-footers__item--down
+                include ../../blocks/footer/footer.pug 
+                +footer()
+            .headers-footers__item
+                include ../../blocks/light-footer/light-footer.pug 
+                +light-footer()

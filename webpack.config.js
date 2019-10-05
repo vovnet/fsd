@@ -6,8 +6,10 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
 	entry: {
-		style: './src/scss/style.scss', 
-		main: './src/js/main.js'
+		common: './src/scss/common.scss', 
+		//main: './src/js/main.js',
+		colorsType: './src/pages/colors-type/colors-and-fonts.js',
+		headersFooters: './src/pages/headers-footers/headers-footers.js'
 	},
 
 	output: {
@@ -45,11 +47,19 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			filename: 'index.html',
 			template: './src/index.pug',
+			chunks: ['common']
 		}),
 
 		new HtmlWebpackPlugin({
 			filename: 'pages/colors-and-fonts.html',
-			template: './src/pages/colors-and-fonts.pug'
+			template: './src/pages/colors-type/colors-and-fonts.pug',
+			chunks: ['common', 'colorsType']
+		}),
+
+		new HtmlWebpackPlugin({
+			filename: 'pages/headers-footers.html',
+			template: './src/pages/headers-footers/headers-footers.pug',
+			chunks: ['common', 'headersFooters']
 		}),
 		
 		new MiniCssExtractPlugin({

@@ -1,0 +1,71 @@
+@import '../../scss/colors.scss';
+@import '../../scss/sizes.scss';
+
+.header {
+    width: 100%;
+    position: relative;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        margin: auto 0;
+    }
+
+    &__menu {
+        position: absolute;
+        top: 70px;
+        left: 10px;
+        right: 10px;
+    }
+
+    &__enter-panel {
+        display: flex;
+        justify-content: space-between;
+        width: 200px;
+        margin: 0 auto;
+    }
+
+    &__toggle {
+        
+    }
+
+    &__account {
+        margin: 0 auto;
+    }
+    
+}
+
+@media screen and (min-width: $small-size) {
+    .header {
+        height: 70px;
+
+        &__container {
+            flex-direction: row;
+            max-width: 1160px;
+            margin: 0 auto;
+        }
+
+        &__menu {
+            position: static;
+            width: auto;
+            margin-left: auto;
+            padding-right: 14px;
+        }
+
+        &__enter-panel {
+            margin: 0;
+            margin-right: 0;
+        }
+
+        &__account {
+            border-left: 1px solid $dark-shade-10;
+            color: $dark-shade-50;
+            padding: 8px 0 4px 30px;
+        }
+
+        &__toggle {
+            display: none;
+        }
+    }
+}

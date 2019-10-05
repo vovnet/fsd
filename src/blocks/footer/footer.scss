@@ -1,14 +1,17 @@
+@import '../../scss/colors.scss';
+@import '../../scss/sizes.scss';
+
 .footer {
     width: 100%;
     background-color: $white;
     line-height: 24px;
-    padding: 100px 0;
+    padding-top: 100px;
 
     &__container {
         display: flex;
         justify-content: space-between;
         max-width: 1160px;
-        margin: 0 auto;
+        margin: 0 auto 84px;
     }
 
     &__block {
@@ -29,5 +32,17 @@
         line-height: 17px;
     }
 
+    &__bottom {
+        border-top: 1px solid $dark-shade-25;
+    }
+
+    &__copy {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1160px;
+        margin: 0 auto;
+        align-items: baseline;
+        padding: 10px 0;
+    }
     
 }
