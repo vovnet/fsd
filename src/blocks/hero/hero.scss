@@ -1,0 +1,22 @@
+.hero {
+    position: relative;
+    background-image: url('../../img/image_3.png');
+    width: 100%;
+    min-height: 900px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &--img2 {
+        background-image: url('../../img/image_4.png');
+    }
+
+    &__text {
+        position: absolute;
+        width: 297px;
+        height: 48px;
+        text-align: right;
+        bottom: 18px;
+        right: 70px;
+    }
+}

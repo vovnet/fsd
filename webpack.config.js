@@ -7,7 +7,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 module.exports = {
 	entry: {
 		common: './src/scss/common.scss', 
-		//main: './src/js/main.js',
+		main: './src/js/main.js',
 		colorsType: './src/pages/colors-type/colors-and-fonts.js',
 		headersFooters: './src/pages/headers-footers/headers-footers.js'
 	},
