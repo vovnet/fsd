@@ -1,3 +1,6 @@
+import './configuration-dropdown.scss';
+import '../simple-button/simple-button';
+
 let options = [
     { id: 'room', data: 0, view: 'спальни'},
     { id: 'bad', data: 0, view: 'кровати'},
