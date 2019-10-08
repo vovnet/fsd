@@ -12,6 +12,10 @@
         margin: auto 0;
     }
 
+    &__logo {
+        margin-right: auto;
+    }
+
     &__menu {
         position: absolute;
         top: 44px;
@@ -22,8 +26,10 @@
     &__enter-panel {
         display: flex;
         justify-content: space-between;
-        width: 200px;
-        margin: 0 auto;
+    }
+
+    &__enter-button {
+        margin-right: 20px;
     }
 
     &__toggle {
@@ -49,13 +55,11 @@
         &__menu {
             position: static;
             width: auto;
-            margin-left: auto;
             padding-right: 14px;
         }
 
         &__enter-panel {
-            margin: 0;
-            margin-right: 0;
+
         }
 
         &__account {

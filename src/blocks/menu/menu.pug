@@ -1,18 +1,33 @@
-mixin menu()
-    .menu
-      .menu__item.menu__item--current 
-        a(href="#") Home
-      .menu__item 
-        a(href="#") About Us
-      .menu__item.menu__submenu#services_menu Services
-        .submenu#services_submenu
-          .submenu__item 
-            a(href="#first") First
-          .submenu__item 
-            a(href="#second") Second
-      .menu__item 
-        a(href="#") Careers
-      .menu__item
-        a(href="#") News
-      .menu__item 
-        a(href="#") Documentation
+mixin menu(items)
+  .menu
+    +_print-items(items)
+
+
+mixin _print-items(items)
+  each item in items
+    if Array.isArray(item.link)
+      div(class=item.classes)= item.text
+        .submenu
+          +_print-items(item.link)
+    else
+      div(class=item.classes)
+        a(href=item.link)= item.text
+
+
+//.menu
+  .menu__item.menu__item--current 
+    a(href="#") Home
+  .menu__item 
+    a(href="#") About Us
+  .menu__item.menu__submenu#services_menu Services
+    .submenu#services_submenu
+      .submenu__item 
+        a(href="#first") First
+      .submenu__item 
+        a(href="#second") Second
+  .menu__item 
+    a(href="#") Careers
+  .menu__item
+    a(href="#") News
+  .menu__item 
+    a(href="#") Documentation

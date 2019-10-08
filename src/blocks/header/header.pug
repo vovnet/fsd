@@ -1,15 +1,16 @@
-mixin header(isLogged = false)
-    include ../menu/menu.pug 
-    header.header
-      .header__container
-        .site-logo 
-        .header__menu
-          +menu()
-        if (isLogged)
-            .header__account Cosmin Negoita
-        else
-            .header__enter-panel
-                .rounded-button Login
-                .button Register
-        .header__toggle
-            button.menu-toggle#menu_toggle
+mixin header(obj)
+  include ../menu/menu.pug 
+  header.header
+    .header__container
+      .site-logo.header__logo
+      .header__menu
+        +menu(obj.menu)
+      if obj.isLogged
+        .header__account Cosmin Negoita
+      else
+        .header__enter-panel
+          .header__enter-button
+            .rounded-button= obj.buttons.enter
+          .button= obj.buttons.register
+      .header__toggle
+        button.menu-toggle#menu_toggle
