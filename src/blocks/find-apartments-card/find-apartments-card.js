@@ -1,4 +1,4 @@
-import './find-apartments-card.js';
+import './find-apartments-card.scss';
 import '../card-canvas/card-canvas';
 import '../range-dates/range-dates';
 import '../configuration-dropdown/configuration-dropdown';

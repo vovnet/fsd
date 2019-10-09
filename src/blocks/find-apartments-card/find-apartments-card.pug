@@ -1,12 +1,14 @@
 mixin apartments()
     .find-apartments-card
         .card-canvas
-          .find-apartments-card__content
-            h1 Найдем номера под ваши пожелания
+          h1 Найдем номера под ваши пожелания
+          .find-apartments-card__item
             include ../range-dates/range-dates.pug
             +range-dates()
-            .find-apartments-card__dropdown
-              include ../configuration-dropdown/configuration-dropdown.pug
-              +dropdown({label: 'Гости', isFooter: true})
+          .find-apartments-card__item
+            include ../configuration-dropdown/configuration-dropdown.pug
+            //+dropdown({label: 'Гости', isFooter: true})
+            +guest-dropdown()
+          .find-apartments-card__button
             include ../long-button/long-button.pug
             +long-button('Подобрать номер')

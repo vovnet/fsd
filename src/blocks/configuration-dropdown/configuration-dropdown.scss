@@ -47,6 +47,14 @@
         }
     }
 
+    &__footer-button {
+        visibility: visible;
+
+        &--hide {
+            visibility: hidden;
+        }
+    }
+
     &__item {
         display: flex;
         justify-content: space-between;
