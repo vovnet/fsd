@@ -6,6 +6,10 @@
         position: relative;
         margin: 20px 0;
         z-index: 3;
+
+        &--primary {
+            z-index: 4;
+        }
     }
 
     &__button {

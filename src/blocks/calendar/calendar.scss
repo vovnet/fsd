@@ -1,0 +1,125 @@
+@import '../../scss/colors.scss';
+
+.calendar {
+    position: absolute;
+    top: 40px;
+    visibility: hidden;
+}
+
+@import '../../../node_modules/air-datepicker/src/sass/datepicker.scss';
+@import '../../../node_modules/air-datepicker/src/sass/navigation.scss';
+@import '../../../node_modules/air-datepicker/src/sass/cell.scss';
+
+.datepicker {
+    font-family: 'Montserrat';
+    font-size: .75rem;
+    padding: 10px 20px 16px;
+    width: 280px;
+
+    &--content {
+        padding: 0;
+    }
+
+    &--btn-container {
+        padding-top: 18px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.datepicker--cell {
+    width: 40px;
+    height: 40px;
+    color: $dark-shade-50;
+
+    &.-current- {
+        background-image: $light-gradient;
+        border-radius: 50%;
+        color: $white;
+        font-family: 'Montserrat Bold';
+
+        &.-focus- {
+            background-image: $light-gradient;
+            color: $white;
+        }
+
+        &.-in-range- {
+            color: $white;
+        }
+    }
+
+    &.-focus- {
+        background: none;
+    }
+
+    &.-selected- {
+        border-radius: 50%;
+        background-image: $gradient;
+        font-family: 'Montserrat Bold';
+
+        &.-focus- {
+            background-image: $gradient;
+        }
+    }
+
+    &.-in-range- {
+        background: $gradient-25;
+        color: $dark-shade-50;
+    }
+
+    &.-range-from- {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: '';
+            width: 20px;
+            height: 40px;
+            background-image: $gradient-25;
+            right: 0;
+        }
+    }
+
+    &.-range-to- {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 20px;
+            height: 40px;
+            background-image: $gradient-25;
+            left: 0;
+        }
+    }
+}
+
+.datepicker--day-name {
+    font-family: 'Montserrat Bold';
+    color: $purple;
+    width: 40px;
+    height: 40px;
+    text-transform: none;
+}
+
+.datepicker--nav {
+    border-bottom: none;
+    padding: 6px 0 14px;
+}
+
+.datepicker--nav-title,
+.datepicker--nav-title i {
+    color: $dark-shade-100;
+    font-size: 1.19rem;
+    font-family: 'Quicksand Bold', sans-serif;
+    font-weight: bold;
+}
+
+.datepicker--nav-action {
+    width: auto;
+    color: $purple;
+}
+
+.datepicker--pointer {
+    display: none;
+}
