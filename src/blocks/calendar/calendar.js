@@ -40,4 +40,5 @@ $('#apply_calendar').click(() => {
         $('#first_date').val(dates[0]);
         $('#second_date').val(dates[1]);
     }
+    datepicker.hide();
 });

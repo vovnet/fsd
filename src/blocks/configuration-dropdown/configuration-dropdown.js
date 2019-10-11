@@ -99,3 +99,10 @@ function mapNames(val) {
             return 2;
     }
 }
+
+$('#clear_guest').click(() => {
+    options.forEach(value => value.data = 0);
+    updateFields();
+    setGuestHeader();
+    $('#clear_guest').addClass('configuration-dropdown__footer-button--hide');
+});

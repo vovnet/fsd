@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title Card Kit
+  body
+    img.logo(src="../img/logo.svg")
+    .cards
+      include ../../blocks/find-apartments-card/find-apartments-card
+      +apartments()
+      include ../../blocks/register-card/register-card 
+      +register-card()
+      include ../../blocks/enter-card/enter-card 
+      +enter-card()
+      include ../../blocks/image-card/image-card 
+      +image-card('../img/apartments_1.png', true, 888, true, 9990, 5, 145)
+      +image-card('../img/apartments_2.png', false, 840, false, 9990, 4, 65)
+      #static-calendar

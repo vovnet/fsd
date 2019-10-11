@@ -10,7 +10,8 @@ module.exports = {
 		//main: './src/js/main.js',
 		colorsType: './src/pages/colors-type/colors-and-fonts.js',
 		headersFooters: './src/pages/headers-footers/headers-footers.js',
-		landing: './src/pages/landing/landing.js'
+		landing: './src/pages/landing/landing.js',
+		cards: './src/pages/cards/cards.js'
 	},
 
 	output: {
@@ -67,6 +68,12 @@ module.exports = {
 			filename: 'pages/landing.html',
 			template: './src/pages/landing/landing.pug',
 			chunks: ['common', 'landing']
+		}),
+
+		new HtmlWebpackPlugin({
+			filename: 'pages/cards.html',
+			template: './src/pages/cards/cards.pug',
+			chunks: ['common', 'cards']
 		}),
 		
 		new MiniCssExtractPlugin({

@@ -1,5 +1,6 @@
 mixin image-card(image, arrows = true, apartment, lux = false, price, rating, comments)
     .image-card
+        include ../gallery/gallery
         +gallery(image, arrows)
         .image-card__body
           .image-card__item.image-card__item--border
@@ -11,6 +12,7 @@ mixin image-card(image, arrows = true, apartment, lux = false, price, rating, co
             b #{price}&#8381; 
             span.image-card__s в сутки
           .image-card__item.image-card__item--rating
+            include ../rating/rating
             +rating(rating)
           .image-card__item.image-card__item--right
             b 
