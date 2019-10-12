@@ -1,36 +1,51 @@
+@import '../../scss/colors.scss';
+
 .invoice {
-    line-height: 18px;
+    line-height: 24px;
 
     &__row {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 16px;
+        margin-bottom: 10px;
 
         &--total {
             font-family: 'Quicksand Bold';
             margin-top: 16px;
             margin-bottom: 0;
-            
         }
 
-        
-        
     }
 
     &__line {
-        width: 100%;
+        position: relative;
+        bottom: 5px;
         border-bottom: 1px dashed $dark-shade-25;
+        width: 62%;
+    }
+
+    &__block {
+        display: table-cell;
     }
 
     &__service {
         position: relative;
-        width: 70%;
-    }
+        padding-right: 24px;
+        width: 80%;
 
-    &__info {
-        position: absolute;
-        top: 0;
-        right: -14px;
+        &--info::after {
+            position: absolute;
+            content: 'i';
+            top: 0;
+            right: 0;
+            font-family: 'Montserrat Bold';
+            color: $dark-shade-25;
+            border: 1px solid $dark-shade-25;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+        }
     }
 
 }

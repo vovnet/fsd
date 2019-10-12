@@ -1,0 +1,26 @@
+.booking-card {
+    width: 380px;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    &__item {
+        margin: 20px 0;
+        position: relative;
+
+        &--last {
+            margin: 0;
+        }
+
+        &--up {
+            z-index: 10;
+        }
+    
+        &--middle {
+            z-index: 5;
+        }
+    }
+}

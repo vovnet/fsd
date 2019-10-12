@@ -1,0 +1,13 @@
+@import '../../scss/colors.scss';
+
+.price {
+    color: $dark-shade-50;
+
+    &--bold {
+        font-family: 'Montserrat Bold';
+    }
+
+    &--small {
+        font-size: 12px;
+    }
+}

@@ -5,3 +5,4 @@ import '../../blocks/register-card/register-card';
 import '../../blocks/enter-card/enter-card';
 import '../../blocks/image-card/image-card';
 import '../../blocks/calendar/static-calendar';
+import '../../blocks/booking-card/booking-card';
