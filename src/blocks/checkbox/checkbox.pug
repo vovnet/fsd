@@ -2,3 +2,11 @@ mixin checkbox(label, checked=false)
     label.checkbox= label
         input.checkbox__input(type="checkbox" checked=checked)
         .checkbox__mark
+
+
+mixin checkboxList(data)
+  each item in data
+    label.checkbox.checkbox--bold= item.title
+      input.checkbox__input(type="checkbox" checked=item.checked)
+      .checkbox__mark
+      .checkbox__description= item.desc

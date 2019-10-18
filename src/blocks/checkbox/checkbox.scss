@@ -1,3 +1,5 @@
+@import '../../scss/colors.scss';
+
 .checkbox {
     display: block;
     position: relative;
@@ -13,7 +15,7 @@
     &__description {
         font-family: 'Montserrat';
         font-size: .75rem;
-        line-height: .875em;
+        line-height: 1.2em;
         padding-top: .65em;
         color: $dark-shade-50;
     }

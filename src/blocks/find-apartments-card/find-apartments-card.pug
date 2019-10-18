@@ -4,7 +4,10 @@ mixin apartments()
           h1 Найдем номера под ваши пожелания
           .find-apartments-card__item.find-apartments-card__item--primary
             include ../range-dates/range-dates.pug
-            +range-dates()
+            +range-dates({
+              firstLabel: 'Прибытие',
+              secondLabel: 'Выезд'
+            })
             .calendar
               input(type="text")#calendar
           .find-apartments-card__item

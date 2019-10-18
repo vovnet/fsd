@@ -1,0 +1,7 @@
+mixin expander(data)
+  .expander
+    .expander__header#expander-header= data.title
+    .expander__list#expander-list(class=data.hide ? 'expander__list--hide': '')
+      include ../checkbox/checkbox
+      each item in data.list
+        +checkbox(item.text, item.checked)

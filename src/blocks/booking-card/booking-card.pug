@@ -8,7 +8,10 @@ mixin booking-card()
         +price('9 990')
       .booking-card__item.booking-card__item--up
         include ../range-dates/range-dates 
-        +range-dates()
+        +range-dates({
+          firstLabel: 'Въезд',
+          secondLabel: 'Выезд'
+        })
       .booking-card__item.booking-card__item--middle
         include ../configuration-dropdown/configuration-dropdown
         +guest-dropdown()

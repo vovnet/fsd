@@ -1,4 +1,8 @@
-document.getElementById('expander-header').onclick = e => {
-    e.target.classList.toggle('expander__header--open');
-    document.getElementById('expander-list').classList.toggle('expander__list--hide');
-};
+import './expander.scss';
+import '../checkbox/checkbox';
+
+
+$('.expander__header').click( e => {
+    e.currentTarget.classList.toggle('expander__header--open');
+    $(e.currentTarget).next()[0].classList.toggle('expander__list--hide');
+});

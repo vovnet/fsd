@@ -126,7 +126,10 @@ html
         input.text-field(placeholder="Email")
 
       include blocks/range-dates/range-dates.pug 
-      +range-dates()
+      +range-dates({
+        firstLabel: 'Date dropdown',
+        secondLabel: 'Date dropdown'
+      })
 
 
       include blocks/find-apartments-card/find-apartments-card.pug 

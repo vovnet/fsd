@@ -11,7 +11,8 @@ module.exports = {
 		colorsType: './src/pages/colors-type/colors-and-fonts.js',
 		headersFooters: './src/pages/headers-footers/headers-footers.js',
 		landing: './src/pages/landing/landing.js',
-		cards: './src/pages/cards/cards.js'
+		cards: './src/pages/cards/cards.js',
+		formElements: './src/pages/form-elements/form-elements.js'
 	},
 
 	output: {
@@ -74,6 +75,12 @@ module.exports = {
 			filename: 'pages/cards.html',
 			template: './src/pages/cards/cards.pug',
 			chunks: ['common', 'cards']
+		}),
+
+		new HtmlWebpackPlugin({
+			filename: 'pages/form-elements.html',
+			template: './src/pages/form-elements/form-elements.pug',
+			chunks: ['common', 'formElements']
 		}),
 		
 		new MiniCssExtractPlugin({

@@ -1,5 +1,10 @@
 import './configuration-dropdown.scss';
 import '../simple-button/simple-button';
+import './dropdown-plugin/dropdown-plugin';
+
+
+
+/*
 
 let options = [
     { id: 'room', data: 0, view: 'спальни'},
@@ -106,3 +111,5 @@ $('#clear_guest').click(() => {
     setGuestHeader();
     $('#clear_guest').addClass('configuration-dropdown__footer-button--hide');
 });
+
+*/

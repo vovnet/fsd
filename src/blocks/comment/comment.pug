@@ -1,0 +1,10 @@
+mixin comment(data)
+  .comment
+    img.avatar(src=data.image)
+    div
+      .comment__author= data.author
+      .comment__date= data.date
+    .comment__like
+      include ../like/like
+      +like(data.like)
+    .comment__text= data.text

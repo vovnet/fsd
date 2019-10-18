@@ -1,3 +1,5 @@
+@import '../../scss/colors.scss';
+
 .additions {
     position: relative;
     line-height: 1.716em;
@@ -11,8 +13,7 @@
         font-family: 'Montserrat Bold';
     }
 
-    &::after {
-        content: '\e420';
+    &__icon {
         position: absolute;
         top: .5em;
         left: 0;
@@ -22,9 +23,5 @@
         background: $gradient;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-    }
-
-    &--home::after {
-        content: '\e7f1';
     }
 }

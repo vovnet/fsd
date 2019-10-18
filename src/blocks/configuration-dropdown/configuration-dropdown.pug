@@ -26,9 +26,10 @@ mixin dropdown(options = {})
 
 
 // guests
-mixin guest-dropdown()
+mixin guest-dropdown(isTitle = true)
   .configuration-dropdown
-    .configuration-dropdown__label Гости
+    if isTitle
+      .configuration-dropdown__label Гости
     .configuration-dropdown__header#guest_header Сколько гостей
     .configuration-dropdown__content.configuration-dropdown__content--hide
       .configuration-dropdown__item#config_guest
@@ -53,3 +54,23 @@ mixin guest-dropdown()
         .configuration-dropdown__footer-button.configuration-dropdown__footer-button--hide
           .simple-button.simple-button--disabled#clear_guest Очистить
         .simple-button#apply_guest Применить
+
+
+mixin drop(data)
+  .configuration-dropdown
+    if data.title
+      .configuration-dropdown__label= data.title
+    .configuration-dropdown__header= data.header
+    .configuration-dropdown__content(class= data.hide ? 'configuration-dropdown__content--hide' : '')
+      each item in data.list
+        .configuration-dropdown__item
+          .configuration-dropdown__option= item.title
+          .configuration-dropdown__controlls
+            .configuration-dropdown__button.configuration-dropdown__button--disabled(data-type='dec') -
+            .configuration-dropdown__counter= item.value
+            .configuration-dropdown__button(data-type='inc') +
+      if data.footer
+        .configuration-dropdown__footer
+          .configuration-dropdown__footer-button.configuration-dropdown__footer-button--hide
+            .simple-button.simple-button--disabled Очистить
+          .simple-button Применить
