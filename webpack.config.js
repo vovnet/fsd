@@ -12,7 +12,9 @@ module.exports = {
 		headersFooters: './src/pages/headers-footers/headers-footers.js',
 		landing: './src/pages/landing/landing.js',
 		cards: './src/pages/cards/cards.js',
-		formElements: './src/pages/form-elements/form-elements.js'
+		formElements: './src/pages/form-elements/form-elements.js',
+		registration: './src/pages/registration/registration.js',
+		landingLayout: './src/pages/landing-layout/landing-layout.js'
 	},
 
 	output: {
@@ -68,7 +70,7 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			filename: 'pages/landing.html',
 			template: './src/pages/landing/landing.pug',
-			chunks: ['common', 'landing']
+			chunks: ['common', 'landing', 'landingLayout']
 		}),
 
 		new HtmlWebpackPlugin({
@@ -81,6 +83,12 @@ module.exports = {
 			filename: 'pages/form-elements.html',
 			template: './src/pages/form-elements/form-elements.pug',
 			chunks: ['common', 'formElements']
+		}),
+
+		new HtmlWebpackPlugin({
+			filename: 'pages/registration.html',
+			template: './src/pages/registration/registration.pug',
+			chunks: ['common', 'registration', 'landingLayout']
 		}),
 		
 		new MiniCssExtractPlugin({

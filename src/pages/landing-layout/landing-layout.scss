@@ -1,0 +1,22 @@
+@import '../../scss/sizes.scss';
+
+.landing-layout {
+    max-width: 1160px;
+    margin: 0 auto;
+
+    &__room-config {
+        position: absolute;
+        top: 140px;
+        left: calc(50% - 380px / 2);
+        z-index: 1;
+    }
+}
+
+@media screen and (min-width: $small-size) {
+    .landing {
+
+        &__room-config {
+            left: auto;
+        }
+    }
+}
