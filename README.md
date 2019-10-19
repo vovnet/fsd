@@ -13,3 +13,7 @@
 [Test](http://vovnet.github.io/fsd)
 
 [Landing](http://vovnet.github.io/fsd/pages/landing.html)
+
+[Registration](http://vovnet.github.io/fsd/pages/registration.html)
+
+[Sign In](http://vovnet.github.io/fsd/pages/sign-in.html)
