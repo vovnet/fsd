@@ -15,7 +15,8 @@ module.exports = {
 		formElements: './src/pages/form-elements/form-elements.js',
 		registration: './src/pages/registration/registration.js',
 		landingLayout: './src/pages/landing-layout/landing-layout.js',
-		signIn: './src/pages/sign-in/sign-in.js'
+		signIn: './src/pages/sign-in/sign-in.js',
+		searchRoom: './src/pages/search-room/search-room.js'
 	},
 
 	output: {
@@ -96,6 +97,12 @@ module.exports = {
 			filename: 'pages/sign-in.html',
 			template: './src/pages/sign-in/sign-in.pug',
 			chunks: ['common', 'signIn', 'landingLayout']
+		}),
+
+		new HtmlWebpackPlugin({
+			filename: 'pages/search-room.html',
+			template: './src/pages/search-room/search-room.pug',
+			chunks: ['common', 'searchRoom']
 		}),
 		
 		new MiniCssExtractPlugin({

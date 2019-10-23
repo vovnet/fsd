@@ -1,18 +1,18 @@
-mixin image-card(image, arrows = true, apartment, lux = false, price, rating, comments)
+mixin image-card(data)
     .image-card
         include ../gallery/gallery
-        +gallery(image, arrows)
+        +gallery(data.image, data.arrows)
         .image-card__body
           .image-card__item.image-card__item--border
             include ../apartment-info/apartment-info 
-            +apartment-info({number: apartment, lux: lux})
+            +apartment-info({number: data.position, lux: data.lux})
           .image-card__item.image-card__item--right.image-card__item--border
             include ../price/price 
-            +price(price)
+            +price(data.price)
           .image-card__item.image-card__item--rating
             include ../rating/rating
-            +rating(rating)
+            +rating(data.rating)
           .image-card__item.image-card__item--right
             b 
-              | #{comments} 
+              | #{data.comments} 
             | Отзывов

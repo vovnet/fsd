@@ -1,0 +1,219 @@
+extends ../main-layout/main-layout 
+
+block title
+  title Search Room
+
+block content
+  .search-room
+    sidebar.search-room__sidebar
+      include ../../blocks/checkbox/checkbox 
+      .search-room__sidebar-item
+        include ../../blocks/range-dates/range-dates
+        #calendar 
+          +date-dropdown({
+            label: 'Даты превыбания в отеле',
+            date: '19 авг - 23 авг'
+          })
+      .search-room__sidebar-item
+        #guest.search-room--index-100
+      .search-room__sidebar-item
+        h3.search-room__sidebar-item-title checkbox buttons
+        +checkbox('Можно курить', false)
+        +checkbox('Можно с питомцами', true)
+        +checkbox('Можно пригласить гостей (до 10 человек)', true)
+      .search-room__sidebar-item
+        h3.search-room__sidebar-item-title Доступность
+        +checkboxList([
+          {
+            title: 'Широкий коридор',
+            checked: false,
+            desc: 'Ширина коридоров в номере не менее 91 см.'
+          },
+          {
+            title: 'Помощник для инвалидов',
+            checked: false,
+            desc: 'На 1 этаже вас встретит специалист и проводит до номера.'
+          }
+        ])
+      .search-room__sidebar-item
+        #comfort.search-room--index-100
+      .search-room__sidebar-item
+        include ../../blocks/expander/expander 
+        +expander({
+          title: 'Дополнительные удобства',
+          hide: true,
+          list: [
+            {
+              text: 'Завтрак',
+              checked: false
+            },
+            {
+              text: 'Письменный стол',
+              checked: true
+            },
+            {
+              text: 'Стул для кормления',
+              checked: true
+            },
+            {
+              text: 'Кроватка',
+              checked: true
+            },
+            {
+              text: 'Телевизор',
+              checked: false
+            },
+            {
+              text: 'Шампунь',
+              checked: false
+            },
+            {
+              text: 'Телевизор',
+              checked: false
+            },
+            {
+              text: 'Шампунь',
+              checked: false
+            },
+          ]
+        })
+        
+    .search-room__content
+      h2.search-room__header Номера, которые мы для вас подобрали
+      include ../../blocks/image-card/image-card 
+      
+      .search-room__room-card
+        +image-card({
+            image: '../img/apartments_1.png',
+            arrows: true,
+            position: 888,
+            lux: true, 
+            price: '9 990', 
+            rating: 5, 
+            comments: 145
+        })
+
+      .search-room__room-card
+        +image-card({
+            image: '../img/apartments_2.png',
+            arrows: false,
+            position: 840,
+            lux: true, 
+            price: '9 900', 
+            rating: 4, 
+            comments: 65
+        })
+
+      .search-room__room-card
+        +image-card({
+            image: '../img/apartments_3.png',
+            arrows: false,
+            position: 980,
+            lux: true, 
+            price: '8 500', 
+            rating: 3, 
+            comments: 35
+        })
+
+      .search-room__room-card
+        +image-card({
+            image: '../img/apartments_4.png',
+            arrows: false,
+            position: 856,
+            lux: false, 
+            price: '7 300', 
+            rating: 5, 
+            comments: 19
+        })
+
+      .search-room__room-card
+        +image-card({
+            image: '../img/apartments_5.png',
+            arrows: false,
+            position: 740,
+            lux: false, 
+            price: '6 000', 
+            rating: 4, 
+            comments: 44
+        })
+
+      .search-room__room-card
+        +image-card({
+            image: '../img/apartments_6.png',
+            arrows: false,
+            position: 982,
+            lux: false, 
+            price: '5 800', 
+            rating: 3, 
+            comments: 56
+        })
+
+      .search-room__room-card
+        +image-card({
+            image: '../img/apartments_7.png',
+            arrows: false,
+            position: 678,
+            lux: false, 
+            price: '5 500', 
+            rating: 5, 
+            comments: 45
+        })
+
+      .search-room__room-card
+        +image-card({
+            image: '../img/apartments_8.png',
+            arrows: false,
+            position: 450,
+            lux: false, 
+            price: '5 300', 
+            rating: 4, 
+            comments: 39
+        })
+
+      .search-room__room-card
+        +image-card({
+            image: '../img/apartments_9.png',
+            arrows: false,
+            position: 350,
+            lux: false, 
+            price: '5 000', 
+            rating: 3, 
+            comments: 77
+        })
+
+      .search-room__room-card
+        +image-card({
+            image: '../img/apartments_10.png',
+            arrows: false,
+            position: 666,
+            lux: false, 
+            price: '5 000', 
+            rating: 4, 
+            comments: 25
+        })
+
+      .search-room__room-card
+        +image-card({
+            image: '../img/apartments_11.png',
+            arrows: false,
+            position: 444,
+            lux: false, 
+            price: '5 000', 
+            rating: 3, 
+            comments: 15
+        })
+
+      .search-room__room-card
+        +image-card({
+            image: '../img/apartments_12.png',
+            arrows: false,
+            position: 352,
+            lux: false, 
+            price: '5 000', 
+            rating: 3, 
+            comments: 55
+        })
+
+      .search-room__pagination
+        include ../../blocks/pagination/pagination 
+        +pagination()

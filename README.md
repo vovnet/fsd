@@ -17,3 +17,5 @@
 [Registration](http://vovnet.github.io/fsd/pages/registration.html)
 
 [Sign In](http://vovnet.github.io/fsd/pages/sign-in.html)
+
+[Search room](http://vovnet.github.io/fsd/pages/search-room.html)
