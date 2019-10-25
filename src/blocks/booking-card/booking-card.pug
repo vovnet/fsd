@@ -10,8 +10,12 @@ mixin booking-card()
         include ../range-dates/range-dates 
         +range-dates({
           firstLabel: 'Въезд',
-          secondLabel: 'Выезд'
+          secondLabel: 'Выезд',
+          firstInputId: 'first_booking_date',
+          secondInputId: 'second_booking_date'
         })
+        .calendar
+          input(type="text")#booking_calendar
       .booking-card__item.booking-card__item--middle
         include ../configuration-dropdown/configuration-dropdown
         +guest-dropdown()

@@ -3,4 +3,9 @@ import '../card-canvas/card-canvas';
 import '../range-dates/range-dates';
 import '../configuration-dropdown/configuration-dropdown';
 import '../long-button/long-button';
-import '../calendar/calendar';
+import Calendar from '../calendar/calendar';
+
+Calendar({
+    container: $('#calendar'),
+    inputs: $('#first_date,#second_date')
+})

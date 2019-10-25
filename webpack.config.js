@@ -16,7 +16,8 @@ module.exports = {
 		registration: './src/pages/registration/registration.js',
 		landingLayout: './src/pages/landing-layout/landing-layout.js',
 		signIn: './src/pages/sign-in/sign-in.js',
-		searchRoom: './src/pages/search-room/search-room.js'
+		searchRoom: './src/pages/search-room/search-room.js',
+		roomDetails: './src/pages/room-details/room-details.js'
 	},
 
 	output: {
@@ -103,6 +104,12 @@ module.exports = {
 			filename: 'pages/search-room.html',
 			template: './src/pages/search-room/search-room.pug',
 			chunks: ['common', 'searchRoom']
+		}),
+
+		new HtmlWebpackPlugin({
+			filename: 'pages/room-details.html',
+			template: './src/pages/room-details/room-details.pug',
+			chunks: ['common', 'roomDetails']
 		}),
 		
 		new MiniCssExtractPlugin({

@@ -6,3 +6,9 @@ import '../range-dates/range-dates';
 import '../configuration-dropdown/configuration-dropdown';
 import '../long-button/long-button';
 import '../invoice/invoidce';
+import Calendar from '../calendar/calendar';
+
+Calendar({
+    container: $('#booking_calendar'),
+    inputs: $('#first_booking_date,#second_booking_date')
+})

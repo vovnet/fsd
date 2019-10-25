@@ -3,6 +3,14 @@ html
   head
     title Index
     meta(name="viewport" content="width=device-width, initial-scale=1")
+  body
+    include blocks/donut/donut 
+    +donut({
+      excellent: 10,
+      good: 25,
+      normal: 40,
+      bad: 25
+    })
   //body
     include blocks/checkbox/checkbox.pug
     include blocks/radio/radio.pug

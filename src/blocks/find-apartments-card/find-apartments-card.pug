@@ -6,7 +6,9 @@ mixin apartments()
             include ../range-dates/range-dates.pug
             +range-dates({
               firstLabel: 'Прибытие',
-              secondLabel: 'Выезд'
+              secondLabel: 'Выезд',
+              firstInputId: 'first_date',
+              secondInputId: 'second_date'
             })
             .calendar
               input(type="text")#calendar

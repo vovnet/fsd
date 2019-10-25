@@ -1,5 +1,8 @@
 mixin additions(data)
-  .additions
+  - var noBorder = '';
+  if data.noBorder
+    - noBorder = 'additions--no-border'
+  .additions(class=noBorder)
     .additions__title= data.title
     div= data.desc
     i.material-icons.additions__icon= data.icon

@@ -19,3 +19,5 @@
 [Sign In](http://vovnet.github.io/fsd/pages/sign-in.html)
 
 [Search room](http://vovnet.github.io/fsd/pages/search-room.html)
+
+[Room details](http://vovnet.github.io/fsd/pages/room-details.html)

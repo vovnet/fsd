@@ -1,0 +1,63 @@
+extends ../main-layout/main-layout 
+
+block title
+  title Room details
+
+block content
+  .room-details
+    .room-details__info
+      .room-details__room-item
+        h2.room-details__title Сведения о номере
+        include ../../blocks/additions/additions 
+        .room-details__inner
+            +additions({
+                title: 'Комфорт',
+                desc: 'Шумопоглощающие стены',
+                icon: 'tag_faces'
+            })
+        .room-details__inner
+            +additions({
+                title: 'Удобство',
+                desc: 'Окно в каждой из спален',
+                icon: 'location_city'
+            })
+        +additions({
+            title: 'Уют',
+            desc: 'Номер оснащен камином',
+            icon: 'whatshot',
+            noBorder: true
+        })
+      .room-details__room-item.bb
+        h2.room-details__title Впечатления от номера
+      .room-details__room-comments
+        h2.room-details__title Отзывы посетителей номера
+        include ../../blocks/comment/comment 
+        .room-details__inner
+            +comment({
+                image: '../../img/ava.jpg',
+                author: 'Мурад Сарафанов',
+                date: '5 дней назад',
+                like: { likes: 5, liked: true },
+                text: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'
+            })
+        +comment({
+            image: '../../img/ava.jpg',
+            author: 'Патрисия Стёклышкова',
+            date: 'Неделю назад',
+            like: { likes: 2, liked: false },
+            text: 'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент'
+        })
+      .room-details__room-item
+        h2.room-details__title Правила
+        include ../../blocks/bullet/bullet 
+        +bullet([
+            'Нельзя с питомцами',
+            'Без вечеринок и мероприятий',
+            'Время прибытия — после 13:00, а выезд до 12:00'
+        ])
+      .room-details__room-item
+        h2.room-details__title Отмена
+        p.room-details__text Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
+    .room-details__booking
+      include ../../blocks/booking-card/booking-card 
+      +booking-card()

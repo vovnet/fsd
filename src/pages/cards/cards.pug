@@ -3,7 +3,7 @@ html
   head
     title Card Kit
   body
-    img.logo(src="../img/logo.svg")
+    img.cards__logo(src="../img/logo.svg")
     .cards
       .cards__column
         .cards__item
@@ -21,11 +21,27 @@ html
           +enter-card()
       .cards__column
         .cards__item
-          #static-calendar
+          #static_calendar
         .cards__item
           include ../../blocks/image-card/image-card 
-          +image-card('../img/apartments_1.png', true, 888, true, 9990, 5, 145)
+          +image-card({
+            image: '../img/apartments_1.png',
+            arrows: true,
+            position: 888,
+            lux: true,
+            price: '9 990',
+            rating: 5,
+            comments: 145
+          })
         .cards__item
-          +image-card('../img/apartments_2.png', false, 840, false, 9990, 4, 65)
+          +image-card({
+            image: '../img/apartments_2.png',
+            arrows: false,
+            position: 840,
+            lux: false,
+            price: '9 990',
+            rating: 4,
+            comments: 65
+          })
         
       
