@@ -4,6 +4,12 @@ block title
   title Room details
 
 block content
+  include ../../blocks/hero-galery/hero-galery 
+  +hero-galery([
+    '../img/hero_galery/image.png',
+    '../img/hero_galery/image_2.png',
+    '../img/hero_galery/image_3.png'
+  ])
   .room-details
     .room-details__info
       .room-details__room-item
