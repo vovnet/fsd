@@ -1,6 +1,4 @@
-body{background-color:#F4F4F6}.cards{max-width:86%;margin:150px auto;display:flex;justify-items:center;align-items:flex-start;flex-wrap:wrap;justify-content:space-between}.cards__column{margin:0 10px}.cards__item{margin-bottom:40px}
-
-.logo{position:absolute;top:30px;left:30px}
+body{background-color:#F4F4F6}.cards{max-width:86%;margin:150px auto;display:flex;justify-items:center;align-items:flex-start;flex-wrap:wrap;justify-content:space-between}.cards__column{margin:0 10px}.cards__item{margin-bottom:40px}.cards__logo{position:absolute;top:30px;left:30px}
 
 .find-apartments-card{width:380px;height:374px}.find-apartments-card__item{position:relative;margin:20px 0;z-index:3}.find-apartments-card__item--primary{z-index:4}.find-apartments-card__button{margin-top:31px}
 
