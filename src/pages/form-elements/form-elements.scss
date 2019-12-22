@@ -89,6 +89,12 @@
             margin-right: 30px;
         }
     }
+
+    &__slider {
+        position: relative;
+        top: -22px;
+        width: 266px;
+    }
 }
 
 @media screen and (min-width: $small-size) {

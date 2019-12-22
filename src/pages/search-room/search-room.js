@@ -6,6 +6,7 @@ import '../../blocks/configuration-dropdown/configuration-dropdown';
 import '../../blocks/checkbox/checkbox';
 import '../../blocks/expander/expander';
 import '../../blocks/range-dates/range-dates';
+import '../../blocks/slider/slider';
 
 $('#guest').dropdown({
     title: 'гости',

@@ -40,12 +40,19 @@
         grid-template-columns: repeat(auto-fill, minmax(272px, 1fr));
         row-gap: 2em;
         column-gap: 1em;
-        
     }
 
     &__room-card {
         justify-self: center;
-        
+    }
+
+    &__slider {
+        position: relative;
+        top: -16px;
+        font-size: 12px;
+        color: $dark-shade-50;
+        font-family: Montserrat;
+        line-height: 24px;
     }
 
     &--index-100 {

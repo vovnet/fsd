@@ -19,6 +19,7 @@ import '../../blocks/simple-button/simple-button';
 import '../../blocks/long-button/long-button';
 import '../../blocks/rounded-button/rounded-button';
 import '../../blocks/bullet/bullet';
+import '../../blocks/slider/slider';
 
 $('#birthday').mask('99.99.9999');
 
