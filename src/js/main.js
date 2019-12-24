@@ -4,6 +4,7 @@ import 'jquery-ui/ui/widgets/datepicker';
 import 'jquery.maskedinput/src/jquery.maskedinput';
 import '../blocks/menu/menu';
 import '../blocks/slider/slider';
+import '../blocks/statistic/statistic';
 
 $.datepicker.regional['ru'] = {
     closeText: 'Закрыть',

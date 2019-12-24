@@ -1,0 +1,14 @@
+.statistic {
+    display: flex;
+    
+    &__donut {
+        margin-right: 16px;
+    }
+
+    &__list {
+        align-self: flex-end;
+        padding-bottom: 10px;
+    }
+
+    
+}
