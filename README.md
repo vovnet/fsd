@@ -10,7 +10,6 @@
 [Form elements](http://vovnet.github.io/fsd/pages/form-elements.html)
 
 ## Pages
-[Test](http://vovnet.github.io/fsd)
 
 [Landing](http://vovnet.github.io/fsd/pages/landing.html)
 
