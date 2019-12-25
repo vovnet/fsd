@@ -1,27 +1,27 @@
 mixin booking-card()
   .booking-card
     .card-canvas
-      .booking-card__header
-        include ../apartment-info/apartment-info 
-        +apartment-info({number: 888, lux: true, big: true})
-        include ../price/price 
-        +price('9 990')
-      .booking-card__item.booking-card__item--up
-        include ../range-dates/range-dates 
-        +range-dates({
-          firstLabel: 'Въезд',
-          secondLabel: 'Выезд',
-          firstInputId: 'first_booking_date',
-          secondInputId: 'second_booking_date'
-        })
-        .calendar
-          input(type="text")#booking_calendar
-      .booking-card__item.booking-card__item--middle
-        #booking_dropdown
-      .booking-card__item 
-        include ../invoice/invoice 
-        +invoice()
-      .booking-card__item--last 
-        include ../long-button/long-button 
-        .long-button Забронировать
-          i.long-button__icon arrow_forward
+      form(action="index.html", method="post")
+        .booking-card__header
+          include ../apartment-info/apartment-info 
+          +apartment-info({number: 888, lux: true, big: true})
+          include ../price/price 
+          +price('9 990')
+        .booking-card__item.booking-card__item--up
+          include ../range-dates/range-dates 
+          +range-dates({
+            firstLabel: 'Въезд',
+            secondLabel: 'Выезд',
+            firstInputId: 'first_booking_date',
+            secondInputId: 'second_booking_date'
+          })
+          .calendar
+            input(type="text")#booking_calendar
+        .booking-card__item.booking-card__item--middle
+          #booking_dropdown
+        .booking-card__item 
+          include ../invoice/invoice 
+          +invoice()
+        .booking-card__item--last 
+          include ../long-button/long-button
+          +long-button('Забронировать')

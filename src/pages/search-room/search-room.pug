@@ -6,82 +6,83 @@ block title
 block content
   .search-room
     sidebar.search-room__sidebar
-      include ../../blocks/checkbox/checkbox 
-      .search-room__sidebar-item
-        include ../../blocks/range-dates/range-dates
-        #calendar 
-          +date-dropdown({
-            label: 'Даты превыбания в отеле',
-            date: '19 авг - 23 авг'
+      form(action="index.html", method="post")
+        include ../../blocks/checkbox/checkbox 
+        .search-room__sidebar-item
+          include ../../blocks/range-dates/range-dates
+          #calendar 
+            +date-dropdown({
+              label: 'Даты превыбания в отеле',
+              date: '19 авг - 23 авг'
+            })
+        .search-room__sidebar-item
+          #guest.search-room--index-100
+        .search-room__sidebar-item
+          h3.search-room__sidebar-item-title Диапазон цен
+          .search-room__slider
+            input.slider
+            div Стоимость за сутки пребывания в номере
+        .search-room__sidebar-item
+          h3.search-room__sidebar-item-title checkbox buttons
+          +checkbox('Можно курить', false)
+          +checkbox('Можно с питомцами', true)
+          +checkbox('Можно пригласить гостей (до 10 человек)', true)
+        .search-room__sidebar-item
+          h3.search-room__sidebar-item-title Доступность
+          +checkboxList([
+            {
+              title: 'Широкий коридор',
+              checked: false,
+              desc: 'Ширина коридоров в номере не менее 91 см.'
+            },
+            {
+              title: 'Помощник для инвалидов',
+              checked: false,
+              desc: 'На 1 этаже вас встретит специалист и проводит до номера.'
+            }
+          ])
+        .search-room__sidebar-item
+          #comfort.search-room--index-100
+        .search-room__sidebar-item
+          include ../../blocks/expander/expander 
+          +expander({
+            title: 'Дополнительные удобства',
+            hide: true,
+            list: [
+              {
+                text: 'Завтрак',
+                checked: false
+              },
+              {
+                text: 'Письменный стол',
+                checked: true
+              },
+              {
+                text: 'Стул для кормления',
+                checked: true
+              },
+              {
+                text: 'Кроватка',
+                checked: true
+              },
+              {
+                text: 'Телевизор',
+                checked: false
+              },
+              {
+                text: 'Шампунь',
+                checked: false
+              },
+              {
+                text: 'Телевизор',
+                checked: false
+              },
+              {
+                text: 'Шампунь',
+                checked: false
+              },
+            ]
           })
-      .search-room__sidebar-item
-        #guest.search-room--index-100
-      .search-room__sidebar-item
-        h3.search-room__sidebar-item-title Диапазон цен
-        .search-room__slider
-          input.slider
-          div Стоимость за сутки пребывания в номере
-      .search-room__sidebar-item
-        h3.search-room__sidebar-item-title checkbox buttons
-        +checkbox('Можно курить', false)
-        +checkbox('Можно с питомцами', true)
-        +checkbox('Можно пригласить гостей (до 10 человек)', true)
-      .search-room__sidebar-item
-        h3.search-room__sidebar-item-title Доступность
-        +checkboxList([
-          {
-            title: 'Широкий коридор',
-            checked: false,
-            desc: 'Ширина коридоров в номере не менее 91 см.'
-          },
-          {
-            title: 'Помощник для инвалидов',
-            checked: false,
-            desc: 'На 1 этаже вас встретит специалист и проводит до номера.'
-          }
-        ])
-      .search-room__sidebar-item
-        #comfort.search-room--index-100
-      .search-room__sidebar-item
-        include ../../blocks/expander/expander 
-        +expander({
-          title: 'Дополнительные удобства',
-          hide: true,
-          list: [
-            {
-              text: 'Завтрак',
-              checked: false
-            },
-            {
-              text: 'Письменный стол',
-              checked: true
-            },
-            {
-              text: 'Стул для кормления',
-              checked: true
-            },
-            {
-              text: 'Кроватка',
-              checked: true
-            },
-            {
-              text: 'Телевизор',
-              checked: false
-            },
-            {
-              text: 'Шампунь',
-              checked: false
-            },
-            {
-              text: 'Телевизор',
-              checked: false
-            },
-            {
-              text: 'Шампунь',
-              checked: false
-            },
-          ]
-        })
 
     .search-room__content
       h2.search-room__header Номера, которые мы для вас подобрали
