@@ -1,25 +1,25 @@
 mixin register-card()
-    .register-card
-        .card-canvas
-          h1 Регистрация аккаунта
-          .register-card__block
-            input.text-field(placeholder="Имя").register-card__item
-            input.text-field(placeholder="Фамилия").register-card__item
-            include ../radio/radio
-            +radio('Мужчина', 'gender', true)
-            +radio('Женщина', 'gender')
-          .register-card__block
-            h3.register-card__label Дата рождения
-            input.text-field(placeholder="ДД.ММ.ГГГГ")#birthday
-          .register-card__block
-            h3.register-card__label Данные для входа в сервис
-            input.text-field(placeholder="Email").register-card__item
-            input.text-field(placeholder="Пароль").register-card__item
-            include ../toggle/toggle
-            +toggle('Получать спецпредложения')
-          .register-card__block
-            include ../long-button/long-button
-            +long-button('Перейти к оплате')
-          .register-card__block.register-card__block--last
-            include ../card-footer/card-footer
-            +card-footer('Уже есть аккаунт на Toxin', 'Войти')
+  .register-card
+    .card-canvas
+      h1 Регистрация аккаунта
+      .register-card__block
+        input.text-field(placeholder="Имя").register-card__item
+        input.text-field(placeholder="Фамилия").register-card__item
+        include ../radio/radio
+        +radio('Мужчина', 'gender', true)
+        +radio('Женщина', 'gender')
+      .register-card__block
+        h3.register-card__label Дата рождения
+        input.text-field(placeholder="ДД.ММ.ГГГГ")#birthday
+      .register-card__block
+        h3.register-card__label Данные для входа в сервис
+        input.text-field(placeholder="Email").register-card__item
+        input.text-field(placeholder="Пароль").register-card__item
+        include ../toggle/toggle
+        +toggle('Получать спецпредложения')
+      .register-card__block
+        include ../long-button/long-button
+        +long-button('Перейти к оплате')
+      .register-card__block.register-card__block--last
+        include ../card-footer/card-footer
+        +card-footer('Уже есть аккаунт на Toxin', 'Войти')

@@ -34,7 +34,7 @@ html
             firstLabel: 'Date dropdown',
             secondLabel: 'Date dropdown'
           })
-            
+
 
         .form-elements__item.form-elements__item--big-space.form-elements__small-container
           +date-dropdown({
@@ -65,38 +65,38 @@ html
         include ../../blocks/expander/expander 
         .form-elements__item.form-elements__top-margin
           +expander({
-              title: 'Expandable checkbox list',
-              list: [
-                  { text: 'Завтрак', checked: true }
-              ],
-              hide: true
+            title: 'Expandable checkbox list',
+            list: [
+              { text: 'Завтрак', checked: true }
+            ],
+            hide: true
           })
         .form-elements__item
           +expander({
-              title: 'Expandable checkbox list',
-              list: [
-                  { text: 'Завтрак', checked: false },
-                  { text: 'Письменный стол', checked: true },
-                  { text: 'Стул для кормления', checked: true },
-                  { text: 'Кроватка', checked: true },
-                  { text: 'Телевизор', checked: false },
-                  { text: 'Шампунь', checked: false },
-                  { text: 'Телевизор', checked: false },
-                  { text: 'Шампунь', checked: false },
-              ]
+            title: 'Expandable checkbox list',
+            list: [
+              { text: 'Завтрак', checked: false },
+              { text: 'Письменный стол', checked: true },
+              { text: 'Стул для кормления', checked: true },
+              { text: 'Кроватка', checked: true },
+              { text: 'Телевизор', checked: false },
+              { text: 'Шампунь', checked: false },
+              { text: 'Телевизор', checked: false },
+              { text: 'Шампунь', checked: false },
+            ]
           })
 
         .form-elements__item
           include ../../blocks/additions/additions 
           +additions({
-              title: 'Комфорт',
-              desc: 'Шумопоглощающие стены',
-              icon: 'tag_faces'
+            title: 'Комфорт',
+            desc: 'Шумопоглощающие стены',
+            icon: 'tag_faces'
           })
           +additions({
-              title: 'Удобство',
-              desc: 'Окно в каждой из спален',
-              icon: 'location_city'
+            title: 'Удобство',
+            desc: 'Окно в каждой из спален',
+            icon: 'location_city'
           })
 
       .form-elements__mid 
@@ -130,13 +130,13 @@ html
           include ../../blocks/like/like
           span.form-elements__like
             +like({
-                likes: 2,
-                liked: false
+              likes: 2,
+              liked: false
             })
-        
+
           +like({
-              likes: 12,
-              liked: true
+            likes: 12,
+            liked: true
           })
 
         .form-elements__item
@@ -208,18 +208,18 @@ html
             'Без вечеринок и мероприятий',
             'Время прибытия — после 13:00, а выезд до 12:00'
           ])
-      
+
       .form-elements__bot 
         include ../../blocks/comment/comment 
         +comment({
-            image: '../img/ava.jpg',
-            author: 'Мурад Сарафанов',
-            date: '5 дней назад',
-            text: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.',
-            like: {
-                liked: true,
-                likes: 12
-            }
+          image: '../img/ava.jpg',
+          author: 'Мурад Сарафанов',
+          date: '5 дней назад',
+          text: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.',
+          like: {
+            liked: true,
+            likes: 12
+          }
         })
 
       .form-elements__item

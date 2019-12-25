@@ -1,28 +1,28 @@
 // rooms
-mixin dropdown(options = {})
-    .configuration-dropdown
-        if options.label !== undefined
-            .configuration-dropdown__label= options.label
-        .configuration-dropdown__header#dropdown_header 2 спальни, 2 кровати...
-        .configuration-dropdown__content.configuration-dropdown__content--hide#dropdown_content
-          .configuration-dropdown__item#config_room 
-            .configuration-dropdown__option Спальни
-            .configuration-dropdown__controlls
-              .configuration-dropdown__button#room(data-id='room' data-type='dec') -
-              .configuration-dropdown__counter#room_field 0
-              .configuration-dropdown__button(data-id='room' data-type='inc') +
-          .configuration-dropdown__item#config_bad 
-            .configuration-dropdown__option Кровати
-            .configuration-dropdown__controlls
-              .configuration-dropdown__button#bad(data-id='bad' data-type='dec') -
-              .configuration-dropdown__counter#bad_field 3
-              .configuration-dropdown__button(data-id='bad' data-type='inc') +
-          .configuration-dropdown__item#config_badroom 
-            .configuration-dropdown__option Ванные комнаты
-            .configuration-dropdown__controlls
-              .configuration-dropdown__button#badroom(data-id='badroom' data-type='dec') -
-              .configuration-dropdown__counter#badroom_field 3
-              .configuration-dropdown__button(data-id='badroom' data-type='inc') +
+//- mixin dropdown(options = {})
+//-     .configuration-dropdown
+//-         if options.label !== undefined
+//-             .configuration-dropdown__label= options.label
+//-         .configuration-dropdown__header#dropdown_header 2 спальни, 2 кровати...
+//-         .configuration-dropdown__content.configuration-dropdown__content--hide#dropdown_content
+//-           .configuration-dropdown__item#config_room 
+//-             .configuration-dropdown__option Спальни
+//-             .configuration-dropdown__controlls
+//-               .configuration-dropdown__button#room(data-id='room' data-type='dec') -
+//-               .configuration-dropdown__counter#room_field 0
+//-               .configuration-dropdown__button(data-id='room' data-type='inc') +
+//-           .configuration-dropdown__item#config_bad 
+//-             .configuration-dropdown__option Кровати
+//-             .configuration-dropdown__controlls
+//-               .configuration-dropdown__button#bad(data-id='bad' data-type='dec') -
+//-               .configuration-dropdown__counter#bad_field 3
+//-               .configuration-dropdown__button(data-id='bad' data-type='inc') +
+//-           .configuration-dropdown__item#config_badroom 
+//-             .configuration-dropdown__option Ванные комнаты
+//-             .configuration-dropdown__controlls
+//-               .configuration-dropdown__button#badroom(data-id='badroom' data-type='dec') -
+//-               .configuration-dropdown__counter#badroom_field 3
+//-               .configuration-dropdown__button(data-id='badroom' data-type='inc') +
 
 
 // guests

@@ -1,66 +1,66 @@
 doctype html
 html
-    head
-        title Headers and Footer
-    body
-        include ../../blocks/header/header.pug
-        img.logo(src="../img/logo.svg")
-        .headers-footers
-            .headers-footers__item.headers-footers__item--up
-                +header({
-                    isLogged: false, 
-                    buttons: {
-                        enter: 'Войти',
-                        register: 'Зарегистрироваться'
-                    },
-                    menu: [
-                        {
-                        text: 'Home',
-                        link: '#home',
-                        classes: ['menu__item', 'menu__item--current']
-                        },
-                        {
-                        text: 'About Us',
-                        link: '#about_us',
-                        classes: ['menu__item']
-                        }, 
-                        {
-                        text: 'Services',
-                        classes: ['menu__item', 'menu__submenu'],
-                        link: [
-                        {
-                            text: 'First',
-                            link: '#first',
-                            classes: ['submenu__item']
-                        },
-                        {
-                            text: 'Second',
-                            link: '#second',
-                            classes: ['submenu__item']
-                        }
-                        ]},
-                        {
-                        text: 'Careers',
-                        link: '#careers',
-                        classes: ['menu__item']
-                        },
-                        {
-                        text: 'News',
-                        link: '#news',
-                        classes: ['menu__item']
-                        },
-                        {
-                        text: 'Documentation',
-                        link: '#docs',
-                        classes: ['menu__item']
-                        }
-                    ]
-                    })
-            .headers-footers__item
-                //+header({isLogged: true})
-            .headers-footers__item.headers-footers__item--down
-                include ../../blocks/footer/footer.pug 
-                +footer()
-            .headers-footers__item
-                include ../../blocks/light-footer/light-footer.pug 
-                +light-footer()
+  head
+    title Headers and Footer
+  body
+    include ../../blocks/header/header.pug
+    img.logo(src="../img/logo.svg")
+    .headers-footers
+      .headers-footers__item.headers-footers__item--up
+        +header({
+          isLogged: false, 
+          buttons: {
+            enter: 'Войти',
+            register: 'Зарегистрироваться'
+          },
+          menu: [
+            {
+            text: 'Home',
+            link: '#home',
+            classes: ['menu__item', 'menu__item--current']
+            },
+            {
+            text: 'About Us',
+            link: '#about_us',
+            classes: ['menu__item']
+            }, 
+            {
+            text: 'Services',
+            classes: ['menu__item', 'menu__submenu'],
+            link: [
+            {
+              text: 'First',
+              link: '#first',
+              classes: ['submenu__item']
+            },
+            {
+              text: 'Second',
+              link: '#second',
+              classes: ['submenu__item']
+            }
+            ]},
+            {
+            text: 'Careers',
+            link: '#careers',
+            classes: ['menu__item']
+            },
+            {
+            text: 'News',
+            link: '#news',
+            classes: ['menu__item']
+            },
+            {
+            text: 'Documentation',
+            link: '#docs',
+            classes: ['menu__item']
+            }
+          ]
+          })
+      .headers-footers__item
+        //+header({isLogged: true})
+      .headers-footers__item.headers-footers__item--down
+        include ../../blocks/footer/footer.pug 
+        +footer()
+      .headers-footers__item
+        include ../../blocks/light-footer/light-footer.pug 
+        +light-footer()
