@@ -33,9 +33,8 @@ mixin footer()
         .footer__block__header
           h3 Subscribe to out newsletter
         p Receive our latest news and promotions in your inbox!
-        .subscription
-          .subscription__item
-          input.text-field(placeholder="Your email address")
+        include ../subscription/subscription 
+        +subscription({ placeholder: 'Your email address' })
     .footer__bottom
       section.footer__copy
         p Copyright © 2018 Toxin UI Kit. All rights reserved.

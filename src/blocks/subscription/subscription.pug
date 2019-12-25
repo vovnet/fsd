@@ -1,4 +1,5 @@
 mixin subscription(data)
   .subscription
-    .subscription__item
-    input.text-field(placeholder=data.placeholder)
+    form(action="index.html", method="get")
+      input.text-field(placeholder=data.placeholder)
+      button.subscription__button arrow_forward

@@ -3,7 +3,7 @@
 .subscription {
     position: relative;
 
-    &::after {
+    &__button {
         position: absolute;
         display: block;
         font-family: 'Material Icons';
@@ -12,9 +12,14 @@
         font-size: 1.5rem;
         line-height: 1.96em;
         text-align: center;
-        content: '\e5c8';
         width: 2em;
         height: 2em;
         color: $purple;
+        background: transparent;
+        border: none;
+    }
+
+    & input {
+        padding-right: 40px;
     }
 }
