@@ -17,8 +17,6 @@
   }
 
   &__icon {
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     position: absolute;
     top: 0.1em;
     left: 0;
@@ -26,5 +24,7 @@
     font-size: 3.43em;
     line-height: 0.85em;
     background: $gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }

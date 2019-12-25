@@ -5,8 +5,6 @@
   user-select: none;
 
   &__icon {
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     font-family: "Material Icons";
     font-weight: normal;
     font-style: normal;
@@ -15,5 +13,7 @@
     line-height: 1;
     text-transform: none;
     background: $gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
