@@ -1,13 +1,13 @@
-@import '../../scss/colors.scss';
+@import "../../scss/colors.scss";
 
 .price {
-    color: $dark-shade-50;
+  color: $dark-shade-50;
 
-    &--bold {
-        font-family: 'Montserrat Bold';
-    }
+  &--bold {
+    font-family: "Montserrat Bold", Arial, sans-serif;
+  }
 
-    &--small {
-        font-size: 12px;
-    }
+  &--small {
+    font-size: 12px;
+  }
 }

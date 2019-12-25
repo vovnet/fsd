@@ -1,25 +1,26 @@
-@import '../../scss/colors.scss';
+@import "../../scss/colors.scss";
 
 .subscription {
-    position: relative;
+  position: relative;
 
-    &__button {
-        position: absolute;
-        display: block;
-        font-family: 'Material Icons';
-        top: 0;
-        right: 0;
-        font-size: 1.5rem;
-        line-height: 1.96em;
-        text-align: center;
-        width: 2em;
-        height: 2em;
-        color: $purple;
-        background: transparent;
-        border: none;
-    }
+  &__button {
+    position: absolute;
+    display: block;
+    font-family: "Material Icons";
+    top: 0;
+    right: 0;
+    font-size: 1.5rem;
+    line-height: 1.96em;
+    text-align: center;
+    width: 2em;
+    height: 2em;
+    color: $purple;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
 
-    & input {
-        padding-right: 40px;
-    }
+  & input {
+    padding-right: 40px;
+  }
 }

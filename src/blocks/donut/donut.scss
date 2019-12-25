@@ -1,23 +1,23 @@
-@import '../../scss/colors.scss';
+@import "../../scss/colors.scss";
 
 .donut {
-    position: relative;
-    width: 150px;
-    height: 150px;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  color: $purple;
+  cursor: default;
+  text-align: center;
+
+  &__text {
+    position: absolute;
+    top: 50px;
+    left: 44px;
+    font-family: "Montserrat Bold", Arial, sans-serif;
+    letter-spacing: 0.03rem;
+    line-height: 15px;
+  }
+
+  h1 {
     color: $purple;
-    cursor: default;
-    text-align: center;
-
-    &__text {
-        position: absolute;
-        top: 50px;
-        left: 44px;
-        font-family: 'Montserrat Bold';
-        letter-spacing: .03rem;
-        line-height: 15px;
-    }
-
-    h1 {
-        color: $purple;
-    }
+  }
 }

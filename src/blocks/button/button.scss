@@ -1,21 +1,21 @@
-@import '../../scss/colors.scss';
+@import "../../scss/colors.scss";
 
 .button {
-    display: inline-block;
-    color: $white;
-    background-image: $gradient;
-    border-radius: 22px;
-    padding: 8px 20px;
-    line-height: 24px;
-    text-transform: uppercase;
-    font-size: .75rem;
-    font-weight: bold;
-    cursor: pointer;
-    user-select: none;
-    border: none;
+  display: inline-block;
+  color: $white;
+  background-image: $gradient;
+  border-radius: 22px;
+  padding: 8px 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  border: none;
 
-    &--disabled {
-        opacity: .5;
-        cursor: auto;
-    }
+  &--disabled {
+    opacity: 0.5;
+    cursor: auto;
+  }
 }

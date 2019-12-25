@@ -1,48 +1,47 @@
-@import '../../scss/colors.scss';
+@import "../../scss/colors.scss";
 
 .toggle {
-    padding-left: 3.6em;
-    position: relative;
-    cursor: pointer;
-    user-select: none;
+  padding-left: 3.6em;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
 
-    &__input {
-        width: 0;
-        height: 0;
-        opacity: 0;
-    }
+  &__input {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
 
-    &__mark {
-        position: absolute;
-        top: -2px;
-        left: 0;
-        width: 40px;
-        height: 20px;
-        border: 1px solid $dark-shade-25;
-        border-radius: 10px;
-        transition: .3s;
-    }
+  &__mark {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 40px;
+    height: 20px;
+    border: 1px solid $dark-shade-25;
+    border-radius: 10px;
+    transition: 0.3s;
+  }
 
-    &__mark:after {
-        display: block;
-        position: absolute;
-        content: '';
-        width: 12px;
-        height: 12px;
-        top: 4px;
-        left: 4px;
-        border-radius: 50%;
-        background-color: $dark-shade-25;
-        transition: .3s;
-    }
+  &__mark:after {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 12px;
+    top: 4px;
+    left: 4px;
+    border-radius: 50%;
+    background-color: $dark-shade-25;
+    transition: 0.3s;
+  }
 
-    &__input:checked ~ &__mark::after {
-        transform: translateX(20px);
-        background-image: $gradient;
-    }
+  &__input:checked ~ &__mark::after {
+    transform: translateX(20px);
+    background-image: $gradient;
+  }
 
-    &__input:checked ~ &__mark {
-        border-color: $purple;
-    }
-
+  &__input:checked ~ &__mark {
+    border-color: $purple;
+  }
 }

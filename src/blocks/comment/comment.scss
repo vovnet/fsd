@@ -1,19 +1,19 @@
 .comment {
-    display: grid;
-    grid-template-columns: 3.57em 1fr;
-    grid-template-rows: 3.57em 1fr;
-    grid-gap: .57em;
+  display: grid;
+  grid-template-columns: 3.57em 1fr;
+  grid-template-rows: 3.57em 1fr;
+  grid-gap: 0.57em;
 
-    &__author {
-        padding-top: .143em;
-        font-family: 'Montserrat Bold';
-    }
+  &__author {
+    padding-top: 0.143em;
+    font-family: "Montserrat Bold", Arial, sans-serif;
+  }
 
-    &__date {
-        padding-top: .285em;
-    }
+  &__date {
+    padding-top: 0.285em;
+  }
 
-    &__text {
-        line-height: 1.72em;
-    }
+  &__text {
+    line-height: 1.72em;
+  }
 }

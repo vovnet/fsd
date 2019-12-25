@@ -1,13 +1,13 @@
-@import '../../scss/colors.scss';
+@import "../../scss/colors.scss";
 
 .info {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    color: $dark-shade-25;
-    border: 1px solid $dark-shade-25;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 20px;
-    cursor: pointer;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  color: $dark-shade-25;
+  border: 1px solid $dark-shade-25;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20px;
+  cursor: pointer;
 }

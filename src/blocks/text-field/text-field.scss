@@ -1,24 +1,26 @@
-@import '../../scss/colors.scss';
+@import "../../scss/colors.scss";
 
 .text-field {
+  color: $dark-shade-25;
+  border: 1px solid $dark-shade-25;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  line-height: 18px;
+  padding: 13px 15px 13px 15px;
+  width: 100%;
+
+  &::placeholder {
     color: $dark-shade-25;
-    border: 1px solid $dark-shade-25;
-    border-radius: 4px;
-    font-size: .875rem;
-    line-height: 18px;
-    padding: 13px 15px 13px 15px;
-    width: 100%;
+  }
+
+  &:hover,
+  &:focus,
+  &--focus {
+    border-color: $dark-shade-50;
+    color: $dark-shade-75;
 
     &::placeholder {
-        color: $dark-shade-25;
+      color: $dark-shade-75;
     }
-
-    &:hover, &:focus, &--focus {
-        border-color: $dark-shade-50;
-        color: $dark-shade-75;
-
-        &::placeholder {
-            color: $dark-shade-75;
-        }
-    }
+  }
 }

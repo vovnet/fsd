@@ -1,52 +1,47 @@
-@import '../../scss/sizes.scss';
+@import "../../scss/sizes.scss";
 
 .room-details {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 70px;
+  row-gap: 30px;
+  max-width: 1160px;
+  margin: 70px auto 0;
+
+  @media screen and (min-width: $middle-size) {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  &__info {
     display: grid;
-    grid-template-columns: 1fr;
     column-gap: 70px;
     row-gap: 30px;
-    max-width: 1160px;
-    margin: 70px auto 0;
+  }
 
-    @media screen and (min-width: $middle-size) {
-        grid-template-columns: 2fr 1fr;
-    }
+  &__room-item {
+    min-width: 220px;
+  }
 
-    &__info {
-        display: grid;
-        column-gap: 70px;
-        row-gap: 30px;
-    }
+  &__room-comments {
+    grid-column: 1/3;
+  }
 
-    &__room-item {
-        min-width: 220px;
-    }
+  &__inner {
+    padding-bottom: 23px;
+  }
 
-    &__room-comments {
-        grid-column: 1/3;
-    }
+  &__text {
+    font-size: 0.875rem;
+    line-height: 1.714em;
+  }
 
-    &__inner {
-        padding-bottom: 23px;
-    }
+  &__booking {
+    min-width: 380px;
+    justify-self: center;
+    padding-bottom: 20px;
+  }
 
-    &__text {
-        font-size: .875rem;
-        line-height: 1.714em;
-    }
-
-    &__booking {
-        min-width: 380px;
-        justify-self: center;
-        padding-bottom: 20px;
-    }
-
-    &__title {
-        margin-bottom: 23px;
-    }
-}
-
-.bb {
-    min-height: 50px;
-    background-color: yellowgreen;
+  &__title {
+    margin-bottom: 23px;
+  }
 }

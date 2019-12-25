@@ -1,113 +1,112 @@
-@import '../../scss/colors.scss';
+@import "../../scss/colors.scss";
 
 .configuration-dropdown {
+  position: relative;
+
+  &__label {
+    text-transform: uppercase;
+    font-family: "Montserrat Bold", Arial, sans-serif;
+    font-size: 0.75rem;
+    color: $dark-shade-100;
+  }
+
+  &__header {
     position: relative;
+    color: $dark-shade-75;
+    line-height: 1.715em;
+    padding: 0.57em 0 0.715em 1em;
+    border: 1px solid $dark-shade-25;
+    border-radius: 0.14em 0.14em 0 0;
+    user-select: none;
+    cursor: pointer;
 
-    &__label {
-        text-transform: uppercase;
-        font-family: 'Montserrat Bold';
-        font-size: .75rem;
-        color: $dark-shade-100;
+    &::after {
+      content: "\e313";
+      font-family: "Material Icons";
+      font-size: 24px;
+      position: absolute;
+      right: 9px;
+      top: 10px;
+      color: $dark-shade-75;
     }
+  }
 
-    &__header {
-        position: relative;
-        color: $dark-shade-75;
-        line-height: 1.715em;
-        padding: .57em 0 .715em 1em;
-        border: 1px solid $dark-shade-25;
-        border-radius: .14em .14em 0 0;
-        user-select: none;
-        cursor: pointer;
+  &__content {
+    display: block;
+    position: absolute;
+    background-color: $white;
+    left: 0;
+    right: 0;
+    border: 1px solid $dark-shade-25;
+    border-radius: 0 0 0.14em 0.14em;
+    border-top: none;
+    padding-bottom: 6px;
 
-        &::after {
-            content: '\e313';
-            font-family: 'Material Icons';
-            font-size: 24px;
-            position: absolute;
-            right: 9px;
-            top: 10px;
-            color: $dark-shade-75;
-        }
-
+    &--hide {
+      display: none;
     }
+  }
 
-    &__content {
-        display: block;
-        position: absolute;
-        background-color: $white;
-        left: 0;
-        right: 0;
-        border: 1px solid $dark-shade-25;
-        border-radius: 0 0 .14em .14em;
-        border-top: none;
-        padding-bottom: 6px;
+  &__footer-button {
+    visibility: visible;
 
-        &--hide {
-            display: none;
-        }
+    &--hide {
+      visibility: hidden;
     }
+  }
 
-    &__footer-button {
-        visibility: visible;
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Montserrat Bold", Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    color: $dark-shade-100;
+    vertical-align: middle;
+    padding: 0 0 0 1.2em;
+  }
 
-        &--hide {
-            visibility: hidden;
-        }
+  &__option {
+    padding-top: 10px;
+  }
+
+  &__controlls {
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+    line-height: 0;
+    padding-top: 6px;
+    padding-right: 6px;
+  }
+
+  &__counter {
+    padding-top: 1.2em;
+  }
+
+  &__button {
+    width: 1.5em;
+    height: 1.5em;
+    border: 1px solid $dark-shade-50;
+    font-family: "Montserrat", Arial, sans-serif;
+    color: $dark-shade-50;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1.285rem;
+    line-height: 30px;
+    user-select: none;
+    cursor: pointer;
+
+    &--disabled {
+      cursor: default;
+      border-color: $dark-shade-25;
+      color: $dark-shade-25;
     }
+  }
 
-    &__item {
-        display: flex;
-        justify-content: space-between;
-        font-family: 'Montserrat Bold';
-        text-transform: uppercase;
-        font-size: .75rem;
-        color: $dark-shade-100;
-        vertical-align: middle;
-        padding: 0 0 0 1.2em;
-    }
-
-    &__option {
-        padding-top: 10px;
-    }
-
-    &__controlls {
-        display: flex;
-        width: 100px;
-        justify-content: space-between;
-        line-height: 0;
-        padding-top: 6px;
-        padding-right: 6px;
-    }
-
-    &__counter {
-        padding-top: 1.2em;
-    }
-
-    &__button {
-        width: 1.5em;
-        height: 1.5em;
-        border: 1px solid $dark-shade-50;
-        font-family: 'Montserrat';
-        color: $dark-shade-50;
-        border-radius: 50%;
-        text-align: center;
-        font-size: 1.285rem;
-        line-height: 30px;
-        user-select: none;
-        cursor: pointer;
-
-        &--disabled {
-            cursor: default;
-            border-color: $dark-shade-25;
-            color: $dark-shade-25;
-        }
-    }
-
-    &__footer {
-        display: flex;
-        justify-content: space-between;
-        height: 40px;
-        padding: 16px 7px 0;
-    }
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    padding: 16px 7px 0;
+  }
 }

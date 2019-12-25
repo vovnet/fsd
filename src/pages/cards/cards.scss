@@ -1,29 +1,29 @@
-@import '../../scss/colors.scss';
+@import "../../scss/colors.scss";
 
 body {
-    background-color: $gray;
+  background-color: $gray;
 }
 
 .cards {
-    max-width: 86%;
-    margin: 150px auto;
-    display: flex;
-    justify-items: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    
-    &__column {
-        margin: 0 10px;
-    }
+  max-width: 86%;
+  margin: 150px auto;
+  display: flex;
+  justify-items: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
-    &__item {
-        margin-bottom: 40px;
-    }
+  &__column {
+    margin: 0 10px;
+  }
 
-    &__logo {
-        position: absolute;
-        top: 30px;
-        left: 30px;
-    }
+  &__item {
+    margin-bottom: 40px;
+  }
+
+  &__logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
 }

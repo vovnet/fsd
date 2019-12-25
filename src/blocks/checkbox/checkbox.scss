@@ -1,61 +1,61 @@
-@import '../../scss/colors.scss';
+@import "../../scss/colors.scss";
 
 .checkbox {
+  display: block;
+  position: relative;
+  padding-left: 2.2em;
+  padding-bottom: 0.7em;
+  cursor: pointer;
+  user-select: none;
+
+  &--bold {
+    font-family: "Montserrat Bold", Arial, sans-serif;
+  }
+
+  &__description {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 0.75rem;
+    line-height: 1.2em;
+    padding-top: 0.65em;
+    color: $dark-shade-50;
+  }
+
+  &__input {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+
+  &__mark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1.4em;
+    height: 1.4em;
+    border: 1px solid $dark-shade-25;
+    border-radius: 0.25em;
+  }
+
+  &__mark:after {
+    content: "";
+    display: none;
+    position: absolute;
+    top: 0.36em;
+    left: 0.46em;
+    width: 0.375em;
+    height: 0.5em;
+    border-width: 0 2px 2px 0;
+    border-style: solid;
+    border-image: linear-gradient(180deg, $purple 0%, #8ba4f9 100%);
+    border-image-slice: 1;
+    transform: rotate(45deg);
+  }
+
+  &__input:checked ~ &__mark {
+    border-color: $purple;
+  }
+
+  &__input:checked ~ &__mark:after {
     display: block;
-    position: relative;
-    padding-left: 2.2em;
-    padding-bottom: .7em;
-    cursor: pointer;
-    user-select: none;
-
-    &--bold {
-        font-family: 'Montserrat Bold';
-    }
-
-    &__description {
-        font-family: 'Montserrat';
-        font-size: .75rem;
-        line-height: 1.2em;
-        padding-top: .65em;
-        color: $dark-shade-50;
-    }
-
-    &__input {
-        width: 0;
-        height: 0;
-        opacity: 0;
-    }
-
-    &__mark {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 1.4em;
-        height: 1.4em;
-        border: 1px solid $dark-shade-25;
-        border-radius: .25em;
-    }
-
-    &__mark:after {
-        content: '';
-        display: none;
-        position: absolute;
-        top: .36em;
-        left: .46em;
-        width: .375em;
-        height: .5em;
-        border-width: 0 2px 2px 0;
-        border-style: solid;
-        border-image:  linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
-        border-image-slice: 1;
-        transform: rotate(45deg);
-    }
-
-    &__input:checked ~ &__mark {
-        border-color: $purple;
-    }
-
-    &__input:checked ~ &__mark:after {
-        display: block;
-    }
+  }
 }

@@ -1,51 +1,49 @@
-@import '../../scss/colors.scss';
+@import "../../scss/colors.scss";
 
 .invoice {
-    line-height: 24px;
+  line-height: 24px;
 
-    &__row {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 10px;
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
 
-        &--total {
-            font-family: 'Quicksand Bold';
-            margin-top: 16px;
-            margin-bottom: 0;
-        }
-
+    &--total {
+      font-family: "Quicksand Bold", Arial, sans-serif;
+      margin-top: 16px;
+      margin-bottom: 0;
     }
+  }
 
-    &__line {
-        position: relative;
-        bottom: 5px;
-        border-bottom: 1px dashed $dark-shade-25;
-        width: 62%;
+  &__line {
+    position: relative;
+    bottom: 5px;
+    border-bottom: 1px dashed $dark-shade-25;
+    width: 62%;
+  }
+
+  &__block {
+    display: table-cell;
+  }
+
+  &__service {
+    position: relative;
+    padding-right: 24px;
+    width: 80%;
+
+    &--info::after {
+      position: absolute;
+      content: "i";
+      top: 0;
+      right: 0;
+      font-family: "Montserrat Bold", Arial, sans-serif;
+      color: $dark-shade-25;
+      border: 1px solid $dark-shade-25;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      text-align: center;
     }
-
-    &__block {
-        display: table-cell;
-    }
-
-    &__service {
-        position: relative;
-        padding-right: 24px;
-        width: 80%;
-
-        &--info::after {
-            position: absolute;
-            content: 'i';
-            top: 0;
-            right: 0;
-            font-family: 'Montserrat Bold';
-            color: $dark-shade-25;
-            border: 1px solid $dark-shade-25;
-            border-radius: 50%;
-            width: 20px;
-            height: 20px;
-            line-height: 20px;
-            text-align: center;
-        }
-    }
-
+  }
 }

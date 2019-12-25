@@ -1,19 +1,19 @@
-@import '../../scss/colors.scss';
+@import "../../scss/colors.scss";
 
 .rating {
-    display: flex;
-    user-select: none;
+  display: flex;
+  user-select: none;
 
-    &__icon {
-        font-family: 'Material Icons';
-        font-weight: normal;
-        font-style: normal;
-        font-size: 24px; 
-        display: inline-block;
-        line-height: 1;
-        text-transform: none;
-        background: $gradient;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
+  &__icon {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Material Icons";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    background: $gradient;
+  }
 }

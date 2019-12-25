@@ -1,30 +1,30 @@
-@import '../../scss/colors.scss';
+@import "../../scss/colors.scss";
 
 .additions {
-    position: relative;
-    line-height: 1.716em;
-    border-width: 0 0 1px 0;
-    border-style: solid;
-    border-color: $dark-shade-10;
-    padding: 0 0 1.43em 4.14em;
+  position: relative;
+  line-height: 1.716em;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: $dark-shade-10;
+  padding: 0 0 1.43em 4.14em;
 
-    &--no-border {
-        border: none;
-    }
+  &--no-border {
+    border: none;
+  }
 
-    &__title {
-        font-family: 'Montserrat Bold';
-    }
+  &__title {
+    font-family: "Montserrat Bold";
+  }
 
-    &__icon {
-        position: absolute;
-        top: .1em;
-        left: 0;
-        font-family: 'Material Icons';
-        font-size: 3.43em;
-        line-height: .85em;
-        background: $gradient;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
+  &__icon {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    top: 0.1em;
+    left: 0;
+    font-family: "Material Icons";
+    font-size: 3.43em;
+    line-height: 0.85em;
+    background: $gradient;
+  }
 }

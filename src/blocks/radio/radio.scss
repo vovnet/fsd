@@ -1,46 +1,46 @@
-@import '../../scss/colors.scss';
+@import "../../scss/colors.scss";
 
 .radio {
-    display: inline-block;
-    position: relative;
-    padding-left: 2.3em;
-    padding-right: 1em;
-    user-select: none;
-    cursor: pointer;
+  display: inline-block;
+  position: relative;
+  padding-left: 2.3em;
+  padding-right: 1em;
+  user-select: none;
+  cursor: pointer;
 
-    &__input {
-        opacity: 0;
-        width: 0;
-        height: 0;
-    }
+  &__input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
 
-    &__mark {
-        position: absolute;
-        top: .06em;
-        left: .125em;
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        border: 1px solid $dark-shade-25;
-    }
+  &__mark {
+    position: absolute;
+    top: 0.06em;
+    left: 0.125em;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid $dark-shade-25;
+  }
 
-    &__mark::after {
-        content: '';
-        display: none;
-        position: absolute;
-        top: .2em;
-        left: .2em;
-        width: 12px;
-        height: 12px;
-        background-image: linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
-        border-radius: 50%;
-    }
+  &__mark::after {
+    content: "";
+    display: none;
+    position: absolute;
+    top: 0.2em;
+    left: 0.2em;
+    width: 12px;
+    height: 12px;
+    background-image: linear-gradient(180deg, $purple 0%, #8ba4f9 100%);
+    border-radius: 50%;
+  }
 
-    &__input:checked ~ &__mark::after {
-        display: block;
-    }
+  &__input:checked ~ &__mark::after {
+    display: block;
+  }
 
-    &__input:checked ~ &__mark {
-        border-color: $purple;
-    }
+  &__input:checked ~ &__mark {
+    border-color: $purple;
+  }
 }

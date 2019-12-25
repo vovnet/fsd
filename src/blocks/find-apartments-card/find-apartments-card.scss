@@ -1,18 +1,18 @@
 .find-apartments-card {
-    width: 380px;
-    height: 374px;
+  width: 380px;
+  height: 374px;
 
-    &__item {
-        position: relative;
-        margin: 20px 0;
-        z-index: 3;
+  &__item {
+    position: relative;
+    margin: 20px 0;
+    z-index: 3;
 
-        &--primary {
-            z-index: 4;
-        }
+    &--primary {
+      z-index: 4;
     }
+  }
 
-    &__button {
-        margin-top: 31px;
-    }
+  &__button {
+    margin-top: 31px;
+  }
 }

@@ -1,57 +1,56 @@
-@import '../../scss/colors.scss';
+@import "../../scss/colors.scss";
 
 .color {
-    display: flex;
-    padding-bottom: 20px;
-    font-size: 19px;
-    line-height: 29px;
+  display: flex;
+  padding-bottom: 20px;
+  font-size: 19px;
+  line-height: 29px;
 
-    &__box {
-        min-width: 70px;
-        height: 70px;
-        border-radius: 6px;
+  &__box {
+    min-width: 70px;
+    height: 70px;
+    border-radius: 6px;
 
-        &--dark-shade {
+    &--dark-shade {
+      &-100 {
+        background-color: $dark-shade-100;
+      }
 
-            &-100 {
-                background-color: $dark-shade-100;
-            }
+      &-75 {
+        background-color: $dark-shade-75;
+      }
 
-            &-75 {
-                background-color: $dark-shade-75;
-            }
+      &-50 {
+        background-color: $dark-shade-50;
+      }
 
-            &-50 {
-                background-color: $dark-shade-50;
-            }
+      &-25 {
+        background-color: $dark-shade-25;
+      }
 
-            &-25 {
-                background-color: $dark-shade-25;
-            }
-
-            &-5 {
-                background-color: $dark-shade-5;
-            }
-        }
-
-        &--purple {
-            background-color: $purple;
-        }
-
-        &--green {
-            background-color: $green;
-        }
+      &-5 {
+        background-color: $dark-shade-5;
+      }
     }
 
-    &__description {
-        padding: 8px 0 0 40px;
+    &--purple {
+      background-color: $purple;
     }
 
-    &__title {
-        font-family: 'Quicksand Bold';
+    &--green {
+      background-color: $green;
     }
+  }
 
-    &__body {
-        font-family: 'Quicksand Regular';
-    }
+  &__description {
+    padding: 8px 0 0 40px;
+  }
+
+  &__title {
+    font-family: "Quicksand Bold", Arial, sans-serif;
+  }
+
+  &__body {
+    font-family: "Quicksand Regular", Arial, sans-serif;
+  }
 }

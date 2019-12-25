@@ -1,40 +1,39 @@
-@import '../../scss/colors.scss';
+@import "../../scss/colors.scss";
 
 .rounded-button {
-    display: inline-block;
-    position: relative;
-    font-family: Montserrat;
-    color: $purple;
+  display: inline-block;
+  position: relative;
+  font-family: Montserrat;
+  color: $purple;
+  border-radius: 22px;
+  border: none;
+  padding: 8px 18px;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  line-height: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  background-color: $white;
+
+  &::after {
+    display: inherit;
+    content: "";
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    z-index: -1;
     border-radius: 22px;
-    border: none;
-    padding: 8px 18px;
-    text-transform: uppercase;
-    font-size: .75rem;
-    line-height: 24px;
-    font-weight: bold;
-    cursor: pointer;
-    user-select: none;
-    background-color: $white;
+    background-image: $gradient;
+  }
 
-    &::after {
-        display: inherit;
-        content: '';
-        position: absolute;
-        top: -2px;
-        bottom: -2px;
-        left: -2px;
-        right: -2px;
-        z-index: -1;
-        border-radius: 22px;
-        background-image: $gradient;
-    }
+  &--disabled::after {
+    opacity: 0.5;
+  }
 
-    &--disabled::after {
-        opacity: .5;
-    }
-
-    &--disabled {
-        cursor: auto;
-    }
-
+  &--disabled {
+    cursor: auto;
+  }
 }

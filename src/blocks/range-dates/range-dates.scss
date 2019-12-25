@@ -1,67 +1,65 @@
-@import '../../scss/colors.scss';
+@import "../../scss/colors.scss";
 
 .range-dates {
-    display: flex;
-    justify-content: space-between;
-    //width: 100%;
+  display: flex;
+  justify-content: space-between;
 
-    &__label {
-        width: 100%;
-        font-family: 'Montserrat Bold';
-        font-size: 12px;
-        line-height: 15px;
-        text-transform: uppercase;
-        color: $dark-shade-100;
+  &__label {
+    width: 100%;
+    font-family: "Montserrat Bold", Arial, sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $dark-shade-100;
 
-        &--small {
-            width: 150px;
-        }
+    &--small {
+      width: 150px;
+    }
+  }
+
+  &__wrapper {
+    display: block;
+    position: relative;
+    padding-top: 4px;
+
+    &::after {
+      position: absolute;
+      font-family: "Material Icons";
+      font-size: 24px;
+      content: "\e313";
+      text-align: center;
+      line-height: 58px;
+      color: $dark-shade-50;
+      top: 0;
+      right: 0;
+      width: 44px;
+      height: 44px;
+    }
+  }
+
+  &__date-dropdown {
+    color: $dark-shade-25;
+    border: 1px solid $dark-shade-25;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    line-height: 18px;
+    padding-left: 15px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    width: 100%;
+
+    &::placeholder {
+      color: $dark-shade-25;
     }
 
-    &__wrapper {
-        display: block;
-        position: relative;
-        padding-top: 4px;
-        
-        &::after {
-            position: absolute;
-            font-family: 'Material Icons';
-            font-size: 24px;
-            content: '\e313';
-            text-align: center;
-            line-height: 58px;
-            color: $dark-shade-50;
-            top: 0;
-            right: 0;
-            width: 44px;
-            height: 44px;
-        }
+    &:hover,
+    &:focus {
+      border-color: $dark-shade-50;
+      color: $dark-shade-75;
+
+      &::placeholder {
+        color: $dark-shade-75;
+      }
     }
-
-    &__date-dropdown {
-        color: $dark-shade-25;
-        border: 1px solid $dark-shade-25;
-        border-radius: 4px;
-        font-size: .875rem;
-        line-height: 18px;
-        padding-left: 15px;
-        padding-top: 13px;
-        padding-bottom: 13px;
-        width: 100%;
-
-        &::placeholder {
-            color: $dark-shade-25;
-        }
-
-        &:hover, &:focus {
-            border-color: $dark-shade-50;
-            color: $dark-shade-75;
-
-            &::placeholder {
-                color: $dark-shade-75;
-            }
-        }
-
-        
-    }
+  }
 }
