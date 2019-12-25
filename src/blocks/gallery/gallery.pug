@@ -1,7 +1,7 @@
 mixin gallery(image, arrows = true)
   .gallery
     .gallery__image
-      img(src=image)
+      img(src=image, alt="apartment photo")
       if (arrows)
         .gallery__left-arrow.gallery__arrow
           i.material-icons keyboard_arrow_left
