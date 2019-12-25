@@ -7,6 +7,7 @@ import '../../blocks/checkbox/checkbox';
 import '../../blocks/expander/expander';
 import '../../blocks/range-dates/range-dates';
 import '../../blocks/slider/slider';
+import '../../blocks/calendar/calendar';
 
 $('#guest').dropdown({
     title: 'гости',
