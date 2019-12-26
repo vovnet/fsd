@@ -47,10 +47,11 @@
   }
 
   &__title {
-    font-family: "Quicksand Bold", Arial, sans-serif;
+    font-family: Quicksand, Arial, sans-serif;
+    font-weight: bold;
   }
 
   &__body {
-    font-family: "Quicksand Regular", Arial, sans-serif;
+    font-family: Montserrat, Arial, sans-serif;
   }
 }

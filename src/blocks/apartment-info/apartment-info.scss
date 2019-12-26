@@ -6,15 +6,16 @@
   }
 
   &--lux {
-    font-family: "Montserrat Bold", Arial, sans-serif;
-    font-size: 12px;
+    font-family: Montserrat, Arial, sans-serif;
+    font-weight: bold;
+    font-size: .75rem;
     color: $purple;
     text-transform: uppercase;
     padding-left: 1px;
   }
 
   &--bold {
-    font-family: "Quicksand Bold", Arial, sans-serif;
+    font-family: Quicksand, Arial, sans-serif;
     font-weight: bold;
   }
 }

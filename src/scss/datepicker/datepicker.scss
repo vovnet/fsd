@@ -9,7 +9,7 @@
   &-header {
     display: flex;
     justify-content: space-between;
-    font-family: "Quicksand Bold", Arial, sans-serif;
+    font-family: Quicksand, Arial, sans-serif;
     font-weight: bold;
     font-size: 19px;
     text-align: center;
@@ -20,7 +20,8 @@
     font-size: 12px;
 
     & thead {
-      font-family: "Montserrat Bold", Arial, sans-serif;
+      font-family: Montserrat, Arial, sans-serif;
+      font-weight: bold;
       color: $purple;
     }
 
@@ -40,7 +41,8 @@
     border-radius: 50%;
 
     & > a.ui-state-highlight {
-      font-family: "Montserrat Bold", Arial, sans-serif;
+      font-family: Montserrat, Arial, sans-serif;
+      font-weight: bold;
       color: $white;
     }
   }

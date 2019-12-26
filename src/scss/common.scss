@@ -33,21 +33,24 @@ h6 {
 }
 
 h1 {
-  font-family: "Quicksand Bold", Arial, sans-serif;
+  font-family: Quicksand, Arial, sans-serif;
+  font-weight: bold;
   font-size: 1.5rem;
   line-height: 1.25em;
   color: #1f2041;
 }
 
 h2 {
-  font-family: "Quicksand Bold", Arial, sans-serif;
+  font-family: Quicksand, Arial, sans-serif;
+  font-weight: bold;
   font-size: 1.1875rem;
   line-height: 1.22em;
   color: #1f2041;
 }
 
 h3 {
-  font-family: "Montserrat Bold", Arial, sans-serif;
+  font-family: Montserrat, Arial, sans-serif;
+  font-weight: bold;
   font-size: 0.75rem;
   line-height: 1.1em;
   color: $dark-shade-100;
@@ -58,7 +61,7 @@ h3 {
   font-family: "Material Icons";
   font-weight: normal;
   font-style: normal;
-  font-size: 24px;
+  font-size: 1.5rem;
   display: inline-block;
   line-height: 1;
   text-transform: none;

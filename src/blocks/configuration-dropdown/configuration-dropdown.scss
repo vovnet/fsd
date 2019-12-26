@@ -5,7 +5,8 @@
 
   &__label {
     text-transform: uppercase;
-    font-family: "Montserrat Bold", Arial, sans-serif;
+    font-family: Montserrat, Arial, sans-serif;
+    font-weight: bold;
     font-size: 0.75rem;
     color: $dark-shade-100;
   }
@@ -58,7 +59,8 @@
   &__item {
     display: flex;
     justify-content: space-between;
-    font-family: "Montserrat Bold", Arial, sans-serif;
+    font-family: Montserrat, Arial, sans-serif;
+    font-weight: bold;
     text-transform: uppercase;
     font-size: 0.75rem;
     color: $dark-shade-100;
@@ -87,7 +89,8 @@
     width: 1.5em;
     height: 1.5em;
     border: 1px solid $dark-shade-50;
-    font-family: "Montserrat", Arial, sans-serif;
+    font-family: Montserrat, Arial, sans-serif;
+    font-weight: normal;
     color: $dark-shade-50;
     border-radius: 50%;
     text-align: center;

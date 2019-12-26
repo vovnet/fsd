@@ -36,7 +36,8 @@
     background-image: $light-gradient;
     border-radius: 50%;
     color: $white;
-    font-family: "Montserrat Bold", Arial, sans-serif;
+    font-family: Montserrat, Arial, sans-serif;
+    font-weight: bold;
 
     &.-focus- {
       background-image: $light-gradient;
@@ -55,7 +56,8 @@
   &.-selected- {
     border-radius: 50%;
     background-image: $gradient;
-    font-family: "Montserrat Bold", Arial, sans-serif;
+    font-family: Montserrat, Arial, sans-serif;
+    font-weight: bold;
 
     &.-focus- {
       background-image: $gradient;
@@ -95,7 +97,8 @@
 }
 
 .datepicker--day-name {
-  font-family: "Montserrat Bold", Arial, sans-serif;
+  font-family: Montserrat, Arial, sans-serif;
+  font-weight: bold;
   color: $purple;
   width: 40px;
   height: 40px;
@@ -111,7 +114,7 @@
 .datepicker--nav-title i {
   color: $dark-shade-100;
   font-size: 1.19rem;
-  font-family: "Quicksand Bold", Arial, sans-serif;
+  font-family: Quicksand, Arial, sans-serif;
   font-weight: bold;
 }
 

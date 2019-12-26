@@ -9,7 +9,8 @@
     margin-bottom: 10px;
 
     &--total {
-      font-family: "Quicksand Bold", Arial, sans-serif;
+      font-family: Quicksand, Arial, sans-serif;
+      font-weight: bold;
       margin-top: 16px;
       margin-bottom: 0;
     }
@@ -36,7 +37,8 @@
       content: "i";
       top: 0;
       right: 0;
-      font-family: "Montserrat Bold", Arial, sans-serif;
+      font-family: Montserrat, Arial, sans-serif;
+      font-weight: bold;
       color: $dark-shade-25;
       border: 1px solid $dark-shade-25;
       border-radius: 50%;
