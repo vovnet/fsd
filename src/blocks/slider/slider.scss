@@ -10,7 +10,7 @@
   width: 16px;
   height: 16px;
   top: -2px;
-  color: red;
+  left: -1px;
   border-radius: 50%;
   border: 2px solid white;
   background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
@@ -34,7 +34,7 @@
   position: relative;
   top: -20px;
   font-size: .75rem;
-  line-height: 15px;
+  line-height: .9375rem;
   text-transform: uppercase;
   text-align: right;
   color: $dark-shade-50;
