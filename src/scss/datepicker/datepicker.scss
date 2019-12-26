@@ -11,13 +11,13 @@
     justify-content: space-between;
     font-family: Quicksand, Arial, sans-serif;
     font-weight: bold;
-    font-size: 19px;
+    font-size: 1.1875rem;
     text-align: center;
     padding-bottom: 34px;
   }
 
   &-calendar {
-    font-size: 12px;
+    font-size: .75rem;
 
     & thead {
       font-family: Montserrat, Arial, sans-serif;
@@ -63,7 +63,7 @@
 
 .ui-state-default {
   text-decoration: none;
-  font-size: 12px;
+  font-size: .75rem;
   color: $dark-shade-25;
 }
 
