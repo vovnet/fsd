@@ -64,39 +64,46 @@
   }
 }
 
-@media screen and (min-width: $small-size) {
+@media screen and (min-width: 767px) {
   .menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 100%;
+    height: 34px;
     border: none;
 
     &__item {
       cursor: pointer;
-      padding: 10px 15px;
+      //padding: 10px 15px;
+      padding: 0 10px;
       border: none;
-      line-height: 1.25rem;
+      line-height: 34px;
+      white-space: nowrap;
+
+      &:last-child {
+        margin-right: -10px;
+      }
     }
 
     &__submenu {
       position: relative;
-      padding-right: 25px;
+      padding-right: 36px;
 
       &:hover .submenu {
-        display: block;
+        //display: block;
       }
 
       &::after {
-        position: absolute;
+        //position: absolute;
         content: "\e313";
         font-family: "Material Icons";
         font-size: 1.5rem;
         width: 24px;
-        height: 21px;
-        line-height: 1.375rem;
-        top: 10px;
-        right: 0;
+        height: 36px;
+        line-height: 36px;
+        //top: 10px;
+        right: 12px;
+        //right: 0;
       }
     }
   }
@@ -111,7 +118,11 @@
     background-color: $white;
 
     &:hover {
-      display: block;
+      //display: block;
+    }
+
+    &--open {
+      display: flex;
     }
 
     &__item {
