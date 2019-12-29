@@ -1,42 +1,43 @@
 mixin footer()
   footer.footer
-    .footer__container
+    .footer__container.wrapper
       section.footer__block
         .site-logo
-        p
-        | Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam 
-        | eget nullam pellentesque aliquam curabitur cociis.
-      section.footer__nav
-        .footer__block__header
-          h3 Navigation
-        p
-          a.footer__link(href="index.html") About Us
-          a.footer__link(href="index.html") News
-          a.footer__link(href="index.html") Support
-          a.footer__link(href="index.html") Products
-      section.footer__nav
-        .footer__block__header
-          h3 About Us
-        p
-          a.footer__link(href="index.html") Who we are
-          a.footer__link(href="index.html") Our team
-          a.footer__link(href="index.html") Careers
-          a.footer__link(href="index.html") Investors
-      section.footer__nav
-        .footer__block__header
-          h3 Support
-        p
-          a.footer__link(href="index.html") Documentation
-          a.footer__link(href="index.html") Community
-          a.footer__link(href="index.html") Get in Touch
+        p.footer__text Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
+      .footer__nav-container
+        section.footer__nav
+          .footer__block__header
+            h3 Navigation
+          p
+            a.footer__link(href="index.html") About Us
+            a.footer__link(href="index.html") News
+            a.footer__link(href="index.html") Support
+            a.footer__link(href="index.html") Products
+        section.footer__nav
+          .footer__block__header
+            h3 About Us
+          p
+            a.footer__link(href="index.html") Who we are
+            a.footer__link(href="index.html") Our team
+            a.footer__link(href="index.html") Careers
+            a.footer__link(href="index.html") Investors
+        section.footer__nav
+          .footer__block__header
+            h3 Support
+          p
+            a.footer__link(href="index.html") Documentation
+            a.footer__link(href="index.html") Community
+            a.footer__link(href="index.html") Get in Touch
+            
       section.footer__block
         .footer__block__header
           h3 Subscribe to out newsletter
         p Receive our latest news and promotions in your inbox!
         include ../subscription/subscription 
         +subscription({ placeholder: 'Your email address' })
-    .footer__bottom
-      section.footer__copy
+    
+    section.footer__line
+      .footer__copy.wrapper
         p Copyright © 2018 Toxin UI Kit. All rights reserved.
         include ../socials/socials.pug 
         +socials()
