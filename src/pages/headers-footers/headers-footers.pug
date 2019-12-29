@@ -3,6 +3,47 @@ html
   head
     title Headers and Footer
   body
+    - 
+      var menu = [{
+        text: 'Home',
+        link: '#home',
+        classes: ['menu__item', 'menu__item--current']
+        },
+        {
+        text: 'About Us',
+        link: '#about_us',
+        classes: ['menu__item']
+        }, 
+        {
+        text: 'Services',
+        classes: ['menu__item', 'menu__submenu'],
+        link: [
+        {
+          text: 'First',
+          link: '#first',
+          classes: ['submenu__item']
+        },
+        {
+          text: 'Second',
+          link: '#second',
+          classes: ['submenu__item']
+        }
+        ]},
+        {
+        text: 'Careers',
+        link: '#careers',
+        classes: ['menu__item']
+        },
+        {
+        text: 'News',
+        link: '#news',
+        classes: ['menu__item']
+        },
+        {
+        text: 'Documentation',
+        link: '#docs',
+        classes: ['menu__item']
+      }];
     include ../../blocks/header/header.pug
     img.logo(src="../img/logo.svg", alt="logo")
     .headers-footers
@@ -10,54 +51,13 @@ html
         +header({
           isLogged: false, 
           buttons: {
-            enter: 'Войти',
-            register: 'Зарегистрироваться'
+            enter: 'Login',
+            register: 'Register'
           },
-          menu: [
-            {
-            text: 'Home',
-            link: '#home',
-            classes: ['menu__item', 'menu__item--current']
-            },
-            {
-            text: 'About Us',
-            link: '#about_us',
-            classes: ['menu__item']
-            }, 
-            {
-            text: 'Services',
-            classes: ['menu__item', 'menu__submenu'],
-            link: [
-            {
-              text: 'First',
-              link: '#first',
-              classes: ['submenu__item']
-            },
-            {
-              text: 'Second',
-              link: '#second',
-              classes: ['submenu__item']
-            }
-            ]},
-            {
-            text: 'Careers',
-            link: '#careers',
-            classes: ['menu__item']
-            },
-            {
-            text: 'News',
-            link: '#news',
-            classes: ['menu__item']
-            },
-            {
-            text: 'Documentation',
-            link: '#docs',
-            classes: ['menu__item']
-            }
-          ]
-          })
+          menu: menu
+        })
       .headers-footers__item
-        //+header({isLogged: true})
+        +header({isLogged: true, menu: menu})
       .headers-footers__item.headers-footers__item--down
         include ../../blocks/footer/footer.pug 
         +footer()

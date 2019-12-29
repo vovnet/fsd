@@ -6,6 +6,10 @@
   position: relative;
   box-shadow: 0px 10px 20px $dark-shade-5;
 
+  &__account {
+    margin-left: 60px;
+  }
+
   &__container {
     display: flex;
     align-items: center;
