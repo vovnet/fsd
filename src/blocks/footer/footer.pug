@@ -1,43 +1,65 @@
-mixin footer()
+mixin footer(data)
+  - 
+    data.main = data.main || "Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis."
+    data.navigation = data.navigation || [
+      {
+        title: 'Navigation',
+        links: [
+          { url: 'index.html', text: 'About Us' },
+          { url: 'index.html', text: 'News' },
+          { url: 'index.html', text: 'Support' },
+          { url: 'index.html', text: 'Products' },
+        ]
+      },
+      {
+        title: 'About Us',
+        links: [
+          { url: 'index.html', text: 'About Us' },
+          { url: 'index.html', text: 'Our team' },
+          { url: 'index.html', text: 'Careers' },
+          { url: 'index.html', text: 'Investors' },
+        ]
+      },
+      {
+        title: 'Support',
+        links: [
+          { url: 'index.html', text: 'Documentation' },
+          { url: 'index.html', text: 'Community' },
+          { url: 'index.html', text: 'Get in Touch' },
+        ]
+      },
+    ]
+    data.copy = data.copy || "Copyright © 2018 Toxin UI Kit. All rights reserved."
+    data.subscription = data.subscription || {
+      title: 'Subscribe to out newsletter',
+      text: 'Receive our latest news and promotions in your inbox!',
+      placeholder: 'Your email address'
+    }
+
   footer.footer
     .footer__container.wrapper
       section.footer__block
         .site-logo
-        p.footer__text Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
+        p.footer__text= data.main
+
       .footer__nav-container
-        section.footer__nav
-          .footer__block__header
-            h3 Navigation
-          p
-            a.footer__link(href="index.html") About Us
-            a.footer__link(href="index.html") News
-            a.footer__link(href="index.html") Support
-            a.footer__link(href="index.html") Products
-        section.footer__nav
-          .footer__block__header
-            h3 About Us
-          p
-            a.footer__link(href="index.html") Who we are
-            a.footer__link(href="index.html") Our team
-            a.footer__link(href="index.html") Careers
-            a.footer__link(href="index.html") Investors
-        section.footer__nav
-          .footer__block__header
-            h3 Support
-          p
-            a.footer__link(href="index.html") Documentation
-            a.footer__link(href="index.html") Community
-            a.footer__link(href="index.html") Get in Touch
-            
+        each link_block in data.navigation
+          section.footer__nav
+            .footer__block__header
+              h3= link_block.title
+            p
+              each link in link_block.links
+                a.footer__link(href=link.url)= link.text
+    
       section.footer__block
         .footer__block__header
-          h3 Subscribe to out newsletter
-        p Receive our latest news and promotions in your inbox!
+          h3= data.subscription.title
+        p= data.subscription.text
         include ../subscription/subscription 
-        +subscription({ placeholder: 'Your email address' })
+        +subscription({ placeholder: data.subscription.placeholder })
     
     section.footer__line
       .footer__copy.wrapper
-        p Copyright © 2018 Toxin UI Kit. All rights reserved.
+        p= data.copy
         include ../socials/socials.pug 
         +socials()
