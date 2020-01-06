@@ -1,5 +1,4 @@
-import './calendar.scss';
-import 'air-datepicker/dist/js/datepicker';
+ import 'air-datepicker/dist/js/datepicker';
 
 export default function makeCalendar(data) {
     let dates;
@@ -53,8 +52,5 @@ export default function makeCalendar(data) {
             });
         }
     });
-
-
-    
 
 }

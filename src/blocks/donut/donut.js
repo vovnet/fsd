@@ -1,12 +1,4 @@
-import './donut.scss';
-
-
-/*
-let str = document.createElement('div');
-str.innerHTML = 'hello';
-document.body.appendChild(str);
-*/
-let Donut = function(container) {
+const Donut = function(container) {
     this.svg = document.createElementNS("http://www.w3.org/2000/svg", 'svg');
     this.svg.setAttribute('viewBox', '0 0 42 42');
     this.svg.setAttribute('width', '100%');
@@ -70,8 +62,4 @@ let Donut = function(container) {
     }
 }
 
-const pie = document.getElementsByClassName('donut');
-
-for (let item of pie) {
-    new Donut(item).draw();
-}
+export { Donut };

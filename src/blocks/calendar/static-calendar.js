@@ -1,4 +1,4 @@
-import './calendar.scss';
+//import './calendar.scss';
 import 'air-datepicker/dist/js/datepicker';
 
 export default function makeCalendar(id) {

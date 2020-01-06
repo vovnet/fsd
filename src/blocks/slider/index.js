@@ -1,4 +1,4 @@
-import './slider.scss';
+// import './slider.scss';
 import 'ion-rangeslider';
 
 
@@ -19,6 +19,5 @@ let slider = $('.slider').ionRangeSlider({
 });
 
 function updateLabel(data) {
-    
     $(data.slider).find('.slider__min-max').html(data.from_pretty + '&#8381; - ' + data.to_pretty + '&#8381;');
 }

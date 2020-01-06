@@ -6,18 +6,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
 	entry: {
-		common: './src/scss/common.scss', 
-		main: './src/js/main.js',
-		colorsType: './src/pages/colors-type/colors-and-fonts.js',
-		headersFooters: './src/pages/headers-footers/headers-footers.js',
-		landing: './src/pages/landing/landing.js',
-		cards: './src/pages/cards/cards.js',
-		formElements: './src/pages/form-elements/form-elements.js',
-		registration: './src/pages/registration/registration.js',
-		landingLayout: './src/pages/landing-layout/landing-layout.js',
-		signIn: './src/pages/sign-in/sign-in.js',
-		searchRoom: './src/pages/search-room/search-room.js',
-		roomDetails: './src/pages/room-details/room-details.js'
+		main: './src/index.js',
 	},
 
 	output: {
@@ -55,61 +44,51 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			filename: 'index.html',
 			template: './src/index.pug',
-			chunks: ['common', 'main']
 		}),
 
 		new HtmlWebpackPlugin({
 			filename: 'pages/colors-and-fonts.html',
 			template: './src/pages/colors-type/colors-and-fonts.pug',
-			chunks: ['common', 'colorsType']
 		}),
 
 		new HtmlWebpackPlugin({
 			filename: 'pages/headers-footers.html',
 			template: './src/pages/headers-footers/headers-footers.pug',
-			chunks: ['common', 'headersFooters']
 		}),
 
 		new HtmlWebpackPlugin({
 			filename: 'pages/landing.html',
 			template: './src/pages/landing/landing.pug',
-			chunks: ['common', 'landing', 'landingLayout']
 		}),
 
 		new HtmlWebpackPlugin({
 			filename: 'pages/cards.html',
 			template: './src/pages/cards/cards.pug',
-			chunks: ['common', 'cards']
 		}),
 
 		new HtmlWebpackPlugin({
 			filename: 'pages/form-elements.html',
 			template: './src/pages/form-elements/form-elements.pug',
-			chunks: ['common', 'formElements']
 		}),
 
 		new HtmlWebpackPlugin({
 			filename: 'pages/registration.html',
 			template: './src/pages/registration/registration.pug',
-			chunks: ['common', 'registration', 'landingLayout']
 		}),
 
 		new HtmlWebpackPlugin({
 			filename: 'pages/sign-in.html',
 			template: './src/pages/sign-in/sign-in.pug',
-			chunks: ['common', 'signIn', 'landingLayout']
 		}),
 
 		new HtmlWebpackPlugin({
 			filename: 'pages/search-room.html',
 			template: './src/pages/search-room/search-room.pug',
-			chunks: ['common', 'searchRoom']
 		}),
 
 		new HtmlWebpackPlugin({
 			filename: 'pages/room-details.html',
 			template: './src/pages/room-details/room-details.pug',
-			chunks: ['common', 'roomDetails']
 		}),
 		
 		new MiniCssExtractPlugin({
