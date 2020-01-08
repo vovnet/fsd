@@ -81,3 +81,9 @@ a {
   padding-left: 20px;
   padding-right: 20px;
 }
+
+.body {
+  &--kit {
+    background-color: #e5e5e5;
+  }
+}
