@@ -41,4 +41,4 @@ let options = {
 $('#first_date').datepicker(options);
 $('#second_date').datepicker(options);
 
-$('#birthday').mask('99.99.9999');
+$('.js-masked').mask('99.99.9999');

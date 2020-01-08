@@ -1,5 +1,3 @@
-$('#birthday').mask('99.99.9999');
-
 $('#dd').dropdown({
     title: '',
     placeholder: '2 спальни, 2 кровати...',
