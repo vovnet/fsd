@@ -29,16 +29,7 @@ $.datepicker.regional['ru'] = {
     showMonthAfterYear: false,
     yearSuffix: ''
 };
+
 $.datepicker.setDefaults($.datepicker.regional['ru']);
-
-let options = {
-    showOtherMonths: true,
-    showButtonPanel: true,
-    prevText: '<i class="material-icons">arrow_back</i>',
-    nextText: '<i class="material-icons">arrow_forward</i>'
-};
-
-$('#first_date').datepicker(options);
-$('#second_date').datepicker(options);
 
 $('.js-masked').mask('99.99.9999');
