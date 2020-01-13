@@ -1,19 +1,15 @@
 $(document).ready(function() {
-    $('.js-dropdown-booking').dropdown({
+    $('.js-dropdown-find-apartments').dropdown({
         text: 'Сколько гостей',
         visibility: 'hide',
         words: ['гость', 'гостя', 'гостей'],
         items: [
             {
                 name: 'Взрослых',
-                value: 2
+                value: 0
             },
             {
                 name: 'Детей',
-                value: 1
-            },
-            {
-                name: 'Младенцев',
                 value: 0
             }
         ],

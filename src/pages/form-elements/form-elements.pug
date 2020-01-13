@@ -20,8 +20,7 @@ html
           .form-elements__head
             .form-elements__title Dropdown
             .form-elements__desc Default
-          include ../../blocks/configuration-dropdown/configuration-dropdown
-          +guest-dropdown(false)
+          input.js-dropdown-guest-close
         .form-elements__item
           .form-elements__head
             .form-elements__title Masked text field
@@ -49,18 +48,17 @@ html
           +subscription({ placeholder: 'Email' })
 
 
+        .form-elements__item.form-elements__item--big-space.form-elements__small-container.form-elements__top
+          .form-elements__head
+            .form-elements__title Dropdown 
+            .form-elements__desc Default
+          input.js-dropdown-room-close
+
         .form-elements__item.form-elements__item--big-space.form-elements__small-container
           .form-elements__head
             .form-elements__title Dropdown 
             .form-elements__desc Default
-          #dd
-
-
-        .form-elements__item.form-elements__item--big-space.form-elements__small-container
-          .form-elements__head
-            .form-elements__title Dropdown 
-            .form-elements__desc Default
-          #dd2
+          input.js-dropdown-room-open
 
         include ../../blocks/expander/expander 
         .form-elements__item.form-elements__top-margin
@@ -151,7 +149,7 @@ html
         .form-elements__item
           .form-elements__head.form-elements__head--accent
             .form-elements__title Dropdown 
-          #dd3
+          input.js-dropdown-guest-open
 
         .form-elements__item.form-elements__top-margin
           .form-elements__head.form-elements__head--accent
@@ -197,7 +195,7 @@ html
         .form-elements__item
           .form-elements__head.form-elements__head--accent
             .form-elements__title Dropdown 
-          #dd4
+          input.js-dropdown-guest-open-many
 
         .form-elements__item.form-elements__top-margin
           .form-elements__head.form-elements__head--accent
@@ -221,10 +219,3 @@ html
             likes: 12
           }
         })
-
-      .form-elements__item
-        #dr
-      .form-elements__item
-        #dr2
-      .form-elements__item
-        #dr3

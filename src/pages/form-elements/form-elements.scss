@@ -26,6 +26,11 @@
     grid-area: bot;
   }
 
+  &__top {
+    position: relative;
+    z-index: 50;
+  }
+
   &__item {
     width: 320px;
     padding-bottom: 20px;

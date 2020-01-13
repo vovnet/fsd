@@ -1,72 +1,53 @@
-$('#dd').dropdown({
-    title: '',
-    placeholder: '2 спальни, 2 кровати...',
-    buttons: false,
-    show: false,
-    elements: []
-});
+$(document).ready(function() {
+    let guest = {
+        text: 'Сколько гостей',
+        visibility: 'hide',
+        words: ['гость', 'гостя', 'гостей'],
+        items: [
+            {
+                name: 'Взрослые',
+                value: 0
+            },
+            {
+                name: 'Дети',
+                value: 0
+            },
+            {
+                name: 'Младенцы',
+                value: 0
+            }
+        ],
+    };
 
-$('#dd2').dropdown({
-    title: '',
-    placeholder: '2 спальни, 2 кровати...',
-    singular: false,
-    buttons: false,
-    elements: [
-        {
-            title: 'спальни',
-            value: 2
-        },
-        {
-            title: 'кровати',
-            value: 2
-        },
-        {
-            title: 'ванные комнаты',
-            value: 0
-        }
-    ]
-});
+    let rooms = {
+        text: 'Конфигурация',
+        visibility: 'hide',
+        items: [
+            {
+                name: 'Спальни',
+                value: 2
+            },
+            {
+                name: 'Кровати',
+                value: 2
+            },
+            {
+                name: 'Ванные комнаты',
+                value: 0
+            }
+        ],
+    };
 
-$('#dd3').dropdown({
-    title: '',
-    placeholder: 'Сколько гостей',
-    singular: true,
-    buttons: true,
-    mapNames: ['гость', 'гостя', 'гостей'],
-    elements: [
-        {
-            title: 'взрослые',
-            value: 0
-        },
-        {
-            title: 'дети',
-            value: 0
-        },
-        {
-            title: 'младенцы',
-            value: 0
-        }
-    ]
-});
+    $('.js-dropdown-guest-close').dropdown(guest);
+    $('.js-dropdown-room-close').dropdown(rooms);
 
-$('#dd4').dropdown({
-    title: '',
-    placeholder: 'Сколько гостей',
-    singular: true,
-    buttons: true,
-    mapNames: ['гость', 'гостя', 'гостей'],
-    elements: [
-        {
-            title: 'взрослые',
-            value: 2
-        },
-        {
-            title: 'дети',
-            value: 1
-        },
-        {
-            title: 'младенцы',
-            value: 0
-        }
-    ]
+    rooms.visibility = '';
+    $('.js-dropdown-room-open').dropdown(rooms);
+
+    guest.visibility = '';
+    $('.js-dropdown-guest-open').dropdown(guest);
+
+    guest.items[0].value = 2;
+    guest.items[1].value = 1;
+    $('.js-dropdown-guest-open-many').dropdown(guest);
 });

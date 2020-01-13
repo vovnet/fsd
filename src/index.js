@@ -1,8 +1,6 @@
 import 'jquery-ui/ui/widgets/datepicker';
 import 'jquery.maskedinput/src/jquery.maskedinput';
-import { Dropdown } from './blocks/configuration-dropdown/dropdown-plugin/dropdown-plugin';
 
-new Dropdown().init();
 
 function importAll(resolve) {
     resolve.keys().forEach(resolve);

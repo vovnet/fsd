@@ -15,8 +15,7 @@ mixin apartments()
             .calendar
               input(type="text")#calendar
           .find-apartments-card__item
-            include ../configuration-dropdown/configuration-dropdown.pug
-            +guest-dropdown()
+            input.js-dropdown-find-apartments
         .find-apartments-card__button
           include ../long-button/long-button.pug
           +long-button('Подобрать номер')

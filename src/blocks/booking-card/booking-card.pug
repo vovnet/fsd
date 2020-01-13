@@ -16,9 +16,9 @@ mixin booking-card()
             secondInputId: 'second_booking_date'
           })
           .calendar
-            input(type="text")#booking_calendar
+            input(type="text")
         .booking-card__item.booking-card__item--middle
-          #booking_dropdown
+          input.js-dropdown-booking
         .booking-card__item 
           include ../invoice/invoice 
           +invoice()
