@@ -1,4 +1,9 @@
 .main-layout {
+  &__header {
+    position: relative;
+    z-index: 200;
+  }
+
   &__footer {
     position: absolute;
     left: 0;

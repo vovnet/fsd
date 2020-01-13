@@ -15,8 +15,8 @@ block content
               label: 'Даты превыбания в отеле',
               date: '19 авг - 23 авг'
             })
-        .search-room__sidebar-item
-          #guest.search-room--index-100
+        .search-room__sidebar-item.search-room--index-100
+          input.js-dropdown-guests
         .search-room__sidebar-item
           h3.search-room__sidebar-item-title Диапазон цен
           .search-room__slider
@@ -41,9 +41,10 @@ block content
               desc: 'На 1 этаже вас встретит специалист и проводит до номера.'
             }
           ])
-        .search-room__sidebar-item
-          #comfort.search-room--index-100
-        .search-room__sidebar-item
+        .search-room__sidebar-ite.search-room--index-100
+          h3.search-room__sidebar-item-title Удобства номера
+          input.js-dropdown-search-room
+        .search-room__sidebar-item.search-room__last-item
           include ../../blocks/expander/expander 
           +expander({
             title: 'Дополнительные удобства',
