@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('.header__menu-toggle').click(e => {
+    $('.js-menu').click(e => {
         $('.menu').toggleClass('menu--open');
     });
 

@@ -2,7 +2,7 @@
 import 'ion-rangeslider';
 
 
-let slider = $('.slider').ionRangeSlider({
+let slider = $('.js-slider').ionRangeSlider({
     min: 1000,
     max: 20000,
     type: 'double',
