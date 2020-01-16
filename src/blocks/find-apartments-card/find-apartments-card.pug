@@ -1,3 +1,6 @@
+include ../range-dates/range-dates
+include ../long-button/long-button
+
 mixin apartments()
   .find-apartments-card
     .card-canvas
@@ -5,7 +8,6 @@ mixin apartments()
       form(action="index.html", method="get")
         .find-apartments-card__body
           .find-apartments-card__item.find-apartments-card__item--primary
-            include ../range-dates/range-dates.pug
             +range-dates({
               firstLabel: 'Прибытие',
               secondLabel: 'Выезд',
@@ -17,5 +19,4 @@ mixin apartments()
           .find-apartments-card__item
             input.js-dropdown-find-apartments
         .find-apartments-card__button
-          include ../long-button/long-button.pug
           +long-button('Подобрать номер')

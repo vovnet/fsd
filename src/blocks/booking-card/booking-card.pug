@@ -1,14 +1,17 @@
+include ../price/price 
+include ../apartment-info/apartment-info 
+include ../range-dates/range-dates 
+include ../invoice/invoice 
+include ../long-button/long-button
+
 mixin booking-card()
   .booking-card
     .card-canvas
       form(action="index.html", method="post")
         .booking-card__header
-          include ../apartment-info/apartment-info 
           +apartment-info({number: 888, lux: true, big: true})
-          include ../price/price 
           +price('9 990')
         .booking-card__item.booking-card__item--up
-          include ../range-dates/range-dates 
           +range-dates({
             firstLabel: 'Въезд',
             secondLabel: 'Выезд',
@@ -20,8 +23,6 @@ mixin booking-card()
         .booking-card__item.booking-card__item--middle
           input.js-dropdown-booking
         .booking-card__item 
-          include ../invoice/invoice 
           +invoice()
         .booking-card__item--last 
-          include ../long-button/long-button
           +long-button('Забронировать')

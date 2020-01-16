@@ -1,10 +1,15 @@
 extends ../main-layout/main-layout 
 
+include ../../blocks/hero-galery/hero-galery 
+include ../../blocks/additions/additions 
+include ../../blocks/comment/comment 
+include ../../blocks/bullet/bullet 
+include ../../blocks/booking-card/booking-card 
+
 block title
   title Room details
 
 block content
-  include ../../blocks/hero-galery/hero-galery 
   +hero-galery([
     '../img/hero_galery/image.png',
     '../img/hero_galery/image_2.png',
@@ -14,7 +19,6 @@ block content
     .room-details__info
       .room-details__room-item
         h2.room-details__title Сведения о номере
-        include ../../blocks/additions/additions 
         .room-details__inner
           +additions({
             title: 'Комфорт',
@@ -45,7 +49,6 @@ block content
             li.bullet--bad.bullet--small Разачарован
       .room-details__room-comments
         h2.room-details__title Отзывы посетителей номера
-        include ../../blocks/comment/comment 
         .room-details__inner
           +comment({
             image: '../img/ava.jpg',
@@ -63,7 +66,6 @@ block content
         })
       .room-details__room-item.room-details__room-item--bottom
         h2.room-details__title Правила
-        include ../../blocks/bullet/bullet 
         +bullet([
           'Нельзя с питомцами',
           'Без вечеринок и мероприятий',
@@ -73,5 +75,4 @@ block content
         h2.room-details__title Отмена
         p.room-details__text Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
     .room-details__booking
-      include ../../blocks/booking-card/booking-card 
       +booking-card()

@@ -1,5 +1,11 @@
 extends ../main-layout/main-layout 
 
+include ../../blocks/checkbox/checkbox 
+include ../../blocks/range-dates/range-dates
+include ../../blocks/expander/expander 
+include ../../blocks/image-card/image-card 
+include ../../blocks/pagination/pagination 
+
 block title
   title Search Room
 
@@ -7,14 +13,11 @@ block content
   .search-room.wrapper
     sidebar.search-room__sidebar
       form(action="index.html", method="post")
-        include ../../blocks/checkbox/checkbox 
         .search-room__sidebar-item
-          include ../../blocks/range-dates/range-dates
-          #calendar 
-            +date-dropdown({
-              label: 'Даты превыбания в отеле',
-              date: '19 авг - 23 авг'
-            })
+          +date-dropdown({
+            label: 'Даты превыбания в отеле',
+            date: '19 авг - 23 авг'
+          })
         .search-room__sidebar-item.search-room--index-100
           input.js-dropdown-guests
         .search-room__sidebar-item
@@ -45,7 +48,6 @@ block content
           h3.search-room__sidebar-item-title Удобства номера
           input.js-dropdown-search-room
         .search-room__sidebar-item.search-room__last-item
-          include ../../blocks/expander/expander 
           +expander({
             title: 'Дополнительные удобства',
             hide: true,
@@ -87,8 +89,6 @@ block content
 
     .search-room__content
       h1.search-room__header Номера, которые мы для вас подобрали
-      include ../../blocks/image-card/image-card 
-
       .search-room__room-card
         +image-card({
           image: '../img/apartments_1.png',
@@ -222,5 +222,4 @@ block content
         })
 
       .search-room__pagination
-        include ../../blocks/pagination/pagination 
         +pagination()

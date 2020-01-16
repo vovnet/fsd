@@ -1,13 +1,14 @@
 extends ../landing-layout/landing-layout
 
+include ../../blocks/hero/hero
+include ../../blocks/register-card/register-card
+
 block title
   title Registration
 
 block hero
-  include ../../blocks/hero/hero.pug
   +hero({text: '', theme: 'secondary'})
 
 block card 
-  include ../../blocks/register-card/register-card
   .registration
     +register-card()

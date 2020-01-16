@@ -1,3 +1,6 @@
+include ../../blocks/header/header
+include ../../blocks/footer/footer
+
 doctype html
 html
   head
@@ -17,7 +20,6 @@ html
       title Main
   body
     block header.main-layout__header
-      include ../../blocks/header/header.pug 
       +header({
       isLogged: false, 
       buttons: {
@@ -78,7 +80,6 @@ html
 
     block footer
       .main-layout__footer
-        include ../../blocks/footer/footer.pug 
         +footer({
           main: 'Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»',
           navigation: [

@@ -1,3 +1,6 @@
+include ../subscription/subscription 
+include ../socials/socials
+
 mixin footer(data)
   - 
     data.main = data.main || "Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis."
@@ -41,7 +44,6 @@ mixin footer(data)
       section.footer__block
         .site-logo
         p.footer__text= data.main
-
       .footer__nav-container
         each link_block in data.navigation
           section.footer__nav
@@ -55,11 +57,9 @@ mixin footer(data)
         .footer__block__header
           h3= data.subscription.title
         p= data.subscription.text
-        include ../subscription/subscription 
         +subscription({ placeholder: data.subscription.placeholder })
     
     section.footer__line
       .footer__copy.wrapper
         p= data.copy
-        include ../socials/socials.pug 
         +socials()

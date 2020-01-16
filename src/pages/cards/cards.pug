@@ -1,3 +1,9 @@
+include ../../blocks/find-apartments-card/find-apartments-card
+include ../../blocks/register-card/register-card 
+include ../../blocks/booking-card/booking-card 
+include ../../blocks/enter-card/enter-card 
+include ../../blocks/image-card/image-card 
+
 doctype html
 html
   head
@@ -7,23 +13,18 @@ html
     .cards
       .cards__column
         .cards__item
-          include ../../blocks/find-apartments-card/find-apartments-card
           +apartments()
         .cards__item
-          include ../../blocks/register-card/register-card 
           +register-card()
       .cards__column
         .cards__item
-          include ../../blocks/booking-card/booking-card 
           +booking-card()
         .cards__item
-          include ../../blocks/enter-card/enter-card 
           +enter-card()
       .cards__column
         .cards__item
           .js-calendar
         .cards__item
-          include ../../blocks/image-card/image-card 
           +image-card({
             image: '../img/apartments_1.png',
             arrows: true,

@@ -1,3 +1,17 @@
+include ../../blocks/range-dates/range-dates
+include ../../blocks/subscription/subscription 
+include ../../blocks/expander/expander 
+include ../../blocks/additions/additions 
+include ../../blocks/checkbox/checkbox 
+include ../../blocks/radio/radio 
+include ../../blocks/toggle/toggle 
+include ../../blocks/like/like
+include ../../blocks/rating/rating 
+include ../../blocks/long-button/long-button 
+include ../../blocks/pagination/pagination 
+include ../../blocks/bullet/bullet 
+include ../../blocks/comment/comment 
+
 doctype html
 html
   head
@@ -27,7 +41,6 @@ html
             .form-elements__desc Default
           input.text-field(placeholder='ДД.ММ.ГГГГ').js-masked
 
-        include ../../blocks/range-dates/range-dates
         .form-elements__item.form-elements__item--big-space
           +range-dates({
             firstLabel: 'Date dropdown',
@@ -44,7 +57,6 @@ html
         .form-elements__item.form-elements__item--big-space.form-elements__small-container
           .form-elements__head
             .form-elements__title Subscription text field 
-          include ../../blocks/subscription/subscription 
           +subscription({ placeholder: 'Email' })
 
 
@@ -60,7 +72,6 @@ html
             .form-elements__desc Default
           input.js-dropdown-room-open
 
-        include ../../blocks/expander/expander 
         .form-elements__item.form-elements__top-margin
           +expander({
             title: 'Expandable checkbox list',
@@ -85,7 +96,6 @@ html
           })
 
         .form-elements__item
-          include ../../blocks/additions/additions 
           +additions({
             title: 'Комфорт',
             desc: 'Шумопоглощающие стены',
@@ -101,7 +111,6 @@ html
         .form-elements__item.form-elements__item--big-space
           .form-elements__head.form-elements__head--accent
             .form-elements__title Checkbox buttons 
-          include ../../blocks/checkbox/checkbox 
           +checkbox('Можно курить')
           +checkbox('Можно с питомцами', true)
           +checkbox('Можно пригралисть гостей (до 10 человек)', true)
@@ -109,14 +118,12 @@ html
         .form-elements__item.form-elements__item--big-space
           .form-elements__head.form-elements__head--accent
             .form-elements__title Radio buttons 
-          include ../../blocks/radio/radio 
           +radio('Мужчина', 'gender', true)
           +radio('Женщина', 'gender', false)
 
         .form-elements__item.form-elements__item--big-space
           .form-elements__head.form-elements__head--accent
             .form-elements__title Toggle
-          include ../../blocks/toggle/toggle 
           .form-elements__item--sub
             +toggle('Получать спецпредложения', true) 
           .form-elements__item--sub
@@ -125,7 +132,6 @@ html
         .form-elements__item.form-elements__item--big-space
           .form-elements__head.form-elements__head--accent
             .form-elements__title Like button
-          include ../../blocks/like/like
           span.form-elements__like
             +like({
               likes: 2,
@@ -140,7 +146,6 @@ html
         .form-elements__item
           .form-elements__head.form-elements__head--accent
             .form-elements__title Rate button
-          include ../../blocks/rating/rating 
           span.form-elements__inline
             +rating(4)
             .form-elements__rating
@@ -183,13 +188,11 @@ html
             button.rounded-button.rounded-button--disabled.form-elements__btn--big.form-elements__btn Click me
             .simple-button.form-elements__btn Click me
             .simple-button.simple-button--disabled.form-elements__btn Click me
-            include ../../blocks/long-button/long-button 
             +long-button('Перейти к оплате')
 
         .form-elements__item
           .form-elements__head.form-elements__head--accent
             .form-elements__title Pagination 
-          include ../../blocks/pagination/pagination 
           +pagination()  
 
         .form-elements__item
@@ -200,7 +203,7 @@ html
         .form-elements__item.form-elements__top-margin
           .form-elements__head.form-elements__head--accent
             .form-elements__title Bullet list 
-          include ../../blocks/bullet/bullet 
+          
           +bullet([
             'Нельзя с питомцами',
             'Без вечеринок и мероприятий',
@@ -208,7 +211,6 @@ html
           ])
 
       .form-elements__bot 
-        include ../../blocks/comment/comment 
         +comment({
           image: '../img/ava.jpg',
           author: 'Мурад Сарафанов',

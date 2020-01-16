@@ -1,10 +1,11 @@
 extends ../landing-layout/landing-layout
 
+include ../../blocks/find-apartments-card/find-apartments-card
+
 block title
   title Landing
 
 block card
   .landing
     .landing__room-config
-      include ../../blocks/find-apartments-card/find-apartments-card.pug 
       +apartments()

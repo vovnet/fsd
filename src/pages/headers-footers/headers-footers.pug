@@ -1,3 +1,7 @@
+include ../../blocks/header/header
+include ../../blocks/footer/footer
+include ../../blocks/light-footer/light-footer
+
 doctype html
 html
   head
@@ -44,7 +48,7 @@ html
         link: '#docs',
         classes: ['menu__item']
       }];
-    include ../../blocks/header/header.pug
+    
     img.logo(src="../img/logo.svg", alt="logo")
     .headers-footers
       .headers-footers__item.headers-footers__item--up
@@ -59,8 +63,6 @@ html
       .headers-footers__item
         +header({isLogged: true, menu: menu})
       .headers-footers__item.headers-footers__item--down
-        include ../../blocks/footer/footer.pug 
         +footer({})
       .headers-footers__item
-        include ../../blocks/light-footer/light-footer.pug 
         +light-footer()

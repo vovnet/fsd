@@ -1,11 +1,12 @@
 extends ../main-layout/main-layout
 
+include ../../blocks/hero/hero
+
 block title
   title Landing Layout
 
 block content
   block hero
-    include ../../blocks/hero/hero.pug
     +hero({text: 'Лучшие номера для вашей работы, отдыха и просто вдохновения'})
 
   block card

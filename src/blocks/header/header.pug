@@ -1,5 +1,6 @@
+include ../menu/menu
+
 mixin header(obj)
-  include ../menu/menu.pug 
   header.header
     .header__container
       .site-logo.header__logo
@@ -12,7 +13,5 @@ mixin header(obj)
           .header__enter-button
             button.rounded-button= obj.buttons.enter
           .button= obj.buttons.register
-      
       button.header__enter-toggle.icon-button account_box
-      
       button.header__menu-toggle.icon-button.js-menu-button menu

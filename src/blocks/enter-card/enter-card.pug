@@ -1,3 +1,6 @@
+include ../long-button/long-button
+include ../card-footer/card-footer
+
 mixin enter-card()  
   .enter-card
     .card-canvas
@@ -6,9 +9,6 @@ mixin enter-card()
         input.text-field.enter-card__field(type="text" placeholder="Email")
         input.text-field(type="password" placeholder="Пароль")
         .enter-card__enter-button
-          include ../long-button/long-button
           +long-button('Войти')
-      
       .enter-card__footer
-        include ../card-footer/card-footer.pug 
         +card-footer('Нет аккаунта на Toxin?', 'Создать')
