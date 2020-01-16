@@ -1,3 +1,5 @@
+include ../like/like
+
 mixin comment({image, author, date, like, text})
   article.comment
     img.avatar(src=image alt="user avatar")
@@ -5,6 +7,5 @@ mixin comment({image, author, date, like, text})
       .comment__author= author
       .comment__date= date
     .comment__like
-      include ../like/like
       +like(like)
     .comment__text= text
