@@ -1,7 +1,7 @@
 mixin comment({image, author, date, like, text})
   article.comment
     img.avatar(src=image alt="user avatar")
-    div
+    div.comment__author-container
       .comment__author= author
       .comment__date= date
     .comment__like
