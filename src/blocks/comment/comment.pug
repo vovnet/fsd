@@ -1,10 +1,10 @@
-mixin comment(data)
+mixin comment({image, author, date, like, text})
   article.comment
-    img.avatar(src=data.image alt="user avatar")
+    img.avatar(src=image alt="user avatar")
     div
-      .comment__author= data.author
-      .comment__date= data.date
+      .comment__author= author
+      .comment__date= date
     .comment__like
       include ../like/like
-      +like(data.like)
-    .comment__text= data.text
+      +like(like)
+    .comment__text= text
