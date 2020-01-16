@@ -1,8 +1,8 @@
-mixin additions(data)
+mixin additions({noBorder, title, desc, icon})
   - var noBorder = '';
-  if data.noBorder
-    - noBorder = 'additions--no-border'
-  .additions(class=noBorder)
-    .additions__title= data.title
-    div= data.desc
-    i.additions__icon.material-icons= data.icon
+  if noBorder
+    - let noBorderClass = 'additions--no-border'
+  .additions(class=noBorderClass)
+    .additions__title= title
+    div= desc
+    i.additions__icon.material-icons= icon
