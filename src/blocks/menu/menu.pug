@@ -1,5 +1,5 @@
 mixin menu(items)
-  nav.menu
+  nav.menu.js-menu
     +_print-items(items)
 
 
@@ -7,7 +7,7 @@ mixin _print-items(items)
   each item in items
     if Array.isArray(item.link)
       div(class=item.classes)= item.text
-        .submenu
+        .submenu.js-submenu
           +_print-items(item.link)
     else
       div(class=item.classes)
