@@ -1,7 +1,7 @@
-mixin like(data)
-  if data.liked
-    .like.like--liked= data.likes
+mixin like({liked, lides})
+  if liked
+    .like.like--liked= likes
       i.like__icon.like__icon--liked favorite
   else
-    .like= data.likes
+    .like= likes
       i.like__icon favorite_border

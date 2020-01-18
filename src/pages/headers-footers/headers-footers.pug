@@ -63,6 +63,42 @@ html
       .headers-footers__item
         +header({isLogged: true, menu: menu})
       .headers-footers__item.headers-footers__item--down
-        +footer({})
+        +footer({
+          main: 'Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis',
+          navigation: [
+            {
+              title: 'Navigation',
+              links: [
+                { url: 'index.html', text: 'About Us' },
+                { url: 'index.html', text: 'News' },
+                { url: 'index.html', text: 'Support' },
+                { url: 'index.html', text: 'Products' },
+              ]
+            },
+            {
+              title: 'About Us',
+              links: [
+                { url: 'index.html', text: 'About Us' },
+                { url: 'index.html', text: 'Our team' },
+                { url: 'index.html', text: 'Careers' },
+                { url: 'index.html', text: 'Investors' },
+              ]
+            },
+            {
+              title: 'Support',
+              links: [
+                { url: 'index.html', text: 'Documentation' },
+                { url: 'index.html', text: 'Community' },
+                { url: 'index.html', text: 'Get in Touch' },
+              ]
+            },
+          ],
+          copy: 'Copyright © 2018 Toxin UI Kit. All rights reserved.',
+          subscription: {
+            title: 'Subscribe to out newsletter',
+            text: 'Receive our latest news and promotions in your inbox!',
+            placeholder: 'Your email address'
+          }
+        })
       .headers-footers__item
         +light-footer()

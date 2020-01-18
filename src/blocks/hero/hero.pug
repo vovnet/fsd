@@ -1,6 +1,6 @@
-mixin hero(data)
+mixin hero({theme, text})
   -var classes = ['hero']
-  if data.theme == 'secondary'
+  if theme == 'secondary'
     - classes.push('hero--img2')
   div(class=classes) 
-    .hero__text= data.text
+    .hero__text= text

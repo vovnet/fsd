@@ -1,8 +1,8 @@
 include ../checkbox/checkbox
 
-mixin expander(data)
+mixin expander({title, hide, list})
   .expander
-    .expander__header.js-expander= data.title
-    .expander__list(class=data.hide ? 'expander__list--hide': '')
-      each item in data.list
+    .expander__header.js-expander= title
+    .expander__list(class=hide ? 'expander__list--hide': '')
+      each item in list
         +checkbox(item.text, item.checked)

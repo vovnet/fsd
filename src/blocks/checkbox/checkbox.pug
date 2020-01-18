@@ -4,8 +4,8 @@ mixin checkbox(label, checked=false)
         .checkbox__mark
 
 
-mixin checkboxList(data)
-  each item in data
+mixin checkboxList(items)
+  each item in items
     label.checkbox.checkbox--bold= item.title
       input.checkbox__input(type="checkbox" checked=item.checked)
       .checkbox__mark

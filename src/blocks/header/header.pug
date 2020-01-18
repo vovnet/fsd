@@ -1,17 +1,17 @@
 include ../menu/menu
 
-mixin header(obj)
+mixin header({isLogged, buttons: {enter = '', register = ''} = {}, menu})
   header.header
     .header__container
       .site-logo.header__logo
       .header__menu
-        +menu(obj.menu)
-      if obj.isLogged
+        +menu(menu)
+      if isLogged
         .header__account Cosmin Negoita
       else
         .header__enter-panel
           .header__enter-button
-            button.rounded-button= obj.buttons.enter
-          .button= obj.buttons.register
+            button.rounded-button= enter
+          .button= register
       button.header__enter-toggle.icon-button account_box
       button.header__menu-toggle.icon-button.js-menu-button menu

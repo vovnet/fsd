@@ -1,51 +1,15 @@
 include ../subscription/subscription 
 include ../socials/socials
 
-mixin footer(data)
-  - 
-    data.main = data.main || "Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis."
-    data.navigation = data.navigation || [
-      {
-        title: 'Navigation',
-        links: [
-          { url: 'index.html', text: 'About Us' },
-          { url: 'index.html', text: 'News' },
-          { url: 'index.html', text: 'Support' },
-          { url: 'index.html', text: 'Products' },
-        ]
-      },
-      {
-        title: 'About Us',
-        links: [
-          { url: 'index.html', text: 'About Us' },
-          { url: 'index.html', text: 'Our team' },
-          { url: 'index.html', text: 'Careers' },
-          { url: 'index.html', text: 'Investors' },
-        ]
-      },
-      {
-        title: 'Support',
-        links: [
-          { url: 'index.html', text: 'Documentation' },
-          { url: 'index.html', text: 'Community' },
-          { url: 'index.html', text: 'Get in Touch' },
-        ]
-      },
-    ]
-    data.copy = data.copy || "Copyright © 2018 Toxin UI Kit. All rights reserved."
-    data.subscription = data.subscription || {
-      title: 'Subscribe to out newsletter',
-      text: 'Receive our latest news and promotions in your inbox!',
-      placeholder: 'Your email address'
-    }
-
+mixin footer({main, navigation, copy, subscription: {title, text, placeholder}})
   footer.footer
     .footer__container.wrapper
       section.footer__block
         .site-logo
-        p.footer__text= data.main
+        p.footer__text= main
+
       .footer__nav-container
-        each link_block in data.navigation
+        each link_block in navigation
           section.footer__nav
             .footer__block__header
               h3= link_block.title
@@ -55,11 +19,11 @@ mixin footer(data)
     
       section.footer__block
         .footer__block__header
-          h3= data.subscription.title
-        p= data.subscription.text
-        +subscription({ placeholder: data.subscription.placeholder })
+          h3= title
+        p= text
+        +subscription({ placeholder: placeholder })
     
     section.footer__line
       .footer__copy.wrapper
-        p= data.copy
+        p= copy
         +socials()

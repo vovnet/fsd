@@ -1,16 +1,16 @@
-mixin range-dates(data)
+mixin range-dates({inLabel, outLabel})
   .range-dates
     input.js-calendar.js-hidden.calendar
-    label.range-dates__label.range-dates__label--small= data.firstLabel
+    label.range-dates__label.range-dates__label--small= inLabel
       span.range-dates__wrapper
-        input.range-dates__date-dropdown(placeholder="ДД.ММ.ГГГГ" id=data.firstInputId)
-    label.range-dates__label.range-dates__label--small= data.secondLabel
+        input.range-dates__date-dropdown(placeholder="ДД.ММ.ГГГГ")
+    label.range-dates__label.range-dates__label--small= outLabel
       span.range-dates__wrapper
-        input.range-dates__date-dropdown(placeholder="ДД.ММ.ГГГГ" id=data.secondInputId)
+        input.range-dates__date-dropdown(placeholder="ДД.ММ.ГГГГ")
 
 
-mixin date-dropdown(data)
+mixin date-dropdown({date, label})
   .range-dates
-    label.range-dates__label= data.label
+    label.range-dates__label= label
       span.range-dates__wrapper
-        input.range-dates__date-dropdown(placeholder="ДД.ММ.ГГГГ" value=data.date)
+        input.range-dates__date-dropdown(placeholder="ДД.ММ.ГГГГ" value=date)

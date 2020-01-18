@@ -1,10 +1,9 @@
-mixin apartment-info(info)
-  - info.big = info.big ? info.big : false
+mixin apartment-info({big, lux, number})
   .apartment-info
     span.apartment-info--bold № 
-    if info.big 
-      h1.apartment-info--main= info.number 
+    if big 
+      h1.apartment-info--main= number 
     else
-      h2.apartment-info--main= info.number 
-    if (info.lux)
+      h2.apartment-info--main= number 
+    if (lux)
       span.apartment-info--lux  Люкс
