@@ -10,6 +10,14 @@
   justify-items: center;
   gap: 120px;
 
+  @media (min-width: $small-size) {
+    grid-template-areas: "left right" "mid bot";
+  }
+
+  @media (min-width: $middle-size) {
+    grid-template-areas: "left mid right" "left bot bot";
+  }
+
   &__left {
     grid-area: left;
   }
@@ -100,17 +108,5 @@
     position: relative;
     top: -22px;
     width: 266px;
-  }
-}
-
-@media screen and (min-width: $small-size) {
-  .form-elements {
-    grid-template-areas: "left right" "mid bot";
-  }
-}
-
-@media screen and (min-width: $middle-size) {
-  .form-elements {
-    grid-template-areas: "left mid right" "left bot bot";
   }
 }

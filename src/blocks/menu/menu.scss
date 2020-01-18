@@ -10,9 +10,25 @@
   background-color: $white;
   z-index: 100;
 
+  @media (min-width: 767px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 34px;
+    border: none;
+  }
+
   &__item {
     text-align: center;
     line-height: 2.5rem;
+
+    @media (min-width: 767px) {
+      cursor: pointer;
+      padding: 0 10px;
+      border: none;
+      line-height: 34px;
+      white-space: nowrap;
+    }
 
     &--current {
       font-family: Montserrat, Arial, sans-serif;
@@ -22,6 +38,12 @@
 
     &:hover {
       background-color: $dark-shade-5;
+    }
+
+    &:last-child {
+      @media (min-width: 767px) {
+        margin-right: -10px;
+      }
     }
   }
 
@@ -35,6 +57,11 @@
   &__submenu {
     position: relative;
 
+    @media (min-width: 767px) {
+      position: relative;
+      padding-right: 36px;
+    }
+
     &::after {
       position: absolute;
       content: "\e313";
@@ -45,6 +72,16 @@
       line-height: 2.5rem;
       top: 0;
       right: 10px;
+
+      @media (min-width: 767px) {
+        content: "\e313";
+        font-family: "Material Icons";
+        font-size: 1.5rem;
+        width: 24px;
+        height: 36px;
+        line-height: 36px;
+        right: 12px;
+      }
     }
   }
 
@@ -59,56 +96,7 @@
   padding: 10px;
   background-color: $dark-shade-10;
 
-  &--open {
-    display: flex;
-  }
-}
-
-@media screen and (min-width: 767px) {
-  .menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 34px;
-    border: none;
-
-    &__item {
-      cursor: pointer;
-      //padding: 10px 15px;
-      padding: 0 10px;
-      border: none;
-      line-height: 34px;
-      white-space: nowrap;
-
-      &:last-child {
-        margin-right: -10px;
-      }
-    }
-
-    &__submenu {
-      position: relative;
-      padding-right: 36px;
-
-      &:hover .submenu {
-        //display: block;
-      }
-
-      &::after {
-        //position: absolute;
-        content: "\e313";
-        font-family: "Material Icons";
-        font-size: 1.5rem;
-        width: 24px;
-        height: 36px;
-        line-height: 36px;
-        //top: 10px;
-        right: 12px;
-        //right: 0;
-      }
-    }
-  }
-
-  .submenu {
+  @media (min-width: 767px) {
     position: absolute;
     display: none;
     top: 40px;
@@ -116,22 +104,20 @@
     border: 1px solid rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     background-color: $white;
+  }
 
-    &:hover {
-      //display: block;
-    }
+  &--open {
+    display: flex;
+  }
 
-    &--open {
-      display: flex;
-    }
-
-    &__item {
+  &__item {
+    @media (min-width: 767px) {
       padding: 10px 40px;
       text-align: center;
+    }
 
-      &:hover {
-        background-color: $dark-shade-5;
-      }
+    &:hover {
+      background-color: $dark-shade-5;
     }
   }
 }

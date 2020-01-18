@@ -6,8 +6,19 @@
   justify-items: center;
   margin: 144px auto;
 
+  @media (min-width: $small-size) {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1160px;
+  }
+
   &__pallete {
     margin: 0 auto;
+
+    @media (min-width: $small-size) {
+      padding: 0 56px;
+      margin: 0;
+    }
   }
 
   &__types {
@@ -17,21 +28,8 @@
     max-width: 500px;
     height: 306px;
     margin: 0 auto;
-  }
-}
 
-@media screen and (min-width: $small-size) {
-  .color-types {
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 1160px;
-
-    &__pallete {
-      padding: 0 56px;
-      margin: 0;
-    }
-
-    &__types {
+    @media (min-width: $small-size) {
       margin: 0;
     }
   }
