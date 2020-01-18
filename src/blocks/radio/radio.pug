@@ -1,4 +1,4 @@
-mixin radio(label, name, checked = false)
+mixin radio({label, name, checked = false})
   label.radio= label
     input.radio__input(type="radio" name=name checked=checked)
     .radio__mark

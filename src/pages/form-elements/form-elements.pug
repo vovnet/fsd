@@ -118,8 +118,8 @@ html
         .form-elements__item.form-elements__item--big-space
           .form-elements__head.form-elements__head--accent
             .form-elements__title Radio buttons 
-          +radio('Мужчина', 'gender', true)
-          +radio('Женщина', 'gender', false)
+          +radio({ label: 'Мужчина', name: 'gender', checked: true })
+          +radio({ label: 'Женщина', name: 'gender', checked: false })
 
         .form-elements__item.form-elements__item--big-space
           .form-elements__head.form-elements__head--accent
