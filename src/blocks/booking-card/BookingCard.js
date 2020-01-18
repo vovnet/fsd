@@ -1,3 +1,5 @@
+import { Dropdown } from '../configuration-dropdown/dropdown/Dropdown';
+
 class BookingCard {
     
     constructor() {
@@ -5,10 +7,13 @@ class BookingCard {
     }
 
     init() {
-        $('.js-dropdown-booking').dropdown({
+        let element = document.querySelector('.js-dropdown-booking');
+
+        new Dropdown(element, {
             text: 'Сколько гостей',
             visibility: 'hide',
             words: ['гость', 'гостя', 'гостей'],
+            buttons: true,
             items: [
                 {
                     name: 'Взрослых',
@@ -24,6 +29,7 @@ class BookingCard {
                 }
             ],
         });
+
     }
 }
 
