@@ -1,5 +1,5 @@
-@import "../../scss/colors.scss";
-@import "../../scss/sizes.scss";
+@import '../../scss/colors.scss';
+@import '../../scss/sizes.scss';
 
 .menu {
   display: none;
@@ -64,8 +64,8 @@
 
     &::after {
       position: absolute;
-      content: "\e313";
-      font-family: "Material Icons";
+      content: '\e313';
+      font-family: 'Material Icons';
       font-size: 1.5rem;
       width: 24px;
       height: 21px;
@@ -74,8 +74,8 @@
       right: 10px;
 
       @media (min-width: 767px) {
-        content: "\e313";
-        font-family: "Material Icons";
+        content: '\e313';
+        font-family: 'Material Icons';
         font-size: 1.5rem;
         width: 24px;
         height: 36px;

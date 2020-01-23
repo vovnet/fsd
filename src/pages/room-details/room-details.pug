@@ -11,9 +11,9 @@ block title
 
 block content
   +hero-galery([
-    '../img/hero_galery/image.png',
-    '../img/hero_galery/image_2.png',
-    '../img/hero_galery/image_3.png'
+    "../img/hero_galery/image.png",
+    "../img/hero_galery/image_2.png",
+    "../img/hero_galery/image_3.png"
   ])
   .room-details.wrapper
     .room-details__info
@@ -21,20 +21,20 @@ block content
         h2.room-details__title Сведения о номере
         .room-details__inner
           +additions({
-            title: 'Комфорт',
-            desc: 'Шумопоглощающие стены',
-            icon: 'tag_faces'
+            title: "Комфорт",
+            desc: "Шумопоглощающие стены",
+            icon: "tag_faces"
           })
         .room-details__inner
           +additions({
-            title: 'Удобство',
-            desc: 'Окно в каждой из спален',
-            icon: 'location_city'
+            title: "Удобство",
+            desc: "Окно в каждой из спален",
+            icon: "location_city"
           })
         +additions({
-          title: 'Уют',
-          desc: 'Номер оснащен камином',
-          icon: 'whatshot',
+          title: "Уют",
+          desc: "Номер оснащен камином",
+          icon: "whatshot",
           noBorder: true
         })
       .room-details__room-item
@@ -51,25 +51,25 @@ block content
         h2.room-details__title Отзывы посетителей номера
         .room-details__inner
           +comment({
-            image: '../img/ava.jpg',
-            author: 'Мурад Сарафанов',
-            date: '5 дней назад',
+            image: "../img/ava.jpg",
+            author: "Мурад Сарафанов",
+            date: "5 дней назад",
             like: { likes: 5, liked: true },
-            text: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'
+            text: "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей."
           })
         +comment({
-          image: '../img/ava.jpg',
-          author: 'Патрисия Стёклышкова',
-          date: 'Неделю назад',
+          image: "../img/ava.jpg",
+          author: "Патрисия Стёклышкова",
+          date: "Неделю назад",
           like: { likes: 2, liked: false },
-          text: 'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент'
+          text: "Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент"
         })
       .room-details__room-item.room-details__room-item--bottom
         h2.room-details__title Правила
         +bullet([
-          'Нельзя с питомцами',
-          'Без вечеринок и мероприятий',
-          'Время прибытия — после 13:00, а выезд до 12:00'
+          "Нельзя с питомцами",
+          "Без вечеринок и мероприятий",
+          "Время прибытия — после 13:00, а выезд до 12:00"
         ])
       .room-details__room-item.room-details__room-item--bottom
         h2.room-details__title Отмена

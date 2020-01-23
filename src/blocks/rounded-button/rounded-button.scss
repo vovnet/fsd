@@ -1,4 +1,4 @@
-@import "../../scss/colors.scss";
+@import '../../scss/colors.scss';
 
 .rounded-button {
   display: inline-block;
@@ -20,7 +20,7 @@
 
   &::after {
     display: inherit;
-    content: "";
+    content: '';
     position: absolute;
     top: -2px;
     bottom: -2px;

@@ -1,5 +1,5 @@
 const Donut = function(container) {
-    this.svg = document.createElementNS("http://www.w3.org/2000/svg", 'svg');
+    this.svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
     this.svg.setAttribute('viewBox', '0 0 42 42');
     this.svg.setAttribute('width', '100%');
     this.svg.setAttribute('height', '100%');
@@ -47,7 +47,7 @@ const Donut = function(container) {
     }
 
     this.createSegment = function(x, y, r, dashes, offset, color, width) {
-        let segment = document.createElementNS("http://www.w3.org/2000/svg", 'circle');
+        let segment = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
 
         segment.setAttribute('cx', x);
         segment.setAttribute('cy', y);

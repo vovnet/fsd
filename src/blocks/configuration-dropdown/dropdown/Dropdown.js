@@ -1,4 +1,3 @@
-import { ItemView } from './view/ItemView';
 import { DropdownView } from './view/DropdownView';
 import { DropdownModel } from './model/DropdownModel';
 

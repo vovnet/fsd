@@ -1,4 +1,4 @@
-@import "../../scss/colors.scss";
+@import '../../scss/colors.scss';
 
 .bullet {
   list-style: none;
@@ -20,7 +20,7 @@
     }
 
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       top: 5px;
       left: -1px;

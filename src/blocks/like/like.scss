@@ -1,4 +1,4 @@
-@import "../../scss/colors.scss";
+@import '../../scss/colors.scss';
 
 .like {
   display: inline-block;
@@ -17,7 +17,7 @@
     position: absolute;
     top: 4px;
     left: 5px;
-    font-family: "Material Icons";
+    font-family: 'Material Icons';
     font-weight: normal;
     font-style: normal;
     font-size: .625rem;
@@ -35,7 +35,7 @@
   }
 
   &::after {
-    content: "";
+    content: '';
     display: inherit;
     position: absolute;
     top: -1px;

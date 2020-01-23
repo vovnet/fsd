@@ -1,4 +1,4 @@
-@import "../../scss/sizes.scss";
+@import '../../scss/sizes.scss';
 
 .form-elements {
   margin: 143px auto;
@@ -6,16 +6,16 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px 1fr));
   grid-template-rows: 1fr 1fr;
-  grid-template-areas: "left" "mid" "right" "bot";
+  grid-template-areas: 'left' 'mid' 'right' 'bot';
   justify-items: center;
   gap: 120px;
 
   @media (min-width: $small-size) {
-    grid-template-areas: "left right" "mid bot";
+    grid-template-areas: 'left right' 'mid bot';
   }
 
   @media (min-width: $middle-size) {
-    grid-template-areas: "left mid right" "left bot bot";
+    grid-template-areas: 'left mid right' 'left bot bot';
   }
 
   &__left {

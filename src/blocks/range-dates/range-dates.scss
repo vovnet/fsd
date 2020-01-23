@@ -1,4 +1,4 @@
-@import "../../scss/colors.scss";
+@import '../../scss/colors.scss';
 
 .range-dates {
   display: flex;
@@ -25,9 +25,9 @@
 
     &::after {
       position: absolute;
-      font-family: "Material Icons";
+      font-family: 'Material Icons';
       font-size: 1.5rem;
-      content: "\e313";
+      content: '\e313';
       text-align: center;
       line-height: 3.625rem;
       color: $dark-shade-50;

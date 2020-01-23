@@ -1,4 +1,4 @@
-@import "../../scss/colors.scss";
+@import '../../scss/colors.scss';
 
 .invoice {
   line-height: 1.5rem;
@@ -34,7 +34,7 @@
 
     &--info::after {
       position: absolute;
-      content: "i";
+      content: 'i';
       top: 0;
       right: 0;
       font-family: Montserrat, Arial, sans-serif;

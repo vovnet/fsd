@@ -1,11 +1,11 @@
-@import "../../scss/colors.scss";
+@import '../../scss/colors.scss';
 
 .socials {
   display: flex;
 
   &__button {
     border: none;
-    font-family: "Font Awesome";
+    font-family: 'Font Awesome';
     width: 28px;
     height: 24px;
     font-size: 1.5rem;
@@ -16,15 +16,15 @@
     -webkit-text-fill-color: transparent;
 
     &--twitter::before {
-      content: "\f099";
+      content: '\f099';
     }
 
     &--fb::before {
-      content: "\f082";
+      content: '\f082';
     }
 
     &--instagram::before {
-      content: "\f16d";
+      content: '\f16d';
     }
   }
 }

@@ -9,44 +9,44 @@ html
   body.body--kit
     - 
       var menu = [{
-        text: 'Home',
-        link: '#home',
-        classes: ['menu__item', 'menu__item--current']
+        text: "Home",
+        link: "#home",
+        classes: ["menu__item", "menu__item--current"]
         },
         {
-        text: 'About Us',
-        link: '#about_us',
-        classes: ['menu__item']
+        text: "About Us",
+        link: "#about_us",
+        classes: ["menu__item"]
         }, 
         {
-        text: 'Services',
-        classes: ['menu__item', 'menu__submenu', 'js-menu__submenu'],
+        text: "Services",
+        classes: ["menu__item", "menu__submenu", "js-menu__submenu"],
         link: [
         {
-          text: 'First',
-          link: '#first',
-          classes: ['submenu__item']
+          text: "First",
+          link: "#first",
+          classes: ["submenu__item"]
         },
         {
-          text: 'Second',
-          link: '#second',
-          classes: ['submenu__item']
+          text: "Second",
+          link: "#second",
+          classes: ["submenu__item"]
         }
         ]},
         {
-        text: 'Careers',
-        link: '#careers',
-        classes: ['menu__item']
+        text: "Careers",
+        link: "#careers",
+        classes: ["menu__item"]
         },
         {
-        text: 'News',
-        link: '#news',
-        classes: ['menu__item']
+        text: "News",
+        link: "#news",
+        classes: ["menu__item"]
         },
         {
-        text: 'Documentation',
-        link: '#docs',
-        classes: ['menu__item']
+        text: "Documentation",
+        link: "#docs",
+        classes: ["menu__item"]
       }];
     
     img.logo(src="../img/logo.svg", alt="logo")
@@ -55,8 +55,8 @@ html
         +header({
           isLogged: false, 
           buttons: {
-            enter: 'Login',
-            register: 'Register'
+            enter: "Login",
+            register: "Register"
           },
           menu: menu
         })
@@ -64,40 +64,40 @@ html
         +header({isLogged: true, menu: menu})
       .headers-footers__item.headers-footers__item--down
         +footer({
-          main: 'Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis',
+          main: "Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis",
           navigation: [
             {
-              title: 'Navigation',
+              title: "Navigation",
               links: [
-                { url: 'index.html', text: 'About Us' },
-                { url: 'index.html', text: 'News' },
-                { url: 'index.html', text: 'Support' },
-                { url: 'index.html', text: 'Products' },
+                { url: "index.html", text: "About Us" },
+                { url: "index.html", text: "News" },
+                { url: "index.html", text: "Support" },
+                { url: "index.html", text: "Products" },
               ]
             },
             {
-              title: 'About Us',
+              title: "About Us",
               links: [
-                { url: 'index.html', text: 'About Us' },
-                { url: 'index.html', text: 'Our team' },
-                { url: 'index.html', text: 'Careers' },
-                { url: 'index.html', text: 'Investors' },
+                { url: "index.html", text: "About Us" },
+                { url: "index.html", text: "Our team" },
+                { url: "index.html", text: "Careers" },
+                { url: "index.html", text: "Investors" },
               ]
             },
             {
-              title: 'Support',
+              title: "Support",
               links: [
-                { url: 'index.html', text: 'Documentation' },
-                { url: 'index.html', text: 'Community' },
-                { url: 'index.html', text: 'Get in Touch' },
+                { url: "index.html", text: "Documentation" },
+                { url: "index.html", text: "Community" },
+                { url: "index.html", text: "Get in Touch" },
               ]
             },
           ],
-          copy: 'Copyright © 2018 Toxin UI Kit. All rights reserved.',
+          copy: "Copyright © 2018 Toxin UI Kit. All rights reserved.",
           subscription: {
-            title: 'Subscribe to out newsletter',
-            text: 'Receive our latest news and promotions in your inbox!',
-            placeholder: 'Your email address'
+            title: "Subscribe to out newsletter",
+            text: "Receive our latest news and promotions in your inbox!",
+            placeholder: "Your email address"
           }
         })
       .headers-footers__item

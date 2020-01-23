@@ -1,11 +1,11 @@
-@import "../../scss/colors.scss";
+@import '../../scss/colors.scss';
 
 .rating {
   display: flex;
   user-select: none;
 
   &__icon {
-    font-family: "Material Icons";
+    font-family: 'Material Icons';
     font-weight: normal;
     font-style: normal;
     font-size: 1.5rem;

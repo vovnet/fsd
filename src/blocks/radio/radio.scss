@@ -1,4 +1,4 @@
-@import "../../scss/colors.scss";
+@import '../../scss/colors.scss';
 
 .radio {
   display: inline-block;
@@ -25,7 +25,7 @@
   }
 
   &__mark::after {
-    content: "";
+    content: '';
     display: none;
     position: absolute;
     top: 0.2em;

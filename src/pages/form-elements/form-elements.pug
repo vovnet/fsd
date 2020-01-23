@@ -24,12 +24,12 @@ html
           .form-elements__head
             .form-elements__title Text field
             .form-elements__desc Default
-          input.text-field(placeholder='Email')
+          input.text-field(placeholder="Email")
         .form-elements__item
           .form-elements__head
             .form-elements__title Text field
             .form-elements__desc Hover / Focus
-          input.text-field.text-field--focus(placeholder='Email')
+          input.text-field.text-field--focus(placeholder="Email")
         .form-elements__item
           .form-elements__head
             .form-elements__title Dropdown
@@ -39,25 +39,25 @@ html
           .form-elements__head
             .form-elements__title Masked text field
             .form-elements__desc Default
-          input.text-field(placeholder='ДД.ММ.ГГГГ').js-masked
+          input.text-field(placeholder="ДД.ММ.ГГГГ").js-masked
 
         .form-elements__item.form-elements__item--big-space
           +range-dates({
-            firstLabel: 'Date dropdown',
-            secondLabel: 'Date dropdown'
+            firstLabel: "Date dropdown",
+            secondLabel: "Date dropdown"
           })
 
 
         .form-elements__item.form-elements__item--big-space.form-elements__small-container
           +date-dropdown({
-            label: 'Filter date dropdown',
-            date: '19 авг - 23 авг'
+            label: "Filter date dropdown",
+            date: "19 авг - 23 авг"
           })
 
         .form-elements__item.form-elements__item--big-space.form-elements__small-container
           .form-elements__head
             .form-elements__title Subscription text field 
-          +subscription({ placeholder: 'Email' })
+          +subscription({ placeholder: "Email" })
 
 
         .form-elements__item.form-elements__item--big-space.form-elements__small-container.form-elements__top
@@ -74,60 +74,60 @@ html
 
         .form-elements__item.form-elements__top-margin
           +expander({
-            title: 'Expandable checkbox list',
+            title: "Expandable checkbox list",
             list: [
-              { text: 'Завтрак', checked: true }
+              { text: "Завтрак", checked: true }
             ],
             hide: true
           })
         .form-elements__item
           +expander({
-            title: 'Expandable checkbox list',
+            title: "Expandable checkbox list",
             list: [
-              { text: 'Завтрак', checked: false },
-              { text: 'Письменный стол', checked: true },
-              { text: 'Стул для кормления', checked: true },
-              { text: 'Кроватка', checked: true },
-              { text: 'Телевизор', checked: false },
-              { text: 'Шампунь', checked: false },
-              { text: 'Телевизор', checked: false },
-              { text: 'Шампунь', checked: false },
+              { text: "Завтрак", checked: false },
+              { text: "Письменный стол", checked: true },
+              { text: "Стул для кормления", checked: true },
+              { text: "Кроватка", checked: true },
+              { text: "Телевизор", checked: false },
+              { text: "Шампунь", checked: false },
+              { text: "Телевизор", checked: false },
+              { text: "Шампунь", checked: false },
             ]
           })
 
         .form-elements__item
           +additions({
-            title: 'Комфорт',
-            desc: 'Шумопоглощающие стены',
-            icon: 'tag_faces'
+            title: "Комфорт",
+            desc: "Шумопоглощающие стены",
+            icon: "tag_faces"
           })
           +additions({
-            title: 'Удобство',
-            desc: 'Окно в каждой из спален',
-            icon: 'location_city'
+            title: "Удобство",
+            desc: "Окно в каждой из спален",
+            icon: "location_city"
           })
 
       .form-elements__mid 
         .form-elements__item.form-elements__item--big-space
           .form-elements__head.form-elements__head--accent
             .form-elements__title Checkbox buttons 
-          +checkbox('Можно курить')
-          +checkbox('Можно с питомцами', true)
-          +checkbox('Можно пригралисть гостей (до 10 человек)', true)
+          +checkbox("Можно курить")
+          +checkbox("Можно с питомцами", true)
+          +checkbox("Можно пригралисть гостей (до 10 человек)", true)
 
         .form-elements__item.form-elements__item--big-space
           .form-elements__head.form-elements__head--accent
             .form-elements__title Radio buttons 
-          +radio({ label: 'Мужчина', name: 'gender', checked: true })
-          +radio({ label: 'Женщина', name: 'gender', checked: false })
+          +radio({ label: "Мужчина", name: "gender", checked: true })
+          +radio({ label: "Женщина", name: "gender", checked: false })
 
         .form-elements__item.form-elements__item--big-space
           .form-elements__head.form-elements__head--accent
             .form-elements__title Toggle
           .form-elements__item--sub
-            +toggle('Получать спецпредложения', true) 
+            +toggle("Получать спецпредложения", true) 
           .form-elements__item--sub
-            +toggle('Получать спецпредложения') 
+            +toggle("Получать спецпредложения") 
 
         .form-elements__item.form-elements__item--big-space
           .form-elements__head.form-elements__head--accent
@@ -161,12 +161,12 @@ html
             .form-elements__title Rich checkbox buttons
           +checkboxList([
             { 
-              title: 'Широкий коридор',
-              desc: 'Ширина коридоров в номере не менее 91 см.'
+              title: "Широкий коридор",
+              desc: "Ширина коридоров в номере не менее 91 см."
             },
             { 
-              title: 'Помощник для инвалидов',
-              desc: 'На 1 этаже вас встретит специалист и проводит до номера.'
+              title: "Помощник для инвалидов",
+              desc: "На 1 этаже вас встретит специалист и проводит до номера."
             },
           ])
 
@@ -188,7 +188,7 @@ html
             button.rounded-button.rounded-button--disabled.form-elements__btn--big.form-elements__btn Click me
             .simple-button.form-elements__btn Click me
             .simple-button.simple-button--disabled.form-elements__btn Click me
-            +long-button('Перейти к оплате')
+            +long-button("Перейти к оплате")
 
         .form-elements__item
           .form-elements__head.form-elements__head--accent
@@ -205,17 +205,17 @@ html
             .form-elements__title Bullet list 
           
           +bullet([
-            'Нельзя с питомцами',
-            'Без вечеринок и мероприятий',
-            'Время прибытия — после 13:00, а выезд до 12:00'
+            "Нельзя с питомцами",
+            "Без вечеринок и мероприятий",
+            "Время прибытия — после 13:00, а выезд до 12:00"
           ])
 
       .form-elements__bot 
         +comment({
-          image: '../img/ava.jpg',
-          author: 'Мурад Сарафанов',
-          date: '5 дней назад',
-          text: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.',
+          image: "../img/ava.jpg",
+          author: "Мурад Сарафанов",
+          date: "5 дней назад",
+          text: "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.",
           like: {
             liked: true,
             likes: 12

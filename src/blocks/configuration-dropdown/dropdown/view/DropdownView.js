@@ -1,4 +1,4 @@
-import { ItemView } from "./ItemView";
+import { ItemView } from './ItemView';
 
 class DropdownView {
 

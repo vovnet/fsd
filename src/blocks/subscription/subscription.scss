@@ -1,4 +1,4 @@
-@import "../../scss/colors.scss";
+@import '../../scss/colors.scss';
 
 .subscription {
   position: relative;
@@ -6,7 +6,7 @@
   &__button {
     position: absolute;
     display: block;
-    font-family: "Material Icons";
+    font-family: 'Material Icons';
     top: 0;
     right: 0;
     font-size: 1.5rem;

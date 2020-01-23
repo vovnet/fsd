@@ -9,14 +9,14 @@ mixin apartments()
         .find-apartments-card__body
           .find-apartments-card__item.find-apartments-card__item--primary
             +range-dates({
-              firstLabel: 'Прибытие',
-              secondLabel: 'Выезд',
-              firstInputId: 'first_date',
-              secondInputId: 'second_date'
+              firstLabel: "Прибытие",
+              secondLabel: "Выезд",
+              firstInputId: "first_date",
+              secondInputId: "second_date"
             })
             .calendar
               input(type="text")#calendar
           .find-apartments-card__item
             input.js-dropdown-find-apartments
         .find-apartments-card__button
-          +long-button('Подобрать номер')
+          +long-button("Подобрать номер")

@@ -10,11 +10,11 @@ mixin booking-card()
       form(action="index.html", method="post")
         .booking-card__header
           +apartment-info({number: 888, lux: true, big: true})
-          +price('9 990')
+          +price("9 990")
         .booking-card__item.booking-card__item--up
           +range-dates({
-            firstLabel: 'Въезд',
-            secondLabel: 'Выезд',
+            firstLabel: "Въезд",
+            secondLabel: "Выезд",
           })
           .calendar
             input(type="text")
@@ -23,4 +23,4 @@ mixin booking-card()
         .booking-card__item 
           +invoice()
         .booking-card__item--last 
-          +long-button('Забронировать')
+          +long-button("Забронировать")
