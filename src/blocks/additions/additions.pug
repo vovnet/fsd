@@ -3,5 +3,5 @@ mixin additions({noBorder, title, desc, icon})
     - let noBorderClass = "additions--no-border"
   .additions(class=noBorderClass)
     .additions__title= title
-    div= desc
+    div.description= desc
     i.additions__icon.material-icons= icon
