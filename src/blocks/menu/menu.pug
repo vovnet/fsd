@@ -5,10 +5,24 @@ mixin menu(items)
 
 mixin _print-items(items)
   each item in items
+    - 
+      let classList = ["menu__item"]
+      if (item.current) {
+        classList.push("menu__item--current")
+      }
+
     if Array.isArray(item.link)
-      div(class=item.classes)= item.text
-        .submenu.js-submenu
-          +_print-items(item.link)
+      - classList.push("js-menu__submenu")
+
+      .menu__submenu  
+        div(class=classList)= item.text
+          .submenu.js-submenu
+            +_print-submenu(item.link)
     else
-      div(class=item.classes)
+      div(class=classList)
         a(href=item.link)= item.text
+
+
+mixin _print-submenu(items)
+  each item in items
+    a.submenu__item(href=item.link)= item.text

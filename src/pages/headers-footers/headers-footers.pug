@@ -11,42 +11,35 @@ html
       var menu = [{
         text: "Home",
         link: "/mock-address",
-        classes: ["menu__item", "menu__item--current"]
+        current: true,
         },
         {
         text: "About Us",
         link: "/mock-address",
-        classes: ["menu__item"]
         }, 
         {
         text: "Services",
-        classes: ["menu__item", "menu__submenu", "js-menu__submenu"],
         link: [
         {
           text: "First",
           link: "/mock-address",
-          classes: ["submenu__item"]
         },
         {
           text: "Second",
           link: "/mock-address",
-          classes: ["submenu__item"]
         }
         ]},
         {
         text: "Careers",
         link: "/mock-address",
-        classes: ["menu__item"]
         },
         {
         text: "News",
         link: "/mock-address",
-        classes: ["menu__item"]
         },
         {
         text: "Documentation",
         link: "/mock-address",
-        classes: ["menu__item"]
       }];
     
     img.logo(src="../img/logo.svg", alt="logo")
