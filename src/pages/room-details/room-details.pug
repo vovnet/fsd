@@ -15,64 +15,67 @@ block content
     "../img/hero_galery/image_2.png",
     "../img/hero_galery/image_3.png"
   ])
-  .room-details.wrapper
-    .room-details__info
-      .room-details__room-item
-        h2.room-details__title Сведения о номере
-        .room-details__inner
+  .wrapper
+    .room-details
+      .room-details__info
+        .room-details__room-item
+          h2.room-details__title Сведения о номере
+          .room-details__inner
+            +additions({
+              title: "Комфорт",
+              desc: "Шумопоглощающие стены",
+              icon: "tag_faces"
+            })
+          .room-details__inner
+            +additions({
+              title: "Удобство",
+              desc: "Окно в каждой из спален",
+              icon: "location_city"
+            })
           +additions({
-            title: "Комфорт",
-            desc: "Шумопоглощающие стены",
-            icon: "tag_faces"
+            title: "Уют",
+            desc: "Номер оснащен камином",
+            icon: "whatshot",
+            noBorder: true
           })
-        .room-details__inner
-          +additions({
-            title: "Удобство",
-            desc: "Окно в каждой из спален",
-            icon: "location_city"
-          })
-        +additions({
-          title: "Уют",
-          desc: "Номер оснащен камином",
-          icon: "whatshot",
-          noBorder: true
-        })
-      .room-details__room-item
-        h2.room-details__title Впечатления от номера
-        .statistic.room-details__statistic
-          div(class="donut statistic__donut js-donut" data-donut='[{"value": 65, "color": "#BC9CFF", "bold": true}, {"value": 65, "color": "#6FCF97"}, {"value": 130, "color": "#FFE39C"}]')
+        .room-details__room-item
+          h2.room-details__title Впечатления от номера
+          .statistic
+            .room-details__statistic
+              div(class="donut statistic__donut js-donut" data-donut='[{"value": 65, "color": "#BC9CFF", "bold": true}, {"value": 65, "color": "#6FCF97"}, {"value": 130, "color": "#FFE39C"}]')
 
-          ul.bullet.statistic__list
-            li.bullet--excellent.bullet--small Великолепно
-            li.bullet--good.bullet--small Хорошо
-            li.bullet--normal.bullet--small Удовлетворительно
-            li.bullet--bad.bullet--small Разачарован
-      .room-details__room-comments
-        h2.room-details__title Отзывы посетителей номера
-        .room-details__inner
+            .statistic__list
+              ul.bullet
+                li.bullet--excellent.bullet--small Великолепно
+                li.bullet--good.bullet--small Хорошо
+                li.bullet--normal.bullet--small Удовлетворительно
+                li.bullet--bad.bullet--small Разачарован
+        .room-details__room-comments
+          h2.room-details__title Отзывы посетителей номера
+          .room-details__inner
+            +comment({
+              image: "../img/ava.jpg",
+              author: "Мурад Сарафанов",
+              date: "5 дней назад",
+              like: { likes: 5, liked: true },
+              text: "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей."
+            })
           +comment({
             image: "../img/ava.jpg",
-            author: "Мурад Сарафанов",
-            date: "5 дней назад",
-            like: { likes: 5, liked: true },
-            text: "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей."
+            author: "Патрисия Стёклышкова",
+            date: "Неделю назад",
+            like: { likes: 2, liked: false },
+            text: "Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент"
           })
-        +comment({
-          image: "../img/ava.jpg",
-          author: "Патрисия Стёклышкова",
-          date: "Неделю назад",
-          like: { likes: 2, liked: false },
-          text: "Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент"
-        })
-      .room-details__room-item.room-details__room-item--bottom
-        h2.room-details__title Правила
-        +bullet([
-          "Нельзя с питомцами",
-          "Без вечеринок и мероприятий",
-          "Время прибытия — после 13:00, а выезд до 12:00"
-        ])
-      .room-details__room-item.room-details__room-item--bottom
-        h2.room-details__title Отмена
-        p.room-details__text Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
-    .room-details__booking
-      +booking-card()
+        .room-details__room-item.room-details__room-item--bottom
+          h2.room-details__title Правила
+          +bullet([
+            "Нельзя с питомцами",
+            "Без вечеринок и мероприятий",
+            "Время прибытия — после 13:00, а выезд до 12:00"
+          ])
+        .room-details__room-item.room-details__room-item--bottom
+          h2.room-details__title Отмена
+          p.room-details__text Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
+      .room-details__booking
+        +booking-card()
