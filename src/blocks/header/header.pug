@@ -3,7 +3,8 @@ include ../menu/menu
 mixin header({isLogged, buttons: {enter = "", register = ""} = {}, menu})
   header.header
     .header__container
-      .site-logo.header__logo
+      .header__logo
+        .site-logo
       .header__menu
         +menu(menu)
       if isLogged
