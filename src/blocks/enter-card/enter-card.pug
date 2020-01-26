@@ -6,7 +6,8 @@ mixin enter-card()
     .card-canvas
       h1.enter-card__title Войти
       form.enter-card-form(action="/mock-address", method="post")
-        input.text-field.enter-card__field(type="text" placeholder="Email")
+        .enter-card__field
+          input.text-field(type="text" placeholder="Email")
         input.text-field(type="password" placeholder="Пароль")
         .enter-card__enter-button
           +long-button("Войти")
