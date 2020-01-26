@@ -3,27 +3,29 @@ include ../socials/socials
 
 mixin footer({main, navigation, copy, subscription: {title, text, placeholder}})
   footer.footer
-    .footer__container.wrapper
-      section.footer__block
-        .site-logo
-        p.footer__text= main
+    .wrapper
+      .footer__container
+        section.footer__block
+          .site-logo
+          p.footer__text= main
 
-      .footer__nav-container
-        each link_block in navigation
-          section.footer__nav
-            .footer__block__header
-              h3= link_block.title
-            p
-              each link in link_block.links
-                a.footer__link(href=link.url)= link.text
-    
-      section.footer__block
-        .footer__block__header
-          h3= title
-        p= text
-        +subscription({ placeholder: placeholder })
+        .footer__nav-container
+          each link_block in navigation
+            section.footer__nav
+              .footer__block__header
+                h3= link_block.title
+              p
+                each link in link_block.links
+                  a.footer__link(href=link.url)= link.text
+      
+        section.footer__block
+          .footer__block__header
+            h3= title
+          p= text
+          +subscription({ placeholder: placeholder })
     
     section.footer__line
-      .footer__copy.wrapper
-        p= copy
-        +socials()
+      .wrapper
+        .footer__copy
+          p= copy
+          +socials()
