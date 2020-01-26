@@ -14,5 +14,6 @@ mixin header({isLogged, buttons: {enter = "", register = ""} = {}, menu})
           .header__enter-button
             button.rounded-button= enter
           .button= register
-      button.header__enter-toggle.icon-button account_box
-      button.header__menu-toggle.icon-button.js-menu-button menu
+      .header__enter-toggle
+        button.icon-button account_box
+        button.icon-button.js-menu-button menu
