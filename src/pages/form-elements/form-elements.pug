@@ -48,38 +48,43 @@ html
           })
 
 
-        .form-elements__item.form-elements__item--big-space.form-elements__small-container
-          +date-dropdown({
-            label: "Filter date dropdown",
-            date: "19 авг - 23 авг"
-          })
+        .form-elements__item.form-elements__item--big-space
+          .form-elements__small-container
+            +date-dropdown({
+              label: "Filter date dropdown",
+              date: "19 авг - 23 авг"
+            })
 
-        .form-elements__item.form-elements__item--big-space.form-elements__small-container
-          .form-elements__head
-            .form-elements__title Subscription text field 
-          +subscription({ placeholder: "Email" })
+        .form-elements__item.form-elements__item--big-space
+          .form-elements__small-container
+            .form-elements__head
+              .form-elements__title Subscription text field 
+            +subscription({ placeholder: "Email" })
 
+        .form-elements__top
+          .form-elements__item.form-elements__item--big-space
+            .form-elements__small-container
+              .form-elements__head
+                .form-elements__title Dropdown 
+                .form-elements__desc Default
+              input.js-dropdown-room-close
 
-        .form-elements__item.form-elements__item--big-space.form-elements__small-container.form-elements__top
-          .form-elements__head
-            .form-elements__title Dropdown 
-            .form-elements__desc Default
-          input.js-dropdown-room-close
+        .form-elements__item.form-elements__item--big-space
+          .form-elements__small-container
+            .form-elements__head
+              .form-elements__title Dropdown 
+              .form-elements__desc Default
+            input.js-dropdown-room-open
 
-        .form-elements__item.form-elements__item--big-space.form-elements__small-container
-          .form-elements__head
-            .form-elements__title Dropdown 
-            .form-elements__desc Default
-          input.js-dropdown-room-open
-
-        .form-elements__item.form-elements__top-margin
-          +expander({
-            title: "Expandable checkbox list",
-            list: [
-              { text: "Завтрак", checked: true }
-            ],
-            hide: true
-          })
+        .form-elements__top-margin
+          .form-elements__item
+            +expander({
+              title: "Expandable checkbox list",
+              list: [
+                { text: "Завтрак", checked: true }
+              ],
+              hide: true
+            })
         .form-elements__item
           +expander({
             title: "Expandable checkbox list",
@@ -156,22 +161,22 @@ html
             .form-elements__title Dropdown 
           input.js-dropdown-guest-open
 
-        .form-elements__item.form-elements__top-margin
-          .form-elements__head.form-elements__head--accent
-            .form-elements__title Rich checkbox buttons
-          +checkboxList([
-            { 
-              title: "Широкий коридор",
-              desc: "Ширина коридоров в номере не менее 91 см."
-            },
-            { 
-              title: "Помощник для инвалидов",
-              desc: "На 1 этаже вас встретит специалист и проводит до номера."
-            },
-          ])
+        .form-elements__top-margin
+          .form-elements__item
+            .form-elements__head.form-elements__head--accent
+              .form-elements__title Rich checkbox buttons
+            +checkboxList([
+              { 
+                title: "Широкий коридор",
+                desc: "Ширина коридоров в номере не менее 91 см."
+              },
+              { 
+                title: "Помощник для инвалидов",
+                desc: "На 1 этаже вас встретит специалист и проводит до номера."
+              },
+            ])
 
       .form-elements__right 
-
         .form-elements__item
           .form-elements__head.form-elements__head--accent
             .form-elements__title Range slider
@@ -200,15 +205,16 @@ html
             .form-elements__title Dropdown 
           input.js-dropdown-guest-open-many
 
-        .form-elements__item.form-elements__top-margin
-          .form-elements__head.form-elements__head--accent
-            .form-elements__title Bullet list 
-          
-          +bullet([
-            "Нельзя с питомцами",
-            "Без вечеринок и мероприятий",
-            "Время прибытия — после 13:00, а выезд до 12:00"
-          ])
+        .form-elements__top-margin
+          .form-elements__item
+            .form-elements__head.form-elements__head--accent
+              .form-elements__title Bullet list 
+            
+            +bullet([
+              "Нельзя с питомцами",
+              "Без вечеринок и мероприятий",
+              "Время прибытия — после 13:00, а выезд до 12:00"
+            ])
 
       .form-elements__bot 
         +comment({
