@@ -1,13 +1,19 @@
 class Menu {
 
     constructor() {
-        $('.js-menu-button').on('click', this.onClickMenuButton.bind(this));
-        $('.js-menu__submenu').on('click', this.onClickSubmenu.bind(this));
-        $(document.body).not('.js-menu__submenu').on('click', this.onCloseMenu.bind(this));
+        this.menu = $('.js-menu');
+
+        let menuButton = $('.js-menu-button');
+        let submenu = $('.js-menu__submenu');
+        let body = $(document.body).not('.js-menu__submenu');
+
+        menuButton.on('click', this.onClickMenuButton.bind(this));
+        submenu.on('click', this.onClickSubmenu.bind(this));
+        body.on('click', this.onCloseMenu.bind(this));
     }
 
     onClickMenuButton(e) {
-        $('.js-menu').toggleClass('menu--open');
+        this.menu.toggleClass('menu--open');
     }
 
     onClickSubmenu(e) {
@@ -16,9 +22,9 @@ class Menu {
 
     onCloseMenu(e) {
         if (!$(e.target).is('.js-menu__submenu')) {
-            let menu = $('.js-submenu');
-            if (menu.hasClass('submenu--open')) {
-                menu.removeClass('submenu--open');
+            let submenu = $('.js-submenu');
+            if (submenu.hasClass('submenu--open')) {
+                submenu.removeClass('submenu--open');
             }
         }
     }

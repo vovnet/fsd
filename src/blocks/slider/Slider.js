@@ -7,7 +7,9 @@ class Slider {
     }
 
     init() {
-        let slider = $('.js-slider').ionRangeSlider({
+        let element = $('.js-slider');
+
+        let slider = element.ionRangeSlider({
             min: 1000,
             max: 20000,
             type: 'double',

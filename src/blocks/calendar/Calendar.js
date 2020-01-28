@@ -7,7 +7,9 @@ class Calendar {
     }
 
     init() {
-        $('.js-calendar').each((i, element) => {
+        let element = $('.js-calendar');
+        
+        element.each((i, element) => {
             new DatePicker(element);
         });
     }

@@ -1,6 +1,7 @@
 class Expander {
     constructor() {
-        $('.js-expander').on('click', this.onClick.bind(this));
+        let expander = $('.js-expander');
+        expander.on('click', this.onClick.bind(this));
     }
 
     onClick(e) {

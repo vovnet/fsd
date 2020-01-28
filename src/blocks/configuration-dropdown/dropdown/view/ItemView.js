@@ -22,8 +22,8 @@ class ItemView {
 
         $(parent).append(this._container);
 
-        this._minusBtn.click(this.onClickMinus.bind(this));
-        this._plusBtn.click(this.onClickPlus.bind(this));
+        this._minusBtn.on('click', this.onClickMinus.bind(this));
+        this._plusBtn.on('click', this.onClickPlus.bind(this));
     }
 
     update(name, value) {

@@ -20,8 +20,8 @@ class DropdownView {
         let container = $('<div class="configuration-dropdown">');
 
         // hide dropdown when user click anywhere
-        container.click((e) => e.stopPropagation());
-        $(document).click(() => $(this._itemsContainer).addClass('configuration-dropdown__content--hide'));
+        container.on('click', this.onContainerClick.bind(this));
+        $(document).on('click', this.onDocumentClick.bind(this));
 
         $(input).wrap(container);
         this._icon = $('<i class="material-icons configuration-dropdown__header-icon">keyboard_arrow_down</i>');
@@ -50,11 +50,11 @@ class DropdownView {
                 .append(applyButton);
             this._itemsContainer.append(footer);
 
-            this._clearButton.click(this._controller.onClear.bind(this._controller));
+            this._clearButton.on('click', this._controller.onClear.bind(this._controller));
         }
 
-        $(input).click(this.onClick.bind(this));
-        $(this._icon).click(this.onClick.bind(this));
+        $(input).on('click', this.onClick.bind(this));
+        $(this._icon).on('click', this.onClick.bind(this));
     }
 
     update(data) {
@@ -79,6 +79,14 @@ class DropdownView {
 
     onClick() {
         $(this._itemsContainer).toggleClass('configuration-dropdown__content--hide');
+    }
+
+    onContainerClick(e) {
+        e.stopPropagation();
+    }
+
+    onDocumentClick(e) {
+        $(this._itemsContainer).addClass('configuration-dropdown__content--hide')
     }
 
 }

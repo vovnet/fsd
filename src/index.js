@@ -30,4 +30,5 @@ $.datepicker.regional['ru'] = {
 
 $.datepicker.setDefaults($.datepicker.regional['ru']);
 
-$('.js-masked').mask('99.99.9999');
+let maskedFields = $('.js-masked');
+maskedFields.mask('99.99.9999');
