@@ -1,13 +1,11 @@
 class Expander {
     constructor() {
-        this.init();
+        $('.js-expander').on('click', this.onClick.bind(this));
     }
 
-    init() {
-        $('.js-expander').click(e => {
-            e.currentTarget.classList.toggle('expander__header--open');
-            $(e.currentTarget).next()[0].classList.toggle('expander__list--hide');
-        });
+    onClick(e) {
+        e.currentTarget.classList.toggle('expander__header--open');
+        $(e.currentTarget).next()[0].classList.toggle('expander__list--hide');
     }
 }
 
