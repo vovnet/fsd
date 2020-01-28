@@ -15,15 +15,17 @@ class Slider {
             to: 10000,
             hide_from_to: true,
             onChange: this.updateLabel.bind(this),
-            onStart: data => {
-                data.slider.append('<div class="slider__min-max">');
-                this.updateLabel(data);
-            }
+            onStart: this.onStart.bind(this)
         });
     }
 
     updateLabel(data) {
         $(data.slider).find('.slider__min-max').html(data.from_pretty + '&#8381; - ' + data.to_pretty + '&#8381;');
+    }
+
+    onStart(data) {
+        data.slider.append('<div class="slider__min-max">');
+        this.updateLabel(data);
     }
 }
 
