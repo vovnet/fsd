@@ -7,26 +7,26 @@ class DropdownView {
         this._input = input;
         this._value = props.value;
         this._items = [];
-        this._itemsContainer = $('<div class="configuration-dropdown__content">');
+        this._$itemsContainer = $('<div class="configuration-dropdown__content">');
 
         if (props.visibility === 'hide') {
-            this._itemsContainer.addClass('configuration-dropdown__content--hide');
+            this._$itemsContainer.addClass('configuration-dropdown__content--hide');
         }
         
         $(input)
             .addClass('configuration-dropdown__header')
             .val(props.text);
 
-        let container = $('<div class="configuration-dropdown">');
+        let $container = $('<div class="configuration-dropdown">');
 
         // hide dropdown when user click anywhere
-        container.on('click', this.onContainerClick.bind(this));
+        $container.on('click', this.onContainerClick.bind(this));
         $(document).on('click', this.onDocumentClick.bind(this));
 
-        $(input).wrap(container);
-        this._icon = $('<i class="material-icons configuration-dropdown__header-icon">keyboard_arrow_down</i>');
-        $(input).after(this._icon);
-        $(input).after(this._itemsContainer);
+        $(input).wrap($container);
+        this._$icon = $('<i class="material-icons configuration-dropdown__header-icon">keyboard_arrow_down</i>');
+        $(input).after(this._$icon);
+        $(input).after(this._$itemsContainer);
         $(input).attr('readonly', 'readonly');
 
         props.items.forEach((element, index) => {
@@ -34,7 +34,7 @@ class DropdownView {
                 index, 
                 element.name, 
                 element.value, 
-                this._itemsContainer, 
+                this._$itemsContainer, 
                 this._controller.onChange.bind(this._controller)
             );
 
@@ -42,19 +42,19 @@ class DropdownView {
         });
 
         if (props.buttons) {
-            let footer = $('<div class="configuration-dropdown__footer">');
-            this._clearButton = $('<div class="simple-button simple-button--disabled">Очистить</div>');
-            let applyButton = $('<div class="simple-button">Применить</div>');
-            footer
-                .append(this._clearButton)
-                .append(applyButton);
-            this._itemsContainer.append(footer);
+            let $footer = $('<div class="configuration-dropdown__footer">');
+            this._$clearButton = $('<div class="simple-button simple-button--disabled">Очистить</div>');
+            let $applyButton = $('<div class="simple-button">Применить</div>');
+            $footer
+                .append(this._$clearButton)
+                .append($applyButton);
+            this._$itemsContainer.append($footer);
 
-            this._clearButton.on('click', this._controller.onClear.bind(this._controller));
+            this._$clearButton.on('click', this._controller.onClear.bind(this._controller));
         }
 
         $(input).on('click', this.onClick.bind(this));
-        $(this._icon).on('click', this.onClick.bind(this));
+        $(this._$icon).on('click', this.onClick.bind(this));
     }
 
     update(data) {
@@ -71,14 +71,14 @@ class DropdownView {
         $(this._input).val(text);
         
         if(data.hideClearButton) {
-            $(this._clearButton).css('visibility', 'hidden');
+            $(this._$clearButton).css('visibility', 'hidden');
         } else {
-            $(this._clearButton).css('visibility', 'visible');
+            $(this._$clearButton).css('visibility', 'visible');
         }
     }
 
     onClick() {
-        $(this._itemsContainer).toggleClass('configuration-dropdown__content--hide');
+        $(this._$itemsContainer).toggleClass('configuration-dropdown__content--hide');
     }
 
     onContainerClick(e) {
@@ -86,7 +86,7 @@ class DropdownView {
     }
 
     onDocumentClick(e) {
-        $(this._itemsContainer).addClass('configuration-dropdown__content--hide')
+        $(this._$itemsContainer).addClass('configuration-dropdown__content--hide')
     }
 
 }

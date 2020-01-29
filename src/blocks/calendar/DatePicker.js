@@ -24,18 +24,18 @@ class DatePicker {
 
         this.datepicker = $(this.element).datepicker(options).data('datepicker');
 
-        this.clearButton = $('<span class="simple-button simple-button--disabled">Очистить</span>');
-        this.applyButton = $('<span class="simple-button">Применить</span></div>');
-        let btnContainer = $('<div class="datepicker--btn-container">')
-            .append(this.clearButton)
-            .append(this.applyButton);
+        this.$clearButton = $('<span class="simple-button simple-button--disabled">Очистить</span>');
+        this.$applyButton = $('<span class="simple-button">Применить</span></div>');
+        let $btnContainer = $('<div class="datepicker--btn-container">')
+            .append(this.$clearButton)
+            .append(this.$applyButton);
 
-        $(this.datepicker.$datepicker).append(btnContainer);
+        $(this.datepicker.$datepicker).append($btnContainer);
     }
 
     addHandlers() {
-        this.clearButton.on('click', this.onClickClear.bind(this));
-        this.applyButton.on('click', this.onClickApply.bind(this));
+        this.$clearButton.on('click', this.onClickClear.bind(this));
+        this.$applyButton.on('click', this.onClickApply.bind(this));
         this.inputs.on('click', this.onClickInput.bind(this));
     }
 
