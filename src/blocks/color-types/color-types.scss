@@ -1,4 +1,5 @@
 @import '../../scss/sizes.scss';
+@import '../../scss//colors.scss';
 
 .color-types {
   display: flex;
@@ -32,5 +33,30 @@
     @media (min-width: $small-size) {
       margin: 0;
     }
+  }
+
+  &__big {
+    font-family: Quicksand, Arial, sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    color: $dark-shade-100;
+    margin: 0;
+  }
+
+  &__middle {
+    font-family: Quicksand, Arial, sans-serif;
+    font-size: 1.1875rem;
+    line-height: 1.5rem;
+    color: $dark-shade-100;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  &__label {
+    font-family: Montserrat, Arial, sans-serif;
+    text-transform: uppercase;
+    color: $dark-shade-100;
+    font-size: .75rem;
+    margin: 0;
   }
 }

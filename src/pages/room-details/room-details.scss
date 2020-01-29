@@ -1,4 +1,5 @@
 @import '../../scss/sizes.scss';
+@import '../../scss//colors.scss';
 
 .room-details {
   display: grid;
@@ -53,6 +54,10 @@
   }
 
   &__title {
+    font-family: Quicksand, Arial, sans-serif;
+    color: $dark-shade-100;
+    font-size: 1.1875rem;
+    font-weight: bold;
     margin-bottom: 20px;
   }
 

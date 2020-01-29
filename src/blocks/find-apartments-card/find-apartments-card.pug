@@ -4,19 +4,18 @@ include ../long-button/long-button
 mixin apartments()
   .find-apartments-card
     .card-canvas
-      h1 Найдем номера под ваши пожелания
+      h1.card-canvas__title Найдем номера под ваши пожелания
       form.find-apartments-card-form(action="/mock-address", method="get")
         .find-apartments-card__body
           .find-apartments-card__item.find-apartments-card__item--primary
             +range-dates({
-              firstLabel: "Прибытие",
-              secondLabel: "Выезд",
-              firstInputId: "first_date",
-              secondInputId: "second_date"
+              inLabel: "Прибытие",
+              outLabel: "Выезд"
             })
             .calendar
-              input(type="text")#calendar
+              input(type="text")
           .find-apartments-card__item
+            h3.card-canvas__subtitle Гости
             input.js-dropdown-find-apartments
         .find-apartments-card__button
           +long-button("Подобрать номер")

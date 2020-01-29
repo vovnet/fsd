@@ -13,7 +13,7 @@ const Donut = function(container) {
 
     let str = document.createElement('div');
     str.classList.add('donut__text');
-    str.innerHTML = `<h1>${total}</h1> голосов`;
+    str.innerHTML = `<h1 class="donut__big">${total}</h1> голосов`;
     container.appendChild(str);
 
     this.draw = function() {

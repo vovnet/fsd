@@ -13,14 +13,14 @@ mixin footer({main, navigation, copy, subscription: {title, text, placeholder}})
           each link_block in navigation
             section.footer__nav
               .footer__block__header
-                h3= link_block.title
+                h3.footer__subtitle= link_block.title
               p
                 each link in link_block.links
                   a.footer__link(href=link.url)= link.text
       
         section.footer__block
           .footer__block__header
-            h3= title
+            h3.footer__subtitle= title
           p= text
           +subscription({ placeholder: placeholder })
     

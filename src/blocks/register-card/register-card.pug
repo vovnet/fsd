@@ -6,7 +6,7 @@ include ../card-footer/card-footer
 mixin register-card()
   .register-card
     .card-canvas
-      h1 Регистрация аккаунта
+      h1.card-canvas__title Регистрация аккаунта
       form.register-card-form(action="/mock-address", method="post")
         .register-card__block
           .register-card__item
@@ -16,10 +16,10 @@ mixin register-card()
           +radio({ label: "Мужчина", name: "gender", checked: true })
           +radio({ label: "Женщина", name: "gender"})
         .register-card__block
-          h3.register-card__label Дата рождения
+          h3.card-canvas__subtitle Дата рождения
           input.text-field(placeholder="ДД.ММ.ГГГГ").js-masked
         .register-card__block
-          h3.register-card__label Данные для входа в сервис
+          h3.card-canvas__subtitle Данные для входа в сервис
           .register-card__item
             input.text-field(placeholder="Email")
           .register-card__item

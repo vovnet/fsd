@@ -16,9 +16,13 @@
     font-weight: bold;
     letter-spacing: 0.03rem;
     line-height: .9375rem;
+    color: $purple;
   }
 
-  h1 {
-    color: $purple;
+  &__big {
+    font-family: Quicksand, Arial, sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    margin: 0;
   }
 }

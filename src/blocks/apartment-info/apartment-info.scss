@@ -2,7 +2,9 @@
 
 .apartment-info {
   &--main {
+    font-family: Quicksand, Arial, sans-serif;
     display: inline;
+    color: $dark-shade-100;
   }
 
   &--lux {
@@ -17,5 +19,6 @@
   &--bold {
     font-family: Quicksand, Arial, sans-serif;
     font-weight: bold;
+    font-size: .875rem;
   }
 }

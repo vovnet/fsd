@@ -13,12 +13,13 @@ mixin booking-card()
           +price("9 990")
         .booking-card__item.booking-card__item--up
           +range-dates({
-            firstLabel: "Въезд",
-            secondLabel: "Выезд",
+            inLabel: "Въезд",
+            outLabel: "Выезд",
           })
           .calendar
             input(type="text")
         .booking-card__item.booking-card__item--middle
+          h3.card-canvas__subtitle Гости
           input.js-dropdown-booking
         .booking-card__item 
           +invoice()

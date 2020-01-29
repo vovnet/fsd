@@ -13,9 +13,13 @@
   }
 
   &__header {
+    font-family: Quicksand, Arial, sans-serif;
+    line-height: 1.875rem;
     grid-column: 1/-1;
     line-height: 1;
     padding-top: 6px;
+    font-size: 1.5rem;
+    color: $dark-shade-100;
   }
 
   &__pagination {
@@ -28,8 +32,11 @@
   }
 
   &__sidebar-item-title {
+    font-family: Montserrat, Arial, sans-serif;
     margin-bottom: 16px;
     color: $dark-shade-100;
+    text-transform: uppercase;
+    font-size: .75rem;
   }
 
   &__sidebar-item {

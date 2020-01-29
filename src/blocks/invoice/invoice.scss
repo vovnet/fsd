@@ -11,6 +11,7 @@
     &--total {
       font-family: Quicksand, Arial, sans-serif;
       font-weight: bold;
+      color: $dark-shade-100;
       margin-top: 16px;
       margin-bottom: 0;
     }
@@ -18,13 +19,14 @@
 
   &__line {
     position: relative;
-    bottom: 5px;
+    bottom: 20px;
     border-bottom: 1px dashed $dark-shade-25;
     width: 62%;
   }
 
   &__block {
     display: table-cell;
+    font-size: 1.1875rem;
   }
 
   &__service {

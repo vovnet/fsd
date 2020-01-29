@@ -1,4 +1,5 @@
 @import '../../scss/sizes.scss';
+@import '../../scss/colors.scss';
 
 .form-elements {
   margin: 143px auto;
@@ -83,6 +84,7 @@
   &__title {
     font-family: Montserrat, Arial, sans-serif;
     font-weight: bold;
+    color: $dark-shade-100;
   }
 
   &__small-container {
