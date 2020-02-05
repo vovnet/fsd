@@ -1,5 +1,7 @@
+include ../text-field/text-field
+
 mixin subscription({placeholder})
   .subscription
     form.subscription-form(action="/mock-address", method="get")
-      input.text-field(placeholder=placeholder)
+      +text-field({type: "text", placeholder: placeholder})
       button.subscription__button arrow_forward

@@ -1,0 +1,8 @@
+mixin text-field({type, placeholder, masked = false, focused = false})
+  - let classes = ['text-field'] 
+  if masked
+    - classes.push('js-masked')
+  else if focused
+    - classes.push('text-field--focus')
+
+  input(type=type placeholder=placeholder class=classes)

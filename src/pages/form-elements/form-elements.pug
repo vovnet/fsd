@@ -11,6 +11,7 @@ include ../../blocks/long-button/long-button
 include ../../blocks/pagination/pagination 
 include ../../blocks/bullet/bullet 
 include ../../blocks/comment/comment 
+include ../../blocks/text-field/text-field
 
 doctype html
 html
@@ -25,12 +26,12 @@ html
             .form-elements__head
               .form-elements__title Text field
               .form-elements__desc Default
-            input.text-field(placeholder="Email")
+            +text-field({type: "text", placeholder: "Email"})
           .form-elements__item
             .form-elements__head
               .form-elements__title Text field
               .form-elements__desc Hover / Focus
-            input.text-field.text-field--focus(placeholder="Email")
+            +text-field({type: "text", placeholder: "Email", focused: true})
           .form-elements__item
             .form-elements__head
               .form-elements__title Dropdown
@@ -40,7 +41,7 @@ html
             .form-elements__head
               .form-elements__title Masked text field
               .form-elements__desc Default
-            input.text-field(placeholder="ДД.ММ.ГГГГ").js-masked
+            +text-field({type: "text", placeholder: "ДД.ММ.ГГГГ", masked: true})
 
           .form-elements__item.form-elements__item--big-space
             +range-dates({

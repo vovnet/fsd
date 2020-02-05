@@ -2,6 +2,7 @@ include ../radio/radio
 include ../toggle/toggle
 include ../long-button/long-button
 include ../card-footer/card-footer
+include ../text-field/text-field
 
 mixin register-card()
   .register-card
@@ -10,20 +11,20 @@ mixin register-card()
       form.register-card-form(action="/mock-address", method="post")
         .register-card__block
           .register-card__item
-            input.text-field(placeholder="Имя")
+            +text-field({type: "text", placeholder: "Имя"})
           .register-card__item
-            input.text-field(placeholder="Фамилия")
+            +text-field({type: "text", placeholder: "Фамилия"})
           +radio({ label: "Мужчина", name: "gender", checked: true })
           +radio({ label: "Женщина", name: "gender"})
         .register-card__block
           h3.card-canvas__subtitle Дата рождения
-          input.text-field(placeholder="ДД.ММ.ГГГГ").js-masked
+          +text-field({type: "text", placeholder: "ДД.ММ.ГГГГ", masked: true})
         .register-card__block
           h3.card-canvas__subtitle Данные для входа в сервис
           .register-card__item
-            input.text-field(placeholder="Email")
+            +text-field({type: "text", placeholder: "Email"})
           .register-card__item
-            input.text-field(placeholder="Пароль")
+            +text-field({type: "password", placeholder: "Пароль"})
           +toggle("Получать спецпредложения")
         .register-card__block
           +long-button("Перейти к оплате")

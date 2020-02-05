@@ -1,5 +1,6 @@
 include ../long-button/long-button
 include ../card-footer/card-footer
+include ../text-field/text-field
 
 mixin enter-card()  
   .enter-card
@@ -7,8 +8,8 @@ mixin enter-card()
       h1.card-canvas__title Войти
       form.enter-card-form(action="/mock-address", method="post")
         .enter-card__field
-          input.text-field(type="text" placeholder="Email")
-        input.text-field(type="password" placeholder="Пароль")
+          +text-field({type: "text", placeholder: "Email"})
+        +text-field({type: "password", placeholder: "Пароль"})
         .enter-card__enter-button
           +long-button("Войти")
       .enter-card__footer
