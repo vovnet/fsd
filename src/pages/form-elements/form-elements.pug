@@ -12,6 +12,7 @@ include ../../blocks/pagination/pagination
 include ../../blocks/bullet/bullet 
 include ../../blocks/comment/comment 
 include ../../blocks/text-field/text-field
+include ../../blocks/button/button
 
 doctype html
 html
@@ -189,12 +190,18 @@ html
             .form-elements__head.form-elements__head--accent
               .form-elements__title Buttons
             .form-elements__buttons
-              .button.form-elements__btn Click me 
-              .button.button--disabled.form-elements__btn Click me 
-              button.rounded-button.form-elements__btn--big.form-elements__btn Click me
-              button.rounded-button.rounded-button--disabled.form-elements__btn--big.form-elements__btn Click me
-              .simple-button.form-elements__btn Click me
-              .simple-button.simple-button--disabled.form-elements__btn Click me
+              .form-elements__btn
+                +button({text: "Click me"})
+              .form-elements__btn
+                +button({text: "Click me", disabled: true})
+              .form-elements__btn.form-elements__btn--big
+                button.rounded-button Click me
+              .form-elements__btn.form-elements__btn--big
+                button.rounded-button.rounded-button--disabled Click me
+              .form-elements__btn
+                .simple-button Click me
+              .form-elements__btn
+                .simple-button.simple-button--disabled Click me
               +long-button("Перейти к оплате")
 
           .form-elements__item

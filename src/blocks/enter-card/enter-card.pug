@@ -2,10 +2,10 @@ include ../long-button/long-button
 include ../card-footer/card-footer
 include ../text-field/text-field
 
-mixin enter-card()  
-  .enter-card
-    .card-canvas
-      h1.card-canvas__title Войти
+mixin enter-card() 
+  .card-canvas
+    h1.card-canvas__title Войти
+    .enter-card
       form.enter-card-form(action="/mock-address", method="post")
         .enter-card__field
           +text-field({type: "text", placeholder: "Email"})

@@ -1,4 +1,5 @@
 include ../menu/menu
+include ../button/button
 
 mixin header({isLogged, buttons: {enter = "", register = ""} = {}, menu})
   header.header
@@ -13,7 +14,7 @@ mixin header({isLogged, buttons: {enter = "", register = ""} = {}, menu})
         .header__enter-panel
           .header__enter-button
             button.rounded-button= enter
-          .button= register
+          +button({text: register})
       .header__enter-toggle
         button.icon-button account_box
         button.icon-button.js-menu-button menu
