@@ -1,3 +1,5 @@
+include ../../blocks/color/color
+
 doctype html
 html
   head
@@ -9,42 +11,14 @@ html
       .color-types
         .color-types__pallete
           .palette
-            .color
-              .color__box.color__box--dark-shade-100
-              .color__description
-                .color__title Dark Shade 100%
-                .color__body #1F2041
-            .color
-              .color__box.color__box--dark-shade-75
-              .color__description
-                .color__title Dark Shade 75%
-                .color__body #1F2041
-            .color
-              .color__box.color__box--dark-shade-50
-              .color__description
-                .color__title Dark Shade 50%
-                .color__body #1F2041
-            .color
-              .color__box.color__box--dark-shade-25
-              .color__description
-                .color__title Dark Shade 25%
-                .color__body #1F2041
-            .color
-              .color__box.color__box--dark-shade-5
-              .color__description
-                .color__title Dark Shade 5%
-                .color__body #1F2041
-            .color
-              .color__box.color__box--purple
-              .color__description
-                .color__title Purple
-                .color__body #BC9CFF
-            .color
-              .color__box.color__box--green
-              .color__description
-                .color__title Green
-                .color__body #6FCF97
-
+            +color({title: "Dark Shade 100%", body: "#1F2041", theme: "100"})
+            +color({title: "Dark Shade 75%", body: "#1F2041", theme: "75"})
+            +color({title: "Dark Shade 50%", body: "#1F2041", theme: "50"})
+            +color({title: "Dark Shade 25%", body: "#1F2041", theme: "25"})
+            +color({title: "Dark Shade 5%", body: "#1F2041", theme: "5"})
+            +color({title: "Purple", body: "#BC9CFF", theme: "main"})
+            +color({title: "Green", body: "#6FCF97", theme: "accent"})
+            
         .color-types__types
           .type
             .type__head.type__head--big H1
