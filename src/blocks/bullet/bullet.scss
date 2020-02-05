@@ -14,11 +14,6 @@
     padding-left: 19px;
     padding-bottom: 14px;
 
-    &.bullet--small {
-      padding-bottom: 3px;
-      padding-left: 14px;
-    }
-
     &::before {
       content: '';
       position: absolute;
@@ -30,6 +25,11 @@
       border-radius: 50%;
     }
   }
+
+  &--small {
+      padding-bottom: 3px;
+      padding-left: 14px;
+    }
 
   &--excellent::before {
     background: linear-gradient(180deg, #ffe39c 0%, #ffba9c 100%);
