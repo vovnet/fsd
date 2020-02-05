@@ -2,14 +2,13 @@
 
 .hero {
   position: relative;
-  background-image: url('../img/image_3.png');
+  background-image: url('../img/image-3.png');
   min-height: 702px;
   background-repeat: no-repeat;
   background-position-x: center;
-  //background-position-y: -70px;
 
   &--img2 {
-    background-image: url('../img/image_4.png');
+    background-image: url('../img/image-4.png');
   }
 
   &__text {
