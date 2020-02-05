@@ -2,8 +2,7 @@
 @import '../../scss/colors.scss';
 
 .form-elements {
-  margin: 143px auto;
-  //max-width: 85%;
+  padding-top: 143px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px 1fr));
   grid-template-rows: 1fr 1fr;

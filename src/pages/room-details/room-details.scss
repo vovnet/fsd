@@ -6,7 +6,7 @@
   grid-template-columns: 2fr 1fr;
   column-gap: 70px;
   row-gap: 30px;
-  margin-top: 78px;
+  padding-top: 78px;
 
   @media screen and (max-width: 1248px) {
     grid-template-columns: 1fr;
