@@ -1,0 +1,18 @@
+mixin color({title, body, theme})
+  - 
+    const themes = new Map();
+    themes.set('100', 'color__box--dark-shade-100');
+    themes.set('75', 'color__box--dark-shade-75');
+    themes.set('50', 'color__box--dark-shade-50');
+    themes.set('25', 'color__box--dark-shade-25');
+    themes.set('5', 'color__box--dark-shade-5');
+    themes.set('main', 'color__box--purple');
+    themes.set('accent', 'color__box--green');
+    
+    let classes = ['color__box', themes.get(theme)];
+    
+  .color
+    div(class=classes)
+    .color__description
+      .color__title= title
+      .color__body= body

@@ -40,16 +40,16 @@ block content
           })
         .room-details__room-item
           h2.room-details__title Впечатления от номера
-          .statistic
+          .room-details__statistic-container
             .room-details__statistic
               div(class="donut statistic__donut js-donut" data-donut='[{"value": 65, "color": "#BC9CFF", "bold": true}, {"value": 65, "color": "#6FCF97"}, {"value": 130, "color": "#FFE39C"}]')
 
-            .statistic__list
+            .room-details__list
               ul.bullet
-                li.bullet--excellent.bullet--small Великолепно
-                li.bullet--good.bullet--small Хорошо
-                li.bullet--normal.bullet--small Удовлетворительно
-                li.bullet--bad.bullet--small Разачарован
+                li.bullet__element.bullet--excellent.bullet--small Великолепно
+                li.bullet__element.bullet--good.bullet--small Хорошо
+                li.bullet__element.bullet--normal.bullet--small Удовлетворительно
+                li.bullet__element.bullet--bad.bullet--small Разачарован
         .room-details__room-comments
           h2.room-details__title Отзывы посетителей номера
           .room-details__inner
