@@ -3,6 +3,12 @@
 .headers-footers {
   padding-top: 150px;
 
+  &__logo {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+  }
+
   &__item {
     position: relative;
     z-index: 2;

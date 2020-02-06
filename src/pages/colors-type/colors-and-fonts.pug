@@ -1,5 +1,6 @@
 include ../../blocks/color/color
 include ../../blocks/type/type
+include ../../blocks/kit-logo/kit-logo
 
 doctype html
 html
@@ -7,9 +8,10 @@ html
     title Colors & Type
     meta(name="viewport" content="width=device-width, initial-scale=1")
   body
-    img.logo(src="../img/logo.svg", alt="logo")
     .wrapper
       .color-types
+        .color-types__logo
+          +kit-logo()
         .color-types__pallete
           +color({title: "Dark Shade 100%", body: "#1F2041", theme: "100"})
           +color({title: "Dark Shade 75%", body: "#1F2041", theme: "75"})

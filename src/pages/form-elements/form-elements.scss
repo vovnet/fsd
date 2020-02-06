@@ -18,6 +18,12 @@
     grid-template-areas: 'left mid right' 'left bot bot';
   }
 
+  &__logo {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+  }
+
   &__left {
     grid-area: left;
   }

@@ -3,14 +3,16 @@ include ../../blocks/register-card/register-card
 include ../../blocks/booking-card/booking-card 
 include ../../blocks/enter-card/enter-card 
 include ../../blocks/image-card/image-card 
+include ../../blocks/kit-logo/kit-logo
 
 doctype html
 html
   head
     title Card Kit
   body.wrapper.wrapper--kit
-    img.cards__logo(src="../img/logo.svg", alt="logo")
     .cards
+      .cards__logo
+        +kit-logo()
       .cards__column
         .cards__item
           +apartments()

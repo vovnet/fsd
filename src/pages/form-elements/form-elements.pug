@@ -13,6 +13,7 @@ include ../../blocks/bullet/bullet
 include ../../blocks/comment/comment 
 include ../../blocks/text-field/text-field
 include ../../blocks/button/button
+include ../../blocks/kit-logo/kit-logo
 
 doctype html
 html
@@ -20,8 +21,9 @@ html
     title Form Elements
   body
     .wrapper
-      img.logo(src="../img/logo.svg", alt="logo")
       .form-elements
+        .form-elements__logo
+          +kit-logo()
         .form-elements__left 
           .form-elements__item
             .form-elements__head
