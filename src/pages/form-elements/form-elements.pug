@@ -14,6 +14,7 @@ include ../../blocks/comment/comment
 include ../../blocks/text-field/text-field
 include ../../blocks/button/button
 include ../../blocks/kit-logo/kit-logo
+include ../../blocks/rounded-button/rounded-button
 
 doctype html
 html
@@ -197,9 +198,9 @@ html
               .form-elements__btn
                 +button({text: "Click me", disabled: true})
               .form-elements__btn.form-elements__btn--big
-                button.rounded-button Click me
+                +rounded-button({text: "Click me"})
               .form-elements__btn.form-elements__btn--big
-                button.rounded-button.rounded-button--disabled Click me
+                +rounded-button({text: "Click me", isDisabled: true})
               .form-elements__btn
                 .simple-button Click me
               .form-elements__btn
