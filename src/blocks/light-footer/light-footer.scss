@@ -1,7 +1,7 @@
 @import '../../scss/colors.scss';
 
 .light-footer {
-  width: 100%;
+  //width: 100%;
   background-color: $white;
   display: flex;
   flex-direction: column;
@@ -10,7 +10,9 @@
   padding-bottom: 110px;
 
   &__content {
-    padding: 16px 0 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 20px 25px 20px;
     text-align: center;
     line-height: 1.5rem;
     max-width: 560px;
