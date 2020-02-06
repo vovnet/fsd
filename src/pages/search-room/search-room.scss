@@ -2,15 +2,21 @@
 @import '../../scss/colors.scss';
 
 .search-room {
-  display: grid;
-  padding-top: 30px;
-  gap: 1em;
-  justify-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 
-  @media screen and (min-width: $middle-size) {
-    grid-template-columns: 1fr 3fr;
-    justify-items: stretch;
-  }
+  &__grid {
+    display: grid;
+    padding-top: 30px;
+    gap: 1em;
+    justify-items: center;
+
+    @media screen and (min-width: $middle-size) {
+      grid-template-columns: 1fr 3fr;
+      justify-items: stretch;
+    }
+  } 
 
   &__header {
     font-family: Quicksand, Arial, sans-serif;

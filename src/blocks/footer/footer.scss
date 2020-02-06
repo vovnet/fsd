@@ -8,6 +8,12 @@
   padding-top: 100px;
   box-shadow: inset 0px 1px 0px rgba(31, 32, 65, 0.1);
 
+  &__wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
   &__text {
     margin-top: 17px;
   }

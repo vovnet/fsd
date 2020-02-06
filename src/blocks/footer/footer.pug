@@ -3,7 +3,7 @@ include ../socials/socials
 
 mixin footer({main, navigation, copy, subscription: {title, text, placeholder}})
   footer.footer
-    .wrapper
+    .footer__wrapper
       .footer__container
         section.footer__block
           .site-logo
@@ -25,7 +25,7 @@ mixin footer({main, navigation, copy, subscription: {title, text, placeholder}})
           +subscription({ placeholder: placeholder })
     
     section.footer__line
-      .wrapper
+      .footer__wrapper
         .footer__copy
           p.footer__paragraph= copy
           +socials()
