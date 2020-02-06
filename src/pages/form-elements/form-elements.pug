@@ -15,6 +15,7 @@ include ../../blocks/text-field/text-field
 include ../../blocks/button/button
 include ../../blocks/kit-logo/kit-logo
 include ../../blocks/rounded-button/rounded-button
+include ../../blocks/simple-button/simple-button
 
 doctype html
 html
@@ -202,9 +203,9 @@ html
               .form-elements__btn.form-elements__btn--big
                 +rounded-button({text: "Click me", isDisabled: true})
               .form-elements__btn
-                .simple-button Click me
+                +simple-button({text: "Click me"})
               .form-elements__btn
-                .simple-button.simple-button--disabled Click me
+                +simple-button({text: "Click me", isDisabled: true})
               +long-button("Перейти к оплате")
 
           .form-elements__item

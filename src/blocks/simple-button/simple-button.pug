@@ -1,0 +1,5 @@
+mixin simple-button({text, isDisabled = false})
+  - const classes = ["simple-button"]
+  if isDisabled
+    - classes.push("simple-button--disabled")
+  div(class=classes)= text
