@@ -2,17 +2,23 @@
 @import '../../scss/colors.scss';
 
 .color-types {
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  padding: 144px 0 0 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 
-  @media (min-width: $small-size) {
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 1160px;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    padding: 144px 0 0 0;
+
+    @media (min-width: $small-size) {
+      flex-direction: row;
+      justify-content: space-between;
+      max-width: 1160px;
+    }
   }
-
+  
   &__logo {
     position: absolute;
     top: 30px;

@@ -9,40 +9,41 @@ doctype html
 html
   head
     title Card Kit
-  body.wrapper.wrapper--kit
+  body
     .cards
-      .cards__logo
-        +kit-logo()
-      .cards__column
-        .cards__item
-          +apartments()
-        .cards__item
-          +register-card()
-      .cards__column
-        .cards__item
-          +booking-card()
-        .cards__item
-          +enter-card()
-      .cards__column
-        .cards__item
-          .js-calendar
-        .cards__item
-          +image-card({
-            image: "../img/apartments-1.png",
-            arrows: true,
-            position: 888,
-            lux: true,
-            price: "9 990",
-            rating: 5,
-            comments: 145
-          })
-        .cards__item
-          +image-card({
-            image: "../img/apartments-2.png",
-            arrows: false,
-            position: 840,
-            lux: false,
-            price: "9 990",
-            rating: 4,
-            comments: 65
-          })
+      .cards__wrapper
+        .cards__logo
+          +kit-logo()
+        .cards__column
+          .cards__item
+            +apartments()
+          .cards__item
+            +register-card()
+        .cards__column
+          .cards__item
+            +booking-card()
+          .cards__item
+            +enter-card()
+        .cards__column
+          .cards__item
+            .js-calendar
+          .cards__item
+            +image-card({
+              image: "../img/apartments-1.png",
+              arrows: true,
+              position: 888,
+              lux: true,
+              price: "9 990",
+              rating: 5,
+              comments: 145
+            })
+          .cards__item
+            +image-card({
+              image: "../img/apartments-2.png",
+              arrows: false,
+              position: 840,
+              lux: false,
+              price: "9 990",
+              rating: 4,
+              comments: 65
+            })

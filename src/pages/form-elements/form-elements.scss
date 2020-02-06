@@ -2,20 +2,26 @@
 @import '../../scss/colors.scss';
 
 .form-elements {
-  padding-top: 143px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px 1fr));
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: 'left' 'mid' 'right' 'bot';
-  justify-items: center;
-  gap: 120px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 
-  @media (min-width: 872px) {
-    grid-template-areas: 'left right' 'mid bot';
-  }
+  &__wrapper {
+    padding-top: 143px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px 1fr));
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 'left' 'mid' 'right' 'bot';
+    justify-items: center;
+    gap: 120px;
 
-  @media (min-width: 1260px) {
-    grid-template-areas: 'left mid right' 'left bot bot';
+    @media (min-width: 872px) {
+      grid-template-areas: 'left right' 'mid bot';
+    }
+
+    @media (min-width: 1260px) {
+      grid-template-areas: 'left mid right' 'left bot bot';
+    }
   }
 
   &__logo {
