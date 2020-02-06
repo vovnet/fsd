@@ -1,4 +1,5 @@
 include ../../blocks/color/color
+include ../../blocks/type/type
 
 doctype html
 html
@@ -20,23 +21,9 @@ html
             +color({title: "Green", body: "#6FCF97", theme: "accent"})
             
         .color-types__types
-          .type
-            .type__head.type__head--big H1
-            .type__body
-              h1.color-types__big This one is the sub-section or widget title
-          .type
-            .type__head.type__head--middle H2
-            .type__body
-              h2.color-types__middle 
-                | Next one is the item title inside
-                br
-                | widgets
-          .type
-            .type__head.type__head--small H3
-            .type__body
-              h3.color-types__label This is a label or CTA text
-          .type
-            .type__head Body
-            .type__body
-              | This is the body text which is used for most of the design, 
-              | like paragraphs, lists, etc.
+          +type({title: "H1", text: "This one is the sub-section or widget title", size: "large"})
+          +type({title: "H2", text: "Next one is the item title inside <br> widgets", size: "medium"})
+          +type({title: "H3", text: "This is a label or CTA text", size: "small"})
+          +type({title: "Body", text: "This is the body text which is used for most of the design,<br>like paragraphs, lists, etc."})
+          
+          

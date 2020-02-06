@@ -10,23 +10,59 @@
     flex-basis: 60px;
     flex-shrink: 0;
 
-    &--big {
+    &--large {
       font-size: 1.5rem;
       line-height: 1.2rem;
+      margin-top: 5px;
     }
 
-    &--middle {
+    &--medium {
       font-size: 1.1875rem;
       line-height: 1.21rem;
+      margin-top: 3px;
     }
 
     &--small {
       font-size: 0.75rem;
       line-height: 0.8rem;
+      margin-top: 5px;
     }
   }
 
   &__body {
     padding-left: 30px;
+  }
+
+  &__text {
+    font-family: Quicksand, Arial, sans-serif;
+
+    &--large {
+      font-size: 1.5rem;
+      line-height: 1.875rem;
+      color: $dark-shade-100;
+      margin: 0;
+    }
+
+    &--medium {
+      font-size: 1.1875rem;
+      line-height: 1.5rem;
+      color: $dark-shade-100;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    &--small {
+      font-family: Montserrat, Arial, sans-serif;
+      text-transform: uppercase;
+      color: $dark-shade-100;
+      font-size: .75rem;
+      margin: 0;
+    }
+
+    &--default {
+      font-family: Montserrat, Arial, sans-serif;
+      font-size: .875rem;
+      line-height: 1.5rem;
+    }
   }
 }

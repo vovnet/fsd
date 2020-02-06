@@ -1,0 +1,18 @@
+mixin type({title, text, size})
+  .type
+    if size == "large"
+      .type__head.type__head--large= title
+      .type__body
+        h1.type__text.type__text--large!= text
+    else if size == "medium"
+      .type__head.type__head--medium= title
+      .type__body
+        h2.type__text.type__text--medium!= text 
+    else if size == "small"
+      .type__head.type__head--small= title
+      .type__body
+        h3.type__text.type__text--small!= text
+    else
+      .type__head= title
+      .type__body
+        .type__text.type__text--default!= text
