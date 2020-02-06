@@ -1,0 +1,62 @@
+@import '../../scss/sizes.scss';
+@import '../../scss/colors.scss';
+
+.color-types {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  padding: 144px 0 0 0;
+
+  @media (min-width: $small-size) {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1160px;
+  }
+
+  &__pallete {
+    margin: 0 auto;
+
+    @media (min-width: $small-size) {
+      padding: 0 56px;
+      margin: 0;
+    }
+  }
+
+  &__types {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 500px;
+    height: 306px;
+    margin: 0 auto;
+
+    @media (min-width: $small-size) {
+      margin: 0;
+    }
+  }
+
+  &__big {
+    font-family: Quicksand, Arial, sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    color: $dark-shade-100;
+    margin: 0;
+  }
+
+  &__middle {
+    font-family: Quicksand, Arial, sans-serif;
+    font-size: 1.1875rem;
+    line-height: 1.5rem;
+    color: $dark-shade-100;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  &__label {
+    font-family: Montserrat, Arial, sans-serif;
+    text-transform: uppercase;
+    color: $dark-shade-100;
+    font-size: .75rem;
+    margin: 0;
+  }
+}
