@@ -1,0 +1,5 @@
+mixin icon-button({icon, isMenu = false})
+  - const classes = ["icon-button"]
+  if isMenu
+    - classes.push("js-menu-button")
+  button(class=classes)= icon
