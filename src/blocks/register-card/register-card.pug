@@ -1,7 +1,7 @@
 include ../radio/radio
 include ../toggle/toggle
 include ../long-button/long-button
-include ../card-footer/card-footer
+include ../account/account
 include ../text-field/text-field
 
 mixin register-card()
@@ -28,4 +28,4 @@ mixin register-card()
       .register-card__block
         +long-button("Перейти к оплате")
     .register-card__block.register-card__block--last
-      +card-footer("Уже есть аккаунт на Toxin", "Войти")
+      +account("Уже есть аккаунт на Toxin", "Войти")

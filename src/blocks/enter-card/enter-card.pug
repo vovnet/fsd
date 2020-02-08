@@ -1,5 +1,5 @@
 include ../long-button/long-button
-include ../card-footer/card-footer
+include ../account/account
 include ../text-field/text-field
 
 mixin enter-card() 
@@ -12,4 +12,4 @@ mixin enter-card()
       .enter-card__enter-button
         +long-button("Войти")
     .enter-card__footer
-      +card-footer("Нет аккаунта на Toxin?", "Создать")
+      +account("Нет аккаунта на Toxin?", "Создать")
