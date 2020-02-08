@@ -2,12 +2,13 @@ include ../menu/menu
 include ../button/button
 include ../icon-button/icon-button
 include ../rounded-button/rounded-button
+include ../site-logo/site-logo
 
 mixin header({isLogged, buttons: {enter = "", register = ""} = {}, menu})
   header.header
     .header__container
       .header__logo
-        .site-logo
+        +site-logo()
       .header__menu
         +menu(menu)
       if isLogged

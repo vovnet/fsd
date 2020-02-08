@@ -1,12 +1,13 @@
 include ../subscription/subscription 
 include ../socials/socials
+include ../site-logo/site-logo
 
 mixin footer({main, navigation, copy, subscription: {title, text, placeholder}})
   footer.footer
     .footer__wrapper
       .footer__container
         section.footer__block
-          .site-logo
+          +site-logo()
           p.footer__text= main
 
         .footer__nav-container
