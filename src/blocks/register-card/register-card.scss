@@ -1,5 +1,29 @@
+@import '../../scss/colors.scss';
+
 .register-card {
+  display: block;
   width: 380px;
+  padding: 40px 30px 30px;
+  background-color: $white;
+  border-radius: 4px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+
+  &__title {
+    font-family: Quicksand, Arial, sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    font-weight: bold;
+    color: $dark-shade-100;
+  }
+
+  &__subtitle {
+    font-family: Montserrat, Arial, sans-serif;
+    color: $dark-shade-100;
+    text-transform: uppercase;
+    font-size: .75rem;
+    margin-bottom: 0;
+  }
 
   &__block {
     margin: 20px 0;

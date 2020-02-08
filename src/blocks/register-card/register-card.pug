@@ -6,27 +6,26 @@ include ../text-field/text-field
 
 mixin register-card()
   .register-card
-    .card-canvas
-      h1.card-canvas__title Регистрация аккаунта
-      form.register-card-form(action="/mock-address", method="post")
-        .register-card__block
-          .register-card__item
-            +text-field({type: "text", placeholder: "Имя"})
-          .register-card__item
-            +text-field({type: "text", placeholder: "Фамилия"})
-          +radio({ label: "Мужчина", name: "gender", checked: true })
-          +radio({ label: "Женщина", name: "gender"})
-        .register-card__block
-          h3.card-canvas__subtitle Дата рождения
-          +text-field({type: "text", placeholder: "ДД.ММ.ГГГГ", masked: true})
-        .register-card__block
-          h3.card-canvas__subtitle Данные для входа в сервис
-          .register-card__item
-            +text-field({type: "text", placeholder: "Email"})
-          .register-card__item
-            +text-field({type: "password", placeholder: "Пароль"})
-          +toggle("Получать спецпредложения")
-        .register-card__block
-          +long-button("Перейти к оплате")
-      .register-card__block.register-card__block--last
-        +card-footer("Уже есть аккаунт на Toxin", "Войти")
+    h1.register-card__title Регистрация аккаунта
+    form.register-card-form(action="/mock-address", method="post")
+      .register-card__block
+        .register-card__item
+          +text-field({type: "text", placeholder: "Имя"})
+        .register-card__item
+          +text-field({type: "text", placeholder: "Фамилия"})
+        +radio({ label: "Мужчина", name: "gender", checked: true })
+        +radio({ label: "Женщина", name: "gender"})
+      .register-card__block
+        h3.register-card__subtitle Дата рождения
+        +text-field({type: "text", placeholder: "ДД.ММ.ГГГГ", masked: true})
+      .register-card__block
+        h3.register-card__subtitle Данные для входа в сервис
+        .register-card__item
+          +text-field({type: "text", placeholder: "Email"})
+        .register-card__item
+          +text-field({type: "password", placeholder: "Пароль"})
+        +toggle("Получать спецпредложения")
+      .register-card__block
+        +long-button("Перейти к оплате")
+    .register-card__block.register-card__block--last
+      +card-footer("Уже есть аккаунт на Toxin", "Войти")
