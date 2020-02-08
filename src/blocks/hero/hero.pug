@@ -2,7 +2,7 @@ mixin hero({theme, text})
   - let classes = ["hero"]
 
   if theme == "secondary"
-    classes.push("hero--img2")
+    - classes.push("hero--img2")
 
   div(class=classes) 
     .hero__text= text
