@@ -1,9 +1,9 @@
 mixin apartment-info({big, lux, number})
-  .apartment-info
-    span.apartment-info--bold № 
+  .appartment-info
+    .apartment-info__number № 
     if big 
-      h1.apartment-info--main= number 
+      h2.apartment-info__number.apartment-info__number--accented= number 
     else
-      h2.apartment-info--main= number 
+      h3.apartment-info__number= number 
     if (lux)
-      span.apartment-info--lux  Люкс
+      .apartment-info__lux-text Люкс

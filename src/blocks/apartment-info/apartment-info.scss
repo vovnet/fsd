@@ -1,24 +1,29 @@
 @import '../../scss/colors.scss';
 
 .apartment-info {
-  &--main {
-    font-family: Quicksand, Arial, sans-serif;
-    display: inline;
-    color: $dark-shade-100;
-  }
+  display: flex;
 
-  &--lux {
-    font-family: Montserrat, Arial, sans-serif;
+  &__number {
+    font-family: Quicksand, Arial, sans-serif;
+    display: inline-block;
+    color: $dark-shade-100;
+    font-size: .875rem;
+    padding-right: 4px;
     font-weight: bold;
+    text-transform: uppercase;
+
+    &--accented {
+      font-size: 1.5rem;
+    }
+  }
+    
+  &__lux-text {
+    font-family: Montserrat, Arial, sans-serif;
     font-size: .75rem;
     color: $purple;
-    text-transform: uppercase;
-    padding-left: 1px;
-  }
-
-  &--bold {
-    font-family: Quicksand, Arial, sans-serif;
+    padding-right: 4px;
     font-weight: bold;
-    font-size: .875rem;
-  }
+    text-transform: uppercase;
+    display: inline-block;
+  } 
 }
