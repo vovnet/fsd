@@ -1,4 +1,16 @@
 .main-layout {
+  color: rgba(31, 32, 65, 0.75);
+  font-family: Montserrat, Arial, sans-serif;
+  margin-top: 3em;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  padding: 0;
+  margin: 0;
+
+  &__kit {
+    background-color: #e5e5e5;
+  }
+
   &__header {
     position: relative;
     z-index: 200;

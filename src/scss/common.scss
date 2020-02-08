@@ -11,17 +11,6 @@
   box-sizing: inherit;
 }
 
-body {
-  color: rgba(31, 32, 65, 0.75);
-  font-family: Montserrat, Arial, sans-serif;
-  margin-top: 3em;
-  font-size: 0.875rem;
-  line-height: 1.5rem;
-  padding: 0;
-  margin: 0;
-  //height: 100%;
-}
-
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
@@ -32,10 +21,4 @@ body {
   word-wrap: normal;
   white-space: nowrap;
   direction: ltr;
-}
-
-.body {
-  &--kit {
-    background-color: #e5e5e5;
-  }
 }

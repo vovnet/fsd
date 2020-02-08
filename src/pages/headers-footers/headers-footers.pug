@@ -1,48 +1,51 @@
+extends ../main-layout/main-layout
+
 include ../../blocks/header/header
 include ../../blocks/footer/footer
 include ../../blocks/light-footer/light-footer
 include ../../blocks/kit-logo/kit-logo
 
-doctype html
-html
-  head
-    title Headers and Footer
-  body.body--kit
-    - 
-      var menu = [{
-        text: "Home",
+block title
+  title Headers and Footer
+
+block header
+
+block content
+  - 
+    var menu = [{
+      text: "Home",
+      link: "/mock-address",
+      current: true,
+      },
+      {
+      text: "About Us",
+      link: "/mock-address",
+      }, 
+      {
+      text: "Services",
+      link: [
+      {
+        text: "First",
         link: "/mock-address",
-        current: true,
-        },
-        {
-        text: "About Us",
+      },
+      {
+        text: "Second",
         link: "/mock-address",
-        }, 
-        {
-        text: "Services",
-        link: [
-        {
-          text: "First",
-          link: "/mock-address",
-        },
-        {
-          text: "Second",
-          link: "/mock-address",
-        }
-        ]},
-        {
-        text: "Careers",
-        link: "/mock-address",
-        },
-        {
-        text: "News",
-        link: "/mock-address",
-        },
-        {
-        text: "Documentation",
-        link: "/mock-address",
-      }];
-    
+      }
+      ]},
+      {
+      text: "Careers",
+      link: "/mock-address",
+      },
+      {
+      text: "News",
+      link: "/mock-address",
+      },
+      {
+      text: "Documentation",
+      link: "/mock-address",
+    }];
+  .main-layout__kit
     .headers-footers
       .headers-footers__logo
         +kit-logo()
@@ -97,3 +100,5 @@ html
         })
       .headers-footers__item
         +light-footer()
+
+block footer

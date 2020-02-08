@@ -1,3 +1,5 @@
+extends ../main-layout/main-layout
+
 include ../../blocks/find-apartments-card/find-apartments-card
 include ../../blocks/register-card/register-card 
 include ../../blocks/booking-card/booking-card 
@@ -5,11 +7,13 @@ include ../../blocks/enter-card/enter-card
 include ../../blocks/image-card/image-card 
 include ../../blocks/kit-logo/kit-logo
 
-doctype html
-html
-  head
-    title Card Kit
-  body
+block title
+  title Card Kit
+
+block header
+  
+block content
+  .main-layout__kit
     .cards
       .cards__wrapper
         .cards__logo
@@ -47,3 +51,5 @@ html
               rating: 4,
               comments: 65
             })
+
+block footer

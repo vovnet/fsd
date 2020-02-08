@@ -18,63 +18,64 @@ html
       meta(name="description", content="this is the test project")
     block title
       title Main
-  body
-    block header.main-layout__header
-      +header({
-      isLogged: false, 
-      buttons: {
-        enter: "Войти",
-        register: "Зарегистрироваться"
-      },
-      menu: [
-        {
-        text: "О нас",
-        link: "/mock-address",
-        classes: ["menu__item"]
-        }, 
-        {
-        text: "Услуги",
-        classes: ["menu__item", "menu__submenu", "js-menu__submenu"],
-        link: [
-        {
-          text: "First",
-          link: "/mock-address",
-          classes: ["submenu__item"]
+  body.main-layout
+    block header
+      header.main-layout__header
+        +header({
+        isLogged: false, 
+        buttons: {
+          enter: "Войти",
+          register: "Зарегистрироваться"
         },
-        {
-          text: "Second",
-          link: "/mock-address",
-          classes: ["submenu__item"]
-        }
-        ]},
-        {
-        text: "Вакансии",
-        link: "/mock-address",
-        classes: ["menu__item"]
-        },
-        {
-        text: "Новости",
-        link: "/mock-address",
-        classes: ["menu__item"]
-        },
-        {
-        text: "Соглашения",
-        classes: ["menu__item", "menu__submenu", "js-menu__submenu"],
-        link: [
+        menu: [
           {
-          text: "First",
+          text: "О нас",
           link: "/mock-address",
-          classes: ["submenu__item"]
+          classes: ["menu__item"]
+          }, 
+          {
+          text: "Услуги",
+          classes: ["menu__item", "menu__submenu", "js-menu__submenu"],
+          link: [
+          {
+            text: "First",
+            link: "/mock-address",
+            classes: ["submenu__item"]
           },
           {
-          text: "Second",
+            text: "Second",
+            link: "/mock-address",
+            classes: ["submenu__item"]
+          }
+          ]},
+          {
+          text: "Вакансии",
           link: "/mock-address",
-          classes: ["submenu__item"]
+          classes: ["menu__item"]
+          },
+          {
+          text: "Новости",
+          link: "/mock-address",
+          classes: ["menu__item"]
+          },
+          {
+          text: "Соглашения",
+          classes: ["menu__item", "menu__submenu", "js-menu__submenu"],
+          link: [
+            {
+            text: "First",
+            link: "/mock-address",
+            classes: ["submenu__item"]
+            },
+            {
+            text: "Second",
+            link: "/mock-address",
+            classes: ["submenu__item"]
+            }
+          ]
           }
         ]
-        }
-      ]
-      })
+        })
 
     block content
 
