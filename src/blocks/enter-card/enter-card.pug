@@ -3,14 +3,13 @@ include ../card-footer/card-footer
 include ../text-field/text-field
 
 mixin enter-card() 
-  .card-canvas
-    h1.card-canvas__title Войти
-    .enter-card
-      form.enter-card-form(action="/mock-address", method="post")
-        .enter-card__field
-          +text-field({type: "text", placeholder: "Email"})
-        +text-field({type: "password", placeholder: "Пароль"})
-        .enter-card__enter-button
-          +long-button("Войти")
-      .enter-card__footer
-        +card-footer("Нет аккаунта на Toxin?", "Создать")
+  .enter-card
+    h1.enter-card__title Войти
+    form.enter-card-form(action="/mock-address", method="post")
+      .enter-card__field
+        +text-field({type: "text", placeholder: "Email"})
+      +text-field({type: "password", placeholder: "Пароль"})
+      .enter-card__enter-button
+        +long-button("Войти")
+    .enter-card__footer
+      +card-footer("Нет аккаунта на Toxin?", "Создать")
