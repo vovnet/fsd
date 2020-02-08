@@ -8,35 +8,25 @@
   overflow: hidden;
 
   &__body {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    margin: 16px 20px 0;
-    align-items: baseline;
+    padding: 8px 20px;
   }
 
-  &__item {
-    padding: 0 0 10px;
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
 
-    & h2 {
-      display: inline;
-    }
-
-    &--right {
-      text-align: right;
-    }
-
-    &--border {
+    &--underlined {
       border-bottom: 1px solid $dark-shade-10;
     }
-
-    &--rating {
-      position: relative;
-      top: 6px;
-    }
   }
 
-  &__s {
-    font-size: .75rem;
+  &__text {
+    display: inline-block;
+
+    &--accented {
+      font-weight: bold;
+    }
   }
 }
