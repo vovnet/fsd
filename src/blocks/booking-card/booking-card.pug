@@ -10,14 +10,14 @@ mixin booking-card()
       .booking-card__header
         +apartment-info({number: 888, lux: true, big: true})
         +price("9 990")
-      .booking-card__item.booking-card__item--up
+      .booking-card__item.booking-card__item--index-hight
         +range-dates({
           inLabel: "Прибытие",
           outLabel: "Выезд",
         })
         .calendar
           input(type="text")
-      .booking-card__item.booking-card__item--middle
+      .booking-card__item.booking-card__item--index-low
         h3.booking-card__subtitle Гости
         input.js-dropdown-booking
       .booking-card__item 
