@@ -1,4 +1,4 @@
 mixin hero({image, text = ""})
   .hero
-    img.hero__image(src=image)
+    img.hero__image(src=require(`blocks/hero/images/${image}`), alt="hero image")
     .hero__text= text

@@ -2,7 +2,7 @@ include ../like/like
 
 mixin comment({image, author, date, like, text})
   article.comment
-    img.comment__avatar(src=image alt="user avatar")
+    img.comment__avatar(src=require(`blocks/comment/images/${image}`) alt="user avatar")
     div.comment__author-container
       .comment__author= author
       .comment__date= date
