@@ -1,5 +1,7 @@
-import { Room } from './Room';
+/* eslint-disable no-new */
+/* global $ */
+import Room from './Room';
 
-$(document).ready(function() {
-    new Room();
+$(document).ready(() => {
+  new Room();
 });

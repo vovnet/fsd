@@ -1,5 +1,7 @@
-import { FormElements } from './FormElements';
+/* global $ */
+import FormElements from './FormElements';
 
-$(document).ready(function() {
-    new FormElements();
+$(document).ready(() => {
+  // eslint-disable-next-line no-new
+  new FormElements();
 });
