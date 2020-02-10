@@ -1,18 +1,19 @@
-import { DatePicker } from './DatePicker';
+/* global $ */
+import DatePicker from './DatePicker';
 
 class Calendar {
+  constructor() {
+    this.init();
+  }
 
-    constructor() {
-        this.init();
-    }
+  init() {
+    this.element = $('.js-calendar');
 
-    init() {
-        let element = $('.js-calendar');
-        
-        element.each((i, element) => {
-            new DatePicker(element);
-        });
-    }
+    this.element.each((i, element) => {
+      // eslint-disable-next-line no-new
+      new DatePicker(element);
+    });
+  }
 }
 
-export { Calendar }
+export default Calendar;

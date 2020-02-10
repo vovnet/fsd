@@ -1,7 +1,8 @@
-import { Donut } from './Donut';
+import Donut from './Donut';
 
-const pie = document.querySelectorAll('.js-donut'); 
+const pie = document.querySelectorAll('.js-donut');
 
-for (let item of pie) {
-    new Donut(item).draw();
+// eslint-disable-next-line no-restricted-syntax
+for (const item of pie) {
+  new Donut(item).draw();
 }

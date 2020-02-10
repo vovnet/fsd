@@ -1,5 +1,7 @@
-import { Apartments } from './Apartments';
+/* global $ */
+import Apartments from './Apartments';
 
-$(document).ready(function() {
-    new Apartments();
+$(document).ready(() => {
+  // eslint-disable-next-line no-new
+  new Apartments();
 });

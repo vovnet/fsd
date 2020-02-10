@@ -1,4 +1,4 @@
-import { Dropdown } from '../configuration-dropdown/dropdown/Dropdown';
+import Dropdown from '../configuration-dropdown/dropdown/Dropdown';
 
 class BookingCard {
     

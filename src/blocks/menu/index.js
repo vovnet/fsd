@@ -1,5 +1,7 @@
-import { Menu } from './Menu';
+/* global $ */
+import Menu from './Menu';
 
-$(document).ready(function() {
-    new Menu();
+$(document).ready(() => {
+  // eslint-disable-next-line no-new
+  new Menu();
 });
