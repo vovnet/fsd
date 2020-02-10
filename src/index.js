@@ -1,34 +1,35 @@
+/* global $ */
 import 'jquery-ui/ui/widgets/datepicker';
 import 'jquery.maskedinput/src/jquery.maskedinput';
 
 
 function importAll(resolve) {
-    resolve.keys().forEach(resolve);
+  resolve.keys().forEach(resolve);
 }
 
 importAll(require.context('../src/', true, /\.js$|\.scss$/));
 
-$.datepicker.regional['ru'] = {
-    closeText: 'Закрыть',
-    prevText: 'Пред',
-    nextText: 'След',
-    currentText: 'Сегодня',
-    monthNames: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь',
-        'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
-    monthNamesShort: ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн',
-        'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
-    dayNames: ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'],
-    dayNamesShort: ['вск', 'пнд', 'втр', 'срд', 'чтв', 'птн', 'сбт'],
-    dayNamesMin: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
-    weekHeader: 'Нед',
-    dateFormat: 'dd.mm.yy',
-    firstDay: 1,
-    isRTL: false,
-    showMonthAfterYear: false,
-    yearSuffix: ''
+$.datepicker.regional.ru = {
+  closeText: 'Закрыть',
+  prevText: 'Пред',
+  nextText: 'След',
+  currentText: 'Сегодня',
+  monthNames: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь',
+    'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+  monthNamesShort: ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн',
+    'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
+  dayNames: ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'],
+  dayNamesShort: ['вск', 'пнд', 'втр', 'срд', 'чтв', 'птн', 'сбт'],
+  dayNamesMin: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+  weekHeader: 'Нед',
+  dateFormat: 'dd.mm.yy',
+  firstDay: 1,
+  isRTL: false,
+  showMonthAfterYear: false,
+  yearSuffix: '',
 };
 
-$.datepicker.setDefaults($.datepicker.regional['ru']);
+$.datepicker.setDefaults($.datepicker.regional.ru);
 
-let maskedFields = $('.js-masked');
+const maskedFields = $('.js-masked');
 maskedFields.mask('99.99.9999');
