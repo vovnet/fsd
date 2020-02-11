@@ -38,6 +38,12 @@
     }
   }
 
+  &__calendar {
+    position: absolute;
+    top: 40px;
+    visibility: hidden;
+  }
+
   &__date-dropdown {
     color: $dark-shade-25;
     border: 1px solid $dark-shade-25;
