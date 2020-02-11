@@ -5,7 +5,6 @@ class Calendar {
   constructor(element) {
     this.element = element;
 
-    this.hideContainer();
     this.makeDatepicker();
     this.addHandlers();
   }
@@ -19,6 +18,8 @@ class Calendar {
 
     if (this.inputs.length <= 0) {
       this.isStatic = true;
+    } else {
+      this.hideContainer();
     }
 
     const options = {
