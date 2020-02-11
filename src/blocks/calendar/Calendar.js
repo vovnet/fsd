@@ -1,16 +1,25 @@
 /* global $ */
-import 'air-datepicker/dist/js/datepicker';
+import 'air-datepicker';
 
-class DatePicker {
+class Calendar {
   constructor(element) {
     this.element = element;
 
+    this.hideContainer();
     this.makeDatepicker();
     this.addHandlers();
   }
 
+  hideContainer() {
+    this.element.style.display = 'none';
+  }
+
   makeDatepicker() {
-    this.inputs = $(this.element).parent().find('input').not('.js-hidden');
+    this.inputs = $(this.element).parent().find('input');
+
+    if (this.inputs.length <= 0) {
+      this.isStatic = true;
+    }
 
     const options = {
       range: true,
@@ -23,7 +32,11 @@ class DatePicker {
       },
     };
 
-    this.datepicker = $(this.element).datepicker(options).data('datepicker');
+    if (this.isStatic) {
+      this.datepicker = $(this.element).datepicker(options).data('datepicker');
+    } else {
+      this.datepicker = $(this.inputs[0]).datepicker(options).data('datepicker');
+    }
 
     this.$clearButton = $('<span class="simple-button simple-button--disabled">Очистить</span>');
     this.$applyButton = $('<span class="simple-button">Применить</span></div>');
@@ -37,7 +50,10 @@ class DatePicker {
   addHandlers() {
     this.$clearButton.on('click', this.onClickClear.bind(this));
     this.$applyButton.on('click', this.onClickApply.bind(this));
-    this.inputs.on('click', this.onClickInput.bind(this));
+    if (!this.isStatic) {
+      this.inputs.on('click', this.onClickInput.bind(this));
+      this.datepicker.hide();
+    }
   }
 
   clearInputs() {
@@ -48,6 +64,7 @@ class DatePicker {
 
   onSelect(formattedDate, date) {
     this.dates = date;
+    this.clearInputs();
   }
 
   onClickClear() {
@@ -60,6 +77,9 @@ class DatePicker {
   }
 
   onClickApply() {
+    if (this.dates.length < 2) {
+      return;
+    }
     this.inputs.each((i, el) => {
       $(el).val(this.dates[i].toLocaleDateString());
     });
@@ -68,4 +88,4 @@ class DatePicker {
   }
 }
 
-export default DatePicker;
+export default Calendar;
