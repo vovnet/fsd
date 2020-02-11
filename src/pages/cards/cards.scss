@@ -6,7 +6,7 @@
   padding: 0 20px;
 
   &__wrapper {
-    padding: 150px 0 0 0;
+    margin-top: 67px;
     display: flex;
     justify-items: center;
     align-items: flex-start;
@@ -23,8 +23,6 @@
   }
 
   &__logo {
-    position: absolute;
-    top: 30px;
-    left: 30px;
+    padding-top: 30px;
   }
 }
