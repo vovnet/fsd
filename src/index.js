@@ -8,7 +8,7 @@ function importAll(resolve) {
 }
 
 importAll(require.context('../src/', true, /\.js$|\.scss$/));
-
+/*
 $.datepicker.regional.ru = {
   closeText: 'Закрыть',
   prevText: 'Пред',
@@ -33,3 +33,4 @@ $.datepicker.setDefaults($.datepicker.regional.ru);
 
 const maskedFields = $('.js-masked');
 maskedFields.mask('99.99.9999');
+*/
