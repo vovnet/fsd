@@ -1,18 +1,28 @@
 @import '../../scss/sizes.scss';
+@import '../../scss/colors.scss';
 
 .landing {
-  max-width: 1200px;
-  padding: 0 20px;
-  
-  &__room-config {
-    position: absolute;
-    top: 140px;
-    left: 100px;
-    z-index: 1;
+  background-image: url(./images/hero-primary.png);
+  background-position-x: center;
+  background-position-y: -70px;
+  background-repeat: no-repeat;
 
-    @media (max-width: 767px) {
-      left: calc(50% - 380px / 2);
-    }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 70px 20px 20px;
+  }
+ 
+  &__text {
+    font-family: Montserrat, OpenSans, sans-serif;
+    color: $dark-shade-75;
+    line-height: 1.5rem;
+    width: 297px;
+    text-align: right;
+    margin-top: 318px;
+    align-self: flex-end;
   }
 }
 

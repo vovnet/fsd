@@ -1,11 +1,17 @@
-extends ../landing-layout/landing-layout
+extends ../main-layout/main-layout
 
 include ../../blocks/find-apartments-card/find-apartments-card
 
 block title
   title Landing
 
-block card
+block content
   .landing
-    .landing__room-config
+    .landing__content
       +apartments()
+      .landing__text Лучшие номера для вашей работы, отдыха и просто вдохновения
+
+//- block card
+//-   .landing
+//-     .landing__room-config
+//-       +apartments()
