@@ -1,4 +1,4 @@
-extends ../landing-layout/landing-layout
+extends ../main-layout/main-layout
 
 include ../../blocks/hero/hero
 include ../../blocks/enter-card/enter-card
@@ -6,9 +6,8 @@ include ../../blocks/enter-card/enter-card
 block title
   title Sign In
 
-block hero
-  +hero({text: "", image: "hero-secondary.png"})
-
-block card
+block content
   .sign-in
-    +enter-card()
+    .sign-in__content
+      .sign-in__card
+        +enter-card()

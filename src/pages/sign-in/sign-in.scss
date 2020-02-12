@@ -1,6 +1,18 @@
 .sign-in {
-  position: absolute;
-  top: 233px;
-  left: calc(50% - 380px / 2);
-  z-index: 1;
+  background-image: url(./images/registration-background.png);
+  background-position-x: center;
+  background-position-y: -70px;
+  background-repeat: no-repeat;
+
+  &__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__card {
+    margin: 163px 0;
+  }
 }
