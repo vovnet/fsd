@@ -1,4 +1,4 @@
-extends ../landing-layout/landing-layout
+extends ../main-layout/main-layout
 
 include ../../blocks/hero/hero
 include ../../blocks/register-card/register-card
@@ -6,9 +6,7 @@ include ../../blocks/register-card/register-card
 block title
   title Registration
 
-block hero
-  +hero({image: "hero-secondary.png"})
-
-block card 
+block content
   .registration
-    +register-card()
+    .registration__content
+      +register-card()
