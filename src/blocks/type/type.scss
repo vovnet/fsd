@@ -34,7 +34,7 @@
   }
 
   &__text {
-    font-family: Quicksand, Arial, sans-serif;
+    font-family: Quicksand, OpenSans, sans-serif;
 
     &--large {
       font-size: 1.5rem;
@@ -52,7 +52,7 @@
     }
 
     &--small {
-      font-family: Montserrat, Arial, sans-serif;
+      font-family: Montserrat, OpenSans, sans-serif;
       text-transform: uppercase;
       color: $dark-shade-100;
       font-size: .75rem;
@@ -60,7 +60,7 @@
     }
 
     &--default {
-      font-family: Montserrat, Arial, sans-serif;
+      font-family: Montserrat, OpenSans, sans-serif;
       font-size: .875rem;
       line-height: 1.5rem;
     }

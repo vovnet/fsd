@@ -9,7 +9,7 @@
   z-index: 1;
 
   &__title {
-    font-family: Quicksand, Arial, sans-serif;
+    font-family: Quicksand, OpenSans, sans-serif;
     font-size: 1.5rem;
     line-height: 1.875rem;
     font-weight: bold;
@@ -18,7 +18,7 @@
   }
 
   &__subtitle {
-    font-family: Montserrat, Arial, sans-serif;
+    font-family: Montserrat, OpenSans, sans-serif;
     color: $dark-shade-100;
     text-transform: uppercase;
     font-size: .75rem;

@@ -19,7 +19,7 @@
   } 
 
   &__header {
-    font-family: Quicksand, Arial, sans-serif;
+    font-family: Quicksand, OpenSans, sans-serif;
     line-height: 1.875rem;
     grid-column: 1/-1;
     line-height: 1;
@@ -38,7 +38,7 @@
   }
 
   &__sidebar-item-title {
-    font-family: Montserrat, Arial, sans-serif;
+    font-family: Montserrat, OpenSans, sans-serif;
     margin-bottom: 16px;
     color: $dark-shade-100;
     text-transform: uppercase;

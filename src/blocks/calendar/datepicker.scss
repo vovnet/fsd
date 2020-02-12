@@ -4,7 +4,7 @@
 @import '../../../node_modules/air-datepicker/src/sass/cell.scss';
 
 .datepicker {
-  font-family: Montserrat, Arial, sans-serif;
+  font-family: Montserrat, OpenSans, sans-serif;
   font-size: 0.75rem;
   padding: 10px 20px 16px;
   width: 280px;
@@ -28,7 +28,7 @@
       background-image: $light-gradient;
       border-radius: 50%;
       color: $white;
-      font-family: Montserrat, Arial, sans-serif;
+      font-family: Montserrat, OpenSans, sans-serif;
       font-weight: bold;
 
       &.-focus- {
@@ -48,7 +48,7 @@
     &.-selected- {
       border-radius: 50%;
       background-image: $gradient;
-      font-family: Montserrat, Arial, sans-serif;
+      font-family: Montserrat, OpenSans, sans-serif;
       font-weight: bold;
 
       &.-focus- {
@@ -89,7 +89,7 @@
   }
 
   &--day-name {
-    font-family: Montserrat, Arial, sans-serif;
+    font-family: Montserrat, OpenSans, sans-serif;
     font-weight: bold;
     color: $purple;
     width: 40px;
@@ -116,7 +116,7 @@
   &--nav-title i {
     color: $dark-shade-100;
     font-size: 1.19rem;
-    font-family: Quicksand, Arial, sans-serif;
+    font-family: Quicksand, OpenSans, sans-serif;
     font-weight: bold;
   }
 }

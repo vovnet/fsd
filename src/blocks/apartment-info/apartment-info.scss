@@ -4,7 +4,7 @@
   display: flex;
 
   &__number {
-    font-family: Quicksand, Arial, sans-serif;
+    font-family: Quicksand, OpenSans, sans-serif;
     display: inline-block;
     color: $dark-shade-100;
     font-size: .875rem;
@@ -23,7 +23,7 @@
   }
     
   &__lux-text {
-    font-family: Montserrat, Arial, sans-serif;
+    font-family: Montserrat, OpenSans, sans-serif;
     font-size: .75rem;
     color: $purple;
     padding-right: 4px;

@@ -2,7 +2,7 @@
 
 .configuration-dropdown {
   position: relative;
-  font-family: Montserrat, Arial, sans-serif;
+  font-family: Montserrat, OpenSans, sans-serif;
 
   &__label {
     text-transform: uppercase;
@@ -21,7 +21,7 @@
     border-radius: 0.14em 0.14em 0 0;
     user-select: none;
     cursor: pointer;
-    font-family: Montserrat, Arial, sans-serif;
+    font-family: Montserrat, OpenSans, sans-serif;
     font-size: .875rem;
     width: 100%;
 
@@ -62,7 +62,7 @@
   &__item {
     display: flex;
     justify-content: space-between;
-    font-family: Montserrat, Arial, sans-serif;
+    font-family: Montserrat, OpenSans, sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 0.75rem;
@@ -92,7 +92,7 @@
     width: 1.5em;
     height: 1.5em;
     border: 1px solid $dark-shade-50;
-    font-family: Montserrat, Arial, sans-serif;
+    font-family: Montserrat, OpenSans, sans-serif;
     font-weight: normal;
     color: $dark-shade-50;
     border-radius: 50%;
