@@ -1,0 +1,27 @@
+extends ../main-layout/main-layout
+
+block title
+  title All Pages
+
+block header
+
+block content
+  - 
+    const pages = [
+      { link: "colors-and-fonts", title: "Colors & Fonts"},
+      { link: "headers-footers", title: "Headers & Footers"},
+      { link: "cards", title: "Cards"},
+      { link: "form-elements", title: "Form Elements"},
+      { link: "landing", title: "Langing"},
+      { link: "registration", title: "Registration"},
+      { link: "sign-in", title: "Sign In"},
+      { link: "search-room", title: "Search Room"},
+      { link: "room-details", title: "Room Details"},
+    ]
+  .index
+    ul.index__list
+      each page in pages
+        li.index__item
+          a.index__link(href=`pages/${page.link}.html` target="_blank")= page.title
+
+block footer

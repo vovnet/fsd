@@ -77,7 +77,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: './src/index.pug',
+      template: './src/pages/index/index.pug',
     }),
     new HtmlWebpackPlugin({
       filename: 'pages/colors-and-fonts.html',
