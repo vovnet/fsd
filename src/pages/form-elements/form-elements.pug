@@ -18,6 +18,7 @@ include ../../blocks/button/button
 include ../../blocks/kit-logo/kit-logo
 include ../../blocks/rounded-button/rounded-button
 include ../../blocks/simple-button/simple-button
+include ../../blocks/slider/slider
 
 block title
   title Form Elements
@@ -192,7 +193,7 @@ block content
           .form-elements__head.form-elements__head--accent
             .form-elements__title Range slider
           .form-elements__slider
-            input.slider.js-slider
+            +slider()
 
         .form-elements__item
           .form-elements__head.form-elements__head--accent

@@ -4,7 +4,8 @@ include ../../blocks/checkbox/checkbox
 include ../../blocks/range-dates/range-dates
 include ../../blocks/expander/expander 
 include ../../blocks/image-card/image-card 
-include ../../blocks/pagination/pagination 
+include ../../blocks/pagination/pagination
+include ../../blocks/slider/slider
 
 block title
   title Search Room
@@ -25,7 +26,7 @@ block content
           .search-room__sidebar-item
             h3.search-room__sidebar-item-title Диапазон цен
             .search-room__slider
-              input.slider.js-slider
+              +slider()
               div.search-room__price Стоимость за сутки пребывания в номере
           .search-room__sidebar-item
             h3.search-room__sidebar-item-title checkbox buttons
