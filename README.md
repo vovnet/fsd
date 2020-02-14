@@ -19,22 +19,22 @@
 - ion-rangeslider ([документация](http://ionden.com/a/plugins/ion.rangeSlider/))
 
 ## UI Kit
-[Fonts & Type](http://vovnet.github.io/fsd/pages/colors-and-fonts.html)
+[Fonts & Type](http://vovnet.github.io/fsd/colors-type.html)
 
-[Cards](http://vovnet.github.io/fsd/pages/cards.html)
+[Cards](http://vovnet.github.io/fsd/cards.html)
 
-[Headers & Footers](http://vovnet.github.io/fsd/pages/headers-footers.html)
+[Headers & Footers](http://vovnet.github.io/fsd/headers-footers.html)
 
-[Form elements](http://vovnet.github.io/fsd/pages/form-elements.html)
+[Form elements](http://vovnet.github.io/fsd/form-elements.html)
 
 ## Pages
 
-[Landing](http://vovnet.github.io/fsd/pages/landing.html)
+[Landing](http://vovnet.github.io/fsd/landing.html)
 
-[Registration](http://vovnet.github.io/fsd/pages/registration.html)
+[Registration](http://vovnet.github.io/fsd/registration.html)
 
-[Sign In](http://vovnet.github.io/fsd/pages/sign-in.html)
+[Sign In](http://vovnet.github.io/fsd/sign-in.html)
 
-[Search room](http://vovnet.github.io/fsd/pages/search-room.html)
+[Search room](http://vovnet.github.io/fsd/search-room.html)
 
-[Room details](http://vovnet.github.io/fsd/pages/room-details.html)
+[Room details](http://vovnet.github.io/fsd/room-details.html)
