@@ -20,6 +20,7 @@ module.exports = {
 
   output: {
     path: path.resolve(__dirname, 'build'),
+    filename: '[contenthash].[name].js',
   },
 
   module: {
@@ -82,7 +83,7 @@ module.exports = {
       template: `${PAGES_DIR}/${page}/${page}.pug`,
     })),
     new MiniCssExtractPlugin({
-      filename: '[name].css',
+      filename: '[contenthash].css',
       chunkFilename: '[id].css',
     }),
     new webpack.ProvidePlugin({
