@@ -56,7 +56,6 @@ module.exports = {
           options: {
             name: '[name].[ext]',
             outputPath: 'assets/fonts',
-            publicPath: '../assets/fonts',
           },
         },
       },
@@ -70,7 +69,6 @@ module.exports = {
           options: {
             name: '[name].[ext]',
             outputPath: 'assets/images',
-            publicPath: '../assets/images',
           },
         },
       },
@@ -84,7 +82,7 @@ module.exports = {
       template: `${PAGES_DIR}/${page}/${page}.pug`,
     })),
     new MiniCssExtractPlugin({
-      filename: 'css/[name].css',
+      filename: '[name].css',
       chunkFilename: '[id].css',
     }),
     new webpack.ProvidePlugin({
