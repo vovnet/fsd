@@ -1,8 +1,12 @@
 const path = require('path');
 const webpack = require('webpack');
+const fs = require('fs');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+
+const PAGES_DIR = path.resolve(__dirname, 'src/pages');
+const PAGES = fs.readdirSync(PAGES_DIR);
 
 module.exports = {
   resolve: {
@@ -75,46 +79,10 @@ module.exports = {
 
   plugins: [
     new CleanWebpackPlugin(),
-    new HtmlWebpackPlugin({
-      filename: 'index.html',
-      template: './src/pages/index/index.pug',
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'pages/colors-and-fonts.html',
-      template: './src/pages/colors-type/colors-and-fonts.pug',
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'pages/headers-footers.html',
-      template: './src/pages/headers-footers/headers-footers.pug',
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'pages/landing.html',
-      template: './src/pages/landing/landing.pug',
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'pages/cards.html',
-      template: './src/pages/cards/cards.pug',
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'pages/form-elements.html',
-      template: './src/pages/form-elements/form-elements.pug',
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'pages/registration.html',
-      template: './src/pages/registration/registration.pug',
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'pages/sign-in.html',
-      template: './src/pages/sign-in/sign-in.pug',
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'pages/search-room.html',
-      template: './src/pages/search-room/search-room.pug',
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'pages/room-details.html',
-      template: './src/pages/room-details/room-details.pug',
-    }),
+    ...PAGES.map((page) => new HtmlWebpackPlugin({
+      filename: `${page}.html`,
+      template: `${PAGES_DIR}/${page}/${page}.pug`,
+    })),
     new MiniCssExtractPlugin({
       filename: 'css/[name].css',
       chunkFilename: '[id].css',

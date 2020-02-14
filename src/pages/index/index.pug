@@ -8,7 +8,7 @@ block header
 block content
   - 
     const pages = [
-      { link: "colors-and-fonts", title: "Colors & Fonts"},
+      { link: "colors-type", title: "Colors & Fonts"},
       { link: "headers-footers", title: "Headers & Footers"},
       { link: "cards", title: "Cards"},
       { link: "form-elements", title: "Form Elements"},
@@ -22,6 +22,6 @@ block content
     ul.index__list
       each page in pages
         li.index__item
-          a.index__link(href=`pages/${page.link}.html` target="_blank")= page.title
+          a.index__link(href=`${page.link}.html` target="_blank")= page.title
 
 block footer

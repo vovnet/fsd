@@ -1,0 +1,32 @@
+extends ../main-layout/main-layout
+
+include ../../blocks/color/color
+include ../../blocks/type/type
+include ../../blocks/kit-logo/kit-logo
+
+block title 
+  title Colors & Type
+
+block header
+
+block content
+  .colors-type
+    .colors-type__logo
+      +kit-logo()
+    .colors-type__wrapper
+      .colors-type__pallete
+        +color({title: "Dark Shade 100%", body: "#1F2041", theme: "100"})
+        +color({title: "Dark Shade 75%", body: "#1F2041", theme: "75"})
+        +color({title: "Dark Shade 50%", body: "#1F2041", theme: "50"})
+        +color({title: "Dark Shade 25%", body: "#1F2041", theme: "25"})
+        +color({title: "Dark Shade 5%", body: "#1F2041", theme: "5"})
+        +color({title: "Purple", body: "#BC9CFF", theme: "main"})
+        +color({title: "Green", body: "#6FCF97", theme: "accent"})
+          
+      .colors-type__types
+        +type({title: "H1", text: "This one is the sub-section or widget title", size: "large"})
+        +type({title: "H2", text: "Next one is the item title inside <br> widgets", size: "medium"})
+        +type({title: "H3", text: "This is a label or CTA text", size: "small"})
+        +type({title: "Body", text: "This is the body text which is used for most of the design,<br>like paragraphs, lists, etc."})
+
+block footer
