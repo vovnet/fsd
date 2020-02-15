@@ -12,4 +12,4 @@ mixin enter-card()
       .enter-card__enter-button
         +long-button("Войти")
     .enter-card__footer
-      +account("Нет аккаунта на Toxin?", "Создать")
+      +account({text: "Нет аккаунта на Toxin?", buttonText: "Создать", withoutPaddingsButton: true})

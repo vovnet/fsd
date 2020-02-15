@@ -3,7 +3,7 @@
 .enter-card {
   display: block;
   width: 380px;
-  padding: 22px 30px 30px;
+  padding: 24px 30px 30px;
   background-color: $white;
   border-radius: 4px;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
@@ -14,7 +14,7 @@
     line-height: 1.875rem;
     font-weight: bold;
     color: $dark-shade-100;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
   }
 
   &__subtitle {
@@ -30,17 +30,17 @@
   }
 
   &__enter-button {
-    margin-top: 18px;
+    margin-top: 20px;
   }
 
   &__account {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    padding-top: 30px;
   }
 
   &__footer {
-    margin-top: 30px;
+    margin-top: 28px;
+    padding-bottom: 2px;
   }
 }

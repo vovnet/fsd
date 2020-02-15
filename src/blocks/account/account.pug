@@ -1,7 +1,7 @@
 include ../rounded-button/rounded-button
 
-mixin account(text, buttonText)
+mixin account({text, buttonText, isLarge=true, withoutPaddingsButton=false})
   .account
     .account__left= text
     .account__right
-    +rounded-button({text: buttonText, isLarge: true})
+    +rounded-button({text: buttonText, isLarge: isLarge, withoutPaddings: withoutPaddingsButton})

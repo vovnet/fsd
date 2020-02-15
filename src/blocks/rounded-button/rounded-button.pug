@@ -1,7 +1,9 @@
-mixin rounded-button({text, isDisabled = false, isLarge = false})
+mixin rounded-button({text, isDisabled = false, isLarge = false, withoutPaddings = false})
   - const classes = ["rounded-button"]
   if isDisabled
     - classes.push("rounded-button--disabled")
   if isLarge
     - classes.push("rounded-button--large")
+  if withoutPaddings
+    - classes.push("rounded-button--without-paddings")
   button(class=classes)= text
