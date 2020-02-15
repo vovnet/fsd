@@ -3,7 +3,7 @@
 .register-card {
   display: block;
   width: 380px;
-  padding: 22px 30px 30px;
+  padding: 24px 30px 30px;
   background-color: $white;
   border-radius: 4px;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
@@ -21,22 +21,46 @@
     color: $dark-shade-100;
     text-transform: uppercase;
     font-size: .75rem;
-    margin-bottom: 0;
+    margin: 0;
   }
 
   &__block {
-    margin: 20px 0;
+    margin-top: 20px;
 
     &--margin-large {
-      margin: 30px 0 0;
+      margin: 28px 0 0;
     }
+  }
+
+  &__birthday-block {
+    margin-top: 19px;
+  }
+
+  &__service {
+    margin-top: 16px;
   }
 
   &__item {
     margin-bottom: 10px;
+
+    &--without-bottom {
+      margin-bottom: 0;
+    }
+  }
+
+  &__proposal {
+    margin-top: 7px;
+  }
+
+  &__main-button {
+    margin-top: 23px;
   }
 
   &__label {
     margin-bottom: 4px;
+  }
+
+  &__radio {
+    margin-top: 7px;
   }
 }

@@ -11,23 +11,25 @@ mixin register-card()
       .register-card__block
         .register-card__item
           +text-field({type: "text", placeholder: "Имя"})
-        .register-card__item
+        .register-card__item.register-card__item--without-bottom
           +text-field({type: "text", placeholder: "Фамилия"})
-        +radio({items: [
-          { label: "Мужчина", name: "gender", checked: true },
-          { label: "Женщина", name: "gender", checked: false }
-        ]})
-      .register-card__block
+        .register-card__radio
+          +radio({items: [
+            { label: "Мужчина", name: "gender", checked: true },
+            { label: "Женщина", name: "gender", checked: false }
+          ]})
+      .register-card__birthday-block
         h3.register-card__subtitle Дата рождения
         +text-field({type: "text", placeholder: "ДД.ММ.ГГГГ", masked: true})
-      .register-card__block
+      .register-card__service
         h3.register-card__subtitle Данные для входа в сервис
         .register-card__item
           +text-field({type: "text", placeholder: "Email"})
-        .register-card__item
+        .register-card__item.register-card__item--without-bottom
           +text-field({type: "password", placeholder: "Пароль"})
-        +toggle("Получать спецпредложения")
-      .register-card__block
+        .register-card__proposal
+          +toggle("Получать спецпредложения")
+      .register-card__main-button
         +long-button("Перейти к оплате")
     .register-card__block.register-card__block--margin-large
       +account("Уже есть аккаунт на Toxin", "Войти")

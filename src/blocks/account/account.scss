@@ -9,4 +9,8 @@
   align-items: baseline;
   line-height: 1.125rem;
   color: $black;
+
+  &__left {
+    line-height: 46px;
+  }
 }
