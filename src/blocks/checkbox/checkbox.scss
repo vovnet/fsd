@@ -4,9 +4,10 @@
   display: block;
   position: relative;
   padding-left: 2.2em;
-  padding-bottom: 0.7em;
+  padding-bottom: 12px;
   cursor: pointer;
   user-select: none;
+  line-height: 1.125rem;
 
   &--text-bold {
     font-family: Montserrat, OpenSans, sans-serif;
@@ -41,8 +42,8 @@
     content: '';
     display: none;
     position: absolute;
-    top: 0.36em;
-    left: 0.46em;
+    top: 4px;
+    left: 7px;
     width: 0.375em;
     height: 0.5em;
     border-width: 0 2px 2px 0;
