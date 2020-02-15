@@ -1,46 +1,40 @@
-@import '../../scss/colors.scss';
+@import "../../scss/colors.scss";
 
 .radio {
-  display: inline-block;
-  position: relative;
-  padding-left: 2.3em;
-  padding-right: 10px;
-  user-select: none;
-  cursor: pointer;
+  display: flex;
 
-  &__input {
-    opacity: 0;
-    width: 0;
-    height: 0;
+  &__label {
+    position: relative;
+    margin-right: 20px;
+    padding-left: 30px;
+    cursor: pointer;
   }
 
-  &__mark {
+  &__marker {
+    content: "";
     position: absolute;
-    top: 2px;
-    left: 2px;
+    top: 3px;
+    left: 0;
     width: 20px;
     height: 20px;
-    border-radius: 50%;
+    border-radius: 100%;
     border: 1px solid $dark-shade-25;
   }
 
-  &__mark::after {
-    content: '';
-    display: none;
+  &__input:checked,
+  &__input:not(:checked) {
     position: absolute;
-    top: 0.2em;
-    left: 0.2em;
+    left: -9999px;
+  }
+
+  &__input:checked ~ &__marker:after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
     width: 12px;
     height: 12px;
     background-image: linear-gradient(180deg, $purple 0%, #8ba4f9 100%);
-    border-radius: 50%;
-  }
-
-  &__input:checked ~ &__mark::after {
-    display: block;
-  }
-
-  &__input:checked ~ &__mark {
-    border-color: $purple;
+    border-radius: 100%;
   }
 }

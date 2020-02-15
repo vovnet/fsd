@@ -7,14 +7,16 @@ include ../text-field/text-field
 mixin register-card()
   .register-card
     h1.register-card__title Регистрация аккаунта
-    form.register-card-form(action="/mock-address", method="post")
+    form.register-card-form(action="/mock-address" method="post")
       .register-card__block
         .register-card__item
           +text-field({type: "text", placeholder: "Имя"})
         .register-card__item
           +text-field({type: "text", placeholder: "Фамилия"})
-        +radio({ label: "Мужчина", name: "gender", checked: true })
-        +radio({ label: "Женщина", name: "gender"})
+        +radio({items: [
+          { label: "Мужчина", name: "gender", checked: true },
+          { label: "Женщина", name: "gender", checked: false }
+        ]})
       .register-card__block
         h3.register-card__subtitle Дата рождения
         +text-field({type: "text", placeholder: "ДД.ММ.ГГГГ", masked: true})

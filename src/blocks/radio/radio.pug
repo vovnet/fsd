@@ -1,4 +1,6 @@
-mixin radio({label, name, checked = false})
-  label.radio= label
-    input.radio__input(type="radio" name=name checked=checked)
-    .radio__mark
+mixin radio({items})
+  .radio
+    each item in items
+      label.radio__label= item.label
+        input.radio__input(type="radio" name=item.name checked=item.checked)
+        .radio__marker

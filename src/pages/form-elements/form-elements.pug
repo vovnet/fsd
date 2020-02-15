@@ -135,8 +135,10 @@ block content
         .form-elements__item.form-elements__item--big-space
           .form-elements__head.form-elements__head--accent
             .form-elements__title Radio buttons 
-          +radio({ label: "Мужчина", name: "gender", checked: true })
-          +radio({ label: "Женщина", name: "gender", checked: false })
+          +radio({items: [
+            { label: "Мужчина", name: "gender", checked: true },
+            { label: "Женщина", name: "gender", checked: false }
+          ]})
 
         .form-elements__item.form-elements__item--big-space
           .form-elements__head.form-elements__head--accent
