@@ -1,0 +1,6 @@
+include ../checkbox/checkbox
+
+mixin descriptive-checkbox({ label, description, checked = false })
+  .descriptive-checkbox
+    +checkbox({ label: label, checked: checked, bold: true })
+    .descriptive-checkbox__description= description

@@ -1,0 +1,14 @@
+@import '../../scss/colors.scss';
+
+.descriptive-checkbox {
+  color: $dark-shade-50;
+
+  &__description {
+    font-family: Montserrat, OpenSans, sans-serif;
+    font-size: 0.75rem;
+    line-height: 1.2em;
+    font-weight: normal;
+    padding-left: 30px;
+    margin-top: 6px;
+  }
+}
