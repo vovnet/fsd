@@ -9,7 +9,7 @@
   &__grid {
     display: grid;
     margin-top: 26px;
-    gap: 1em;
+    //gap: 1em;
     justify-items: center;
 
     @media screen and (min-width: $middle-size) {
@@ -20,7 +20,7 @@
 
   &__header {
     font-family: Quicksand, OpenSans, sans-serif;
-    margin: 4px 0 0 0;
+    margin: 8px 0 0 0;
     grid-column: 1/-1;
     font-size: 1.5rem;
     color: $dark-shade-100;
@@ -29,6 +29,7 @@
   &__pagination {
     grid-column: 1/-1;
     justify-self: center;
+    margin: 24px 14px 70px 0;
   }
 
   &__sidebar {
@@ -62,9 +63,9 @@
   &__content {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(272px, 1fr));
-    row-gap: 2em;
+    row-gap: 22px;
     column-gap: 8px;
-    margin-left: 26px;
+    margin-left: 36px;
   }
 
   &__room-card {
