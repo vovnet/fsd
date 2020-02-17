@@ -27,7 +27,7 @@ block content
           .search-room__sidebar-item
             h3.search-room__sidebar-item-title Диапазон цен
             .search-room__slider
-              +slider()
+              +slider({title: "Диапазон цены"})
               div.search-room__price Стоимость за сутки пребывания в номере
           .search-room__sidebar-item
             h3.search-room__sidebar-item-title checkbox buttons
@@ -111,7 +111,7 @@ block content
             image: "apartments-2.png",
             arrows: false,
             position: 840,
-            lux: true, 
+            lux: false, 
             price: "9 900", 
             rating: 4, 
             comments: 65

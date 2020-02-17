@@ -8,10 +8,11 @@ class Slider {
 
   init() {
     const element = $('.js-slider');
+    this.minMax = element.parent().find('.slider__min-max');
 
     this.slider = element.ionRangeSlider({
-      min: 1000,
-      max: 20000,
+      min: 500,
+      max: 15000,
       type: 'double',
       from: 5000,
       to: 10000,
@@ -22,12 +23,10 @@ class Slider {
   }
 
   updateLabel(data) {
-    this.html = `${data.from_pretty} &#8381; - ${data.to_pretty} &#8381;`;
-    $(data.slider).find('.slider__min-max').html(this.html);
+    $(this.minMax).html(`${data.from_pretty}&#8381; - ${data.to_pretty}&#8381;`);
   }
 
   onStart(data) {
-    data.slider.append('<div class="slider__min-max">');
     this.updateLabel(data);
   }
 }

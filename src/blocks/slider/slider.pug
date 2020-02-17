@@ -1,2 +1,8 @@
-mixin slider()
-  input.js-slider
+mixin slider({title="Range", footerText})
+  .slider
+    .slider__header
+      .slider__title= title
+      .slider__min-max Some text
+    input.js-slider
+    if footerText
+      .slider__footer= footerText
