@@ -11,7 +11,7 @@ class ItemView {
     this._$minusBtn = $('<div class="configuration-dropdown__button">-</div>');
     this._$plusBtn = $('<div class="configuration-dropdown__button">+</div>');
 
-    const $controlls = $('<div class="configuration-dropdown__controlls">')
+    const $controlls = $('<div class="configuration-dropdown__controls">')
       .append(this._$minusBtn)
       .append(this._$value)
       .append(this._$plusBtn);

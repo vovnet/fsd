@@ -8,7 +8,7 @@
 
   &__grid {
     display: grid;
-    padding-top: 30px;
+    margin-top: 26px;
     gap: 1em;
     justify-items: center;
 
@@ -55,8 +55,8 @@
     font-weight: bold;
   }
 
-  &__last-item {
-    margin-top: 30px;
+  &__expander {
+    margin-top: 26px;
   }
 
   &__content {
@@ -75,12 +75,27 @@
   }
 
   &__slider {
-    position: relative;
-    top: -16px;
-    font-size: .75rem;
-    color: $dark-shade-50;
-    font-family: Montserrat;
-    line-height: 1.5rem;
+    margin-top: 32px;
+  }
+
+  &__dropdown {
+    margin-top: 26px;
+  }
+
+  &__checkbox-block {
+    margin-top: 25px;
+  }
+
+  &__checkbox {
+    margin-top: 13px;
+  }
+
+  &__descriptive-checkbox {
+    margin-top: 10px;
+  }
+
+  &__options {
+    margin-top: 26px;
   }
 
   &--index-100 {

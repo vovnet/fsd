@@ -3,23 +3,16 @@
 .checkbox {
   display: block;
   position: relative;
-  padding-left: 2.2em;
-  padding-bottom: 12px;
+  padding-left: 30px;
   cursor: pointer;
   user-select: none;
   line-height: 1.125rem;
+  color: $dark-shade-50;
 
   &--text-bold {
     font-family: Montserrat, OpenSans, sans-serif;
     font-weight: bold;
-  }
-
-  &__description {
-    font-family: Montserrat, OpenSans, sans-serif;
-    font-size: 0.75rem;
-    line-height: 1.2em;
-    padding-top: 0.65em;
-    color: $dark-shade-50;
+    color: $dark-shade-75;
   }
 
   &__input {
@@ -30,7 +23,7 @@
 
   &__mark {
     position: absolute;
-    top: 0;
+    top: -1px;
     left: 0;
     width: 1.4em;
     height: 1.4em;

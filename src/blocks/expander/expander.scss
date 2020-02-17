@@ -1,21 +1,21 @@
-@import '../../scss/colors.scss';
+@import "../../scss/colors.scss";
 
 .expander {
   &__header {
-    text-transform: uppercase;
     font-family: Montserrat, OpenSans, sans-serif;
-    font-weight: bold;
-    font-size: 0.75rem;
-    padding-bottom: 16px;
-    color: $dark-shade-100;
     cursor: pointer;
     user-select: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.75rem;
+    color: $dark-shade-100;
 
     &::after {
-      content: '';
+      content: "";
       display: inline-block;
       position: relative;
-      top: -3px;
+      top: -2px;
+      left: -16px;
       margin-left: 48px;
       width: 8px;
       height: 8px;
@@ -29,6 +29,10 @@
       transform: rotate(135deg);
       top: 3px;
     }
+  }
+
+  &__checkbox {
+    margin-top: 12px;
   }
 
   &__list {

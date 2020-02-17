@@ -6,7 +6,6 @@
 
   &__label {
     text-transform: uppercase;
-    
     font-weight: bold;
     font-size: 0.75rem;
     color: $dark-shade-100;
@@ -75,7 +74,7 @@
     padding-top: 10px;
   }
 
-  &__controlls {
+  &__controls {
     display: flex;
     width: 100px;
     justify-content: space-between;

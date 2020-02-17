@@ -5,4 +5,5 @@ mixin expander({title, hide, list})
     .expander__header.js-expander= title
     .expander__list(class=hide ? "expander__list--hide": "")
       each item in list
-        +checkbox(item.text, item.checked)
+        .expander__checkbox
+          +checkbox({ label: item.text, checked: item.checked} )

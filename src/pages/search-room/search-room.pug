@@ -6,6 +6,9 @@ include ../../blocks/expander/expander
 include ../../blocks/image-card/image-card 
 include ../../blocks/pagination/pagination
 include ../../blocks/slider/slider
+include ../../blocks/descriptive-checkbox/descriptive-checkbox
+include ../../blocks/configuration-dropdown/configuration-dropdown
+include ../../blocks/dropdown-field/dropdown-field
 
 block title
   title Search Room
@@ -16,43 +19,41 @@ block content
       sidebar.search-room__sidebar
         form.search-room-form(action="/mock-address", method="post")
           .search-room__sidebar-item
-            +date-dropdown({
-              label: "Даты превыбания в отеле",
-              date: "19 авг - 23 авг"
-            })
+            +dropdown-field({ title: "Даты пребывания в отеле", value: "19 авг - 23 авг" })
+
           .search-room--index-100
             .search-room__sidebar-item
               .search-room__subtitle Гости
-              input.js-dropdown-guests
+              +configuration-dropdown({ name: "guests" })
           .search-room__sidebar-item
-            h3.search-room__sidebar-item-title Диапазон цен
             .search-room__slider
-              +slider({title: "Диапазон цены"})
-              div.search-room__price Стоимость за сутки пребывания в номере
-          .search-room__sidebar-item
+              +slider({title: "Диапазон цены", footerText: "Стоимость за сутки пребывания в номере"})
+          .search-room__checkbox-block
             h3.search-room__sidebar-item-title checkbox buttons
-            +checkbox("Можно курить", false)
-            +checkbox("Можно с питомцами", true)
-            +checkbox("Можно пригласить гостей (до 10 человек)", true)
-          .search-room__sidebar-item
+            .search-room__checkbox
+              +checkbox({ label: "Можно курить" })
+            .search-room__checkbox
+              +checkbox({ label: "Можно с питомцами", checked: true })
+            .search-room__checkbox
+              +checkbox({ label: "Можно пригласить гостей (до 10 человек)", checked: true })
+          .search-room__options
             h3.search-room__sidebar-item-title Доступность
-            +checkboxList([
-              {
-                title: "Широкий коридор",
-                checked: false,
-                desc: "Ширина коридоров в номере не менее 91 см."
-              },
-              {
-                title: "Помощник для инвалидов",
-                checked: false,
-                desc: "На 1 этаже вас встретит специалист и проводит до номера."
-              }
-            ])
+            .search-room__descriptive-checkbox
+              +descriptive-checkbox({
+                label: "Широкий коридор",
+                description: "Ширина коридоров в номере не менее 91 см.",
+              })
+            .search-room__descriptive-checkbox
+              +descriptive-checkbox({
+                label: "Помощник для инвалидов",
+                description: "На 1 этаже вас встретит специалист и проводит до номера.",
+              })
+           
           .search-room--index-100
-            .search-room__sidebar-ite
-              h3.search-room__sidebar-item-title Удобства номера
-              input.js-dropdown-search-room
-          .search-room__last-item
+            .search-room__dropdown
+              .search-room__subtitle Удобства номера
+              +configuration-dropdown({ name: "search-room" })
+          .search-room__expander
             .search-room__sidebar-item
               +expander({
                 title: "Дополнительные удобства",

@@ -3,6 +3,7 @@ include ../apartment-info/apartment-info
 include ../range-dates/range-dates 
 include ../invoice/invoice 
 include ../long-button/long-button
+include ../configuration-dropdown/configuration-dropdown
 
 mixin booking-card()
   .booking-card
@@ -17,7 +18,7 @@ mixin booking-card()
         })
       .booking-card__item.booking-card__item--index-low
         h3.booking-card__subtitle Гости
-        input.js-dropdown-booking
+        +configuration-dropdown({ name: "booking" })
       .booking-card__invoice
         +invoice()
       .booking-card__item

@@ -1,5 +1,6 @@
 include ../range-dates/range-dates
 include ../long-button/long-button
+include ../configuration-dropdown/configuration-dropdown
 
 mixin apartments()
   .find-apartments-card
@@ -13,6 +14,6 @@ mixin apartments()
           })
         .find-apartments-card__item.find-apartments-card__item--primary
           h3.find-apartments-card__subtitle Гости
-          input.js-dropdown-find-apartments
+          +configuration-dropdown({ name: "find-apartments" })
       .find-apartments-card__button
         +long-button("Подобрать номер")

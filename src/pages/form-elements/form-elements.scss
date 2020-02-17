@@ -49,6 +49,14 @@
     z-index: 50;
   }
 
+  &__checkbox {
+    margin-top: 12px;
+  }
+
+  &__descriptive-checkbox {
+    margin-top: 10px;
+  }
+
   &__item {
     width: 320px;
     padding-bottom: 20px;

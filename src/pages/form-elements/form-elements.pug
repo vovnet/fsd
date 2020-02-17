@@ -19,6 +19,9 @@ include ../../blocks/kit-logo/kit-logo
 include ../../blocks/rounded-button/rounded-button
 include ../../blocks/simple-button/simple-button
 include ../../blocks/slider/slider
+include ../../blocks/descriptive-checkbox/descriptive-checkbox
+include ../../blocks/configuration-dropdown/configuration-dropdown
+include ../../blocks/dropdown-field/dropdown-field
 
 block title
   title Form Elements
@@ -30,7 +33,7 @@ block content
     .form-elements__logo
       +kit-logo()
     .form-elements__wrapper
-      
+
       .form-elements__left 
         .form-elements__item
           .form-elements__head
@@ -46,7 +49,7 @@ block content
           .form-elements__head
             .form-elements__title Dropdown
             .form-elements__desc Default
-          input.js-dropdown-guest-close
+          +configuration-dropdown({ name: "guest-close" })
         .form-elements__item
           .form-elements__head
             .form-elements__title Masked text field
@@ -55,17 +58,14 @@ block content
 
         .form-elements__item.form-elements__item--big-space
           +range-dates({
-            firstLabel: "Date dropdown",
-            secondLabel: "Date dropdown"
+            inLabel: "Date dropdown",
+            outLabel: "Date dropdown"
           })
 
 
         .form-elements__item.form-elements__item--big-space
           .form-elements__small-container
-            +date-dropdown({
-              label: "Filter date dropdown",
-              date: "19 авг - 23 авг"
-            })
+            +dropdown-field({ title: "Filter date dropdown", value: "19 авг - 23 авг" })
 
         .form-elements__item.form-elements__item--big-space
           .form-elements__small-container
@@ -79,14 +79,14 @@ block content
               .form-elements__head
                 .form-elements__title Dropdown 
                 .form-elements__desc Default
-              input.js-dropdown-room-close
+              +configuration-dropdown({ name: "room-close" })
 
         .form-elements__item.form-elements__item--big-space
           .form-elements__small-container
             .form-elements__head
               .form-elements__title Dropdown 
               .form-elements__desc Default
-            input.js-dropdown-room-open
+            +configuration-dropdown({ name: "room-open" })
 
         .form-elements__top-margin
           .form-elements__item
@@ -128,9 +128,12 @@ block content
         .form-elements__item.form-elements__item--big-space
           .form-elements__head.form-elements__head--accent
             .form-elements__title Checkbox buttons 
-          +checkbox("Можно курить")
-          +checkbox("Можно с питомцами", true)
-          +checkbox("Можно пригралисть гостей (до 10 человек)", true)
+          .form-elements__checkbox
+            +checkbox({ label: "Можно курить" })
+          .form-elements__checkbox
+            +checkbox({ label: "Можно с питомцами", checked: true })
+          .form-elements__checkbox
+            +checkbox({ label: "Можно пригралисть гостей (до 10 человек)", checked: true })
 
         .form-elements__item.form-elements__item--big-space
           .form-elements__head.form-elements__head--accent
@@ -172,24 +175,23 @@ block content
 
         .form-elements__item
           .form-elements__head.form-elements__head--accent
-            .form-elements__title Dropdown 
-          input.js-dropdown-guest-open
+            .form-elements__title Dropdown
+          +configuration-dropdown({ name: "guest-open" })
 
         .form-elements__top-margin
           .form-elements__item
             .form-elements__head.form-elements__head--accent
               .form-elements__title Rich checkbox buttons
-            +checkboxList([
-              { 
-                title: "Широкий коридор",
-                desc: "Ширина коридоров в номере не менее 91 см."
-              },
-              { 
-                title: "Помощник для инвалидов",
-                desc: "На 1 этаже вас встретит специалист и проводит до номера."
-              },
-            ])
-
+            .form-elements__descriptive-checkbox
+              +descriptive-checkbox({
+                label: "Широкий коридор",
+                description: "Ширина коридоров в номере не менее 91 см.",
+              })
+            .form-elements__descriptive-checkbox
+              +descriptive-checkbox({
+                label: "Помощник для инвалидов",
+                description: "На 1 этаже вас встретит специалист и проводит до номера.",
+              })
       .form-elements__right 
         .form-elements__item
           .form-elements__slider
@@ -221,13 +223,13 @@ block content
         .form-elements__item
           .form-elements__head.form-elements__head--accent
             .form-elements__title Dropdown 
-          input.js-dropdown-guest-open-many
+          +configuration-dropdown({ name: "guest-open-many" })
 
         .form-elements__top-margin
           .form-elements__item
             .form-elements__head.form-elements__head--accent
               .form-elements__title Bullet list 
-            
+
             +bullet([
               "Нельзя с питомцами",
               "Без вечеринок и мероприятий",

@@ -1,12 +1,7 @@
-mixin checkbox(label, checked=false)
-    label.checkbox= label
-        input.checkbox__input(type="checkbox" checked=checked)
-        .checkbox__mark
-
-
-mixin checkboxList(items)
-  each item in items
-    label.checkbox.checkbox--text-bold= item.title
-      input.checkbox__input(type="checkbox" checked=item.checked)
-      .checkbox__mark
-      .checkbox__description= item.desc
+mixin checkbox({ label, checked=false, bold=false })
+  - let classes = ["checkbox"]
+  if bold
+    - classes.push("checkbox--text-bold")
+  label(class=classes)= label
+    input.checkbox__input(type="checkbox" checked=checked)
+    .checkbox__mark
