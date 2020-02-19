@@ -1,119 +1,93 @@
-@import '../../scss/colors.scss';
-@import '../../scss/sizes.scss';
+@import "../../scss/colors.scss";
+@import "../../scss/sizes.scss";
 
 .menu {
-  display: none;
-  flex-direction: column;
+  font-family: Montserrat, OpenSans, sans-serif;
   color: $dark-shade-50;
-  position: relative;
-  border: 1px solid $dark-shade-50;
-  background-color: $white;
-  z-index: 100;
+  font-size: 0.875rem;
+  line-height: 1rem;
 
-  @media (min-width: 767px) {
+  &__container {
+    position: relative;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 34px;
-    border: none;
+
+    @media (max-width: 767px) {
+      position: absolute;
+      flex-direction: column;
+      background-color: white;
+      align-items: center;
+      left: 5%;
+      right: 5%;
+      border: 1px solid $dark-shade-5;
+      font-size: 1.5rem;
+      visibility: hidden;
+    }
+
+    &--visible {
+      visibility: visible;
+    }
+  }
+
+  &__button {
+    display: none;
+
+    @media (max-width: 767px) {
+      display: block;
+    }
   }
 
   &__item {
-    text-align: center;
-    line-height: 2.5rem;
+    cursor: pointer;
+    margin-right: 20px;
 
-    @media (min-width: 767px) {
-      cursor: pointer;
-      padding: 0 15px;
-      border: none;
-      line-height: 34px;
-      white-space: nowrap;
-    }
-
-    &--current {
-      font-family: Montserrat, OpenSans, sans-serif;
-      font-weight: bold;
-      cursor: default;
-    }
-
-    &:hover {
-      background-color: $dark-shade-5;
-    }
-
-    &:last-child {
-      @media (min-width: 767px) {
-        margin-right: -10px;
-      }
+    @media (max-width: 767px) {
+      padding: 20px;
+      width: 80%;
+      border-bottom: 1px solid $dark-shade-5;
     }
   }
 
-  a {
+  &__expander {
+    display: flex;
+
+    &:after {
+      content: "\e313";
+      font-family: "Material Icons";
+      font-size: 1.5rem;
+      width: 24px;
+      line-height: 1.25rem;
+    }
+  }
+
+  &__link {
     text-decoration: none;
     color: $dark-shade-50;
-    display: block;
-    height: 100%;
+
+    &--bold-text {
+      font-weight: bold;
+    }
   }
 
   &__submenu {
-    position: relative;
-
-    @media (min-width: 767px) {
-      position: relative;
-      padding-right: 36px;
-    }
-
-    &::after {
-      position: absolute;
-      content: '\e313';
-      font-family: 'Material Icons';
-      font-size: 1.5rem;
-      width: 24px;
-      height: 21px;
-      line-height: 2.5rem;
-      top: 0;
-
-      @media (min-width: 767px) {
-        content: '\e313';
-        font-family: 'Material Icons';
-        font-size: 1.5rem;
-        width: 24px;
-        height: 36px;
-        line-height: 36px;
-        right: 12px;
-      }
-    }
-  }
-
-  &--open {
-    display: flex;
-  }
-}
-
-.submenu {
-  display: none;
-  flex-direction: column;
-  padding: 10px;
-  background-color: $dark-shade-10;
-
-  @media (min-width: 767px) {
     position: absolute;
-    display: none;
     top: 40px;
-    left: -20px;
-    border: 1px solid rgba(0, 0, 0, 0.12);
+    flex-direction: column;
+    background-color: white;
     border-radius: 4px;
-    background-color: $white;
-  }
+    display: none;
 
-  &--open {
-    display: flex;
-  }
-
-  &__item {
-    @media (min-width: 767px) {
-      padding: 10px 40px;
-      text-align: center;
+    @media (max-width: 767px) {
+      position: initial;
+      margin-top: 20px;
     }
+
+    &--visible {
+      display: flex;
+    }
+  }
+
+  &__submenu-item {
+    padding: 10px 16px;
 
     &:hover {
       background-color: $dark-shade-5;

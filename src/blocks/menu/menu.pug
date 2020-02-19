@@ -1,28 +1,21 @@
+include ../icon-button/icon-button
+
 mixin menu(items)
   nav.menu.js-menu
-    +_print-items(items)
-
-
-mixin _print-items(items)
-  each item in items
-    - 
-      let classList = ["menu__item"]
-      if (item.current) {
-        classList.push("menu__item--current")
-      }
-
-    if Array.isArray(item.link)
-      - classList.push("js-menu__submenu")
-
-      .menu__submenu  
-        div(class=classList)= item.text
-          .submenu.js-submenu
-            +_print-submenu(item.link)
-    else
-      div(class=classList)
-        a(href=item.link)= item.text
-
-
-mixin _print-submenu(items)
-  each item in items
-    a.submenu__item(href=item.link)= item.text
+    .menu__button
+      +icon-button({ icon: "menu" })
+    .menu__container.js-menu-container
+      each item in items
+        .menu__item
+          if Array.isArray(item.link)
+            .menu__expander.js-menu-expander
+              a.menu__link= item.text
+            .menu__submenu.js-submenu
+              each subitem in item.link
+                .menu__submenu-item
+                  a.menu__link(href=subitem.link)= subitem.text
+          else
+            - let classes = ["menu__link"]
+            if item.current
+              - classes.push("menu__link--bold-text")
+            a(class=classes href=item.link)= item.text

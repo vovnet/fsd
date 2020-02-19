@@ -1,41 +1,26 @@
 /* global $ */
 class Menu {
-  constructor() {
-    this.menu = $('.js-menu');
-
-    const menuButton = $('.js-menu-button');
-    const submenu = $('.js-menu__submenu');
-    const body = $(document.body).not('.js-menu__submenu');
-
-    menuButton.on('click', this.onClickMenuButton.bind(this));
-    submenu.on('click', this.onClickSubmenu.bind(this));
-    body.on('click', this.onCloseMenu.bind(this));
-  }
-
-  toggleSbumenu() {
-    if (this.submenu) {
-      $(this.submenu).children('.js-submenu').toggleClass('submenu--open');
-      this.submenu = null;
-    }
+  constructor(element) {
+    this.menu = element;
+    this.menuButton = $(this.menu).find('.js-button');
+    this.menuContainer = $(this.menu).find('.js-menu-container');
+    this.menuButton.on('click', this.onClickMenuButton.bind(this));
+    const expanders = $(this.menuContainer).find('.js-menu-expander');
+    expanders.each(this.addClickListenersToExpanders.bind(this));
   }
 
   onClickMenuButton() {
-    this.menu.toggleClass('menu--open');
+    this.menuContainer.toggleClass('menu__container--visible');
   }
 
-  onClickSubmenu(e) {
-    this.submenu = e.currentTarget;
-    this.toggleSbumenu();
+  addClickListenersToExpanders(index, element) {
+    $(element).on('click', this.onClickExpander.bind(this));
   }
 
   // eslint-disable-next-line class-methods-use-this
-  onCloseMenu(e) {
-    if (!$(e.target).is('.js-menu__submenu')) {
-      const submenu = $('.js-submenu');
-      if (submenu.hasClass('submenu--open')) {
-        submenu.removeClass('submenu--open');
-      }
-    }
+  onClickExpander(e) {
+    const submenu = $(e.currentTarget).parent().find('.js-submenu');
+    submenu.toggleClass('menu__submenu--visible');
   }
 }
 
