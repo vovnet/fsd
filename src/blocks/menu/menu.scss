@@ -1,5 +1,5 @@
-@import "../../scss/colors.scss";
-@import "../../scss/sizes.scss";
+@import '../../scss/colors.scss';
+@import '../../scss/sizes.scss';
 
 .menu {
   font-family: Montserrat, OpenSans, sans-serif;
@@ -51,8 +51,8 @@
     display: flex;
 
     &:after {
-      content: "\e313";
-      font-family: "Material Icons";
+      content: '\e313';
+      font-family: 'Material Icons';
       font-size: 1.5rem;
       width: 24px;
       line-height: 1.25rem;
