@@ -4,7 +4,7 @@ include ../../blocks/footer/footer
 doctype html
 html
   head
-    meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
+    meta(http-equiv="Content-Type" content="text/html;charset=UTF-8")
     meta(name="viewport" content="initial-scale=1.0, width=device-width")
     link(rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png")
     link(rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png")
@@ -13,9 +13,9 @@ html
     meta(name="msapplication-TileColor" content="#da532c")
     meta(name="theme-color" content="#ffffff")
     block keywords
-      meta(name="keywords", content="fsd template")
+      meta(name="keywords" content="fsd template")
     block description
-      meta(name="description", content="this is the test project")
+      meta(name="description" content="this is the test project")
     block title
       title Main
   body.main-layout
@@ -29,48 +29,39 @@ html
         },
         menu: [
           {
-          text: "О нас",
-          link: "/mock-address",
-          classes: ["menu__item"]
+            text: "О нас",
+            link: "/mock-address",
           }, 
           {
-          text: "Услуги",
-          classes: ["menu__item", "menu__submenu", "js-menu__submenu"],
-          link: [
-          {
-            text: "First",
-            link: "/mock-address",
-            classes: ["submenu__item"]
-          },
-          {
-            text: "Second",
-            link: "/mock-address",
-            classes: ["submenu__item"]
-          }
-          ]},
+            text: "Услуги",
+            link: [
+              {
+                text: "First",
+                link: "/mock-address",
+              },
+              {
+                text: "Second",
+                link: "/mock-address",
+              }
+            ]},
           {
           text: "Вакансии",
           link: "/mock-address",
-          classes: ["menu__item"]
           },
           {
           text: "Новости",
           link: "/mock-address",
-          classes: ["menu__item"]
           },
           {
           text: "Соглашения",
-          classes: ["menu__item", "menu__submenu", "js-menu__submenu"],
           link: [
             {
             text: "First",
             link: "/mock-address",
-            classes: ["submenu__item"]
             },
             {
             text: "Second",
             link: "/mock-address",
-            classes: ["submenu__item"]
             }
           ]
           }
