@@ -229,4 +229,13 @@ block content
           })
 
         .search-room__pagination
-          +pagination()
+          +pagination({ 
+            text: "1 &ndash; 12 из 100+ вариантов аренды",
+            items: [
+              { link: "/mock-address", text: "1", active: true },
+              { link: "/mock-address", text: "2" },
+              { link: "/mock-address", text: "3" },
+              { text: "..." },
+              { link: "/mock-address", text: "15" },
+            ]
+          })  

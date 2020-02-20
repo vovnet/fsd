@@ -218,7 +218,16 @@ block content
         .form-elements__item
           .form-elements__head.form-elements__head--accent
             .form-elements__title Pagination 
-          +pagination()  
+          +pagination({ 
+            text: "1 &ndash; 12 из 100+ вариантов аренды",
+            items: [
+              { link: "/mock-address", text: "1", active: true },
+              { link: "/mock-address", text: "2" },
+              { link: "/mock-address", text: "3" },
+              { text: "..." },
+              { link: "/mock-address", text: "15" },
+            ]
+          })  
 
         .form-elements__item
           .form-elements__head.form-elements__head--accent
