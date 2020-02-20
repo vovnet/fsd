@@ -1,10 +1,8 @@
 include ../socials/socials
 include ../site-logo/site-logo
 
-mixin light-footer()
+mixin light-footer({ text })
   footer.light-footer
     +site-logo()
-    .light-footer__content
-      | Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam 
-      | eget nullam pellentesque aliquam curabitur cociis.
+    .light-footer__content= text
     +socials()
