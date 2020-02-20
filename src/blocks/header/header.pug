@@ -4,7 +4,7 @@ include ../icon-button/icon-button
 include ../rounded-button/rounded-button
 include ../site-logo/site-logo
 
-mixin header({isLogged, buttons: {enter = "", register = ""} = {}, menu})
+mixin header({isLogged, buttons: {enter = "", register = ""} = {}, menu, username})
   header.header
     .header__container
       .header__logo
@@ -12,7 +12,7 @@ mixin header({isLogged, buttons: {enter = "", register = ""} = {}, menu})
       .header__menu
         +menu(menu)
       if isLogged
-        .header__account Cosmin Negoita
+        .header__account= username
       else
         .header__enter-panel
           .header__enter-button
