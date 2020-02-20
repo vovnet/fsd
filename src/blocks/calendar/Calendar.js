@@ -39,9 +39,9 @@ class Calendar {
       this.datepicker = $(this.inputs[0]).datepicker(options).data('datepicker');
     }
 
-    this.$clearButton = $('<span class="simple-button simple-button--disabled">Очистить</span>');
-    this.$applyButton = $('<span class="simple-button">Применить</span></div>');
-    const $btnContainer = $('<div class="datepicker--btn-container">')
+    this.$clearButton = $('<span class="calendar__clear-button">Очистить</span>');
+    this.$applyButton = $('<span class="calendar__apply-button">Применить</span></div>');
+    const $btnContainer = $('<div class="calendar__footer">')
       .append(this.$clearButton)
       .append(this.$applyButton);
 
