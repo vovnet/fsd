@@ -22,6 +22,6 @@ block content
     ul.index__list
       each page in pages
         li.index__item
-          a.index__link(href=`${page.link}.html` target="_blank")= page.title
+          a.index__link(href=`${page.link}.html` target="_blank" rel="noopener noreferrer")= page.title
 
 block footer
