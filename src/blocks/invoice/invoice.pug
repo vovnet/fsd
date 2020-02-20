@@ -1,15 +1,15 @@
-mixin invoice()
+mixin invoice({ standing, standingPrice, services, servicesPrice, additional, additionalPrice, total })
   .invoice
     .invoice__row
-      .invoice__service 9 990&#8381; х 4 суток
-      div.invoice__sum 39 960&#8381;
+      .invoice__service!= standing
+      div.invoice__sum!= standingPrice
     .invoice__row
-      .invoice__service.invoice__service--with-icon Сбор за услуги: скидка 2 179&#8381;
-      div.invoice__sum 0&#8381;
+      .invoice__service.invoice__service--with-icon!= services
+      div.invoice__sum!= servicesPrice
     .invoice__row
-      .invoice__service.invoice__service--with-icon Сбор за дополнительные услуги
-      div.invoice__sum 300&#8381;
+      .invoice__service.invoice__service--with-icon= additional
+      div.invoice__sum!= additionalPrice
     .invoice__row.invoice__row--font-large
       h2.invoice__block Итого
       .invoice__line
-      h2.invoice__block 38 081&#8381;
+      h2.invoice__block!= total
