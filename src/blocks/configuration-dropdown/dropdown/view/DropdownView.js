@@ -10,7 +10,7 @@ class DropdownView {
     this._$itemsContainer = $('<div class="configuration-dropdown__content">');
 
     if (props.visibility === 'hide') {
-      this._$itemsContainer.addClass('configuration-dropdown__content--hide');
+      this._$itemsContainer.addClass('configuration-dropdown__content--hided');
     }
 
     $(input)
@@ -78,7 +78,7 @@ class DropdownView {
   }
 
   onClick() {
-    $(this._$itemsContainer).toggleClass('configuration-dropdown__content--hide');
+    $(this._$itemsContainer).toggleClass('configuration-dropdown__content--hided');
   }
 
   onContainerClick(e) {
@@ -86,7 +86,7 @@ class DropdownView {
   }
 
   onDocumentClick() {
-    $(this._$itemsContainer).addClass('configuration-dropdown__content--hide');
+    $(this._$itemsContainer).addClass('configuration-dropdown__content--hided');
   }
 }
 

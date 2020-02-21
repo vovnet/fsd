@@ -1,13 +1,13 @@
 mixin color({title, body, theme})
   - 
     const themes = new Map();
-    themes.set('100', 'color__box--dark-shade-100');
-    themes.set('75', 'color__box--dark-shade-75');
-    themes.set('50', 'color__box--dark-shade-50');
-    themes.set('25', 'color__box--dark-shade-25');
-    themes.set('5', 'color__box--dark-shade-5');
-    themes.set('main', 'color__box--purple');
-    themes.set('accent', 'color__box--green');
+    themes.set('100', 'color__box--background-dark-100');
+    themes.set('75', 'color__box--background-dark-75');
+    themes.set('50', 'color__box--background-dark-50');
+    themes.set('25', 'color__box--background-dark-25');
+    themes.set('5', 'color__box--background-dark-5');
+    themes.set('main', 'color__box--background-purple');
+    themes.set('accent', 'color__box--background-green');
     
     let classes = ['color__box', themes.get(theme)];
     

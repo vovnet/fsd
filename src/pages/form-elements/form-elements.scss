@@ -61,11 +61,11 @@
     width: 320px;
     padding-bottom: 20px;
 
-    &--sub {
+    &--with-small-space {
       padding-bottom: 14px;
     }
 
-    &--big-space {
+    &--with-big-space {
       padding-bottom: 40px;
     }
   }
@@ -118,7 +118,7 @@
     margin-right: 20px;
     margin-bottom: 30px;
 
-    &--big {
+    &--with-right-margin {
       margin-right: 30px;
     }
   }

@@ -56,32 +56,32 @@ block content
             .form-elements__desc Default
           +text-field({type: "text", placeholder: "ДД.ММ.ГГГГ", masked: true})
 
-        .form-elements__item.form-elements__item--big-space
+        .form-elements__item.form-elements__item--with-big-space
           +range-dates({
             inLabel: "Date dropdown",
             outLabel: "Date dropdown"
           })
 
 
-        .form-elements__item.form-elements__item--big-space
+        .form-elements__item.form-elements__item--with-big-space
           .form-elements__small-container
             +dropdown-field({ title: "Filter date dropdown", value: "19 авг - 23 авг" })
 
-        .form-elements__item.form-elements__item--big-space
+        .form-elements__item.form-elements__item--with-big-space
           .form-elements__small-container
             .form-elements__head
               .form-elements__title Subscription text field 
             +subscription({ placeholder: "Email" })
 
         .form-elements__top
-          .form-elements__item.form-elements__item--big-space
+          .form-elements__item.form-elements__item--with-big-space
             .form-elements__small-container
               .form-elements__head
                 .form-elements__title Dropdown 
                 .form-elements__desc Default
               +configuration-dropdown({ name: "room-close" })
 
-        .form-elements__item.form-elements__item--big-space
+        .form-elements__item.form-elements__item--with-big-space
           .form-elements__small-container
             .form-elements__head
               .form-elements__title Dropdown 
@@ -125,7 +125,7 @@ block content
           })
 
       .form-elements__mid 
-        .form-elements__item.form-elements__item--big-space
+        .form-elements__item.form-elements__item--with-big-space
           .form-elements__head.form-elements__head--accent
             .form-elements__title Checkbox buttons 
           .form-elements__checkbox
@@ -135,7 +135,7 @@ block content
           .form-elements__checkbox
             +checkbox({ label: "Можно пригралисть гостей (до 10 человек)", checked: true })
 
-        .form-elements__item.form-elements__item--big-space
+        .form-elements__item.form-elements__item--with-big-space
           .form-elements__head.form-elements__head--accent
             .form-elements__title Radio buttons 
           +radio({items: [
@@ -143,15 +143,15 @@ block content
             { label: "Женщина", name: "gender", checked: false }
           ]})
 
-        .form-elements__item.form-elements__item--big-space
+        .form-elements__item.form-elements__item--with-big-space
           .form-elements__head.form-elements__head--accent
             .form-elements__title Toggle
-          .form-elements__item--sub
+          .form-elements__item--with-small-space
             +toggle("Получать спецпредложения", true) 
-          .form-elements__item--sub
+          .form-elements__item--with-small-space
             +toggle("Получать спецпредложения") 
 
-        .form-elements__item.form-elements__item--big-space
+        .form-elements__item.form-elements__item--with-big-space
           .form-elements__head.form-elements__head--accent
             .form-elements__title Like button
           span.form-elements__like
@@ -205,9 +205,9 @@ block content
               +button({text: "Click me"})
             .form-elements__btn
               +button({text: "Click me", disabled: true})
-            .form-elements__btn.form-elements__btn--big
+            .form-elements__btn.form-elements__btn--with-right-margin
               +rounded-button({text: "Click me"})
-            .form-elements__btn.form-elements__btn--big
+            .form-elements__btn.form-elements__btn--with-right-margin
               +rounded-button({text: "Click me", isDisabled: true})
             .form-elements__btn
               +simple-button({text: "Click me"})

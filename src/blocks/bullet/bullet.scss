@@ -30,19 +30,19 @@
       padding-left: 14px;
     }
 
-    &--yellow-point::before {
+    &--yellow:link {
       background: linear-gradient(180deg, #ffe39c 0%, #ffba9c 100%);
     }
 
-    &--blue-point::before {
+    &--blue::before {
       background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
     }
 
-    &--pink-point::before {
+    &--pink::before {
       background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
     }
 
-    &--black-point::before {
+    &--black::before {
       background: linear-gradient(180deg, #919191 0%, #3d4975 100%);
     }
   }

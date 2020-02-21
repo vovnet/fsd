@@ -45,7 +45,7 @@
     border-top: none;
     padding-bottom: 6px;
 
-    &--hide {
+    &--hided {
       display: none;
     }
   }
@@ -53,7 +53,7 @@
   &__footer-button {
     visibility: visible;
 
-    &--hide {
+    &--hided {
       visibility: hidden;
     }
   }

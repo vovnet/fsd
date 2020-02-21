@@ -12,7 +12,7 @@
     height: 70px;
     border-radius: 6px;
 
-    &--dark-shade {
+    &--background-dark {
       &-100 {
         background-color: $dark-shade-100;
       }
@@ -34,11 +34,11 @@
       }
     }
 
-    &--purple {
+    &--background-purple {
       background-color: $purple;
     }
 
-    &--green {
+    &--background-green {
       background-color: $green;
     }
   }

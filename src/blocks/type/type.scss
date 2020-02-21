@@ -10,19 +10,19 @@
     flex-basis: 60px;
     flex-shrink: 0;
 
-    &--large {
+    &--font-large {
       font-size: 1.5rem;
       line-height: 1.2rem;
       margin-top: 5px;
     }
 
-    &--medium {
+    &--font-medium {
       font-size: 1.1875rem;
       line-height: 1.21rem;
       margin-top: 3px;
     }
 
-    &--small {
+    &--font-small {
       font-size: 0.75rem;
       line-height: 0.8rem;
       margin-top: 5px;
@@ -36,14 +36,14 @@
   &__text {
     font-family: Quicksand, OpenSans, sans-serif;
 
-    &--large {
+    &--font-large {
       font-size: 1.5rem;
       line-height: 1.875rem;
       color: $dark-shade-100;
       margin: 0;
     }
 
-    &--medium {
+    &--font-medium {
       font-size: 1.1875rem;
       line-height: 1.5rem;
       color: $dark-shade-100;
@@ -51,7 +51,7 @@
       margin: 0;
     }
 
-    &--small {
+    &--font-small {
       font-family: Montserrat, OpenSans, sans-serif;
       text-transform: uppercase;
       color: $dark-shade-100;
@@ -59,7 +59,7 @@
       margin: 0;
     }
 
-    &--default {
+    &--font-default {
       font-family: Montserrat, OpenSans, sans-serif;
       font-size: .875rem;
       line-height: 1.5rem;

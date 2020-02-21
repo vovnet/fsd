@@ -7,12 +7,12 @@ mixin apartments()
     h1.find-apartments-card__title Найдем номера под ваши пожелания
     form.find-apartments-card-form(action="/mock-address", method="get")
       .find-apartments-card__body
-        .find-apartments-card__item.find-apartments-card__item--primary
+        .find-apartments-card__item.find-apartments-card__item--high
           +range-dates({
             inLabel: "Прибытие",
             outLabel: "Выезд"
           })
-        .find-apartments-card__item.find-apartments-card__item--primary
+        .find-apartments-card__item.find-apartments-card__item--high
           h3.find-apartments-card__subtitle Гости
           +configuration-dropdown({ name: "find-apartments" })
       .find-apartments-card__button

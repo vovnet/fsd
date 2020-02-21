@@ -20,11 +20,11 @@
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
     margin-bottom: 40px;
 
-    &--up {
+    &--high {
       z-index: 3;
     }
 
-    &--down {
+    &--low {
       z-index: 1;
     }
   }

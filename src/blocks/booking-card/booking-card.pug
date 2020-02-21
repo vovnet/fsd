@@ -11,12 +11,12 @@ mixin booking-card()
       .booking-card__header
         +apartment-info({number: 888, lux: true, big: true})
         +price("9 990")
-      .booking-card__item.booking-card__item--index-hight
+      .booking-card__item.booking-card__item--high
         +range-dates({
           inLabel: "Прибытие",
           outLabel: "Выезд",
         })
-      .booking-card__item.booking-card__item--index-low
+      .booking-card__item.booking-card__item--low
         h3.booking-card__subtitle Гости
         +configuration-dropdown({ name: "booking" })
       .booking-card__invoice

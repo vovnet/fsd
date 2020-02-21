@@ -54,7 +54,7 @@ html
   body.headers-footers
     .headers-footers__logo
       +kit-logo()
-    .headers-footers__item.headers-footers__item--up
+    .headers-footers__item.headers-footers__item--high
       +header({
         isLogged: false, 
         buttons: {
@@ -65,7 +65,7 @@ html
       })
     .headers-footers__item
       +header({isLogged: true, menu: menu, username: "Cosmin Negoita"})
-    .headers-footers__item.headers-footers__item--down
+    .headers-footers__item.headers-footers__item--low
       +footer({
         main: "Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis",
         navigation: [
