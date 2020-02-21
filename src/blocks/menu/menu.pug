@@ -17,5 +17,5 @@ mixin menu(items)
           else
             - let classes = ["menu__link"]
             if item.current
-              - classes.push("menu__link--bold-text")
+              - classes.push("menu__link_bold-text")
             a(class=classes href=item.link)= item.text

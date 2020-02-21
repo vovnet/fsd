@@ -11,7 +11,7 @@ mixin register-card()
       .register-card__block
         .register-card__item
           +text-field({type: "text", placeholder: "Имя"})
-        .register-card__item.register-card__item--without-margin
+        .register-card__item.register-card__item_without-margin
           +text-field({type: "text", placeholder: "Фамилия"})
         .register-card__radio
           +radio({items: [
@@ -25,11 +25,11 @@ mixin register-card()
         h3.register-card__subtitle Данные для входа в сервис
         .register-card__item
           +text-field({type: "text", placeholder: "Email"})
-        .register-card__item.register-card__item--without-margin
+        .register-card__item.register-card__item_without-margin
           +text-field({type: "password", placeholder: "Пароль"})
         .register-card__proposal
           +toggle("Получать спецпредложения")
       .register-card__main-button
         +long-button("Перейти к оплате")
-    .register-card__block.register-card__block--margin-large
+    .register-card__block.register-card__block_margin-large
       +account({text: "Уже есть аккаунт на Toxin", buttonText: "Войти"})

@@ -31,9 +31,9 @@ class ItemView {
     this._$value.text(value);
 
     if (value <= 0) {
-      this._$minusBtn.addClass('configuration-dropdown__button--disabled');
+      this._$minusBtn.addClass('configuration-dropdown__button_disabled');
     } else {
-      this._$minusBtn.removeClass('configuration-dropdown__button--disabled');
+      this._$minusBtn.removeClass('configuration-dropdown__button_disabled');
     }
   }
 

@@ -61,11 +61,11 @@
     width: 320px;
     padding-bottom: 20px;
 
-    &--with-small-space {
+    &_with-small-space {
       padding-bottom: 14px;
     }
 
-    &--with-big-space {
+    &_with-big-space {
       padding-bottom: 40px;
     }
   }
@@ -93,7 +93,7 @@
     font-size: 0.75rem;
     margin-bottom: 5px;
 
-    &--accent {
+    &_accent {
       margin-bottom: 16px;
     }
   }
@@ -118,7 +118,7 @@
     margin-right: 20px;
     margin-bottom: 30px;
 
-    &--with-right-margin {
+    &_with-right-margin {
       margin-right: 30px;
     }
   }

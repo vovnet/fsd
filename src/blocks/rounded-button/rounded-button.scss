@@ -31,20 +31,20 @@
     background-image: $gradient;
   }
 
-  &--disabled::after {
+  &_disabled::after {
     opacity: 0.5;
   }
 
-  &--disabled {
+  &_disabled {
     cursor: auto;
   }
 
-  &--space-large {
+  &_space-large {
     height: 40px;
     padding: 0 25px;
   }
 
-  &--without-paddings {
+  &_without-paddings {
     padding: 0 18px;
   }
 }

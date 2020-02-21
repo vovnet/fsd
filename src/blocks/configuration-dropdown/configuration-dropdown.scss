@@ -45,7 +45,7 @@
     border-top: none;
     padding-bottom: 6px;
 
-    &--hided {
+    &_hided {
       display: none;
     }
   }
@@ -53,7 +53,7 @@
   &__footer-button {
     visibility: visible;
 
-    &--hided {
+    &_hided {
       visibility: hidden;
     }
   }
@@ -101,7 +101,7 @@
     user-select: none;
     cursor: pointer;
 
-    &--disabled {
+    &_disabled {
       cursor: default;
       border-color: $dark-shade-25;
       color: $dark-shade-25;

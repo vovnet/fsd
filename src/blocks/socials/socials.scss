@@ -18,15 +18,15 @@
       margin-right: 0;
     }
 
-    &--with-twitter::before {
+    &_with-twitter::before {
       content: '\f099';
     }
 
-    &--with-fb::before {
+    &_with-fb::before {
       content: '\f082';
     }
 
-    &--with-instagram::before {
+    &_with-instagram::before {
       content: '\f16d';
     }
   }

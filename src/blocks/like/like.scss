@@ -24,12 +24,12 @@
     line-height: .7rem;
     text-transform: none;
 
-    &--liked {
+    &_liked {
       color: $purple;
     }
   }
 
-  &--liked {
+  &_liked {
     color: $purple;
   }
 
@@ -46,7 +46,7 @@
     border-radius: 10px;
   }
 
-  &--liked::after {
+  &_liked::after {
     background-image: $gradient;
   }
 }

@@ -3,6 +3,6 @@ mixin text-field({type, placeholder, masked = false, focused = false})
   if masked
     - classes.push('js-masked')
   else if focused
-    - classes.push('text-field--focused')
+    - classes.push('text-field_focused')
 
   input(type=type placeholder=placeholder class=classes)

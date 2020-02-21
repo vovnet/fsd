@@ -29,11 +29,11 @@
     margin: 4px 0;
     position: relative;
 
-    &--high {
+    &_high {
       z-index: 10;
     }
 
-    &--low {
+    &_low {
       z-index: 5;
     }
   }

@@ -8,7 +8,7 @@
   color: $purple;
   cursor: pointer;
 
-  &--disabled {
+  &_disabled {
     cursor: default;
     color: $dark-shade-50;
   }

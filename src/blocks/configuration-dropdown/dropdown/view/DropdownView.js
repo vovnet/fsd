@@ -10,7 +10,7 @@ class DropdownView {
     this._$itemsContainer = $('<div class="configuration-dropdown__content">');
 
     if (props.visibility === 'hide') {
-      this._$itemsContainer.addClass('configuration-dropdown__content--hided');
+      this._$itemsContainer.addClass('configuration-dropdown__content_hided');
     }
 
     $(input)
@@ -35,7 +35,7 @@ class DropdownView {
         element.name,
         element.value,
         this._$itemsContainer,
-        this._controller.onChange.bind(this._controller)
+        this._controller.onChange.bind(this._controller),
       );
 
       this._items.push(item);
@@ -43,7 +43,7 @@ class DropdownView {
 
     if (props.buttons) {
       const $footer = $('<div class="configuration-dropdown__footer">');
-      this._$clearButton = $('<div class="simple-button simple-button--disabled">Очистить</div>');
+      this._$clearButton = $('<div class="simple-button simple-button_disabled">Очистить</div>');
       const $applyButton = $('<div class="simple-button">Применить</div>');
       $footer
         .append(this._$clearButton)
@@ -78,15 +78,16 @@ class DropdownView {
   }
 
   onClick() {
-    $(this._$itemsContainer).toggleClass('configuration-dropdown__content--hided');
+    $(this._$itemsContainer).toggleClass('configuration-dropdown__content_hided');
   }
 
+  // eslint-disable-next-line class-methods-use-this
   onContainerClick(e) {
     e.stopPropagation();
   }
 
   onDocumentClick() {
-    $(this._$itemsContainer).addClass('configuration-dropdown__content--hided');
+    $(this._$itemsContainer).addClass('configuration-dropdown__content_hided');
   }
 }
 

@@ -10,7 +10,7 @@ class Menu {
   }
 
   onClickMenuButton() {
-    this.menuContainer.toggleClass('menu__container--visible');
+    this.menuContainer.toggleClass('menu__container_visible');
   }
 
   addClickListenersToExpanders(index, element) {
@@ -20,7 +20,7 @@ class Menu {
   // eslint-disable-next-line class-methods-use-this
   onClickExpander(e) {
     const submenu = $(e.currentTarget).parent().find('.js-submenu');
-    submenu.toggleClass('menu__submenu--visible');
+    submenu.toggleClass('menu__submenu_visible');
   }
 }
 

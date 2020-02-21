@@ -1,5 +1,7 @@
-import { BookingCard } from './BookingCard';
+/* global $ */
+import BookingCard from './BookingCard';
 
-$(document).ready(function() { 
-    new BookingCard();
+$(document).ready(() => {
+  // eslint-disable-next-line no-new
+  new BookingCard();
 });

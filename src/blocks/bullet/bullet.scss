@@ -25,24 +25,24 @@
       border-radius: 50%;
     }
 
-    &--compacted {
+    &_compacted {
       padding-bottom: 3px;
       padding-left: 14px;
     }
 
-    &--yellow:link {
+    &_yellow:link {
       background: linear-gradient(180deg, #ffe39c 0%, #ffba9c 100%);
     }
 
-    &--blue::before {
+    &_blue::before {
       background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
     }
 
-    &--pink::before {
+    &_pink::before {
       background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
     }
 
-    &--black::before {
+    &_black::before {
       background: linear-gradient(180deg, #919191 0%, #3d4975 100%);
     }
   }

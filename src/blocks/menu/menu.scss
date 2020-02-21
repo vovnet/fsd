@@ -23,7 +23,7 @@
       visibility: hidden;
     }
 
-    &--visible {
+    &_visible {
       visibility: visible;
     }
   }
@@ -63,7 +63,7 @@
     text-decoration: none;
     color: $dark-shade-50;
 
-    &--bold-text {
+    &_bold-text {
       font-weight: bold;
     }
   }
@@ -81,7 +81,7 @@
       margin-top: 20px;
     }
 
-    &--visible {
+    &_visible {
       display: flex;
     }
   }
