@@ -12,6 +12,7 @@
     column-gap: 56px;
     row-gap: 30px;
     padding-top: 64px;
+    margin-bottom: 58px;
 
     @media screen and (max-width: 1248px) {
       grid-template-columns: 1fr;
@@ -35,6 +36,7 @@
 
   &__statistic-container {
     display: flex;
+    margin-top: 20px;
   }
 
   &__donut {
@@ -44,15 +46,15 @@
 
   &__list {
     align-self: flex-end;
-    padding-bottom: 10px;
+    padding-bottom: 26px;
   }
 
   &__room-item {
     max-width: 280px;
 
     &_bottom {
-      margin-top: 24px;
-      max-width: 320px;
+      margin-top: 10px;
+      max-width: 330px;
     }
   }
 
@@ -70,15 +72,20 @@
     padding-bottom: 20px;
   }
 
+  &__bullets {
+    margin-top: 20px;
+    max-width: 260px;
+  }
+
   &__text {
     font-size: 0.875rem;
     line-height: 1.5rem;
+    margin-top: 16px;
   }
 
   &__booking {
     min-width: 380px;
     justify-self: center;
-    padding-top: 16px;
   }
 
   &__title {
@@ -87,11 +94,15 @@
     font-size: 1.1875rem;
     font-weight: bold;
     margin: 0;
+
+    &_with-left-space {
+      margin-left: 20px;
+    }
   }
 
   &__statistic {
     position: relative;
     top: -14px;
-    left: -8px;
+    left: -15px;
   }
 }

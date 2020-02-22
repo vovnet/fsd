@@ -71,12 +71,13 @@ block content
               text: "Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент"
             })
         .room-details__room-item.room-details__room-item_bottom
-          h2.room-details__title Правила
-          +bullet([
-            "Нельзя с питомцами",
-            "Без вечеринок и мероприятий",
-            "Время прибытия — после 13:00, а выезд до 12:00"
-          ])
+          h2.room-details__title.room-details__title_with-left-space Правила
+          .room-details__bullets
+            +bullet([
+              "Нельзя с питомцами",
+              "Без вечеринок и мероприятий",
+              "Время прибытия — после 13:00, а выезд до 12:00"
+            ])
         .room-details__room-item.room-details__room-item_bottom
           h2.room-details__title Отмена
           p.room-details__text Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
