@@ -9,7 +9,6 @@
   &__grid {
     display: grid;
     margin-top: 26px;
-    //gap: 1em;
     justify-items: center;
 
     @media screen and (min-width: $middle-size) {
@@ -20,7 +19,7 @@
 
   &__header {
     font-family: Quicksand, OpenSans, sans-serif;
-    margin: 8px 0 0 0;
+    margin: 6px 0 2px 0;
     grid-column: 1/-1;
     font-size: 1.5rem;
     color: $dark-shade-100;
@@ -64,7 +63,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(272px, 1fr));
     row-gap: 22px;
-    column-gap: 8px;
+    column-gap: 9px;
     margin-left: 36px;
   }
 
@@ -76,7 +75,7 @@
   }
 
   &__slider {
-    margin-top: 32px;
+    margin-top: 34px;
   }
 
   &__dropdown {

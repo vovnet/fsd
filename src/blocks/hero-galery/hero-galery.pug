@@ -1,5 +1,7 @@
 mixin hero-galery(images)
   .hero-galery
-    img(src=require(`blocks/hero-galery/images/${images[0]}`) class="hero-galery__main-image", alt="main image")
-    img(src=require(`blocks/hero-galery/images/${images[1]}`) class="hero-galery__other-image", alt="other image")
-    img(src=require(`blocks/hero-galery/images/${images[2]}`) class="hero-galery__other-image", alt="other image")
+    .hero-galery__main-container
+      img(src=require(`blocks/hero-galery/images/${images[0]}`) class="hero-galery__image", alt="main image")
+    .hero-galery__right-container
+      img(src=require(`blocks/hero-galery/images/${images[1]}`) class="hero-galery__image", alt="other image")
+      img(src=require(`blocks/hero-galery/images/${images[2]}`) class="hero-galery__image", alt="other image")

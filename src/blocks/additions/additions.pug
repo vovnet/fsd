@@ -1,7 +1,8 @@
 mixin additions({noBorder, title, desc, icon})
+  - let classes = ["additions"]
   if noBorder
-    - let noBorderClass = "additions_without-border"
-  .additions(class=noBorderClass)
+    - classes.push("additions_without-border")
+  div(class=classes)
     .additions__title= title
     div.description= desc
     i.additions__icon.material-icons= icon

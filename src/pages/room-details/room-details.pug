@@ -11,9 +11,9 @@ block title
 
 block content
   +hero-galery([
+    "galery-secondary-2.png",
     "galery-primary.png",
     "galery-secondary-1.png",
-    "galery-secondary-2.png"
   ])
   
   .room-details
@@ -21,24 +21,25 @@ block content
       .room-details__info
         .room-details__room-item
           h2.room-details__title Сведения о номере
-          .room-details__inner
+          .room-details__additions
+            .room-details__inner
+              +additions({
+                title: "Комфорт",
+                desc: "Шумопоглощающие стены",
+                icon: "tag_faces"
+              })
+            .room-details__inner
+              +additions({
+                title: "Удобство",
+                desc: "Окно в каждой из спален",
+                icon: "location_city"
+              })
             +additions({
-              title: "Комфорт",
-              desc: "Шумопоглощающие стены",
-              icon: "tag_faces"
+              title: "Уют",
+              desc: "Номер оснащен камином",
+              icon: "whatshot",
+              noBorder: true
             })
-          .room-details__inner
-            +additions({
-              title: "Удобство",
-              desc: "Окно в каждой из спален",
-              icon: "location_city"
-            })
-          +additions({
-            title: "Уют",
-            desc: "Номер оснащен камином",
-            icon: "whatshot",
-            noBorder: true
-          })
         .room-details__room-item
           h2.room-details__title Впечатления от номера
           .room-details__statistic-container
@@ -53,21 +54,22 @@ block content
                 li.bullet__element.bullet__element_black.bullet__element_compacted Разачарован
         .room-details__room-comments
           h2.room-details__title Отзывы посетителей номера
-          .room-details__inner
+          .room-details__comment
             +comment({
-              image: "ava.jpg",
+              image: "boy-avatar.png",
               author: "Мурад Сарафанов",
               date: "5 дней назад",
-              like: { likes: 5, liked: true },
+              like: { likes: 12, liked: true },
               text: "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей."
             })
-          +comment({
-            image: "ava.jpg",
-            author: "Патрисия Стёклышкова",
-            date: "Неделю назад",
-            like: { likes: 2, liked: false },
-            text: "Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент"
-          })
+          .room-details__comment
+            +comment({
+              image: "girl-avatar.png",
+              author: "Патрисия Стёклышкова",
+              date: "Неделю назад",
+              like: { likes: 2, liked: false },
+              text: "Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент"
+            })
         .room-details__room-item.room-details__room-item_bottom
           h2.room-details__title Правила
           +bullet([
