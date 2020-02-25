@@ -2,5 +2,5 @@ mixin dropdown-field({ title, placeholder, value })
   .dropdown-field
     if title
       .dropdown-field__title= title
-    .dropdown-field__icon-wrapper
+    label.dropdown-field__icon-wrapper
       input.dropdown-field__input(placeholder=placeholder value=value)
