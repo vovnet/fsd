@@ -1,4 +1,3 @@
-/* eslint-disable no-new */
 import Dropdown from '../../blocks/configuration-dropdown/dropdown/Dropdown';
 
 class Room {

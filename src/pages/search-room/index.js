@@ -1,4 +1,3 @@
-/* eslint-disable no-new */
 /* global $ */
 import Room from './Room';
 
