@@ -63,7 +63,7 @@ class Calendar {
     });
   }
 
-  onSelect(formattedDate, date) {
+  onSelect(_, date) {
     this.dates = date;
     this.clearInputs();
   }
@@ -81,8 +81,8 @@ class Calendar {
     if (this.dates.length < 2) {
       return;
     }
-    this.inputs.each((i, el) => {
-      $(el).val(this.dates[i].toLocaleDateString());
+    this.inputs.each((index, input) => {
+      $(input).val(this.dates[index].toLocaleDateString());
     });
 
     this.datepicker.hide();
