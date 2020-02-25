@@ -58,8 +58,8 @@ class Calendar {
   }
 
   clearInputs() {
-    this.inputs.each(function () {
-      this.value = '';
+    this.inputs.each((index) => {
+      this.inputs[index].value = '';
     });
   }
 
