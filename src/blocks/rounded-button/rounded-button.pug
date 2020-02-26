@@ -3,7 +3,7 @@ mixin rounded-button({text, isDisabled = false, isLarge = false, withoutPaddings
   if isDisabled
     - classes.push("rounded-button_disabled")
   if isLarge
-    - classes.push("rounded-button_space-large")
+    - classes.push("rounded-button_space_large")
   if withoutPaddings
     - classes.push("rounded-button_without-paddings")
   button(class=classes)= text

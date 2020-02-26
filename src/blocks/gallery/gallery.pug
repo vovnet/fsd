@@ -4,9 +4,9 @@ mixin gallery(image, arrows = true)
       img(src=require(`blocks/gallery/images/${image}`), alt="apartment photo")
       if (arrows)
         .gallery__left-arrow.gallery__arrow
-          i.material-icons keyboard_arrow_left
+          i.material-icons.gallery__icon keyboard_arrow_left
         .gallery__right-arrow.gallery__arrow
-          i.material-icons keyboard_arrow_left
+          i.material-icons.gallery__icon keyboard_arrow_left
       .gallery__point-container
         .gallery__point.gallery__point_filled
         .gallery__point

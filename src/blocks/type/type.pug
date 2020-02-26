@@ -1,18 +1,18 @@
 mixin type({title, text, size})
   .type
     if size == "large"
-      .type__head.type__head_font-large= title
+      .type__head.type__head_font_large= title
       .type__body
-        h1.type__text.type__text_font-large!= text
+        h1.type__text.type__text_font_large!= text
     else if size == "medium"
-      .type__head.type__head_font-medium= title
+      .type__head.type__head_font_medium= title
       .type__body
-        h2.type__text.type__text_font-medium!= text 
+        h2.type__text.type__text_font_medium!= text 
     else if size == "small"
-      .type__head.type__head_font-small= title
+      .type__head.type__head_font_small= title
       .type__body
-        h3.type__text.type__text_font-small!= text
+        h3.type__text.type__text_font_small!= text
     else
       .type__head= title
       .type__body
-        .type__text.type__text_font-default!= text
+        .type__text.type__text_font_default!= text
