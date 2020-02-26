@@ -1,5 +1,5 @@
-@import '../../scss/colors.scss';
-@import '../../scss/sizes.scss';
+@import "../../scss/colors.scss";
+@import "../../scss/sizes.scss";
 
 .footer {
   width: 100%;
@@ -45,10 +45,10 @@
         padding-bottom: 0;
       }
     }
+  }
 
-    &__header {
-      margin-top: 2px;
-    }
+  &__block-header {
+    margin-top: 2px;
   }
 
   &__socials {
@@ -62,7 +62,7 @@
   &__subtitle {
     font-family: Montserrat, OpenSans, sans-serif;
     color: $dark-shade-100;
-    font-size: .75rem;
+    font-size: 0.75rem;
     text-transform: uppercase;
     margin-bottom: 0;
   }

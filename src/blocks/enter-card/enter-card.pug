@@ -5,7 +5,7 @@ include ../text-field/text-field
 mixin enter-card() 
   .enter-card
     h1.enter-card__title Войти
-    form.enter-card-form(action="/mock-address", method="post")
+    form.enter-card__form(action="/mock-address", method="post")
       .enter-card__field
         +text-field({type: "text", placeholder: "Email"})
       +text-field({type: "password", placeholder: "Пароль"})

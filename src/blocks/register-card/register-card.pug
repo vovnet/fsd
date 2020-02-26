@@ -7,7 +7,7 @@ include ../text-field/text-field
 mixin register-card()
   .register-card
     h1.register-card__title Регистрация аккаунта
-    form.register-card-form(action="/mock-address" method="post")
+    form.register-card__form(action="/mock-address" method="post")
       .register-card__block
         .register-card__item
           +text-field({type: "text", placeholder: "Имя"})
