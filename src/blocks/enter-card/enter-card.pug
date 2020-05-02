@@ -7,7 +7,7 @@ mixin enter-card()
     h1.enter-card__title Войти
     form.enter-card__form(action="/mock-address", method="post")
       .enter-card__field
-        +text-field({type: "text", placeholder: "Email"})
+        +text-field({type: "email", placeholder: "Email"})
       +text-field({type: "password", placeholder: "Пароль"})
       .enter-card__enter-button
         +long-button("Войти")
