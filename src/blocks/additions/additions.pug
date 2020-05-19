@@ -3,6 +3,7 @@ mixin additions({noBorder, title, desc, icon})
   if noBorder
     - classes.push("additions_without-border")
   div(class=classes)
-    .additions__title= title
-    div.additions__description= desc
     i.additions__icon.material-icons= icon
+    .additions__info
+      .additions__title= title
+      div.additions__description= desc

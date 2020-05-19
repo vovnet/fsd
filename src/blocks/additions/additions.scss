@@ -1,15 +1,19 @@
 @import '../../scss/colors.scss';
 
 .additions {
-  position: relative;
+  display: flex;
   line-height: 1.716em;
   border-width: 0 0 1px 0;
   border-style: solid;
   border-color: $dark-shade-10;
-  padding: 0 0 1.43em 4.14em;
+  padding: 0 0 1.43em;
 
   &_without-border {
     border: none;
+  }
+
+  &__info {
+    margin-left: 10px;
   }
 
   &__title {
@@ -18,9 +22,6 @@
   }
 
   &__icon {
-    position: absolute;
-    top: 0.1em;
-    left: 0;
     font-family: 'Material Icons';
     font-size: 3.43em;
     line-height: 0.85em;
