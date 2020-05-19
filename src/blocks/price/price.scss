@@ -4,11 +4,11 @@
   font-family: Montserrat, OpenSans, sans-serif;
   color: $dark-shade-50;
 
-  &_font_bold {
+  &__primary {
     font-weight: bold;
   }
 
-  &_font_small {
+  &__secondary {
     font-size: .75rem;
   }
 }
