@@ -29,23 +29,23 @@ class FormElements {
       ],
     };
 
-    const guestCloseElement = document.querySelector('.js-dropdown-guest-close');
+    const guestCloseElement = document.querySelector('.js-form-elements__dropdown-guest-close > input');
     new Dropdown(guestCloseElement, this.guest);
 
-    const roomCloseElement = document.querySelector('.js-dropdown-room-close');
+    const roomCloseElement = document.querySelector('.js-form-elements__dropdown-room-close > input');
     new Dropdown(roomCloseElement, this.rooms);
 
     this.rooms.visibility = '';
-    const roomOpenElement = document.querySelector('.js-dropdown-room-open');
+    const roomOpenElement = document.querySelector('.js-form-elements__dropdown-room-open > input');
     new Dropdown(roomOpenElement, this.rooms);
 
     this.guest.visibility = '';
-    const guestOpenElement = document.querySelector('.js-dropdown-guest-open');
+    const guestOpenElement = document.querySelector('.js-form-elements__dropdown-guest-open > input');
     new Dropdown(guestOpenElement, this.guest);
 
     this.guest.items[0].value = 2;
     this.guest.items[1].value = 1;
-    const guestOpenManyElement = document.querySelector('.js-dropdown-guest-open-many');
+    const guestOpenManyElement = document.querySelector('.js-form-elements__dropdown-quest-open-many > input');
     new Dropdown(guestOpenManyElement, this.guest);
   }
 }

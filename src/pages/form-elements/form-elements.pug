@@ -45,7 +45,7 @@ block content
             .form-elements__title Text field
             .form-elements__desc Hover / Focus
           +text-field({type: "email", placeholder: "Email", focused: true})
-        .form-elements__item
+        .form-elements__item.js-form-elements__dropdown-guest-close
           .form-elements__head
             .form-elements__title Dropdown
             .form-elements__desc Default
@@ -75,14 +75,14 @@ block content
 
         .form-elements__top
           .form-elements__item.form-elements__item_with-big-space
-            .form-elements__small-container
+            .form-elements__small-container.js-form-elements__dropdown-room-close
               .form-elements__head
                 .form-elements__title Dropdown 
                 .form-elements__desc Default
               +configuration-dropdown({ name: "room-close" })
 
         .form-elements__item.form-elements__item_with-big-space
-          .form-elements__small-container
+          .form-elements__small-container.js-form-elements__dropdown-room-open
             .form-elements__head
               .form-elements__title Dropdown 
               .form-elements__desc Default
@@ -173,7 +173,7 @@ block content
             .form-elements__rating
               +rating(5)
 
-        .form-elements__item
+        .form-elements__item.js-form-elements__dropdown-guest-open
           .form-elements__head.form-elements__head_accent
             .form-elements__title Dropdown
           +configuration-dropdown({ name: "guest-open" })
@@ -236,7 +236,7 @@ block content
             ]
           })  
 
-        .form-elements__item
+        .form-elements__item.js-form-elements__dropdown-quest-open-many
           .form-elements__head.form-elements__head_accent
             .form-elements__title Dropdown 
           +configuration-dropdown({ name: "guest-open-many" })
