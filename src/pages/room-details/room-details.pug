@@ -4,7 +4,8 @@ include ../../blocks/hero-galery/hero-galery
 include ../../blocks/additions/additions 
 include ../../blocks/comment/comment 
 include ../../blocks/bullet/bullet 
-include ../../blocks/booking-card/booking-card 
+include ../../blocks/booking-card/booking-card
+include ../../blocks/donut/donut
 
 block title
   title Room details
@@ -44,8 +45,11 @@ block content
           h2.room-details__title Впечатления от номера
           .room-details__statistic-container
             .room-details__statistic
-              div(class="donut statistic__donut js-donut" data-donut='[{"value": 65, "color": "#BC9CFF", "bold": true}, {"value": 65, "color": "#6FCF97"}, {"value": 130, "color": "#FFE39C"}]')
-
+              +donut([
+                { "value": 65, "color": "#BC9CFF", "bold": true },
+                { "value": 65, "color": "#6FCF97" },
+                { "value": 130, "color": "#FFE39C" }
+              ])
             .room-details__list
               +bullet([
                 { text: "Великолепно", color: "yellow" },
