@@ -47,11 +47,12 @@ block content
               div(class="donut statistic__donut js-donut" data-donut='[{"value": 65, "color": "#BC9CFF", "bold": true}, {"value": 65, "color": "#6FCF97"}, {"value": 130, "color": "#FFE39C"}]')
 
             .room-details__list
-              ul.bullet
-                li.bullet__element.bullet__element_yellow.bullet__element_compacted Великолепно
-                li.bullet__element.bullet__element_blue.bullet__element_compacted Хорошо
-                li.bullet__element.bullet__element_pink.bullet__element_compacted Удовлетворительно
-                li.bullet__element.bullet__element_black.bullet__element_compacted Разачарован
+              +bullet([
+                { text: "Великолепно", color: "yellow" },
+                { text: "Хорошо", color: "blue" },
+                { text: "Удовлетворительно", color: "pink" },
+                { text: "Разачарован", color: "black" }
+              ])
         .room-details__room-comments
           h2.room-details__title Отзывы посетителей номера
           .room-details__comment
@@ -74,9 +75,9 @@ block content
           h2.room-details__title.room-details__title_with-left-space Правила
           .room-details__bullets
             +bullet([
-              "Нельзя с питомцами",
-              "Без вечеринок и мероприятий",
-              "Время прибытия — после 13:00, а выезд до 12:00"
+              { text: "Нельзя с питомцами" },
+              { text: "Без вечеринок и мероприятий" },
+              { text: "Время прибытия — после 13:00, а выезд до 12:00" }
             ])
         .room-details__room-item.room-details__room-item_bottom
           h2.room-details__title Отмена
