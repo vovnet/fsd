@@ -1,8 +1,6 @@
 @import '../../scss/colors.scss';
 
 .account {
-  position: relative;
-  z-index: 1;
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -12,5 +10,10 @@
 
   &__left {
     line-height: 46px;
+  }
+
+  &__right {
+    position: relative;
+    z-index: 1;
   }
 }
