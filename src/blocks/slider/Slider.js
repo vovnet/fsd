@@ -11,11 +11,6 @@ class Slider {
     this.minMax = element.parent().find('.slider__min-max');
 
     this.slider = element.ionRangeSlider({
-      min: 500,
-      max: 15000,
-      type: 'double',
-      from: 5000,
-      to: 10000,
       hide_from_to: true,
       onChange: this.updateLabel.bind(this),
       onStart: this.onStart.bind(this),

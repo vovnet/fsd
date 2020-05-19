@@ -17,7 +17,7 @@ block content
   .search-room
     .search-room__grid
       sidebar.search-room__sidebar
-        form.search-room__form(action="/mock-address", method="post")
+        form.search-room__form(action="/mock-address" method="post")
           .search-room__sidebar-item
             +dropdown-field({ title: "Даты пребывания в отеле", value: "19 авг - 23 авг" })
 
@@ -27,7 +27,15 @@ block content
               +configuration-dropdown({ name: "guests" })
           .search-room__sidebar-item
             .search-room__slider
-              +slider({title: "Диапазон цены", footerText: "Стоимость за сутки пребывания в номере"})
+              +slider({
+                title: "Диапазон цены",
+                footerText: "Стоимость за сутки пребывания в номере",
+                type: "double",
+                min: "500",
+                max: "15000",
+                from: "5000",
+                to: "10000"
+              })
           .search-room__checkbox-block
             h3.search-room__sidebar-item-title checkbox buttons
             .search-room__checkbox
@@ -48,7 +56,7 @@ block content
                 label: "Помощник для инвалидов",
                 description: "На 1 этаже вас встретит специалист и проводит до номера.",
               })
-           
+
           .search-room_index_100
             .search-room__dropdown
               .search-room__subtitle Удобства номера
