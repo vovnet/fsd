@@ -2,7 +2,7 @@
 class Menu {
   constructor(element) {
     this.menu = element;
-    this.menuButton = $(this.menu).find('.js-button');
+    this.menuButton = $(this.menu).find('.js-menu__button');
     this.menuContainer = $(this.menu).find('.js-menu-container');
     this.menuButton.on('click', this.onClickMenuButton.bind(this));
     const expanders = $(this.menuContainer).find('.js-menu-expander');

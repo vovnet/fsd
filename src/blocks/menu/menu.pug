@@ -2,7 +2,7 @@ include ../icon-button/icon-button
 
 mixin menu(items)
   nav.menu.js-menu
-    .menu__button
+    .menu__button.js-menu__button
       +icon-button({ icon: "menu" })
     .menu__container.js-menu-container
       each item in items
