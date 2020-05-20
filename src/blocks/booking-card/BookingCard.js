@@ -6,28 +6,30 @@ class BookingCard {
   }
 
   init() {
-    this.element = document.querySelector('.js-dropdown-booking');
+    this.element = document.querySelector('.js-booking-card__dropdown');
 
-    this.dropdown = new Dropdown(this.element, {
-      text: 'Сколько гостей',
-      visibility: 'hide',
-      words: ['гость', 'гостя', 'гостей'],
-      buttons: true,
-      items: [
-        {
-          name: 'Взрослых',
-          value: 2,
-        },
-        {
-          name: 'Детей',
-          value: 1,
-        },
-        {
-          name: 'Младенцев',
-          value: 0,
-        },
-      ],
-    });
+    if (this.element) {
+      this.dropdown = new Dropdown(this.element, {
+        text: 'Сколько гостей',
+        visibility: 'hide',
+        words: ['гость', 'гостя', 'гостей'],
+        buttons: true,
+        items: [
+          {
+            name: 'Взрослых',
+            value: 2,
+          },
+          {
+            name: 'Детей',
+            value: 1,
+          },
+          {
+            name: 'Младенцев',
+            value: 0,
+          },
+        ],
+      });
+    }
   }
 }
 

@@ -2,11 +2,12 @@ import DropdownView from './view/DropdownView';
 import DropdownModel from './model/DropdownModel';
 
 class Dropdown {
-  constructor(input, options) {
+  constructor(container, options) {
     this.model = new DropdownModel(options);
 
     const props = options;
     props.text = this.model.text;
+    const input = container.querySelector("input");
     this.view = new DropdownView(input, props, this);
     this.model.addUpdateListener(this.update.bind(this));
   }

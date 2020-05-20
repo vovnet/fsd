@@ -16,9 +16,9 @@ mixin booking-card()
           inLabel: "Прибытие",
           outLabel: "Выезд",
         })
-      .booking-card__item.booking-card__item_low
+      .booking-card__item.booking-card__item_low.js-booking-card__dropdown
         h3.booking-card__subtitle Гости
-        +configuration-dropdown({ name: "booking" })
+        +configuration-dropdown()
       .booking-card__invoice
         +invoice({ 
           standing: "9 990&#8381; х 4 суток",

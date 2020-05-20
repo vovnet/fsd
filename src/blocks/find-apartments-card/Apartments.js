@@ -6,18 +6,20 @@ class Apartments {
   }
 
   init() {
-    const element = document.querySelector('.js-dropdown-find-apartments');
+    const element = document.querySelector('.js-find-apartments-card__dropdown');
 
-    this.dropdown = new Dropdown(element, {
-      text: 'Сколько гостей',
-      visibility: 'hide',
-      buttons: true,
-      words: ['гость', 'гостя', 'гостей'],
-      items: [
-        { name: 'Взрослых', value: 0 },
-        { name: 'Детей', value: 0 },
-      ],
-    });
+    if (element) {
+      this.dropdown = new Dropdown(element, {
+        text: 'Сколько гостей',
+        visibility: 'hide',
+        buttons: true,
+        words: ['гость', 'гостя', 'гостей'],
+        items: [
+          { name: 'Взрослых', value: 0 },
+          { name: 'Детей', value: 0 },
+        ],
+      });
+    }
   }
 }
 

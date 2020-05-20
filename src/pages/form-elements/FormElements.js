@@ -29,24 +29,34 @@ class FormElements {
       ],
     };
 
-    const guestCloseElement = document.querySelector('.js-form-elements__dropdown-guest-close > input');
-    new Dropdown(guestCloseElement, this.guest);
+    const guestCloseElement = document.querySelector('.js-form-elements__dropdown-guest-close');
+    if (guestCloseElement) {
+      new Dropdown(guestCloseElement, this.guest);
+    }
 
-    const roomCloseElement = document.querySelector('.js-form-elements__dropdown-room-close > input');
-    new Dropdown(roomCloseElement, this.rooms);
+    const roomCloseElement = document.querySelector('.js-form-elements__dropdown-room-close');
+    if (roomCloseElement) { 
+      new Dropdown(roomCloseElement, this.rooms);
+    }
 
     this.rooms.visibility = '';
-    const roomOpenElement = document.querySelector('.js-form-elements__dropdown-room-open > input');
-    new Dropdown(roomOpenElement, this.rooms);
-
+    const roomOpenElement = document.querySelector('.js-form-elements__dropdown-room-open');
+    if (roomOpenElement) {
+      new Dropdown(roomOpenElement, this.rooms);
+    }
+    
     this.guest.visibility = '';
-    const guestOpenElement = document.querySelector('.js-form-elements__dropdown-guest-open > input');
-    new Dropdown(guestOpenElement, this.guest);
+    const guestOpenElement = document.querySelector('.js-form-elements__dropdown-guest-open');
+    if (guestOpenElement) {
+      new Dropdown(guestOpenElement, this.guest);
+    }
 
     this.guest.items[0].value = 2;
     this.guest.items[1].value = 1;
-    const guestOpenManyElement = document.querySelector('.js-form-elements__dropdown-quest-open-many > input');
-    new Dropdown(guestOpenManyElement, this.guest);
+    const guestOpenManyElement = document.querySelector('.js-form-elements__dropdown-quest-open-many');
+    if (guestOpenManyElement) {
+      new Dropdown(guestOpenManyElement, this.guest);
+    }
   }
 }
 

@@ -26,11 +26,17 @@ class Room {
       ],
     };
 
-    const guestsElement = document.querySelector('.js-dropdown-guests');
-    const roomElement = document.querySelector('.js-dropdown-search-room');
+    const guestsElement = document.querySelector('.js-search-room__guest-dropdown');
+    const roomElement = document.querySelector('.js-search-room__room-dropdown');
 
-    new Dropdown(guestsElement, this.guestOptions);
-    new Dropdown(roomElement, this.roomOptions);
+    if (guestsElement) {
+      new Dropdown(guestsElement, this.guestOptions);
+    }
+    
+    if (roomElement) {
+      new Dropdown(roomElement, this.roomOptions);
+    }
+    
   }
 }
 

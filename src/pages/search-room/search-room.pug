@@ -22,9 +22,9 @@ block content
             +dropdown-field({ title: "Даты пребывания в отеле", value: "19 авг - 23 авг" })
 
           .search-room_index_100
-            .search-room__sidebar-item
+            .search-room__sidebar-item.js-search-room__guest-dropdown
               .search-room__subtitle Гости
-              +configuration-dropdown({ name: "guests" })
+              +configuration-dropdown()
           .search-room__sidebar-item
             .search-room__slider
               +slider({
@@ -58,9 +58,9 @@ block content
               })
 
           .search-room_index_100
-            .search-room__dropdown
+            .search-room__dropdown.js-search-room__room-dropdown
               .search-room__subtitle Удобства номера
-              +configuration-dropdown({ name: "search-room" })
+              +configuration-dropdown()
           .search-room__expander
             .search-room__sidebar-item
               +expander({
