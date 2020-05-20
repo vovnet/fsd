@@ -34,7 +34,7 @@ block content
       +kit-logo()
     .form-elements__wrapper
 
-      .form-elements__left 
+      .form-elements__left-container
         .form-elements__item
           .form-elements__head
             .form-elements__title Text field
@@ -73,7 +73,7 @@ block content
               .form-elements__title Subscription text field 
             +subscription({ placeholder: "Email" })
 
-        .form-elements__top
+        .form-elements__top-container
           .form-elements__item.form-elements__item_with-big-space
             .form-elements__small-container.js-form-elements__dropdown-room-close
               .form-elements__head
@@ -124,7 +124,7 @@ block content
             icon: "location_city"
           })
 
-      .form-elements__mid 
+      .form-elements__mid-container
         .form-elements__item.form-elements__item_with-big-space
           .form-elements__head.form-elements__head_accent
             .form-elements__title Checkbox buttons 
@@ -192,7 +192,7 @@ block content
                 label: "Помощник для инвалидов",
                 description: "На 1 этаже вас встретит специалист и проводит до номера.",
               })
-      .form-elements__right 
+      .form-elements__right-container
         .form-elements__item
           .form-elements__slider
             +slider({
@@ -252,7 +252,7 @@ block content
               { text: "Время прибытия — после 13:00, а выезд до 12:00" }
             ])
 
-      .form-elements__bot 
+      .form-elements__bot-container
         +comment({
           image: "ava.jpg",
           author: "Мурад Сарафанов",

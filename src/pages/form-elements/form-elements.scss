@@ -28,23 +28,23 @@
     margin-top: 30px;
   }
 
-  &__left {
+  &__left-container {
     grid-area: left;
   }
 
-  &__mid {
+  &__mid-container {
     grid-area: mid;
   }
 
-  &__right {
+  &__right-container {
     grid-area: right;
   }
 
-  &__bot {
+  &__bot-container {
     grid-area: bot;
   }
 
-  &__top {
+  &__top-container {
     position: relative;
     z-index: 50;
   }
