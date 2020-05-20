@@ -8,11 +8,11 @@
   line-height: 1.125rem;
   color: $black;
 
-  &__left {
+  &__text {
     line-height: 46px;
   }
 
-  &__right {
+  &__button {
     position: relative;
     z-index: 1;
   }
